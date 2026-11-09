@@ -15,14 +15,14 @@ noindex: true
 
 valentinrouault.com est un média indépendant consacré au SEO et au GEO.
 
-- **Éditeur et directeur de la publication :** Valentin Rouault
-- **Statut :** À COMPLÉTER (particulier, ou entrepreneur individuel avec SIREN)
-- **Adresse :** À COMPLÉTER
+- **Éditeur et directeur de la publication :** Valentin Rouault, à titre personnel
 - **Contact :** [contact@valentinrouault.com](mailto:contact@valentinrouault.com)
+
+Conformément à l'article 6, III, 2 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, l'éditeur, personne physique publiant à titre non professionnel, ne rend pas publique son adresse personnelle. Ses coordonnées d'identification ont été communiquées à l'hébergeur.
 
 ## Hébergeur
 
-**Hostinger International Ltd / HOSTINGER operations, UAB** (À COMPLÉTER : vérifier la dénomination indiquée dans l'espace client)
+**HOSTINGER operations, UAB**
 Švitrigailos str. 34, Vilnius 03230, Lituanie
 Site : [hostinger.fr](https://www.hostinger.fr)
 
