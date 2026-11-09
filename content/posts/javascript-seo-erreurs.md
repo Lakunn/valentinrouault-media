@@ -11,7 +11,7 @@ categories:
 - seo
 dek: "Rendu côté client excessif, ressources bloquées, erreurs de script, scripts tiers trop lourds : les quatre problèmes JavaScript que l'on retrouve le plus souvent en audit, et pourquoi ils pénalisent aussi la visibilité dans les IA."
 seo_title: "JavaScript et SEO : 4 erreurs qui coûtent des positions"
-meta_description: "JavaScript et SEO : rendu côté client, ressources bloquées, erreurs de script et scripts tiers. Les symptômes, les corrections, et l'impact sur les robots des IA."
+meta_description: "JavaScript et SEO : rendu côté client, ressources bloquées, erreurs de script, scripts tiers. Symptômes, corrections et impact sur les robots des IA."
 essentiel:
   - "Le contenu important (titre, texte principal, liens) doit être **présent dans le HTML renvoyé par le serveur**, pas seulement après exécution du JavaScript."
   - "Googlebot exécute le JavaScript, mais en différé ; **la plupart des robots des IA ne l'exécutent pas**, et ne voient donc pas un contenu chargé côté client."

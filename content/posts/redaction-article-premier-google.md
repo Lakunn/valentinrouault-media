@@ -1,145 +1,138 @@
 ---
-title: Comment créer un article qui se positionne premier sur Google ?
+title: "Rédiger un article qui se positionne premier sur Google : la méthode en 6 étapes"
 slug: redaction-article-premier-google
 status: publish
 date: '2025-09-22T15:14:43'
-origin: import
+origin: rewrite
 wp_id: 299
-url: https://valentinrouault.com/redaction-article-premier-google/
-seo_title: Créer un article qui se positionne premier sur Google | 2026
-meta_description: 'Découvrez comment rédiger l’article parfait qui se positionne en 1ʳᵉ page Google : choix du mot-clé, intention, règles d’or et SEO on-page.'
 categories:
 - contenu-seo
 - seo
 cover_id: 308
+dek: "Choix du mot-clé, intention de recherche, rédaction, placement des mots-clés, maillage et couverture thématique : la méthode que j'applique pour écrire des articles qui se classent, et qui sont repris par les IA."
+seo_title: "Rédiger un article premier sur Google : la méthode en 6 étapes"
+meta_description: "Comment rédiger un article SEO qui se positionne premier sur Google : mot-clé, intention de recherche, rédaction, placement des mots-clés, maillage et checklist."
+essentiel:
+  - "Tout part d'un **mot-clé** dont on a compris l'**intention** : la page doit répondre au besoin réel derrière la recherche, dans le format que Google affiche déjà."
+  - "Un article qui se classe apporte un **gain d'information** : données, exemples, expérience que les autres pages n'ont pas."
+  - "Le mot-clé se place dans le **title, le H1, l'introduction et quelques H2**, naturellement : la notion de densité idéale est un mythe."
+  - "L'article doit s'inscrire dans un **ensemble** : liens vers et depuis les contenus proches du même site."
 ---
 
-Pour bien se positionner, un article premier sur Google respecte 5 étapes : Choix mot\-clé, intention de recherche, rédaction, placement du mot\-clé et structure.
+Il n'existe pas de formule magique pour être premier, mais une méthode qui met toutes les chances de son côté. Je l'applique depuis des années sur des sites de secteurs très différents ; elle tient en six étapes.
 
-On passez
+## 1. Choisir le bon mot-clé
 
-## 1\. Choisir un mot\-clé stratégique
+Tout commence par la [recherche de mots-clés](/mot-cle-seo/).
 
-La base d’un bon article SEO, c’est la [recherche de mot\-clé](https://valentinrouault.com/mot-cle-seo/).
+- **Un mot-clé principal**, celui que l'article vise en priorité. Exemple : *meilleures croquettes pour chien*.
+- **Des mots-clés secondaires** : variantes, synonymes, sous-questions (*croquettes sans céréales*, *croquettes pour chiot*, *comment choisir des croquettes*).
 
-- **Un mot\-clé principal** : c’est celui que tu vises en priorité. Exemple : *meilleures croquettes pour chien*.
-- **Des mots\-clés secondaires** : des variantes ou synonymes qui enrichissent le champ lexical (*croquettes sans céréales*, *nourriture pour chien premium*).
+Privilégiez les requêtes **précises**, souvent plus longues : elles sont moins concurrentielles et attirent des visiteurs dont le besoin est clair. Vérifiez aussi la **valeur** du mot-clé pour votre activité : une requête à fort volume sans lien avec ce que vous proposez ne rapportera rien.
 
-Un mot\-clé comme « meilleures croquettes pour chien » est parfait à l’heure du [SEO pour les IA](https://valentinrouault.com/seo-ia/). Son intention est commerciale et donc plus susceptible d’attirer du trafic et des conversions. Un mot\-clé plus informationnel amènera moins de trafic car les IA donneront la réponse directement. Ce sont les [zero click search](https://valentinrouault.com/zero-click-searches/).
+## 2. Comprendre l'intention de recherche
 
-Les mots\-clés de **longue traîne** (3\+ mots) sont souvent plus rentables. Ahrefs indique que **92 % des mots\-clés tapés chaque mois sont de longue traîne**. Moins de concurrence, plus de précision, et un trafic qualifié.
+Google classe les pages qui répondent le mieux au **besoin** derrière la requête. On distingue généralement quatre intentions :
 
-## 2\. Comprendre l’intention de recherche pour comprendre l’audience
+| Intention | Ce que veut l'internaute | Exemple |
+|---|---|---|
+| Informationnelle | Apprendre, comprendre | *comment dresser un chiot* |
+| Commerciale | Comparer avant d'acheter | *meilleures croquettes pour chien* |
+| Transactionnelle | Acheter | *acheter harnais chien pas cher* |
+| Navigationnelle | Trouver une marque ou un site | *croquettes Zooplus* |
 
-Google ne veut pas seulement des mots\-clés, il veut de la pertinence. C’est là qu’intervient l’intention de recherche :
+**Le test le plus fiable : regarder la première page de Google.** Si elle n'affiche que des comparatifs, un article « définition » ne se classera pas. Notez le format dominant (liste, guide, comparatif, vidéo), la profondeur des pages et les questions associées.
 
-- **Informationnelle** : l’utilisateur veut apprendre (ex. *comment dresser un chiot*).
-- **Commerciale :** L’utilisateur exprime un besoin (ex : *meilleures croquettes pour chien*)
-- **Transactionnelle** : il est prêt à acheter (ex. *acheter harnais pour chien pas cher*).
-- **Navigationnelle** : il cherche une marque ou un site précis (ex. *Zooplus croquettes*).
+**Conseil de structure :** construisez l'arborescence du site (catégories, pages services) autour des intentions commerciales et transactionnelles, et utilisez les articles pour répondre aux intentions informationnelles. Ces articles alimentent le maillage interne, et ce sont aussi ceux que les IA citent le plus pour répondre aux questions.
 
-Selon Semrush, **80 % des recherches sur Google sont informationnelles**. Comprendre ton audience, c’est donc répondre à ses questions… avant même qu’elle les pose.
+## 3. Rédiger : les cinq règles
 
-Contrairement à ce qu’on voit sur les **réseaux sociaux**, construire des contenus à visée informationnelle est toujours important pour améliorer son SEO pour les intelligences artificielles notamment. Ce genre de contenus permet d’obtenir de potentiels citations et donc de la notoriété, même si ca ne termine pas toujours en trafic.
+### Des phrases claires
 
-**Conseil du pro :**
+Phrases courtes, vocabulaire simple, paragraphes aérés, réponse directe en tête de chaque section. Un texte facile à lire l'est aussi pour les moteurs et pour les IA, qui extraient plus volontiers une phrase nette qu'une idée diluée.
 
-> On se concentre sur les intentions plus commerciale et transactionnel pour construire la structure de son site web. On fournit d’autres contenu d’information par le biais d’article pour le maillage interne et la croissance à long terme.
+### Un gain d'information
 
-## 3\. Les 5 règles d’or pour rédiger un article qui performe
+Une page qui répète ce que disent les dix premiers résultats n'a aucune raison de passer devant eux. Apportez ce qu'ils n'ont pas : données récentes, test, étude de cas, exemple concret, avis argumenté. La longueur n'est pas un objectif : un article doit être aussi long que nécessaire, pas plus.
 
-### 3\.1 Phrases claires et concises
+### Des sources et une expertise visibles
 
-Google valorise les contenus faciles à lire. Des phrases courtes, un langage simple, des paragraphes aérés. Selon Yoast, un contenu dont le score de lisibilité est bon a **30 % de chances en plus d’apparaître dans le top 10**.
+- Un **auteur identifié**, avec son parcours.
+- Des **sources citées** pour chaque chiffre.
+- Des informations **récentes** et datées.
 
-Cela permet également d’améliorer son SEO dans les IA car les phrases plus directes et concises sont mieux comprises par les robots et algorithmes.
+C'est ce que Google résume par l'E-E-A-T (expérience, expertise, autorité, fiabilité).
 
-En bref, ca leur facilite la tâches et donc vous obtenez du trafic et de meilleures positions.
+**Retour d'expérience.** Cet article, rédigé selon cette méthode, se classe premier sur « compléments alimentaires cheveux » (environ 800 recherches mensuelles) et apparaît aussi dans des réponses de ChatGPT selon Ahrefs. Introduction qui répond tout de suite, sources, structure claire :
 
-### 3\.2 Contenu original et à forte valeur ajoutée
+![Introduction d'un article classé premier sur Google](https://valentinrouault.com/wp-content/uploads/2025/09/capture-article-premier-google.webp)
 
-Copier les autres n’apporte rien. Google mesure l’originalité et la profondeur via son algorithme. Des données récentes, des études de cas ou des exemples concrets te donneront l’avantage.
+![Fin du même article, avec sources et informations complémentaires](https://valentinrouault.com/wp-content/uploads/2025/09/capture-article-premier-google-2.webp)
 
-HubSpot a montré que les articles longs (2000\+ mots) génèrent **3 fois plus de trafic** que les articles courts.
+### Un maillage interne réfléchi
 
-### 3\.3 Sources vérifiées et crédibles
+Reliez l'article aux contenus proches du site, et faites pointer ceux-ci vers lui. Pour trouver les bonnes pages, une recherche `site:votresite.fr intitle:"votre mot-clé"` dans Google liste les pages qui traitent du sujet.
 
-Google valorise l’**E\-E\-A\-T** : Expérience, Expertise, Autorité, Trust.
-Cite des sources reconnues, ajoute des données vérifiables. Cela renforce la confiance de tes lecteurs… et de Google.
+![Recherche site: et intitle: pour trouver des pages à relier](https://valentinrouault.com/wp-content/uploads/2025/09/capture-ecran-page-resultats-de-recherche-google-1024x612.png)
 
-Mais les optimisations pour l’E\-E\-A\-T ne s’arrête pas là :
+Exemple ci-dessus sur le site de Sephora : toutes les pages qui parlent de mascara, à relier à un nouvel article sur le sujet.
 
-- Mentionnez l’auteur et son background pour renforcer l’expertise.
-- Donnez des chiffres ou des informations propres à votre thèmes et venant de sources vérifiées.
-- Trouvez des sources récentes pour améliorer la qualité de votre réponse et analyse.
+### Un format agréable
 
-Cet article se positionne premier sur « Compléments alimentaires cheveux » (800 recherches mensuelles) et, selon ahref, il apparait aussi dans des résultats de recherche Chat gpt. On peut constater qu’il coche toutes les cases 👇
+- Listes à puces pour les énumérations, tableaux pour les comparaisons.
+- Images utiles avec un texte alternatif descriptif.
+- Schémas, infographies ou vidéos quand ils expliquent mieux que le texte.
 
-![Capture d'écran d'une intro d'un article de blog performant sur Google](https://valentinrouault.com/wp-content/uploads/2025/09/capture-article-premier-google.webp)
-![Capture d'écran d'une fin d'un article de blog performant sur Google](https://valentinrouault.com/wp-content/uploads/2025/09/capture-article-premier-google-2.webp)
-### 3\.4 Maillage interne intelligent
+Ces éléments améliorent l'expérience de lecture et participent au gain d'information.
 
-Relie ton article à d’autres contenus pertinents de ton site. Il suffit de taper « site:tonsite.fr intitle:’ton mot clé' » dans ta barre de recherche pour trouver les pages les plus pertinentes et proches sémantiquement pour faire des liens impeccables.
+## 4. Placer le mot-clé, sans excès
 
-![](https://valentinrouault.com/wp-content/uploads/2025/09/capture-ecran-page-resultats-de-recherche-google-1024x612.png)
-Exemple sur le site de sephora, si je veux trouver toutes les pages qui parlent de mascara pour faire des liens vers un nouvel article de blog
+- dans la **balise title** ;
+- dans le **H1** ;
+- dans **l'introduction** ;
+- dans **un ou deux H2**, quand c'est naturel ;
+- dans la **meta description** (elle n'influence pas le classement mais le taux de clic) ;
+- dans l'**URL**, courte et lisible.
 
-Le maillage interne comporte d’autres avantages :
+Pour le reste du texte, écrivez naturellement, en utilisant les variantes et le vocabulaire du sujet. Google ne fixe aucune densité de mot-clé idéale ; répéter l'expression exacte à outrance (*keyword stuffing*) est contre-productif et peut être considéré comme du spam.
 
-- Tu aides Google à comprendre la structure de ton site.
-- Tu gardes ton lecteur plus longtemps sur tes pages.
+## 5. Penser au-delà de l'article : la couverture thématique
 
-Une étude de NinjaSEO montre que le maillage interne bien pensé peut augmenter le trafic organique de **40 %**.
+Google évalue aussi la **profondeur d'un site sur un sujet**. Un article isolé se classe moins bien qu'un article intégré dans un ensemble :
 
-### 3\.5 Format engageant
+- un guide de référence sur le sujet ;
+- des articles qui approfondissent chaque sous-question ;
+- des liens entre tous ces contenus.
 
-Un mur de texte n’attire personne. Les paragraphes qui n’en finissent pas, les articles sans images, sans infographies et dans rien de neuf sont d’un ennui mortel pour les utilisateurs. Mais au delà de ça, ce sont aussi des article compliqué à lire car l’utilisateurs ne trouve pas l’information intéressantes.
+Voir [les 10 stratégies SEO qui fonctionnent](/strategies-seo/) et [la cannibalisation](/cannibalisation-seo/) pour éviter que vos articles se concurrencent.
 
-![](https://valentinrouault.com/wp-content/uploads/2025/09/Tired-Sick-Of-It-GIF-by-U-by-Kotex®-Brand.gif)
-C’est assez simple de remédier un article qui n’intéressera personnes, pas même les algorithmes.
+## 6. La checklist avant publication
 
-- Utilise des listes à puces : Parfait pour aider les algorithmes d’intelligence artificiel à construire leur réponse en extrayant vos mots.
-- Ajoute des images optimisées (balise alt) : C’est idéal pour faire passer vos messages et faire du ‘stop scroll’ (arrêter le scroll de l’utilisateur).
-- Intègre des infographies ou vidéos : Rien de mieux pour donner des informations cruciales à vos utilisateurs.
+![Checklist d'un article SEO de qualité](https://valentinrouault.com/wp-content/uploads/2025/09/Autopsie-dun-article-de-qualidad-1.png)
 
-L’utilisation de différents format participe à ce qu’on appel le **gain informationnel** (capacité à apporter plus que la concurrence).
+- Le mot-clé et son intention sont clairs, et le format correspond à ce qu'affiche Google.
+- L'introduction répond directement à la question.
+- L'article apporte au moins une information que les concurrents n'ont pas.
+- Les chiffres sont sourcés et datés, l'auteur est identifié.
+- Title, H1, introduction et URL contiennent le mot-clé.
+- L'article reçoit des liens internes et en fait vers les contenus proches.
+- Images optimisées, textes alternatifs renseignés.
+- Relecture complète : fautes, faits, liens.
 
-BuzzSumo a observé que les articles avec des visuels génèrent **94 % de vues en plus** que ceux sans image. Ce n’est vraiment pas rien et ça participe à la bonne expérience de vos utilisateurs sur le site (ce qui boost le SEO également).
+<section class="faq" markdown="1">
 
-## 4\. Où placer le mot\-clé dans ton article
+## Questions fréquentes
 
-Le placement est aussi important que le choix du mot\-clé.
+### Combien de temps pour qu'un article se positionne ?
 
-- Dans le **titre (H1\)**.
-- Dans le **premier paragraphe**.
-- Dans au moins un ou deux **H2**.
-- Dans la **balise Title** et la **Meta description**.
-- Naturellement dans le contenu (densité entre 1 % et 2 %).
+De quelques jours à plusieurs mois, selon l'autorité du site et la concurrence. Un article sur un site déjà reconnu dans son domaine progresse beaucoup plus vite.
 
-Attention au keyword stuffing : sur\-optimiser peut faire l’effet inverse.
+### Quelle longueur pour un article SEO ?
 
-Respecte une densité naturel qui ne dépasse pas 2% de ton total de mot. Cela concerne « l’occurrence exacte », donc ton mot\-clé principal sans variantes :
+Celle qu'exige le sujet. Regardez la profondeur des pages qui se classent, puis visez une réponse plus utile, pas forcément plus longue.
 
-- **meilleures croquette pour chien** : occurrence exacte donc 1\-2% de densité
-- **Croquettes pour chien/croquettes pour chiot :** occurrence partielle donc c’est possible de le mettre un peu plus.
+### Faut-il mettre à jour un article qui se classe déjà ?
 
-Respecte ces quelques règles et article se positionnera rapidement.
+Oui, régulièrement : chiffres, exemples et captures vieillissent, et un concurrent plus à jour finit par passer devant.
 
-## 5\. Topical authority : aller plus loin
-
-Google ne valorise plus seulement une page, mais **la profondeur d’un site sur un sujet donné**. C’est ce qu’on appelle la *topical authority*.
-
-- Publie plusieurs articles reliés entre eux (un *topic cluster*).
-- Relie\-les par des liens internes.
-- Couvre le sujet de manière exhaustive (FAQ, guides, études).
-
-Selon MarketMuse, les sites qui travaillent leur topical authority voient une **hausse de 30 à 70 % de leurs impressions organiques** sur 6 mois.
-
-## 6\. L’article parfait pour se positionner en SEO : la checklist finale
-
-Partagez ça partout
-
-![](https://valentinrouault.com/wp-content/uploads/2025/09/Autopsie-dun-article-de-qualidad-1.png)
-Vous avez tout ce qu’il faut pour ranker, maintenant il ne vous reste plus qu’à vous lancer, et si vous avez besoin d’aider : contactez\-moi à contact@valentinrouault.com
-
-Allez voir mon article sur les mes [top stratégies SEO pour 2026](https://valentinrouault.com/strategies-seo/)
+</section>
