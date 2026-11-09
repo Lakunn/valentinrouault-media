@@ -1,138 +1,136 @@
 ---
-title: 'SEO Chat GPT : Se positionner efficacement et à coup sûr dans les IA'
+title: "SEO ChatGPT : comment être cité dans les réponses de ChatGPT"
 slug: seo-chatgpt
 status: publish
 date: '2025-09-10T14:42:38'
-origin: import
+origin: rewrite
 wp_id: 221
-url: https://valentinrouault.com/seo-chatgpt/
-seo_title: 'ChatGPT SEO : Ce qu''il faut savoir pour performer en 2026 !'
-meta_description: 'Découvrez comment se positionner efficacement sur ChatGPT et en tirer du trafic : extraction des données, fraîcheur du contenu, preuve d’autorité, structure optimisée et exploitation des requêtes à éventail (fan-out queries).'
 categories:
 - blog
 - actus-seo
 - contenu-seo
+dek: "Comment ChatGPT trouve et choisit ses sources, quels robots laisser passer, et la méthode pour exploiter les sous-requêtes qu'il lance afin de devenir une source citée."
+seo_title: "SEO ChatGPT : comment être cité dans les réponses de ChatGPT"
+meta_description: "Comment ChatGPT choisit ses sources : robots à autoriser, recherche web, sous-requêtes (fan-out), structure des contenus et mesure du trafic venant de ChatGPT."
+essentiel:
+  - "ChatGPT utilise trois robots aux rôles distincts : **OAI-SearchBot** (recherche), **ChatGPT-User** (pages ouvertes à la demande d'un utilisateur) et **GPTBot** (entraînement). Bloquer les deux premiers vous retire des réponses."
+  - "Quand il cherche sur le web, ChatGPT **découpe la question en sous-requêtes**. Ces sous-requêtes sont les sujets sur lesquels il faut être présent."
+  - "Il reprend surtout des passages **clairs, structurés, datés et attribuables** : listes, tableaux, définitions, chiffres sourcés."
+  - "Le trafic venant de ChatGPT se mesure dans l'analytics grâce au paramètre `utm_source=chatgpt.com` ajouté à beaucoup de ses liens."
 ---
 
-C’est une des questions qu’on me pose le plus souvent en sessions de consulting : ‘Comment faire du SEO pour Chat GPT ?’
+« Comment faire du SEO pour ChatGPT ? » est devenue l'une des questions les plus fréquentes en SEO. La réponse tient en deux parties : comprendre comment ChatGPT trouve ses sources, puis rendre vos pages faciles à trouver, à lire et à citer.
 
-Comme les algorithmes de SEO, les intelligences artificielles ont des critères de sélection pour leurs sources.
+Pour la méthode générale, valable pour tous les moteurs génératifs, voir le [guide complet du GEO](/seo-ia/). Cet article se concentre sur ChatGPT.
 
-## Extraction des données
+## 1. Comment ChatGPT trouve ses sources
 
-Avant toute action, il faut comprendre comment l’IA puise ses informations. ChatGPT se base sur :
+### Deux modes de réponse
 
-- **Les données textuelles accessibles en ligne** : sites à forte autorité, contenus structurés et facilement lisibles.
-- **Les signaux de popularité** : backlinks, mentions, citations.
-- **Les données structurées** (schema.org, FAQ, tableaux, listes à puces) qui facilitent l’extraction et la réutilisation.
+- **Sans recherche web**, ChatGPT répond à partir de ce que le modèle a appris pendant son entraînement. Il ne cite alors généralement aucune source.
+- **Avec recherche web**, déclenchée automatiquement pour les questions récentes, précises ou commerciales (ou à la demande de l'utilisateur), il interroge des moteurs de recherche, lit plusieurs pages et cite celles qu'il utilise.
 
-### Comment chat GPT fonctionne ?
+C'est sur ce second mode que l'on peut agir directement.
 
-Quand un utilisateur me demande par exemple *“Quels sont les meilleurs CRM pour PME ?”*, je vais :
+### Les robots d'OpenAI
 
-1. Identifier les sources les plus citées et fiables (blogs spécialisés, comparatifs SaaS).
-2. Extraire les informations structurées (tableaux de prix, listes d’outils).
-3. Donner une réponse hiérarchisée, souvent sous forme de liste.
+OpenAI documente trois robots, à traiter séparément dans votre `robots.txt` :
 
-Si ton contenu est déjà organisé sous cette forme (liste claire \+ tableaux comparatifs \+ FAQ), tu deviens une source idéale pour moi.
+| Robot | Rôle | Conséquence d'un blocage |
+|---|---|---|
+| `OAI-SearchBot` | Explore les pages pour la recherche de ChatGPT | Vos pages ne peuvent plus apparaître comme sources dans les réponses |
+| `ChatGPT-User` | Ouvre une page quand un utilisateur ou un agent le demande | ChatGPT ne peut plus lire vos pages à la demande |
+| `GPTBot` | Collecte des contenus pour entraîner les modèles | Vos contenus ne servent plus à l'entraînement ; sans effet direct sur la recherche |
 
-On constate d’ailleurs que ce sont les mêmes critères pour des IA génératives comme celle de Google. Les AI overviews ou les résultats de Chat GPT sont souvent présentés sous forme de listes, c’est donc intéressants de donner des listes à extraire (logique non ?).
+Un site qui veut être cité laisse passer au minimum `OAI-SearchBot`. Le choix concernant `GPTBot` est indépendant.
 
-## Fraîcheur du contenu
+### Le rôle des moteurs de recherche
 
-La fraîcheur joue un rôle crucial dans le référencement naturel et dans la perception qu’ont les utilisateurs du site.
+ChatGPT s'appuie en partie sur des moteurs de recherche tiers pour trouver des pages candidates. Être bien indexé et bien classé, dans Google mais aussi dans **Bing**, augmente donc la probabilité d'être lu. Vérifiez votre site dans [Bing Webmaster Tools](https://www.bing.com/webmasters) au même titre que dans la Search Console.
 
-- Mets à jour tes articles anciens avec de nouvelles statistiques, captures d’écran et exemples concrets.
-- Ajoute des dates de publication et de mise à jour visibles.
-- Crée un flux de contenus réguliers sur ton site (articles, études, comparatifs).
+## 2. Les sous-requêtes : la clé pour être présent
 
-### Comment chat GPT fonctionne ?
+Face à une question complexe, ChatGPT ne lance pas une seule recherche. Il la **décompose en plusieurs sous-requêtes** (on parle de *fan-out queries*), chacune couvrant un angle de la question, puis il fusionne les résultats.
 
-Quand quelqu’un me demande “Tendances SEO 2025”, Chat GPT va:
+![Une question complexe posée à ChatGPT, qui déclenche plusieurs recherches](https://valentinrouault.com/wp-content/uploads/2025/09/image-2-1024x520.png)
 
-1. Chercher en priorité des contenus récents (articles de 2024\-2025\).
-2. Écarter les contenus trop vieux ou non mis à jour.
-3. Donner du contexte avec les évolutions récentes (IA, Google SGE, etc.).
+Dans certains cas, les recherches lancées sont visibles dans le détail du raisonnement :
 
-Résultat : si ton article est mis à jour régulièrement et comporte clairement la mention “2025” (ou l’année en cours), l’intelligence artificielle aura beaucoup plus de chances de le sélectionner.
+![Les sous-requêtes lancées par ChatGPT, visibles dans le détail de sa réponse](https://valentinrouault.com/wp-content/uploads/2025/09/image-3-1024x389.png)
 
-## Autorité et preuve de fiabilité
+### Comment exploiter les sous-requêtes
 
-ChatGPT, comme Google, valorise les sources fiables. Pour t’imposer comme référence :
+Traitez-les comme les « Autres questions posées » de Google : ce sont les besoins réels derrière une question.
 
-- **Multiplie les signaux d’autorité** : backlinks éditoriaux, citations sur des médias spécialisés, partages sociaux.
-- **Montre ton expertise** : inclue des données originales (études, tests, benchmarks).
-- **Affiche tes preuves de crédibilité** : auteurs identifiés avec bio, références aux sources, certifications, témoignages.
+1. **Les collecter.** Posez à ChatGPT (et à d'autres assistants) les questions larges de votre secteur : « compare les meilleures solutions de… avec prix, intégrations et avis ». Notez les sous-thèmes qui reviennent.
+2. **Les couvrir.** Chaque sous-requête récurrente doit trouver une réponse claire sur votre site : une section dédiée, ou une page si le sujet le justifie.
+3. **Y répondre directement.** Une phrase de réponse en tête de section, puis le détail.
 
-### Comment chat GPT fonctionne ?
+**Exemple.** Pour la question « Quels sont les meilleurs CRM pour PME, avec prix, intégrations et avis ? », une page bien construite contient :
 
-Si quelqu’un me demande “Quelle est la meilleure alimentation pour chien shiba inu ?”, je vais :
+- une liste des outils avec une phrase de positionnement pour chacun ;
+- un **tableau des prix** daté ;
+- les **intégrations** principales ;
+- les **avantages et limites** de chaque outil ;
+- une FAQ sur les questions secondaires (essai gratuit, migration, RGPD).
 
-1. Repérer les sites spécialisés (vétérinaires, blogs canins réputés, sites e\-commerce de référence).
-2. Valoriser les contenus citant des études, avis d’experts, ou chiffres vérifiables.
-3. Éviter les contenus trop promotionnels sans preuves.
+## 3. Ce que ChatGPT reprend volontiers
 
-Donc, si tu apportes des **sources externes fiables** et que tu cites tes références, tu augmentes tes chances d’être repris.
+### Des contenus structurés
 
-## Structure du contenu
+Les réponses de ChatGPT prennent souvent la forme de listes et de tableaux. Les pages déjà organisées ainsi sont plus faciles à utiliser :
 
-La forme est presque aussi importante que le fond. ChatGPT adore les contenus clairs et organisés.
+- titres explicites qui posent la question traitée ;
+- listes numérotées pour les étapes, tableaux pour les comparaisons ;
+- un résumé des points clés en tête d'article.
 
-- Utilise des **titres explicites (H2, H3\)**.
-- Structure tes textes avec des **listes à puces, tableaux comparatifs et FAQ**.
-- Rédige des **phrases concises** qui peuvent être facilement extraites.
-- Inclue un **résumé clair** en début ou fin d’article (idéal pour l’extraction IA).
+### Des contenus récents et datés
 
-### Comment chat GPT fonctionne ?
+Sur les sujets qui évoluent, ChatGPT privilégie les informations récentes.
 
-Si un utilisateur tape “Étapes pour lancer un blog rentable”, je vais :
+- Affichez la date de publication **et** la date de mise à jour.
+- Mettez réellement à jour les contenus : chiffres, captures, exemples.
+- Indiquez l'année quand l'information en dépend (prix, classements, réglementation).
 
-1. Chercher un contenu avec une liste numérotée ou un guide étape par étape.
-2. Extraire directement les points (par ex. “Choisir une niche → Acheter un domaine → Installer WordPress…”).
-3. Donner la réponse en quelques lignes claires.
+### Des preuves de fiabilité
 
-Si ton contenu est déjà découpé en étapes, avec des H2/H3 explicites, tu deviens une **source clé** car je peux littéralement “copier\-coller” ta structure.
+- Auteur identifié, avec son expertise.
+- Sources citées pour les chiffres et les affirmations.
+- Données originales : tests, études, retours d'expérience.
+- Ton factuel : les pages trop promotionnelles sont moins reprises sur les questions de conseil.
 
-## Les **fan out queries** (requêtes à éventail)
+### Une marque dont on parle ailleurs
 
-L’IA cherche à donner la réponse la plus complète possible. Son objectif est donc de comprendre les intention de recherche sous jacentes. Les **Fan Out queries**, ou requêtes à éventail, sont le moyen utilisé pour y parvenir.
+ChatGPT recoupe les sources. Une marque citée dans la presse, les comparatifs, les forums et les sites d'avis apparaît plus souvent dans ses réponses. Voir [le netlinking](/netlinking/) et [le SEO off-site](/off-site-seo/).
 
-En général, elle se déclenche sur des requêtes plus longues qui vont demander une réflexion avancée à l’outil d’IA.
+## 4. Mesurer sa visibilité dans ChatGPT
 
-![](https://valentinrouault.com/wp-content/uploads/2025/09/image-2-1024x520.png)
-Une fois que la réponse est générée, on peut voir les différentes requêtes dans la réflexion de l’outil.
+- **Analytics** : ChatGPT ajoute `utm_source=chatgpt.com` à beaucoup des liens qu'il affiche. Suivez cette source et les pages d'arrivée.
+- **Logs serveur** : repérez les passages d'`OAI-SearchBot` et de `ChatGPT-User`, et les pages consultées.
+- **Panel de requêtes** : une vingtaine de questions de votre secteur, posées régulièrement, en notant si vous êtes cité et à quelle place.
 
-![](https://valentinrouault.com/wp-content/uploads/2025/09/image-3-1024x389.png)
-Ensuite, il ne reste plus qu’à en tirer parti.
+Les réponses varient d'un utilisateur et d'une session à l'autre : suivez des tendances, pas des positions.
 
-### Comment utiliser les requêtes à éventail pour créer du meilleur contenu SEO et GEO ?
+## Pour aller plus loin
 
-On utilisera les requêtes à éventail comme on utilise les ‘People also ask’ ou les ‘Autres questions posées’ en SEO traditionnel.
+- [ChatGPT Shopping : le nouveau SEO de l'e-commerce](/seo-ecom-chat-gpt/)
+- [Ce que révèlent les conversations des utilisateurs de ChatGPT](/utilisation-chat-gpt-statistiques/)
+- [ChatGPT vs Google : qui domine ?](/google-vs-chatgpt-tendances/)
 
-#### Comment les exploiter pour ton contenu SEO \& GEO
+<section class="faq" markdown="1">
 
-1. **Lister les fan\-out queries de ton secteur**
-	- Utilise ChatGPT, Perplexity ou Google Bard pour poser des requêtes larges (“Donne\-moi un comparatif complet…”, “Fais une synthèse avec prix, avantages, intégrations…”).
-	- Observe les sous\-thèmes qui reviennent systématiquement.
-2. **Créer du contenu qui couvre ces sous\-requêtes**
-	- Chaque fan\-out query doit devenir une **sous\-section claire** (H2/H3\) dans ton contenu.
-	- Utilise des **listes, tableaux et FAQ** pour faciliter l’extraction par l’IA.
-3. **Penser en mode GEO (Generative Engine Optimization)**
-	- Ton contenu doit être conçu pour être repris et reformulé par une IA.
-	- Ça signifie : phrases concises, réponses directes, exemples contextualisés.
-	- Objectif : devenir la source “parfaite” à agréger quand ChatGPT répond.
+## Questions fréquentes
 
-#### Exemple concret
+### Peut-on payer pour apparaître dans ChatGPT ?
 
-Si tu veux cibler la requête :
-*“Quels sont les meilleurs CRM pour PME en 2025 avec prix, intégrations et avis ?”*
-Ton contenu doit déjà contenir :
+Les citations dans les réponses ne s'achètent pas. Les formats publicitaires éventuels sont distincts des sources citées.
 
-- **H2 : Les meilleurs CRM pour PME en 2025** (liste des outils)
-- **H3 : Prix et plans tarifaires** (tableau comparatif clair)
-- **H3 : Intégrations principales** (liste d’API / connecteurs populaires)
-- **H3 : Avantages et inconvénients** (FAQ ou tableau avantages / limites)
+### ChatGPT utilise-t-il le classement de Google ?
 
-Résultat : quand une fan\-out query se déclenche, ton contenu est **plug\-and\-play** pour ChatGPT → tu deviens la source de référence.
+ChatGPT s'appuie sur des moteurs de recherche pour trouver des pages, mais il choisit lui-même celles qu'il lit et cite. Un bon classement augmente la probabilité d'être trouvé, sans garantir d'être cité.
 
-Donc, pour créer et enrichir ton contenu en fonction de ce qui compte vraiment pour l’IA et ton audience, utiliser les requêtes à éventail est indispensable.
+### Faut-il réécrire tout son site pour ChatGPT ?
+
+Non. Commencez par les pages qui devraient répondre aux questions que vos clients posent aux assistants, et appliquez-leur les principes de structure, de fraîcheur et de preuve.
+
+</section>
