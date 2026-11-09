@@ -10,7 +10,7 @@ categories:
 - contenu-seo
 dek: "Google ne sanctionne pas un texte parce qu'il est écrit par une IA, mais il cible le contenu produit en masse sans valeur ajoutée. Ce que disent ses documents officiels, ce qu'ont montré les mises à jour récentes, et comment utiliser l'IA sans risque."
 seo_title: "Contenu IA et Google : pénalité ou pas ? Ce qu'on sait"
-meta_description: "Google pénalise-t-il le contenu généré par IA ? Ses règles officielles, la politique sur le contenu à grande échelle, les mises à jour récentes et les bonnes pratiques."
+meta_description: "Google pénalise-t-il le contenu IA ? Ses règles officielles, la politique sur le contenu à grande échelle, les mises à jour récentes et les bonnes pratiques."
 essentiel:
   - "Google ne pénalise **pas** un contenu parce qu'il est généré par IA : sa documentation juge la **qualité**, quelle que soit la façon dont le contenu est produit."
   - "Ses règles sur le spam visent en revanche le **contenu à grande échelle** produit surtout pour manipuler le classement, avec ou sans IA."

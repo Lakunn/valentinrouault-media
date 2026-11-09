@@ -11,7 +11,7 @@ categories:
 cover_id: 308
 dek: "Choix du mot-clé, intention de recherche, rédaction, placement des mots-clés, maillage et couverture thématique : la méthode que j'applique pour écrire des articles qui se classent, et qui sont repris par les IA."
 seo_title: "Rédiger un article premier sur Google : la méthode en 6 étapes"
-meta_description: "Comment rédiger un article SEO qui se positionne premier sur Google : mot-clé, intention de recherche, rédaction, placement des mots-clés, maillage et checklist."
+meta_description: "Rédiger un article SEO qui se positionne premier sur Google : mot-clé, intention, rédaction, placement des mots-clés, maillage et checklist."
 essentiel:
   - "Tout part d'un **mot-clé** dont on a compris l'**intention** : la page doit répondre au besoin réel derrière la recherche, dans le format que Google affiche déjà."
   - "Un article qui se classe apporte un **gain d'information** : données, exemples, expérience que les autres pages n'ont pas."
