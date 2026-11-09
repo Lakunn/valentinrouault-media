@@ -30,6 +30,35 @@ def build_site_json(cfg: dict) -> None:
     print(f"site.json généré ({dest.stat().st_size} octets)")
 
 
+def check_pagination(cfg: dict, docs: list) -> int:
+    """Chaque URL paginée du référentiel (…/page/N/) doit exister avec les réglages per_page actuels."""
+    import math
+    import re
+
+    if not URLS_FILE.exists():
+        return 0
+    posts = [d for d in docs if d.kind == "post" and d.meta.get("status", "publish") == "publish"]
+    per = cfg.get("per_page", {})
+    errors = 0
+    with URLS_FILE.open(encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            m = re.search(r"^https?://[^/]+/(.*)/page/(\d+)/$", row["url"])
+            if not m:
+                continue
+            archive, n = m.group(1), int(m.group(2))
+            if archive.startswith("author/"):
+                count, size = len(posts), per.get("author", 5)
+            elif archive.startswith("category/"):
+                slug = archive.split("/")[-1]
+                count, size = sum(1 for d in posts if slug in (d.meta.get("categories") or [])), per.get("archive", 6)
+            else:
+                count, size = len(posts), per.get("blog", 9)
+            if math.ceil(count / size) < n:
+                print(f"✗ /{archive}/page/{n}/ disparaîtrait : {count} articles à {size} par page = {math.ceil(count / size)} page(s)")
+                errors += 1
+    return errors
+
+
 def main() -> None:
     cfg = load_config()
     build_site_json(cfg)
@@ -64,6 +93,8 @@ def main() -> None:
             print(f"✗ canonical_overrides : la cible {target} de « {slug} » n'existe pas dans le dépôt")
             errors += 1 if URLS_FILE.exists() else 0
     for d in docs:
+        if "À COMPLÉTER" in d.body:
+            warn(f"{d.path.name} : contient « À COMPLÉTER » (le déploiement en production est bloqué)")
         if d.kind == "page" and d.meta.get("origin") == "import":
             warn(f"{d.path.name} : page de l'ancien site, à réécrire (le déploiement en production est bloqué tant qu'elle ne l'est pas)")
 
@@ -72,6 +103,8 @@ def main() -> None:
         if n > 1:
             print(f"✗ {n} contenus marqués {flag} (un seul autorisé)")
             errors += 1
+
+    errors += check_pagination(cfg, docs)
 
     if URLS_FILE.exists():
         with URLS_FILE.open(encoding="utf-8") as f:

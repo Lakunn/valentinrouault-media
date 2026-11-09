@@ -142,7 +142,10 @@ class Sync:
         return data
 
     def run(self) -> None:
-        docs = all_docs()
+        skip = set(self.cfg.get("legacy_redirects") or [])
+        docs = [d for d in all_docs() if d.slug not in skip]
+        for slug in sorted(skip):
+            print(f"ignoré (redirigeait déjà avant la refonte) : /{slug}/")
         slugs = [(d.kind, d.slug) for d in docs]
         dupes = {s for s in slugs if slugs.count(s) > 1}
         if dupes:
@@ -154,6 +157,11 @@ class Sync:
             die(f"pages pas encore réécrites (origin: import) : {', '.join(legacy)} — déploiement bloqué")
         for name in legacy:
             warn(f"page à réécrire avant le lancement : {name}")
+        todo = [d.path.name for d in docs if "À COMPLÉTER" in d.body or "À COMPLÉTER" in str(d.meta)]
+        if todo and self.apply:
+            die(f"informations « À COMPLÉTER » dans : {', '.join(todo)} — déploiement bloqué")
+        for name in todo:
+            warn(f"informations à compléter avant le lancement : {name}")
 
         cat_ids = self.sync_categories()
         page_ids: dict[str, int] = {}

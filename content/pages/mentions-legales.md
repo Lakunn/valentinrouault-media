@@ -3,78 +3,47 @@ title: Mentions légales
 slug: mentions-legales
 status: publish
 date: '2025-09-03T19:29:00'
-origin: import
+origin: rewrite
 wp_id: 137
-url: https://valentinrouault.com/mentions-legales/
-seo_title: Mentions légales - valentinrouault.com
-meta_description: 'Nom : Valentin Rouault (prénoms : Joseph, Paul)'
+dek: "Éditeur, hébergeur et conditions d'utilisation du site valentinrouault.com."
+seo_title: "Mentions légales | Valentin Rouault, média SEO & GEO"
+meta_description: "Mentions légales du site valentinrouault.com : éditeur, directeur de la publication, hébergeur, propriété intellectuelle et responsabilité."
+noindex: true
 ---
 
-## Mentions légales – Consultance SEO
+## Éditeur du site
 
-### 1\. Éditeur du site
+valentinrouault.com est un média indépendant consacré au SEO et au GEO.
 
-- **Nom :** Valentin Rouault (prénoms : Joseph, Paul)
-- **Statut juridique :** Entrepreneur individuel
-- **SIREN :** 843 112 871 (immatriculé au Registre National des Entreprises le 18 mars 2024, début d’activité le 1er mars 2024\) [data.inpi.fr](https://data.inpi.fr/entreprises/843112871?q=valentin+rouault&utm_source=chatgpt.com)
-- **Adresse professionnelle :**
-3 Rue Amiral Gaspard de Coligny, appartement B 05,
-35000 Rennes – FRANCE
-- **Nom commercial / Établissement principal :** Fierce (SIRET 843 112 871 00028\), activité d’audit SEO et réseaux sociaux, code APE 6312Z (portails Internet)
-- **Nom de domaine :** valentinrouault.com
+- **Éditeur et directeur de la publication :** Valentin Rouault
+- **Statut :** À COMPLÉTER (particulier, ou entrepreneur individuel avec SIREN)
+- **Adresse :** À COMPLÉTER
+- **Contact :** [contact@valentinrouault.com](mailto:contact@valentinrouault.com)
 
----
+## Hébergeur
 
-### 2\. Hébergeur
+**Hostinger International Ltd / HOSTINGER operations, UAB** (À COMPLÉTER : vérifier la dénomination indiquée dans l'espace client)
+Švitrigailos str. 34, Vilnius 03230, Lituanie
+Site : [hostinger.fr](https://www.hostinger.fr)
 
-- **HOSTINGER operations, UAB
-Švitrigailos str. 34, Vilnius 03230, Lituanie**
-- Téléphone : **\+37064503378**
-- E\-mail (noms de domaine) : **[domains@hostinger.com](mailto:domains@hostinger.com)**
+## Propriété intellectuelle
 
----
+Les textes, analyses, images et éléments graphiques publiés sur ce site sont la propriété de Valentin Rouault, sauf mention contraire. Toute reproduction intégrale ou substantielle sans autorisation écrite est interdite. Les courtes citations sont autorisées à condition de mentionner la source avec un lien vers l'article.
 
-### 3\. Propriété intellectuelle
+Les marques et noms de produits cités appartiennent à leurs propriétaires respectifs. Leur mention n'implique aucun partenariat.
 
-Tous les contenus présents (textes, images, logos, graphismes…) sont la propriété exclusive de **Valentin Rouault**, sauf mention contraire. Toute reproduction, modification ou diffusion est interdite sans autorisation écrite.
+## Indépendance éditoriale
 
----
+Aucun article de ce site n'est sponsorisé ni rémunéré par un éditeur d'outil ou une entreprise citée. Les opinions exprimées sont celles de l'auteur et n'engagent pas ses employeurs, passés ou présents. La [charte éditoriale](/a-propos/) détaille les règles suivies.
 
-### 4\. Responsabilité
+## Responsabilité
 
-Le contenu est fourni à titre informatif. Valentin Rouault s’efforce d’assurer sa fiabilité, mais ne garantit pas son exhaustivité. Il ne peut être tenu responsable des omissions ou erreurs dans les informations affichées sur le site.
+Les contenus sont publiés à titre informatif. Ils sont vérifiés et datés, mais le référencement et les moteurs de recherche évoluent vite : une information peut devenir inexacte après sa publication. L'éditeur ne peut être tenu responsable de décisions prises sur la seule base de ces contenus. Les liens vers des sites externes sont fournis pour référence ; l'éditeur n'a pas de contrôle sur leur contenu.
 
----
+## Données personnelles
 
-### 5\. Données personnelles (RGPD)
+Le traitement des données personnelles est décrit dans la [politique de confidentialité](/politique-de-confidentialite/).
 
-Conformément au **Règlement Général sur la Protection des Données (RGPD)** :
+## Droit applicable
 
-- Les données collectées via formulaires (nom, e‑mail, etc.) sont utilisées uniquement pour répondre à vos demandes ou vous proposer des services.
-- Elles ne sont ni vendues ni partagées avec des tiers.
-- Vous avez le droit de demander l’accès, la rectification ou la suppression de vos données à l’adresse suivante : \[ton e‑mail professionnel].
-
----
-
-### 6\. Cookies
-
-Ce site peut utiliser des cookies pour améliorer l’expérience utilisateur et analyser l’audience. Vous pouvez les refuser via les paramètres de votre navigateur.
-
----
-
-### 7\. Droit applicable
-
-Le site est soumis au droit français. En cas de litige, les tribunaux compétents seront ceux du ressort de Rennes (ou de la ville de ton choix).
-
----
-
-### Résumé officiel (INPI/INSEE)
-
-- **SIREN :** 843 112 871
-- **Forme juridique :** Entrepreneur individuel
-- **Immatriculation :** 18 mars 2024
-- **Début d’activité :** 1er mars 2024
-- **Activité principale :** Audit SEO et réseaux sociaux (code APE 6312Z)
-- **Adresse :** 3 Rue Amiral Gaspard de Coligny, apt. B 05, 35000 Rennes, France
-- **Nom commercial :** Fierce
-- **Nom de domaine :** valentinrouault.com
+Le site est soumis au droit français.

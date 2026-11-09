@@ -12,6 +12,13 @@ Le site WordPress est entièrement piloté depuis ce dépôt : le thème, la con
 | Verrou pages statiques | au déploiement | refuse la mise en production tant qu'une page de l'ancien site (`origin: import`) n'a pas été réécrite |
 | `check_urls.py` | après déploiement + chaque lundi | échoue si une URL du référentiel redirige, renvoie une erreur ou a une canonical différente |
 
+## Verrous avant mise en production
+
+- une page encore issue de l'ancien site (`origin: import`) ;
+- un texte contenant « À COMPLÉTER ».
+
+Dans les deux cas, la simulation le signale et la production refuse de démarrer.
+
 ## Doublons : consolidation sans redirection
 
 Deux URL qui se concurrencent ne sont pas redirigées : la moins bonne reste en ligne (200), sa balise canonical pointe vers l'autre, et elle sort du sitemap et du llms.txt. À déclarer dans `config/site.yml` :
@@ -73,13 +80,13 @@ Champs propres aux contenus importés : `origin: import` (pas encore réécrit),
 
 ### 1. Sauvegarde complète du site
 
-Fichiers + base de données (sauvegarde OVH, ou extension type UpdraftPlus). C'est le seul retour arrière possible : **ne pas sauter cette étape**.
+Fichiers + base de données (sauvegardes hPanel Hostinger, ou extension type UpdraftPlus). C'est le seul retour arrière possible : **ne pas sauter cette étape**.
 
 ### 2. Accès WordPress pour l'API
 
 Dans WordPress : *Utilisateurs > Profil > Mots de passe d'application*, créer « github-actions ». Le site doit être en HTTPS.
 
-Sur les hébergements mutualisés OVH, l'en-tête `Authorization` est parfois supprimé par Apache. Si la synchro renvoie une erreur 401, ajouter en haut du `.htaccess` :
+Sur certains hébergements mutualisés, l'en-tête `Authorization` est parfois supprimé par Apache. Si la synchro renvoie une erreur 401, ajouter en haut du `.htaccess` :
 
 ```apache
 SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
@@ -94,10 +101,11 @@ SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
 | Variable | `WP_URL` | `https://valentinrouault.com` |
 | Secret | `WP_USER` | identifiant WordPress |
 | Secret | `WP_APP_PASSWORD` | mot de passe d'application |
-| Variable | `FTP_PROTOCOL` | `sftp` (ou `ftp`) |
-| Secret | `FTP_HOST` | ex. `ftp.clusterXXX.hosting.ovh.net` |
-| Secret | `FTP_USER` / `FTP_PASSWORD` | accès FTP OVH |
-| Variable | `FTP_THEME_DIR` | ex. `/www/wp-content/themes/vr-media` |
+| Variable | `FTP_PROTOCOL` | `sftp` |
+| Variable | `FTP_PORT` | `65002` (port SFTP Hostinger, visible dans hPanel > Avancé > Accès SSH) |
+| Secret | `FTP_HOST` | IP ou hôte SSH indiqué dans hPanel |
+| Secret | `FTP_USER` / `FTP_PASSWORD` | identifiants SSH/SFTP Hostinger |
+| Variable | `FTP_THEME_DIR` | ex. `domains/valentinrouault.com/public_html/wp-content/themes/vr-media` |
 | Variable | `DEPLOY_ENABLED` | laisser **vide** jusqu'au lancement, puis `true` |
 
 Créer aussi un environnement `production` (*Settings > Environments*) : on peut y exiger une validation manuelle avant chaque déploiement.

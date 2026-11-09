@@ -62,7 +62,10 @@ def main() -> None:
         with URLS_FILE.open(encoding="utf-8") as f:
             for row in csv.DictReader(f):
                 targets[row["url"]] = row["type"]
+    skip = set(load_config().get("legacy_redirects") or [])
     for d in all_docs():
+        if d.slug in skip:
+            continue
         if d.meta.get("status", "publish") == "publish" and not d.meta.get("front_page"):
             targets.setdefault(norm_url(f"{base}/{d.slug}/"), "noindex-ok" if d.meta.get("noindex") else "new")
     targets[f"{base}/llms.txt"] = "txt"

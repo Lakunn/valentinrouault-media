@@ -2,106 +2,55 @@
 title: Politique de confidentialité
 slug: politique-de-confidentialite
 status: publish
-date: '2025-09-03T19:32:46'
-origin: import
-wp_id: 151
-url: https://valentinrouault.com/politique-de-confidentialite/
-seo_title: Politique de confidentialité - valentinrouault.com
-meta_description: Le présent site est édité par Valentin Rouault – Entrepreneur Individuel (SIREN 843 112 871), domicilié au 3 Rue Amiral Gaspard de Coligny, 35000 Rennes,
+origin: rewrite
+dek: "Quelles données ce site collecte, pourquoi, combien de temps, et comment exercer vos droits."
+seo_title: "Politique de confidentialité | Valentin Rouault"
+meta_description: "Données personnelles sur valentinrouault.com : ce qui est collecté, pourquoi, combien de temps, qui y a accès et comment exercer vos droits RGPD."
+noindex: true
 ---
 
-# Politique de confidentialité
+Ce site est un média : il ne vend rien et collecte le minimum de données nécessaire à son fonctionnement.
 
-## 1\. Responsable du traitement
+## Responsable du traitement
 
-Le présent site est édité par **Valentin Rouault – Entrepreneur Individuel** (SIREN 843 112 871\), domicilié au 3 Rue Amiral Gaspard de Coligny, 35000 Rennes, France.
+Valentin Rouault, éditeur du site. Contact : [contact@valentinrouault.com](mailto:contact@valentinrouault.com). Les informations complètes figurent dans les [mentions légales](/mentions-legales/).
 
-📧 Contact : contact@valentinrouault.com
+## Données collectées
 
----
+### Quand vous écrivez par e-mail
 
-## 2\. Données collectées
+Votre adresse e-mail et le contenu de votre message. Ils servent uniquement à vous répondre et sont supprimés au plus tard 12 mois après le dernier échange.
 
-Dans le cadre de l’utilisation de ce site, les données suivantes peuvent être collectées :
+### Mesure d'audience
 
-- **Formulaire de contact / prise de rendez\-vous** : nom, prénom, adresse e\-mail, numéro de téléphone, message.
-- **Newsletter (si applicable)** : prénom, e\-mail.
-- **Navigation** : adresse IP, pages consultées, durée de visite, via des outils comme Google Analytics ou équivalents.
+À COMPLÉTER selon l'outil réellement actif sur le site :
 
----
+- **Google Analytics (via Site Kit)** : adresse IP tronquée, pages consultées, durée de visite, type d'appareil. Ces cookies ne peuvent être déposés qu'après votre consentement, recueilli par un bandeau dédié. Données conservées 14 mois au maximum.
+- **ou aucun outil de mesure** : supprimer ce paragraphe.
 
-## 3\. Finalités de la collecte
+### Newsletter
 
-Les données personnelles collectées servent uniquement à :
+Aucune newsletter n'est active à ce jour. Si une newsletter est mise en place, cette page sera mise à jour avant toute collecte (outil utilisé, durée de conservation, désinscription).
 
-- Répondre aux demandes envoyées via le formulaire de contact.
-- Envoyer des informations et actualités liées à mes prestations SEO (si inscription à la newsletter).
-- Améliorer la qualité du site et analyser son audience.
-- Respecter les obligations légales (facturation, comptabilité, etc.).
+### Données techniques
 
----
+L'hébergeur enregistre, comme tout serveur web, des journaux techniques (adresse IP, date, page demandée) à des fins de sécurité. Ils sont conservés pour une durée limitée par l'hébergeur.
 
-## 4\. Base légale
+## Bases légales
 
-Le traitement repose sur :
+- **Votre consentement** pour les cookies de mesure d'audience.
+- **L'intérêt légitime** de l'éditeur pour répondre aux messages reçus et assurer la sécurité du site.
 
-- **Le consentement** (ex. inscription volontaire à la newsletter).
-- **L’exécution de mesures précontractuelles** (réponse à un formulaire de contact).
-- **L’intérêt légitime** (analyse du trafic pour améliorer le site).
-- **Le respect d’obligations légales** (conservation de factures, etc.).
+## Destinataires
 
----
+Les données ne sont accessibles qu'à l'éditeur et, pour leur stricte part technique, à l'hébergeur et aux outils mentionnés ci-dessus. Elles ne sont jamais vendues ni cédées.
 
-## 5\. Conservation des données
+## Vos droits
 
-- Données de contact : conservées le temps nécessaire pour traiter la demande, puis supprimées sous 12 mois si aucune suite n’est donnée.
-- Données de newsletter : conservées jusqu’au désabonnement.
-- Données de facturation : conservées 10 ans (obligation légale).
-- Cookies et analytics : durée maximale de 13 mois.
+Conformément au RGPD, vous pouvez demander l'accès à vos données, leur rectification, leur effacement, la limitation du traitement, vous y opposer ou demander leur portabilité. Écrivez à [contact@valentinrouault.com](mailto:contact@valentinrouault.com). Une réponse vous sera apportée dans un délai d'un mois.
 
----
+Vous pouvez également adresser une réclamation à la [CNIL](https://www.cnil.fr).
 
-## 6\. Destinataires
+## Cookies
 
-Les données sont destinées uniquement à l’éditeur du site et, le cas échéant, à ses prestataires techniques (hébergeur, outils d’emailing comme Brevo, solutions d’analytics).
-Elles ne sont **jamais vendues ni cédées** à des tiers à des fins commerciales.
-
----
-
-## 7\. Droits des utilisateurs
-
-Conformément au RGPD, vous disposez des droits suivants sur vos données personnelles :
-
-- **Droit d’accès** (savoir quelles données sont détenues).
-- **Droit de rectification** (modifier vos données si elles sont inexactes).
-- **Droit d’effacement** (supprimer vos données).
-- **Droit de limitation** et **d’opposition** (restreindre ou refuser certains traitements).
-- **Droit à la portabilité** (recevoir vos données dans un format structuré).
-
-Pour exercer vos droits, envoyez un e\-mail à : \[ton e\-mail professionnel].
-
-En cas de litige, vous pouvez saisir la **CNIL** (www.cnil.fr).
-
----
-
-## 8\. Cookies et traceurs
-
-Le site peut déposer des cookies destinés à :
-
-- Mesurer l’audience (Google Analytics, Matomo, etc.).
-- Améliorer l’expérience utilisateur.
-- Permettre le partage sur les réseaux sociaux (si boutons intégrés).
-
-L’utilisateur peut refuser les cookies via le bandeau prévu à cet effet ou configurer son navigateur pour bloquer les cookies.
-
----
-
-## 9\. Sécurité des données
-
-Toutes les mesures nécessaires sont prises pour protéger les données collectées (hébergement sécurisé, protocoles SSL, accès restreint).
-
----
-
-## 10\. Modifications
-
-La présente politique peut être modifiée à tout moment. La version la plus récente sera toujours disponible sur ce site.
+Vous pouvez à tout moment retirer votre consentement aux cookies de mesure d'audience depuis le bandeau du site, ou configurer votre navigateur pour les refuser. Le refus n'empêche pas la consultation du site.

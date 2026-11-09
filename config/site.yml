@@ -66,11 +66,26 @@ categories:
     seo_title: "Actualités SEO et GEO : Google, ChatGPT, IA | Valentin Rouault"
     meta_description: "L'actualité SEO et GEO décryptée : mises à jour Google, nouveautés ChatGPT et moteurs IA, avec leurs conséquences concrètes."
     intro: "L'actualité de la recherche, décryptée : ce qui change chez Google et chez les moteurs IA, et ce qu'il faut en faire."
+  # Rubriques historiques conservées (URL existantes), non mises en avant.
+  - slug: seo-technique
+    name: SEO technique
+    on_home: false
+  - slug: ai-seo
+    name: AI SEO
+    on_home: false
+  - slug: reseaux-sociaux
+    name: Réseaux sociaux
+    on_home: false
 
 # Doublons consolidés SANS redirection : l'URL reste en 200, sa canonical pointe vers la cible.
 # Appliqué par la synchro, quel que soit le contenu du fichier.
 canonical_overrides:
   google-penalise-constenu-ia: /google-penalise-contenu-ia/
+
+# URL qui redirigeaient DÉJÀ avant la refonte (constaté à l'import) : la synchro ne les touche pas,
+# le contrôle ne les vérifie pas. On ne crée aucune redirection, on n'en supprime aucune.
+legacy_redirects:
+  - seo-off-site-bonnes-pratiques-et-pieges-a-eviter-cas-concrets   # → /off-site-seo/
 
 nav:
   - { label: GEO & IA, url: /category/blog/ }
@@ -86,6 +101,8 @@ footer_nav:
   - { label: "Guide : SEO local", url: /seo-local/ }
   - { label: À propos, url: /a-propos/ }
   - { label: Contact, url: /contact/ }
+  - { label: Mentions légales, url: /mentions-legales/ }
+  - { label: Confidentialité, url: /politique-de-confidentialite/ }
 
 footer:
   about: "Un média indépendant sur le SEO et le GEO : comment les moteurs de recherche et les IA choisissent les pages qu'ils montrent et qu'ils citent."
@@ -101,6 +118,8 @@ newsletter:
 default_share_image: ""
 
 # Articles par page. Ne pas augmenter sans vérifier urls.csv (les archives paginées existantes doivent rester en 200).
+# Le contrôle automatique (validate.py) recalcule les maximums à partir de urls.csv.
 per_page:
-  blog: 9
-  archive: 6
+  blog: 9       # /blog-seo/page/4/ existe → 11 max aujourd'hui
+  archive: 6    # /category/seo/page/3/ existe → 6 max aujourd'hui
+  author: 5     # /author/…/page/7/ existe → 5 max aujourd'hui

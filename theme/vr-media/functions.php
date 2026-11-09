@@ -258,7 +258,9 @@ add_action(
 		}
 		if ( $q->is_home() ) {
 			$q->set( 'posts_per_page', (int) vr_config( 'per_page.blog', 9 ) );
-		} elseif ( $q->is_category() || $q->is_author() || $q->is_search() ) {
+		} elseif ( $q->is_author() ) {
+			$q->set( 'posts_per_page', (int) vr_config( 'per_page.author', 5 ) );
+		} elseif ( $q->is_category() || $q->is_search() ) {
 			$q->set( 'posts_per_page', (int) vr_config( 'per_page.archive', 6 ) );
 		}
 	}

@@ -18,6 +18,6 @@ Ce site est un média, pas une agence : je n'y vends pas de prestations. En reva
 
 ## Comment me joindre
 
-Par e-mail : [valentinrouault.contact@gmail.com](mailto:valentinrouault.contact@gmail.com)
+Par e-mail : [contact@valentinrouault.com](mailto:contact@valentinrouault.com)
 
 Je réponds en général sous quelques jours. Les demandes commerciales et les propositions d'articles sponsorisés ne reçoivent pas de réponse.
