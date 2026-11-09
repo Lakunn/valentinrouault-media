@@ -26,7 +26,10 @@ def build_site_json(cfg: dict) -> None:
     out = {k: cfg.get(k) for k in keys}
     if out["author"] and out["author"].get("links") is None:
         out["author"]["links"] = []
-    dest = ROOT / "theme" / "vr-media" / "site.json"
+    theme_dirs = [p for p in (ROOT / "theme").iterdir() if p.is_dir()]
+    if len(theme_dirs) != 1:
+        die("theme/ doit contenir exactement un dossier de thème")
+    dest = theme_dirs[0] / "site.json"
     dest.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"site.json généré ({dest.stat().st_size} octets)")
 
