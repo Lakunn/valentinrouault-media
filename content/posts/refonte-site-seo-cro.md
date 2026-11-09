@@ -1,115 +1,123 @@
 ---
-title: 'Gérer une refonte de site web : Le guide SEO/CRO ultime'
+title: "Refonte de site : le guide SEO pour ne pas perdre de trafic"
 slug: refonte-site-seo-cro
 status: publish
 date: '2025-09-11T14:20:17'
-origin: import
+origin: rewrite
 wp_id: 234
-url: https://valentinrouault.com/refonte-site-seo-cro/
-seo_title: 'Refonte Site Web SEO et CRO : Le guide simple et efficace'
-meta_description: D'expérience, c'est souvent un moment stressant que la refonte d'un site web. On a souvent peur de perdre tout son référencement. Pourtant j'en ai accompli
 categories:
 - contenu-seo
 - blog
 - seo-technique
+dek: "Objectifs, audit, inventaire des URL, redirections ou conservation des adresses, recette, lancement et suivi : la méthode en huit étapes pour qu'une refonte fasse progresser le référencement au lieu de le casser."
+seo_title: "Refonte de site et SEO : le guide pour ne pas perdre de trafic"
+meta_description: "Refonte de site sans perte de trafic : audit, inventaire et plan d'URL, redirections, recette SEO, checklist de lancement et suivi après mise en ligne."
+essentiel:
+  - "Une refonte se prépare par un **audit** : pages qui génèrent du trafic, pages qui reçoivent des liens, erreurs à ne pas reproduire."
+  - "L'étape la plus risquée est le **plan d'URL** : chaque ancienne adresse doit soit être conservée, soit rediriger en 301 vers son équivalent exact, jamais vers l'accueil."
+  - "La **recette** (version de test) permet de vérifier redirections, balises, maillage et indexabilité avant la mise en ligne."
+  - "Après le lancement, on **compare avant / après** page par page pendant plusieurs semaines pour corriger vite."
 ---
 
-D’expérience, c’est souvent un moment stressant que la refonte d’un site web. On a souvent peur de perdre tout son référencement. Pourtant j’en ai accompli des dizaines sans constater de perte de trafic importantes, voire même des augmentation de trafic dans certains cas.
+Une refonte est souvent vécue comme un moment à risque pour le référencement. Elle peut aussi être l'occasion de progresser : nettoyer les pages faibles, renforcer les pages fortes, corriger la technique. Tout dépend de la préparation.
 
-Voici le step by step de la refonte d’un site web pour garantir son efficacité.
+Ce site lui-même a été refondu en novembre 2026, en conservant **toutes ses URL à l'identique**, sans aucune redirection. La méthode ci-dessous est celle que j'applique, et que j'ai appliquée ici.
 
-## 1\. Définir les objectifs de la refonte
+## 1. Définir les objectifs
 
-Un projet de refonte poursuit souvent plusieurs objectifs :
+Une refonte poursuit généralement plusieurs objectifs : meilleure expérience mobile, design modernisé, nouvelle arborescence, changement de CMS, performances, conversion. Formalisez-les dans un cahier des charges partagé par tous les intervenants (direction, design, développement, SEO, contenu). Les exigences SEO doivent y figurer dès le départ, pas être ajoutées à la fin.
 
-- Amélioration de l’expérience utilisateur (UX, mobile\-first, vitesse).
-- Modernisation du design et de l’ergonomie.
-- Changement d’arborescence, de CMS, ou de structure technique.
-- [Optimisation SEO](https://valentinrouault.com/strategies-seo/) (meilleur maillage interne, balises, contenu).
+## 2. Auditer l'existant
 
-Ces différentes spécificités formes un cahier des charges qui doit être rempli avant le début du projet. C’est le fil directeur qui sera transmit à tous les intervenants pour assurer la cohérence du projet.
+L'audit dresse la carte du site : ce qui fonctionne, ce qui ne fonctionne pas.
 
-Se faire accompagner par un consultant SEO est donc souvent une bonne idée pour ne rien perdre de vue.
+- **Audit technique** : indexation, balises, canonicals, sitemap, vitesse, rendu JavaScript. Voir [l'indexation Google](/indexation-google/).
+- **Audit des contenus** : pages qui génèrent du trafic, requêtes associées, pages à conserver, fusionner, retravailler.
+- **Audit de popularité** : pages qui reçoivent des liens externes.
 
-## 2\. Audit SEO préalable
+Outils indispensables : la Search Console (données de performance et d'indexation) et un crawler (Screaming Frog ou équivalent). Ahrefs ou Semrush complètent pour les liens.
 
-L’audit SEO est la pierre angulaire d’une refonte. Il est la pour identifier les points cruciaux du site web mais également les erreurs à ne pas répéter sur la nouvelle version.
+Un site a presque toujours des **sections fortes** et des **sections faibles**. Une refonte réussie capitalise sur les premières et corrige les secondes.
 
-C’est une étape très stratégique car un site web à souvent des **sections fortes** et des **sections faibles**. Par expérience, la réussite d’une refonte repose souvent sur le fait de capitaliser sur les sections fortes tout en mettant à jour les sections faibles.
+## 3. Construire le plan d'URL
 
-Il faudra donc fonctionner en 3 étapes clés :
+C'est l'étape où se produisent les pertes de trafic les plus graves.
 
-- **Audit technique** : vitesse, [indexation](https://valentinrouault.com/indexation-google/), balises, canonicals, sitemap.
-- **Audit sémantique** : quelles pages génèrent du trafic, quels mots\-clés, quels contenus à conserver.
-- **Audit de popularité** : backlinks, pages référentes, contenus stratégiques.
-- **Outils à utiliser** : Google Search Console (indispensable), Screaming Frog (indispensable), Ahrefs, Semrush.
+1. **Inventorier toutes les URL** existantes : sitemap, crawl, Search Console, outils de liens, et les pages paginées et archives.
+2. **Décider pour chacune** : conservée telle quelle, fusionnée, ou supprimée.
+3. **Pour chaque URL qui change**, prévoir une **redirection 301** vers la page équivalente la plus proche.
 
-Grâce à ça, on a la cartographie du site web, les pages les plus fortes (à ne surtout pas maltraiter) et les pages a améliorer dans le processus.
+**La solution la plus sûre est de conserver les URL.** Une URL inchangée garde tout son historique sans dépendre d'une redirection. C'est le choix fait pour ce site : contenus et design entièrement refaits, mais adresses identiques.
 
-## 3\. Préserver le SEO existant : le mapping des URLs
+Les erreurs les plus fréquentes :
 
-Ensuite, on a toutes les données de toutes nos pages. On peut donc :
+- rediriger toutes les anciennes pages vers l'accueil (Google les traite comme des erreurs 404) ;
+- oublier des pages qui reçoivent des liens ou du trafic ;
+- créer des chaînes de redirections (A vers B vers C) ;
+- oublier les pages paginées, les images et les fichiers PDF.
 
-- Faire un inventaire des pages existantes et de leur trafic.
-- Identifier les pages à conserver, fusionner ou supprimer : crucial pour **assainir le site web** et gagner en puissance sur les pages importantes.
-- Créer un **plan de redirections 301** propre et exhaustif : Idéal pour gérer les soucis de SEO technique les plus handicapants.
+## 4. Soigner la technique de la nouvelle version
 
-C’est une étape qui cause beaucoup d’erreur dans un processus de refonte. Attention donc, aux erreurs fréquentes comme celle de rediriger tout vers la homepage, que je vois très souvent. Mais également de ne pas oublier des pages stratégiques.
+- Règles d'indexation correctes : robots.txt, balises meta robots, canonicals, hreflang si le site est multilingue.
+- **Core Web Vitals** : images optimisées, scripts tiers maîtrisés. Voir [les erreurs JavaScript à éviter](/javascript-seo-erreurs/).
+- Sitemap XML à jour.
+- **Maillage interne** pensé dès la maquette : menus, pied de page, liens contextuels.
+- Contenu principal présent dans le HTML, pour Google comme pour les robots des IA.
 
-## 4\. SEO technique lors de la refonte
+## 5. Retravailler les contenus
 
-La vérification du SEO technique est primordial pour que les algorithmes trouvent, indexent et envoient du trafic sur vos pages.
+À partir de l'inventaire :
 
-- Respecter les bonnes pratiques d’indexation (robots.txt, balises meta, hreflang si nécessaire).
-- Optimiser le **temps de chargement** et le Core Web Vitals : Optimisation des images et du chargement des ressources.
-- Gérer les sitemaps XML et HTML : pour donner aux robots la ‘carte routière’ de votre site web.
-- Structurer le maillage interne : Point capital de toutes les stratégies SEO.
-- Vérifier la compatibilité mobile et responsive design : Grâce à des outils comme la Google search console ou des tests unitaires.
+- **conserver** les contenus qui performent, en les mettant à jour ;
+- **retravailler** les pages stratégiques qui sous-performent ;
+- **fusionner** les contenus qui se concurrencent (voir [la cannibalisation](/cannibalisation-seo/)) ;
+- **compléter** les sujets manquants.
 
-## 5\. Le contenu : conserver, enrichir, optimiser
+Les exigences de qualité de Google, et des moteurs génératifs comme [ChatGPT](/seo-chatgpt/), sont plus élevées qu'il y a quelques années : la refonte est le bon moment pour relever le niveau.
 
-Une fois que les paramètres techniques sont configurés, on peut passer au gros du travail, le contenu SEO.
+## 6. Tout vérifier en recette
 
-Grâce à l’inventaire des pages on peut :
+Sur une version de test (non indexable) :
 
-- Identifier les contenus à **garder** car ils performent déjà.
-- Supprimer les contenus obsolètes ou sans trafic.
-- Améliorer les pages stratégiques avec plus de valeur.
-- Prévoir de nouvelles pages pour combler les trous sémantiques.
-- Garder un œil sur la cannibalisation.
+- tester **toutes les redirections** à partir de la liste des anciennes URL ;
+- crawler le site : titres, meta descriptions, codes de réponse, pages orphelines, liens cassés ;
+- vérifier qu'il n'existe **qu'une seule version** de chaque URL (avec ou sans `www`, avec ou sans barre finale, HTTP et HTTPS) ;
+- contrôler le rendu mobile et la vitesse.
 
-Ces considérations sont d’autant plus importantes dans les nouveaux standards de qualité du contenu. Les algorithmes de Google mais aussi de [chat GPT](https://valentinrouault.com/seo-chatgpt/) son plus exigeants qu’il y a 1 an. Si vous voulez apparaître en bonne position, il faudra améliorer, mettre à jour ou supprimer vos contenus.
+## 7. Le jour du lancement
 
-## 6\. Recette SEO avant mise en ligne
+- Mettre en ligne le site et les redirections **en même temps**.
+- Retirer les protections de la version de test : mot de passe, `noindex`, blocage dans le robots.txt. C'est l'oubli le plus coûteux qui soit.
+- Soumettre le sitemap dans la Search Console et dans Bing Webmaster Tools.
+- Crawler le site en production et retester les anciennes URL.
 
-C’est l’étape souvent appelée ‘staging’. On installe une version du nouveau site dans un environnement de recettage pour vérifier que tout fonctionne bien.
+## 8. Suivre après la mise en ligne
 
-C’est l’occasion de passer en revue les points bloquants
+Pendant au moins quatre à huit semaines :
 
-- Vérifier toutes les redirections 301\.
-- Contrôler les balises title et meta descriptions.
-- Tester le crawl du site avec Screaming Frog.
-- Vérifier les erreurs 404 et les pages orphelines.
-- Simuler la navigation mobile / desktop.
+- comparer trafic et positions **page par page** avec la période précédente ;
+- surveiller le rapport d'indexation et les erreurs 404 ;
+- analyser les logs serveur pour voir comment les robots explorent la nouvelle version ;
+- corriger immédiatement chaque perte identifiée.
 
-> Je vois souvent des erreurs au niveau des URLs, attention a ne pas utiliser plusieurs versions d’une même URLs. Par exemple https://valentinrouault.com ce n’est pas pareil que https://www.valentinrouault.com/.Il faut vérifier si les liens internes, les menus, les redirections et les canonical pointent vers une même URL pour une même page
+Une baisse légère et temporaire est fréquente le temps que Google réexplore le site. Une baisse durable signale presque toujours une URL oubliée, une redirection manquante ou un contenu affaibli.
 
-## 7\. Le lancement : check\-list SEO le jour J
+Une fois le visiteur arrivé, la conversion compte autant que le trafic : voir [6 optimisations SEO et CRO testées](/optimisation-cro/).
 
-Le jour du lancement de la nouvelle version du site web, voici la checklist opérationnelle :
+<section class="faq" markdown="1">
 
-- Mettre en ligne le site \+ redirections.
-- Soumettre le nouveau sitemap à Google Search Console.
-- Vérifier l’indexation dans les jours qui suivent.
-- Surveiller les logs serveurs pour détecter les anomalies.
+## Questions fréquentes
 
-## 8\. Suivi post\-refonte : ne pas relâcher les efforts
+### Une refonte fait-elle forcément perdre du trafic ?
 
-On y est presque, maintenant , il ne reste plus qu’à reprendre les opérations SEO courantes comme :
+Non. Avec un plan d'URL complet, des contenus conservés ou améliorés et une recette sérieuse, une refonte peut faire progresser le trafic.
 
-- Suivre le trafic et les positions SEO.
-- Comparer les performances avant / après refonte.
-- Identifier rapidement les pertes de visibilité.
-- Ajuster si besoin (ajouts de contenu, corrections techniques).
+### Faut-il changer les URL pendant une refonte ?
 
-Si vous suivez ces étapes et que vous vous faites accompagner par un [consultant SEO expérimenté](https://valentinrouault.com/), aucune chance que vous perdiez du trafic SEO.
+Seulement si c'est nécessaire. Conserver les URL est la solution la plus sûre ; si elles changent, chaque ancienne adresse doit rediriger en 301 vers son équivalent exact.
+
+### Combien de temps garder les redirections ?
+
+Le plus longtemps possible, idéalement sans limite : des liens externes et des favoris continuent de pointer vers les anciennes adresses pendant des années.
+
+</section>

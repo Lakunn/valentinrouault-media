@@ -10,7 +10,7 @@ categories:
 - contenu-seo
 dek: "Plusieurs pages d'un même site sur la même requête : faut-il s'en inquiéter ? Ce que dit Google, les vrais effets, la méthode de diagnostic dans la Search Console et les quatre façons de corriger."
 seo_title: "Cannibalisation SEO : détecter et corriger (guide 2026)"
-meta_description: "Cannibalisation de mots-clés : position de Google, vrais impacts, diagnostic pas à pas dans la Search Console et solutions (fusion, canonical, maillage, recentrage)."
+meta_description: "Cannibalisation de mots-clés : position de Google, vrais impacts, diagnostic dans la Search Console et solutions (fusion, canonical, maillage, recentrage)."
 essentiel:
   - "La cannibalisation n'est **pas une pénalité** : Google choisit la page qu'il juge la plus pertinente parmi celles d'un même site."
   - "Elle pose problème quand deux pages visent **la même intention** sans se différencier : signaux dispersés, page affichée qui alterne, positions instables."

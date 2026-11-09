@@ -1,69 +1,90 @@
 ---
-title: 'Comprendre l’indexation Google : un pilier du référencement naturel (SEO)'
+title: "Indexation Google : comment ça marche, comment la vérifier et la corriger"
 slug: indexation-google
 status: publish
 date: '2025-10-16T17:24:35'
-origin: import
+origin: rewrite
 wp_id: 514
-url: https://valentinrouault.com/indexation-google/
-seo_title: Bien s'indexer pour performer en GEO et SEO (Octobre 2025)
-meta_description: L’indexation Google est le processus par lequel le moteur de recherche analyse, comprend et enregistre les pages web dans sa base de données, appelée « index
 categories:
 - blog
+dek: "Exploration, rendu, indexation : comment Google enregistre une page, pourquoi certaines restent hors de l'index, et pourquoi c'est aussi le point de départ de toute visibilité dans les IA."
+seo_title: "Indexation Google : fonctionnement, vérification, corrections"
+meta_description: "Comment fonctionne l'indexation Google, comment vérifier qu'une page est indexée, les causes de non-indexation et les bonnes pratiques, y compris pour le GEO."
+essentiel:
+  - "Une page non indexée n'apparaît **ni dans Google, ni dans les réponses IA** qui s'appuient sur la recherche web."
+  - "L'indexation suit trois étapes : **exploration** (Googlebot découvre la page), **rendu et analyse** (Google comprend son contenu), **indexation** (Google décide de l'enregistrer)."
+  - "Google n'indexe pas tout : une page explorée peut être écartée si elle est jugée **dupliquée ou de faible valeur**."
+  - "Le rapport **Indexation des pages** de la Search Console indique, page par page, pourquoi une URL n'est pas indexée."
 ---
 
-## Qu’est\-ce que l’indexation Google ?
+L'indexation est le processus par lequel Google enregistre une page dans sa base, l'**index**. C'est la condition pour qu'elle apparaisse dans les résultats : une page non indexée est invisible sur Google, même si elle est en ligne et accessible.
 
-L’indexation Google est le processus par lequel le moteur de recherche analyse, comprend et enregistre les pages web dans sa base de données, appelée « index ». C’est grâce à cette indexation qu’une page peut apparaître dans les résultats de recherche (SERP).
-En d’autres termes : si une page n’est pas indexée, elle est invisible pour les internautes via Google, même si elle est publiée en ligne.
+## Pourquoi l'indexation compte aussi pour les IA
 
-## L’indexation Google est importante pour le GEO
+Quand ChatGPT, Perplexity ou les AI Overviews répondent à une question récente ou précise, ils lancent des recherches web, souvent plusieurs à la fois (les *sous-requêtes*), et lisent les pages qui ressortent. Une page absente des index de recherche a donc peu de chances d'être lue, et encore moins d'être citée.
 
-Pour votre stratégie de GEO ([SEO dans les chats IA](https://valentinrouault.com/seo-ia/)) il est important de bien indexer ses pages.
+L'indexation est le premier maillon de la [visibilité dans les IA](/seo-ia/). Pensez aussi à **Bing**, sur lequel s'appuient plusieurs assistants : vérifiez votre site dans Bing Webmaster Tools.
 
-Sur certaines requêtes importantes, chat gpt, perplexity et les autres IA peuvent améliorer la qualité des réponses en faisant des **Fan\-Out queries**.
+## Les étapes de l'indexation
 
-Les **fan\-out queries** sont les recherchent que les IA vont faire en direct sur les moteurs de recherche traditionnel. Donc, pour être présent dans les IA, il est importants d’apparaître dans les résultats naturels de recherche.
+### 1. L'exploration (crawl)
 
-Logique non ? 😊
+Googlebot découvre les pages en suivant les liens (internes et externes) et en lisant les sitemaps. Il revient régulièrement sur les pages connues pour détecter les changements.
 
-![](https://valentinrouault.com/wp-content/uploads/2025/10/Annu-Kapoor-Bollywood-GIF.gif)
-## Les étapes de l’indexation
+### 2. Le rendu et l'analyse
 
-### 1\. Le crawl (exploration)
+Google charge la page comme un navigateur, exécute le JavaScript si nécessaire, puis analyse le texte, les titres, les images, les liens et les données structurées pour comprendre le sujet et l'utilité de la page. Un contenu qui n'apparaît qu'après un rendu JavaScript lourd peut être vu tard, ou mal : voir [les erreurs JavaScript qui coûtent des positions](/javascript-seo-erreurs/).
 
-Google utilise des robots appelés **Googlebots** qui parcourent le web en suivant les liens entre les sites. Ces robots découvrent ainsi de nouvelles pages ou revisitent des pages existantes.
+### 3. L'indexation
 
-### 2\. L’analyse du contenu
+Google décide d'enregistrer ou non la page. Il ne garde pas tout : une page jugée dupliquée, très proche d'une autre ou de faible valeur peut être explorée sans être indexée.
 
-Une fois la page découverte, Google analyse son contenu : texte, images, balises HTML, métadonnées… L’algorithme tente de comprendre le sujet de la page, son utilité et sa qualité.
+## Pourquoi une page n'est pas indexée
 
-### 3\. L’indexation proprement dite
+| Cause | Ce que l'on voit dans la Search Console | Correction |
+|---|---|---|
+| Blocage volontaire ou accidentel | « Exclue par la balise noindex », « Bloquée par le fichier robots.txt » | Retirer le noindex ou la règle robots.txt si la page doit être indexée |
+| Page jamais découverte | URL absente des rapports | L'ajouter au sitemap et la relier depuis d'autres pages |
+| Page découverte mais pas encore explorée | « Détectée, actuellement non indexée » | Renforcer les liens internes, vérifier la capacité du serveur |
+| Page explorée mais écartée | « Explorée, actuellement non indexée » | Améliorer la valeur du contenu, éviter les pages trop proches |
+| Doublon | « Page en double sans URL canonique sélectionnée par l'utilisateur », « Autre page avec balise canonique correcte » | Déclarer la bonne canonical, fusionner les contenus redondants |
+| Erreur technique | « Erreur serveur (5xx) », « Introuvable (404) » | Corriger l'erreur ou le lien qui y mène |
 
-Si la page est jugée conforme aux critères de Google, elle est stockée dans l’index. Elle devient alors potentiellement éligible à apparaître dans les résultats de recherche.
+## Vérifier qu'une page est indexée
 
-## Les facteurs influençant l’indexation
+- **L'outil d'inspection d'URL** de la Search Console : statut d'indexation, URL canonique retenue par Google, date de la dernière exploration, rendu de la page.
+- **Le rapport Indexation des pages** : vue d'ensemble des pages indexées et non indexées, avec la raison pour chacune.
+- **La commande `site:`** dans Google (`site:exemple.fr/ma-page`) : pratique pour un contrôle rapide, mais imprécise ; les données de la Search Console font foi.
 
-- **Accessibilité technique** : si une page est bloquée par un fichier *robots.txt* ou par une balise *noindex*, elle ne sera pas indexée.
-- **Qualité du contenu** : contenu original, pertinent et utile est favorisé.
-- **Structure du site** : un maillage interne clair aide Google à découvrir et comprendre les pages.
-- **Performance technique** : vitesse de chargement, version mobile, sécurité (HTTPS) sont des signaux importants.
+![Rapport d'indexation des pages dans la Search Console](https://valentinrouault.com/wp-content/uploads/2025/10/image-3-1024x339.png)
 
-## Comment vérifier si une page est indexée ?
+Le rapport détaille les raisons de non-indexation, ce qui permet de prioriser les corrections :
 
-- Utiliser la commande **site:nomdedomaine.com** dans Google.
-- Passer par la **Google Search Console** qui donne un rapport précis sur l’état d’indexation.
+![Raisons de non-indexation détaillées dans la Search Console](https://valentinrouault.com/wp-content/uploads/2025/10/google-search-console-indexation-1024x275.png)
 
-![](https://valentinrouault.com/wp-content/uploads/2025/10/image-3-1024x339.png)
-De plus, la Google search console vous aide à comprendre pourquoi les pages ne sont pas indexées quand c’est le cas 👇
+## Favoriser l'indexation
 
-![](https://valentinrouault.com/wp-content/uploads/2025/10/google-search-console-indexation-1024x275.png)
-Cela permet de facilement identifier les corrections techniques à apporter.
+1. **Un sitemap XML à jour**, soumis dans la Search Console et dans Bing Webmaster Tools, avec des dates `lastmod` fiables.
+2. **Un maillage interne logique** : chaque page importante reçoit des liens depuis des pages déjà indexées. Voir [les quick wins SEO](/quick-wins-seo/).
+3. **Du contenu qui mérite d'être indexé** : utile, original, distinct des autres pages du site.
+4. **Des canonicals cohérentes** : une seule URL de référence par contenu.
+5. **Un site rapide et stable** : un serveur lent ou en erreur ralentit l'exploration.
+6. **Le contenu important dans le HTML initial**, sans dépendre d'un rendu JavaScript complexe.
 
-## Bonnes pratiques pour favoriser l’indexation
+<section class="faq" markdown="1">
 
-1. **Publier du contenu de qualité** régulièrement.
-2. **Optimiser les balises SEO** (title, meta description, balises Hn).
-3. **Créer un sitemap XML** et le soumettre dans Google Search Console.
-4. **Faciliter le crawl** avec un [maillage interne](https://valentinrouault.com/quick-wins-seo/) logique et des liens externes pertinents.
-5. **Améliorer les performances techniques** : vitesse, mobile\-first, absence d’erreurs 404\.
+## Questions fréquentes
+
+### Combien de temps faut-il pour qu'une page soit indexée ?
+
+De quelques heures à plusieurs semaines, selon la notoriété du site, la fréquence de mise à jour et le maillage. Une nouvelle page reliée depuis l'accueil d'un site actif est généralement découverte vite.
+
+### Le bouton « Demander une indexation » suffit-il ?
+
+Il accélère l'exploration d'une URL, mais ne garantit pas l'indexation. Si la page est écartée pour sa qualité ou comme doublon, la demande ne change rien.
+
+### Faut-il que toutes les pages du site soient indexées ?
+
+Non. Les pages de recherche interne, de filtres sans intérêt ou de remerciement n'ont pas à l'être. Ce qui compte, c'est que les pages utiles le soient.
+
+</section>
