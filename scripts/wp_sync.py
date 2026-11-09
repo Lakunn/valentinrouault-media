@@ -102,6 +102,9 @@ class Sync:
         found = self.wp.get(endpoint, slug=doc.slug, status="publish,draft,pending,private,future", context="edit")
         return found[0] if found else None
 
+    def canonical(self, doc: Doc) -> str:
+        return str(doc.meta.get("canonical") or (self.cfg.get("canonical_overrides") or {}).get(doc.slug, ""))
+
     def payload(self, doc: Doc, cat_ids: dict[str, int], page_ids: dict[str, int]) -> dict:
         m = doc.meta
         data = {
@@ -115,7 +118,8 @@ class Sync:
                 "vr_meta_description": m.get("meta_description", ""),
                 "vr_essentiel": essentiel(doc),
                 "vr_noindex": bool(m.get("noindex", False)),
-                "vr_source_hash": doc.source_hash(),
+                "vr_source_hash": doc.source_hash(extra=self.canonical(doc)),
+                "vr_canonical": self.canonical(doc),
             },
         }
         if m.get("date"):
@@ -143,6 +147,13 @@ class Sync:
         dupes = {s for s in slugs if slugs.count(s) > 1}
         if dupes:
             die(f"slugs en double dans le dépôt : {dupes}")
+
+        # Les pages statiques de l'ancien site ne sont jamais republiées telles quelles.
+        legacy = [d.path.name for d in docs if d.kind == "page" and d.meta.get("origin") == "import"]
+        if legacy and self.apply:
+            die(f"pages pas encore réécrites (origin: import) : {', '.join(legacy)} — déploiement bloqué")
+        for name in legacy:
+            warn(f"page à réécrire avant le lancement : {name}")
 
         cat_ids = self.sync_categories()
         page_ids: dict[str, int] = {}

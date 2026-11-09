@@ -9,6 +9,9 @@ Ce dépôt pilote le site WordPress valentinrouault.com (média SEO / GEO). Lire
 - Ne jamais éditer urls.csv à la main.
 - Ne pas augmenter `per_page` dans config/site.yml sans vérifier que toutes les URL paginées de urls.csv resteront en 200.
 
+- Toutes les pages statiques (content/pages) sont réécrites intégralement : aucune ne garde le contenu de l'ancien site. Une page `origin: import` bloque le déploiement.
+- Un doublon se consolide par `canonical_overrides` (config/site.yml), jamais par une redirection ni une suppression.
+
 ## Écriture
 
 - Français, vouvoiement, ton éditorial (média, pas agence) : aucune offre commerciale, aucun appel à « prendre rendez-vous ».

@@ -65,8 +65,8 @@ class Doc:
     def slug(self) -> str:
         return str(self.meta["slug"]).strip("/")
 
-    def source_hash(self) -> str:
-        raw = yaml.safe_dump(self.meta, sort_keys=True, allow_unicode=True) + self.body
+    def source_hash(self, extra: str = "") -> str:
+        raw = yaml.safe_dump(self.meta, sort_keys=True, allow_unicode=True) + self.body + extra
         return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
 
 

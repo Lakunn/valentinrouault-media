@@ -67,6 +67,11 @@ categories:
     meta_description: "L'actualité SEO et GEO décryptée : mises à jour Google, nouveautés ChatGPT et moteurs IA, avec leurs conséquences concrètes."
     intro: "L'actualité de la recherche, décryptée : ce qui change chez Google et chez les moteurs IA, et ce qu'il faut en faire."
 
+# Doublons consolidés SANS redirection : l'URL reste en 200, sa canonical pointe vers la cible.
+# Appliqué par la synchro, quel que soit le contenu du fichier.
+canonical_overrides:
+  google-penalise-constenu-ia: /google-penalise-contenu-ia/
+
 nav:
   - { label: GEO & IA, url: /category/blog/ }
   - { label: SEO, url: /category/seo/ }

@@ -59,6 +59,14 @@ def main() -> None:
             if d.kind == "post" and not d.meta.get("essentiel"):
                 warn(f"{d.path.name} : pas de bloc « essentiel » (recommandé pour le GEO)")
 
+    for slug, target in (cfg.get("canonical_overrides") or {}).items():
+        if target.strip("/") not in slugs:
+            print(f"✗ canonical_overrides : la cible {target} de « {slug} » n'existe pas dans le dépôt")
+            errors += 1 if URLS_FILE.exists() else 0
+    for d in docs:
+        if d.kind == "page" and d.meta.get("origin") == "import":
+            warn(f"{d.path.name} : page de l'ancien site, à réécrire (le déploiement en production est bloqué tant qu'elle ne l'est pas)")
+
     for flag in ("front_page", "posts_page"):
         n = sum(1 for d in docs if d.meta.get(flag))
         if n > 1:

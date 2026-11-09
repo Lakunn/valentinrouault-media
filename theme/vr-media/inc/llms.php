@@ -79,6 +79,9 @@ add_action(
 			}
 			$lines[] = '## ' . html_entity_decode( $term->name, ENT_QUOTES, 'UTF-8' );
 			foreach ( $posts as $p ) {
+				if ( get_post_meta( $p->ID, 'vr_canonical', true ) ) {
+					continue;
+				}
 				$desc    = (string) get_post_meta( $p->ID, 'vr_meta_description', true );
 				$lines[] = sprintf( '- [%s](%s)%s', html_entity_decode( get_the_title( $p ), ENT_QUOTES, 'UTF-8' ), get_permalink( $p ), $desc ? ': ' . $desc : '' );
 			}

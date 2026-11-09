@@ -88,6 +88,7 @@ add_action(
 			'vr_meta_description' => 'string',
 			'vr_essentiel'        => 'string',
 			'vr_source_hash'      => 'string',
+			'vr_canonical'        => 'string',
 			'vr_noindex'          => 'boolean',
 		);
 		foreach ( array( 'post', 'page' ) as $type ) {

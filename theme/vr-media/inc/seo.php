@@ -61,7 +61,9 @@ function vr_canonical() {
 	} elseif ( is_home() ) {
 		$url = get_permalink( (int) get_option( 'page_for_posts' ) );
 	} elseif ( is_singular() ) {
-		$url = get_permalink( get_queried_object() );
+		// Canonical déclarée depuis git (doublon consolidé vers une autre URL, sans redirection).
+		$custom = (string) get_post_meta( get_queried_object_id(), 'vr_canonical', true );
+		$url    = '' !== $custom ? home_url( $custom ) : get_permalink( get_queried_object() );
 	} elseif ( is_category() || is_tag() || is_tax() ) {
 		$url = get_term_link( get_queried_object() );
 	} elseif ( is_author() ) {
@@ -183,4 +185,17 @@ add_action(
 		echo "<meta name=\"twitter:card\" content=\"summary_large_image\">\n";
 	},
 	1
+);
+
+/** Les contenus dont la canonical pointe ailleurs sortent du sitemap. */
+add_filter(
+	'wp_sitemaps_posts_query_args',
+	function ( $args ) {
+		$args['meta_query'] = array(
+			'relation' => 'OR',
+			array( 'key' => 'vr_canonical', 'compare' => 'NOT EXISTS' ),
+			array( 'key' => 'vr_canonical', 'value' => '' ),
+		);
+		return $args;
+	}
 );

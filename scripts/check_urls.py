@@ -19,10 +19,13 @@ import requests
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import UA, URLS_FILE, all_docs, norm_url, site_url  # noqa: E402
+from common import UA, URLS_FILE, all_docs, load_config, norm_url, site_url  # noqa: E402
 
 S = requests.Session()
 S.headers["User-Agent"] = UA
+
+
+EXPECTED_CANONICAL: dict[str, str] = {}
 
 
 def check(url: str, kind: str) -> tuple[str, str, str]:
@@ -40,7 +43,7 @@ def check(url: str, kind: str) -> tuple[str, str, str]:
     can = soup.find("link", rel="canonical")
     if not can or not can.get("href"):
         return url, "KO", "pas de balise canonical"
-    if norm_url(can["href"]) != norm_url(url):
+    if norm_url(can["href"]) != EXPECTED_CANONICAL.get(norm_url(url), norm_url(url)):
         return url, "KO", f"canonical différente : {can['href']}"
     robots = soup.find("meta", attrs={"name": "robots"})
     if robots and "noindex" in robots.get("content", "") and kind != "noindex-ok":
@@ -63,6 +66,10 @@ def main() -> None:
         if d.meta.get("status", "publish") == "publish" and not d.meta.get("front_page"):
             targets.setdefault(norm_url(f"{base}/{d.slug}/"), "noindex-ok" if d.meta.get("noindex") else "new")
     targets[f"{base}/llms.txt"] = "txt"
+    for d in all_docs():
+        target = d.meta.get("canonical") or (load_config().get("canonical_overrides") or {}).get(d.slug)
+        if target:
+            EXPECTED_CANONICAL[norm_url(f"{base}/{d.slug}/")] = norm_url(base + target)
 
     with ThreadPoolExecutor(8) as ex:
         results = list(ex.map(lambda kv: check(*kv), targets.items()))
