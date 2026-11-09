@@ -55,6 +55,7 @@ require VR_DIR . '/inc/toc.php';
 require VR_DIR . '/inc/seo.php';
 require VR_DIR . '/inc/schema.php';
 require VR_DIR . '/inc/llms.php';
+require VR_DIR . '/inc/consent.php';
 
 /* ---------------------------------------------------------------------------
  * Setup

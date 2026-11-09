@@ -27,7 +27,7 @@
 		</div>
 		<div class="footer-bottom">
 			<span>© <?php echo esc_html( wp_date( 'Y' ) ); ?> <?php echo esc_html( vr_config( 'author.name', 'Valentin Rouault' ) ); ?>. Média indépendant, sans contenu sponsorisé.</span>
-			<span><a href="<?php echo esc_url( home_url( '/llms.txt' ) ); ?>">llms.txt</a> · <a href="<?php echo esc_url( get_bloginfo( 'rss2_url' ) ); ?>">RSS</a></span>
+			<span><a href="#" data-consent-open>Gérer les cookies</a> · <a href="<?php echo esc_url( home_url( '/llms.txt' ) ); ?>">llms.txt</a> · <a href="<?php echo esc_url( get_bloginfo( 'rss2_url' ) ); ?>">RSS</a></span>
 		</div>
 	</div>
 </footer>

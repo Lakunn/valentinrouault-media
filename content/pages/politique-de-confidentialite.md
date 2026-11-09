@@ -23,10 +23,13 @@ Votre adresse e-mail et le contenu de votre message. Ils servent uniquement à v
 
 ### Mesure d'audience
 
-À COMPLÉTER selon l'outil réellement actif sur le site :
+Le site utilise **Google Analytics 4**, intégré via l'extension Site Kit de Google, **uniquement si vous l'acceptez** dans le bandeau affiché lors de votre première visite. Sans accord, aucun cookie Analytics n'est déposé.
 
-- **Google Analytics (via Site Kit)** : adresse IP tronquée, pages consultées, durée de visite, type d'appareil. Ces cookies ne peuvent être déposés qu'après votre consentement, recueilli par un bandeau dédié. Données conservées 14 mois au maximum.
-- **ou aucun outil de mesure** : supprimer ce paragraphe.
+Avec votre accord, sont collectés : pages consultées, durée de visite, source de la visite, type d'appareil et de navigateur, pays et ville approximatifs. Google Analytics 4 n'enregistre pas les adresses IP complètes. Les données sont conservées 14 mois au maximum.
+
+Google peut traiter ces données hors de l'Union européenne, notamment aux États-Unis, dans le cadre du Data Privacy Framework UE–États-Unis.
+
+Votre choix est mémorisé 6 mois dans un cookie technique (`vr_consent`), puis le bandeau vous est de nouveau proposé.
 
 ### Newsletter
 
@@ -39,7 +42,7 @@ L'hébergeur enregistre, comme tout serveur web, des journaux techniques (adress
 ## Bases légales
 
 - **Votre consentement** pour les cookies de mesure d'audience.
-- **L'intérêt légitime** de l'éditeur pour répondre aux messages reçus et assurer la sécurité du site.
+- **L'intérêt légitime** de l'éditeur pour répondre aux messages reçus et assurer la sécurité du site (journaux techniques, cookie mémorisant votre choix).
 
 ## Destinataires
 
@@ -53,4 +56,4 @@ Vous pouvez également adresser une réclamation à la [CNIL](https://www.cnil.f
 
 ## Cookies
 
-Vous pouvez à tout moment retirer votre consentement aux cookies de mesure d'audience depuis le bandeau du site, ou configurer votre navigateur pour les refuser. Le refus n'empêche pas la consultation du site.
+Vous pouvez à tout moment modifier votre choix via le lien « Gérer les cookies » en bas de chaque page, ou configurer votre navigateur pour les refuser. Le refus n'empêche pas la consultation du site.
