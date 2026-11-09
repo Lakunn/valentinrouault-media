@@ -26,7 +26,7 @@ def load_config() -> dict:
 
 
 def site_url() -> str:
-    return os.environ.get("WP_URL", load_config()["site_url"]).rstrip("/")
+    return (os.environ.get("WP_URL") or load_config()["site_url"]).rstrip("/")
 
 
 def norm_url(url: str) -> str:
