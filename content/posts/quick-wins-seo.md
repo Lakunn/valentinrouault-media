@@ -11,7 +11,7 @@ categories:
 - seo-technique
 dek: "Titles à faible taux de clic, pages en bas de première page, maillage, vitesse, cannibalisation évidente : dix actions à fort effet et faible effort, une méthode pour les prioriser, et un plan sur deux semaines."
 seo_title: "10 quick wins SEO testés, avec un plan d'action sur 14 jours"
-meta_description: "10 quick wins SEO à fort impact : titles, maillage, vitesse, cannibalisation, mise à jour, données structurées, SEO local. Méthode de priorisation et plan sur 14 jours."
+meta_description: "10 quick wins SEO à fort impact : titles, maillage, vitesse, cannibalisation, mise à jour, SEO local. Méthode de priorisation et plan sur 14 jours."
 essentiel:
   - "Un quick win combine **fort impact et faible effort** : on les trie avec une grille impact / confiance / effort."
   - "Les gains les plus rapides viennent presque toujours des pages **déjà classées entre la 3e et la 15e position**."
