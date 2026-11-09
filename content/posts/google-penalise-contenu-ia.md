@@ -22,7 +22,7 @@ C'est l'une des questions les plus posées depuis l'arrivée de ChatGPT : un tex
 
 ## Ce que dit Google officiellement
 
-Dans sa [documentation sur le contenu généré par IA](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content?hl=fr), Google adopte une position constante : ce qui compte est la **qualité** et l'**utilité** du contenu pour les lecteurs, pas la façon dont il a été produit. L'IA peut aider à créer du contenu utile ; elle ne pose problème que lorsqu'elle sert à produire des pages sans valeur.
+Dans sa [documentation sur le contenu généré par IA](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content?hl=fr), Google adopte une position constante : ce qui compte est la **qualité** et l'utilité du contenu pour les lecteurs, pas la façon dont il a été produit. L'IA peut aider à créer du contenu utile ; elle ne pose problème que lorsqu'elle sert à produire des pages sans valeur.
 
 ![Extrait de la documentation de Google sur l'utilisation de l'IA générative](https://valentinrouault.com/wp-content/uploads/2025/09/image-5.png)
 

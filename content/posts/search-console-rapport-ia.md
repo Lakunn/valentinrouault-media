@@ -32,8 +32,8 @@ Les données démarrent le **18 mai 2026**. Aucune donnée plus ancienne n'est d
 
 ## Ce que le rapport montre
 
-- les **impressions** de vos pages dans ces fonctionnalités ;
-- la répartition par **page**, **pays**, **appareil** et **date**.
+- les impressions de vos pages dans ces fonctionnalités ;
+- la répartition par page, pays, appareil et date.
 
 C'est suffisant pour répondre à des questions concrètes : quelles pages Google reprend-il dans ses réponses IA ? Cette visibilité progresse-t-elle ? Est-elle concentrée sur quelques contenus ou répartie ?
 
@@ -61,9 +61,9 @@ Les pages stratégiques qui n'apparaissent jamais sont les priorités : réponse
 
 ### 4. Compléter avec les autres sources
 
-- **Bing Webmaster Tools** propose son propre suivi de la visibilité dans les réponses IA de Microsoft.
-- Dans votre outil d'**analytics**, isolez les visites venant des assistants : ChatGPT ajoute par exemple un paramètre `utm_source=chatgpt.com` à beaucoup de ses liens.
-- Pour ChatGPT, Perplexity et les autres, un **panel de requêtes** testées régulièrement reste nécessaire.
+- **Bing Webmaster Tools** propose depuis février 2026 un rapport « AI Performance » : nombre de citations de vos pages dans Copilot et dans les résumés IA de Bing, pages citées et requêtes à l'origine des citations. Comme celui de Google, il ne donne pas les clics.
+- Dans votre outil d'analytics, isolez les visites venant des assistants (chatgpt.com, perplexity.ai, copilot.microsoft.com, gemini.google.com). ChatGPT a longtemps ajouté `utm_source=chatgpt.com` aux liens qu'il cite. Depuis le passage à GPT-6, en octobre 2026, plusieurs analyses ont constaté qu'une partie des liens arrive sans ce paramètre ni site référent : ces visites sont alors comptées en accès direct. Surveillez donc aussi l'évolution du trafic direct sur les pages souvent citées.
+- Pour ChatGPT, Perplexity et les autres, un panel de requêtes testées régulièrement reste nécessaire.
 
 ## Une précision sur l'option de blocage
 

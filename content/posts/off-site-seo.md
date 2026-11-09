@@ -52,7 +52,7 @@ Le cycle vertueux : **visibilité, puis mentions, puis liens, puis classement**.
 
 Une mention sans lien (« selon l'étude de X… ») a longtemps été considérée comme un signal secondaire pour Google. Avec les moteurs génératifs, son poids change :
 
-- les modèles apprennent à partir de grands corpus de textes, où la **fréquence et la diversité des mentions** d'une marque sur un sujet comptent, lien ou pas ;
+- les modèles apprennent à partir de grands corpus de textes, où la fréquence et la diversité des mentions d'une marque sur un sujet comptent, lien ou pas ;
 - les assistants qui cherchent sur le web recoupent les sources : une marque citée par plusieurs médias fiables est plus souvent reprise dans les réponses.
 
 **Exemple :** une mention sans lien dans un média spécialisé passe presque inaperçue pour le classement Google, mais peut apparaître comme source dans une réponse de Perplexity, ou contribuer à ce que ChatGPT associe votre marque à votre sujet.
@@ -61,9 +61,9 @@ La notoriété éditoriale devient ainsi un levier GEO à part entière. Voir [l
 
 ### 4. Les avis
 
-- Sur **Google Business Profile**, les avis comptent dans le classement local (voir [le guide du SEO local](/seo-local/)).
-- Sur les **plateformes d'avis** (Trustpilot, Avis Vérifiés, sites sectoriels), ils rassurent les visiteurs et alimentent les réponses des assistants quand on leur demande « quel prestataire choisir ».
-- Dans l'**e-commerce**, les notes affichées dans les résultats augmentent le taux de clic.
+- Sur Google Business Profile, les avis comptent dans le classement local (voir [le guide du SEO local](/seo-local/)).
+- Sur les plateformes d'avis (Trustpilot, Avis Vérifiés, sites sectoriels), ils rassurent les visiteurs et alimentent les réponses des assistants quand on leur demande « quel prestataire choisir ».
+- Dans l'e-commerce, les notes affichées dans les résultats augmentent le taux de clic.
 
 Les enquêtes annuelles de BrightLocal montrent régulièrement qu'une large majorité de consommateurs lisent des avis avant de choisir une entreprise locale.
 
@@ -71,9 +71,9 @@ Les enquêtes annuelles de BrightLocal montrent régulièrement qu'une large maj
 
 Les consignes de Google pour ses évaluateurs de qualité insistent sur l'**E-E-A-T** : expérience, expertise, autorité, fiabilité. Le travail off-site les renforce :
 
-- des **auteurs identifiés**, avec une page « à propos » détaillée ;
-- une marque qui **existe hors de son site** : LinkedIn, YouTube, podcasts, conférences, presse ;
-- des **données structurées** `Organization` et `Person` avec des liens `sameAs` vers ces profils, pour relier les entités entre elles.
+- des auteurs identifiés, avec une page « à propos » détaillée ;
+- une marque qui existe hors de son site : LinkedIn, YouTube, podcasts, conférences, presse ;
+- des données structurées `Organization` et `Person` avec des liens `sameAs` vers ces profils, pour relier les entités entre elles.
 
 ## Construire une stratégie off-site
 

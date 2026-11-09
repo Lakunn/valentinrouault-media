@@ -48,10 +48,10 @@ Le contenu des avis compte aussi : un client qui mentionne « réparation de cha
 
 ## 3. Le site : des pages locales utiles
 
-- Une page par **établissement** (adresse, horaires, accès, équipe, photos, avis), avec une carte intégrée.
-- Pour une zone d'intervention, des pages par **ville ou secteur** seulement si elles apportent un contenu réel : réalisations locales, délais, spécificités. Des centaines de pages identiques où seul le nom de ville change ne se classent pas et dégradent le site.
+- Une page par établissement (adresse, horaires, accès, équipe, photos, avis), avec une carte intégrée.
+- Pour une zone d'intervention, des pages par ville ou secteur seulement si elles apportent un contenu réel : réalisations locales, délais, spécificités. Des centaines de pages identiques où seul le nom de ville change ne se classent pas et dégradent le site.
 - Les données structurées `LocalBusiness` (ou plus précises : `Restaurant`, `Dentist`…) avec nom, adresse, téléphone et horaires.
-- Un **NAP** (nom, adresse, téléphone) identique partout.
+- Un NAP (nom, adresse, téléphone) identique partout.
 
 ## 4. Citations et liens locaux
 
@@ -78,7 +78,7 @@ Les mécanismes de citation sont détaillés dans le [guide du SEO pour les IA](
 ## 7. Mesurer
 
 - Statistiques de la fiche : appels, demandes d'itinéraire, clics vers le site.
-- Positions dans le pack local **depuis plusieurs points de la zone**, car elles varient d'une rue à l'autre.
+- Positions dans le pack local depuis plusieurs points de la zone, car elles varient d'une rue à l'autre.
 - Trafic organique des pages locales et conversions associées.
 
 <section class="faq" markdown="1">

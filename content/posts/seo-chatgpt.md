@@ -16,7 +16,7 @@ essentiel:
   - "ChatGPT utilise trois robots aux rôles distincts : **OAI-SearchBot** (recherche), **ChatGPT-User** (pages ouvertes à la demande d'un utilisateur) et **GPTBot** (entraînement). Bloquer les deux premiers vous retire des réponses."
   - "Quand il cherche sur le web, ChatGPT **découpe la question en sous-requêtes**. Ces sous-requêtes sont les sujets sur lesquels il faut être présent."
   - "Il reprend surtout des passages **clairs, structurés, datés et attribuables** : listes, tableaux, définitions, chiffres sourcés."
-  - "Le trafic venant de ChatGPT se mesure dans l'analytics grâce au paramètre `utm_source=chatgpt.com` ajouté à beaucoup de ses liens."
+  - "Le trafic venant de ChatGPT se repère dans l'analytics (paramètre `utm_source=chatgpt.com`), mais depuis octobre 2026 une partie des visites arrive sans marquage et se confond avec le trafic direct."
 ---
 
 « Comment faire du SEO pour ChatGPT ? » est devenue l'une des questions les plus fréquentes en SEO. La réponse tient en deux parties : comprendre comment ChatGPT trouve ses sources, puis rendre vos pages faciles à trouver, à lire et à citer.
@@ -39,10 +39,10 @@ OpenAI documente trois robots, à traiter séparément dans votre `robots.txt` :
 | Robot | Rôle | Conséquence d'un blocage |
 |---|---|---|
 | `OAI-SearchBot` | Explore les pages pour la recherche de ChatGPT | Vos pages ne peuvent plus apparaître comme sources dans les réponses |
-| `ChatGPT-User` | Ouvre une page quand un utilisateur ou un agent le demande | ChatGPT ne peut plus lire vos pages à la demande |
+| `ChatGPT-User` | Ouvre une page quand un utilisateur ou un agent le demande | OpenAI précise que les règles du robots.txt peuvent ne pas s'appliquer à ces visites, déclenchées par un utilisateur |
 | `GPTBot` | Collecte des contenus pour entraîner les modèles | Vos contenus ne servent plus à l'entraînement ; sans effet direct sur la recherche |
 
-Un site qui veut être cité laisse passer au minimum `OAI-SearchBot`. Le choix concernant `GPTBot` est indépendant.
+Un site qui veut être cité laisse passer au minimum `OAI-SearchBot`, qui respecte le robots.txt (OpenAI indique un délai d'environ 24 heures pour la prise en compte d'un changement). Le choix concernant `GPTBot` est indépendant.
 
 ### Le rôle des moteurs de recherche
 
@@ -69,9 +69,9 @@ Traitez-les comme les « Autres questions posées » de Google : ce sont les bes
 **Exemple.** Pour la question « Quels sont les meilleurs CRM pour PME, avec prix, intégrations et avis ? », une page bien construite contient :
 
 - une liste des outils avec une phrase de positionnement pour chacun ;
-- un **tableau des prix** daté ;
-- les **intégrations** principales ;
-- les **avantages et limites** de chaque outil ;
+- un tableau des prix daté ;
+- les intégrations principales ;
+- les avantages et limites de chaque outil ;
 - une FAQ sur les questions secondaires (essai gratuit, migration, RGPD).
 
 ## 3. Ce que ChatGPT reprend volontiers
@@ -88,7 +88,7 @@ Les réponses de ChatGPT prennent souvent la forme de listes et de tableaux. Les
 
 Sur les sujets qui évoluent, ChatGPT privilégie les informations récentes.
 
-- Affichez la date de publication **et** la date de mise à jour.
+- Affichez la date de publication et la date de mise à jour.
 - Mettez réellement à jour les contenus : chiffres, captures, exemples.
 - Indiquez l'année quand l'information en dépend (prix, classements, réglementation).
 
@@ -105,7 +105,7 @@ ChatGPT recoupe les sources. Une marque citée dans la presse, les comparatifs, 
 
 ## 4. Mesurer sa visibilité dans ChatGPT
 
-- **Analytics** : ChatGPT ajoute `utm_source=chatgpt.com` à beaucoup des liens qu'il affiche. Suivez cette source et les pages d'arrivée.
+- **Analytics** : ChatGPT a longtemps ajouté `utm_source=chatgpt.com` aux liens qu'il cite. Depuis le passage à GPT-6, en octobre 2026, plusieurs analyses ont constaté qu'une partie des liens arrive sans ce paramètre ni site référent : ces visites sont alors comptées en accès direct. Surveillez donc aussi l'évolution du trafic direct sur les pages souvent citées.
 - **Logs serveur** : repérez les passages d'`OAI-SearchBot` et de `ChatGPT-User`, et les pages consultées.
 - **Panel de requêtes** : une vingtaine de questions de votre secteur, posées régulièrement, en notant si vous êtes cité et à quelle place.
 

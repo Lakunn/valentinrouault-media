@@ -23,7 +23,7 @@ Les quick wins SEO sont des actions à faible effort et fort impact : elles amé
 
 ## Prioriser : la grille ICE
 
-Notez chaque action de 1 à 10 sur trois critères : **Impact** attendu, **Confiance** dans le résultat, **Facilité** de mise en œuvre. Gardez celles qui obtiennent les meilleures notes et se déploient en quelques heures ou jours.
+Notez chaque action de 1 à 10 sur trois critères : **Impact** attendu, Confiance dans le résultat, Facilité de mise en œuvre. Gardez celles qui obtiennent les meilleures notes et se déploient en quelques heures ou jours.
 
 | Action | Impact | Confiance | Facilité |
 |---|---|---|---|
@@ -81,7 +81,7 @@ Méthode complète : [le guide de la cannibalisation](/cannibalisation-seo/).
 
 ## 6. Améliorer la vitesse et les Core Web Vitals
 
-Seuils de référence de Google : **LCP ≤ 2,5 s**, **INP ≤ 200 ms**, **CLS ≤ 0,1**.
+Seuils de référence de Google : **LCP ≤ 2,5 s**, INP ≤ 200 ms, CLS ≤ 0,1.
 
 - Images en WebP ou AVIF, dimensionnées, `loading="lazy"` sous la ligne de flottaison.
 - Polices hébergées localement, avec `font-display: swap`.
@@ -98,7 +98,7 @@ Corrigez **par gabarit** (accueil, catégorie, fiche produit, article) : une cor
 - `Organization` et `BreadcrumbList` à l'échelle du site.
 - `LocalBusiness` pour les établissements.
 
-Attention : depuis 2023, Google n'affiche plus les résultats enrichis FAQ que pour un nombre restreint de sites (administrations, santé). Le balisage `FAQPage` reste utile pour clarifier le contenu, notamment pour les IA, mais ne promet plus d'affichage enrichi.
+Attention : Google n'affiche plus du tout de résultats enrichis FAQ depuis le 7 mai 2026, après les avoir réservés aux sites gouvernementaux et de santé en 2023. Le balisage `FAQPage` reste valide et utile pour clarifier le contenu, notamment pour les IA, mais il ne produit plus d'affichage enrichi dans Google.
 
 ## 8. Les gains rapides en SEO local
 

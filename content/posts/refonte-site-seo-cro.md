@@ -37,7 +37,7 @@ L'audit dresse la carte du site : ce qui fonctionne, ce qui ne fonctionne pas.
 
 Outils indispensables : la Search Console (données de performance et d'indexation) et un crawler (Screaming Frog ou équivalent). Ahrefs ou Semrush complètent pour les liens.
 
-Un site a presque toujours des **sections fortes** et des **sections faibles**. Une refonte réussie capitalise sur les premières et corrige les secondes.
+Un site a presque toujours des **sections fortes** et des sections faibles. Une refonte réussie capitalise sur les premières et corrige les secondes.
 
 ## 3. Construire le plan d'URL
 
@@ -45,9 +45,9 @@ C'est l'étape où se produisent les pertes de trafic les plus graves.
 
 1. **Inventorier toutes les URL** existantes : sitemap, crawl, Search Console, outils de liens, et les pages paginées et archives.
 2. **Décider pour chacune** : conservée telle quelle, fusionnée, ou supprimée.
-3. **Pour chaque URL qui change**, prévoir une **redirection 301** vers la page équivalente la plus proche.
+3. **Pour chaque URL qui change**, prévoir une redirection 301 vers la page équivalente la plus proche.
 
-**La solution la plus sûre est de conserver les URL.** Une URL inchangée garde tout son historique sans dépendre d'une redirection. C'est le choix fait pour ce site : contenus et design entièrement refaits, mais adresses identiques.
+La solution la plus sûre est de conserver les URL. Une URL inchangée garde tout son historique sans dépendre d'une redirection. C'est le choix fait pour ce site : contenus et design entièrement refaits, mais adresses identiques.
 
 Les erreurs les plus fréquentes :
 
@@ -79,14 +79,14 @@ Les exigences de qualité de Google, et des moteurs génératifs comme [ChatGPT]
 
 Sur une version de test (non indexable) :
 
-- tester **toutes les redirections** à partir de la liste des anciennes URL ;
+- tester toutes les redirections à partir de la liste des anciennes URL ;
 - crawler le site : titres, meta descriptions, codes de réponse, pages orphelines, liens cassés ;
-- vérifier qu'il n'existe **qu'une seule version** de chaque URL (avec ou sans `www`, avec ou sans barre finale, HTTP et HTTPS) ;
+- vérifier qu'il n'existe qu'une seule version de chaque URL (avec ou sans `www`, avec ou sans barre finale, HTTP et HTTPS) ;
 - contrôler le rendu mobile et la vitesse.
 
 ## 7. Le jour du lancement
 
-- Mettre en ligne le site et les redirections **en même temps**.
+- Mettre en ligne le site et les redirections en même temps.
 - Retirer les protections de la version de test : mot de passe, `noindex`, blocage dans le robots.txt. C'est l'oubli le plus coûteux qui soit.
 - Soumettre le sitemap dans la Search Console et dans Bing Webmaster Tools.
 - Crawler le site en production et retester les anciennes URL.
@@ -95,7 +95,7 @@ Sur une version de test (non indexable) :
 
 Pendant au moins quatre à huit semaines :
 
-- comparer trafic et positions **page par page** avec la période précédente ;
+- comparer trafic et positions page par page avec la période précédente ;
 - surveiller le rapport d'indexation et les erreurs 404 ;
 - analyser les logs serveur pour voir comment les robots explorent la nouvelle version ;
 - corriger immédiatement chaque perte identifiée.

@@ -60,8 +60,8 @@ Il faut aussi se méfier des chiffres spectaculaires sur la hausse des citations
 
 **Oui, si :**
 
-- vous publiez une **documentation technique** ou une API : les agents de code et certains outils de développement l'utilisent réellement ;
-- votre CMS ou votre thème le génère **automatiquement** : le coût est nul ;
+- vous publiez une documentation technique ou une API : les agents de code et certains outils de développement l'utilisent réellement ;
+- votre CMS ou votre thème le génère automatiquement : le coût est nul ;
 - vous voulez disposer d'un index propre de vos contenus de référence, utile aussi pour vos propres outils.
 
 **Ne comptez pas dessus pour :**
@@ -73,10 +73,10 @@ Ce site publie un [llms.txt](/llms.txt), généré automatiquement à partir des
 
 ## Ce qui fonctionne vraiment pour être cité
 
-1. Être **indexé et bien classé** : la plupart des assistants vont chercher leurs sources dans un moteur de recherche. Voir [l'indexation Google](/indexation-google/).
-2. Publier des passages **autoportants** : une question, une réponse directe, une donnée sourcée.
-3. Apporter des **informations originales** : tests, chiffres propres, retours d'expérience.
-4. Être **mentionné ailleurs** : presse, comparatifs, communautés. Voir [le netlinking à l'heure des citations IA](/netlinking/).
+1. Être indexé et bien classé : la plupart des assistants vont chercher leurs sources dans un moteur de recherche. Voir [l'indexation Google](/indexation-google/).
+2. Publier des passages autoportants : une question, une réponse directe, une donnée sourcée.
+3. Apporter des informations originales : tests, chiffres propres, retours d'expérience.
+4. Être mentionné ailleurs : presse, comparatifs, communautés. Voir [le netlinking à l'heure des citations IA](/netlinking/).
 5. **Mesurer** : le [nouveau rapport IA de la Search Console](/search-console-rapport-ia/) et un panel de requêtes suivies dans les assistants.
 
 <section class="faq" markdown="1">

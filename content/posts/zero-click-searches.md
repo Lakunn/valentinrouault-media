@@ -32,11 +32,11 @@ Depuis plusieurs années, Google répond directement dans ses résultats :
 
 Les assistants comme ChatGPT, Perplexity ou Gemini vont plus loin : l'utilisateur ne voit même plus la page de résultats.
 
-L'étude publiée en 2024 par SparkToro à partir des données de panel de Datos estimait qu'environ **six recherches Google sur dix**, aux États-Unis comme dans l'Union européenne, se terminaient sans clic vers un site web. Ces mesures datent d'avant la généralisation des AI Overviews en Europe.
+L'étude publiée en 2024 par SparkToro à partir des données de panel de Datos estimait qu'environ **six recherches Google sur dix**, aux États-Unis comme dans l'Union européenne, se terminaient sans clic vers un site web. Ces mesures datent d'avant la généralisation des AI Overviews en Europe. Les mêmes acteurs ont publié en 2026 des chiffres nettement plus bas (autour d'une recherche sur cinq sans clic), mais à partir d'un panel uniquement sur ordinateur : les deux séries ne sont pas comparables, et l'ordre de grandeur dépend beaucoup de la méthode.
 
 ## À quoi sert encore d'écrire ?
 
-Ma réponse : **le contenu ne sert plus seulement à capter des clics, il sert à capter de l'autorité.**
+Ma réponse : le contenu ne sert plus seulement à capter des clics, il sert à capter de l'autorité.
 
 Quand Google ou une IA reprend votre contenu en vous citant, votre marque est associée à la réponse. Cette exposition construit la notoriété et la confiance, qui se transforment plus tard en recherches de marque, en visites directes, en prises de contact. Le clic n'est plus le seul indicateur de valeur.
 
@@ -50,7 +50,7 @@ Si un moteur doit reprendre votre contenu, autant qu'il le fasse en vous citant.
 
 - Des réponses courtes et précises en tête de section.
 - Des listes, tableaux et FAQ faciles à reprendre.
-- Des **informations qui vous appartiennent** : données, méthodes nommées, retours d'expérience. Une information que l'on ne trouve que chez vous oblige à vous citer.
+- Des informations qui vous appartiennent : données, méthodes nommées, retours d'expérience. Une information que l'on ne trouve que chez vous oblige à vous citer.
 
 Méthode complète : [le guide du GEO](/seo-ia/).
 
@@ -72,10 +72,10 @@ Le contenu doit vivre là où se trouve l'audience :
 
 Si le trafic baisse alors que les impressions et les citations progressent, ce n'est pas forcément un échec. Suivez aussi :
 
-- les **impressions** et la présence dans les fonctionnalités IA ;
-- les **recherches sur votre marque** ;
-- les **citations** dans les réponses des assistants (panel de requêtes) ;
-- les **conversions**, qui comptent plus que le volume de visites. Voir [où sont les conversions selon les sources de trafic](/benchmark-conversion-marketing/).
+- les impressions et la présence dans les fonctionnalités IA ;
+- les recherches sur votre marque ;
+- les citations dans les réponses des assistants (panel de requêtes) ;
+- les conversions, qui comptent plus que le volume de visites. Voir [où sont les conversions selon les sources de trafic](/benchmark-conversion-marketing/).
 
 ## Mon avis
 

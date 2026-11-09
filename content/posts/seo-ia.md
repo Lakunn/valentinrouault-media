@@ -95,7 +95,7 @@ Le balisage ne fait pas citer une page à lui seul, mais il lève les ambiguït�
 
 Sur les sujets qui évoluent, les moteurs génératifs privilégient les contenus récents et datés.
 
-- Afficher la **date de publication et la date de mise à jour**, et les déclarer dans les données structurées.
+- Afficher la date de publication et la date de mise à jour, et les déclarer dans les données structurées.
 - **Mettre à jour réellement** les contenus importants : chiffres, exemples, captures. Changer la date sans changer le fond ne trompe ni les lecteurs ni les moteurs.
 - Exposer les signaux techniques : sitemap avec `lastmod`, flux RSS.
 
@@ -123,8 +123,8 @@ Les moteurs génératifs reprennent plus volontiers les sources et les marques q
 
 Les IA cherchent des sources qui font autorité sur un sujet, pas des pages isolées.
 
-- Organisez les contenus en **groupes thématiques** : un guide de référence, des articles qui approfondissent chaque sous-question, reliés entre eux.
-- Couvrez les **questions secondaires** que les sous-requêtes vont chercher : coûts, comparatifs, erreurs fréquentes, cas d'usage.
+- Organisez les contenus en groupes thématiques : un guide de référence, des articles qui approfondissent chaque sous-question, reliés entre eux.
+- Couvrez les questions secondaires que les sous-requêtes vont chercher : coûts, comparatifs, erreurs fréquentes, cas d'usage.
 - Évitez que plusieurs pages se disputent la même question : voir [la cannibalisation](/cannibalisation-seo/).
 
 ## 3. Mettre en place le GEO sans y passer sa vie
@@ -137,7 +137,8 @@ Les IA cherchent des sources qui font autorité sur un sujet, pas des pages isol
 ## 4. Mesurer
 
 - **Search Console** : depuis juin 2026, un [rapport dédié à l'IA générative](/search-console-rapport-ia/) donne vos impressions dans les AI Overviews et l'AI Mode, par page.
-- **Analytics** : isolez les visites qui viennent des assistants (chatgpt.com, perplexity.ai, copilot, gemini) dans les sources de trafic. ChatGPT ajoute par exemple `utm_source=chatgpt.com` à beaucoup de ses liens.
+- **Bing Webmaster Tools** : depuis février 2026, le rapport « AI Performance » compte les citations de vos pages dans Copilot et les résumés IA de Bing.
+- **Analytics** : isolez les visites qui viennent des assistants (chatgpt.com, perplexity.ai, copilot, gemini) dans les sources de trafic. ChatGPT a longtemps ajouté `utm_source=chatgpt.com` aux liens qu'il cite. Depuis le passage à GPT-6, en octobre 2026, plusieurs analyses ont constaté qu'une partie des liens arrive sans ce paramètre ni site référent : ces visites sont alors comptées en accès direct. Surveillez donc aussi l'évolution du trafic direct sur les pages souvent citées.
 
 ![Suivi du trafic venant des assistants IA dans Google Analytics 4](https://valentinrouault.com/wp-content/uploads/2025/09/google-analytics-4-suivi-1024x376.png)
 

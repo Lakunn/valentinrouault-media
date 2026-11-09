@@ -19,7 +19,7 @@ Une boutique en ligne a un avantage sur la plupart des sites : son catalogue est
 
 L'arborescence d'une boutique est souvent pensée comme un rayonnage interne. Les clients, eux, cherchent avec leurs mots : « chaussures de trail femme », « aspirateur sans fil pour poils d'animaux ». La recherche de mots-clés sert à aligner les deux.
 
-- Regrouper les requêtes par **intention** : générique (catégorie), précise (sous-catégorie ou facette), comparative (guide d'achat), marque + modèle (fiche produit).
+- Regrouper les requêtes par intention : générique (catégorie), précise (sous-catégorie ou facette), comparative (guide d'achat), marque + modèle (fiche produit).
 - Une intention = une page cible. Deux pages qui visent la même requête se concurrencent ; voir [la cannibalisation de mots-clés](/cannibalisation-seo/).
 - Les requêtes conversationnelles (« quel aspirateur choisir pour un appartement avec un chat ») alimentent les guides d'achat et les FAQ, qui sont aussi la matière que citent les IA. Méthode détaillée : [recherche de mots-clés 2026](/mot-cle-seo/).
 
@@ -27,8 +27,8 @@ L'arborescence d'une boutique est souvent pensée comme un rayonnage interne. Le
 
 Ce sont elles qui captent les requêtes génériques. Une catégorie efficace réunit :
 
-- un **H1 et un title** calés sur la requête principale ;
-- un court texte d'introduction **au-dessus** des produits, utile au client (critères de choix, gammes), et un contenu plus complet en bas de page ;
+- un H1 et un title calés sur la requête principale ;
+- un court texte d'introduction au-dessus des produits, utile au client (critères de choix, gammes), et un contenu plus complet en bas de page ;
 - des liens vers les sous-catégories et les guides d'achat liés ;
 - des produits en stock en tête de liste.
 
@@ -71,16 +71,16 @@ Les liens se gagnent mal vers une fiche produit, mieux vers des contenus qui se 
 
 Les assistants conversationnels sont devenus des prescripteurs : sur une requête d'achat, ils affichent une courte sélection de produits, parfois achetables sans quitter la conversation. Pour y figurer :
 
-- un **flux produit** complet et à jour (identifiants, variantes, prix, stock, images) ;
-- des **données structurées** cohérentes avec le flux ;
-- des **preuves externes** : avis, tests, présence dans les comparatifs ;
+- un flux produit complet et à jour (identifiants, variantes, prix, stock, images) ;
+- des données structurées cohérentes avec le flux ;
+- des preuves externes : avis, tests, présence dans les comparatifs ;
 - des descriptions qui répondent aux critères que formulent les acheteurs (budget, usage, contraintes).
 
 Le fonctionnement de ChatGPT Shopping et de l'Instant Checkout est détaillé dans [ChatGPT Shopping, le nouveau SEO de l'e-commerce](/seo-ecom-chat-gpt/).
 
 ## 8. Mesurer
 
-- Trafic organique et chiffre d'affaires par **type de page** (catégorie, produit, guide), pas seulement au global.
+- Trafic organique et chiffre d'affaires par type de page (catégorie, produit, guide), pas seulement au global.
 - Pages catégories positionnées hors du top 10 : ce sont les gains les plus rapides.
 - Couverture d'indexation des produits actifs.
 - Impressions dans les fonctionnalités IA de Google ([rapport dédié de la Search Console](/search-console-rapport-ia/)) et visites venant des assistants IA dans l'outil d'analytics.

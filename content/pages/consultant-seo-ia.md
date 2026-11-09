@@ -13,7 +13,7 @@ essentiel:
   - "Méfiance face à toute promesse de « première place dans ChatGPT » : les réponses varient d'un utilisateur et d'une session à l'autre."
 ---
 
-Le terme est récent, le métier beaucoup moins. Un **consultant SEO IA**, ou consultant GEO (*Generative Engine Optimization*), aide une entreprise à apparaître dans les réponses des moteurs génératifs : ChatGPT, Perplexity, Gemini, Copilot, et les AI Overviews ou l'AI Mode de Google. Sa matière première reste celle du SEO, mais la cible change : il ne s'agit plus seulement d'être classé, il s'agit d'être **cité**.
+Le terme est récent, le métier beaucoup moins. Un **consultant SEO IA**, ou consultant GEO (*Generative Engine Optimization*), aide une entreprise à apparaître dans les réponses des moteurs génératifs : ChatGPT, Perplexity, Gemini, Copilot, et les AI Overviews ou l'AI Mode de Google. Sa matière première reste celle du SEO, mais la cible change : il ne s'agit plus seulement d'être classé, il s'agit d'être cité.
 
 Ce guide décrit le métier tel qu'il se pratique, sans jargon. Pour le fond technique du GEO, voir le [guide complet du SEO pour les IA](/seo-ia/).
 

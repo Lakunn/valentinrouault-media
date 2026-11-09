@@ -95,7 +95,9 @@ def check(path: Path) -> tuple[list[str], list[str]]:
     longs = [s for s in sents if len(s.split()) > 32]
     for s in longs[:5]:
         notes.append(f"phrase longue ({len(s.split())} mots) : « {s[:90]}… »")
-    bold = len(re.findall(r"\*\*[^*]+\*\*", raw))
+    # Le gras en tête d'élément de liste sert de repère : seul le gras du texte courant est compté.
+    prose = "\n".join(l for l in raw.splitlines() if not re.match(r"^\s*([-*]|\d+\.)\s", l))
+    bold = len(re.findall(r"\*\*[^*]+\*\*", prose))
     words = max(1, len(text.split()))
     if bold / words * 1000 > 12:
         notes.append(f"gras excessif ({bold} passages en gras pour {words} mots)")

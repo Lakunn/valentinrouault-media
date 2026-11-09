@@ -28,7 +28,7 @@ Pour les problèmes que l'on rencontre le plus souvent en audit, voir aussi [les
 
 Google indexe la page **après exécution du JavaScript**, comme un navigateur. Le code source brut (Ctrl+U) ne montre donc pas ce que Google voit.
 
-**À faire :** contrôler le rendu dans l'outil d'**inspection d'URL** de la Search Console (« Afficher la page explorée ») : HTML rendu, capture d'écran, ressources non chargées et messages de la console.
+**À faire :** contrôler le rendu dans l'outil d'inspection d'URL de la Search Console (« Afficher la page explorée ») : HTML rendu, capture d'écran, ressources non chargées et messages de la console.
 
 Attention : ce qui vaut pour Google ne vaut pas pour tous les robots. Les robots des assistants IA lisent en général le HTML sans exécuter le JavaScript ; pour eux, c'est bien le code source qui compte.
 
@@ -36,7 +36,7 @@ Attention : ce qui vaut pour Google ne vaut pas pour tous les robots. Les robots
 
 Une erreur courante sur les applications JavaScript : afficher une page « introuvable » tout en renvoyant un code **200**. Google considère alors la page comme valide et peut l'indexer.
 
-**À faire :** une URL inexistante doit renvoyer **404** (ou **410** si elle a été supprimée définitivement) **côté serveur**. L'affichage peut être géré en JavaScript, le code de réponse non.
+**À faire :** une URL inexistante doit renvoyer 404 (ou 410 si elle a été supprimée définitivement) côté serveur. L'affichage peut être géré en JavaScript, le code de réponse non.
 
 ### 3. Ne pas dépendre des permissions
 
@@ -80,7 +80,7 @@ Désactivez le JavaScript dans le navigateur et regardez ce qui reste : le titre
 
 ### 10. Envisager le rendu côté serveur ou le pré-rendu
 
-Pour les sites construits avec React, Vue ou Angular, le **rendu côté serveur (SSR)** ou le **pré-rendu** livrent directement un HTML complet. Ce n'est pas obligatoire, mais c'est la solution la plus robuste pour les pages qui doivent se classer.
+Pour les sites construits avec React, Vue ou Angular, le **rendu côté serveur (SSR)** ou le pré-rendu livrent directement un HTML complet. Ce n'est pas obligatoire, mais c'est la solution la plus robuste pour les pages qui doivent se classer.
 
 ### 11. Faire travailler ensemble SEO et développeurs
 

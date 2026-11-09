@@ -90,7 +90,7 @@ Publier en masse des contenus générés sans valeur ajoutée est explicitement 
 Le menu et le pied de page sont présents sur toutes les pages : ce sont les liens internes les plus puissants du site.
 
 - Mettez les pages stratégiques dans le menu principal, avec peu de niveaux.
-- Utilisez un **pied de page enrichi** pour les pages importantes qui n'ont pas leur place dans le menu : catégories principales, établissements, services.
+- Utilisez un pied de page enrichi pour les pages importantes qui n'ont pas leur place dans le menu : catégories principales, établissements, services.
 - Gardez des libellés explicites, pas des intitulés vagues.
 
 ## 8. Créer des contenus qui attirent les liens
@@ -114,7 +114,7 @@ Certaines plateformes se classent très bien et sont aussi lues par les IA : You
 Deux limites :
 
 - la valeur doit être réelle pour la communauté visée : les messages promotionnels sont supprimés, et nuisent à la marque ;
-- publier sur un site tiers **uniquement** pour profiter de sa réputation, sans lien avec son activité éditoriale, est sanctionné par Google depuis 2024 (*site reputation abuse*).
+- publier sur un site tiers uniquement pour profiter de sa réputation, sans lien avec son activité éditoriale, est sanctionné par Google depuis 2024 (*site reputation abuse*).
 
 ## 10. Analyser ce que cherchent les IA
 

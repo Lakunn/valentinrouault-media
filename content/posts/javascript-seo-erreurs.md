@@ -50,7 +50,7 @@ Un `robots.txt` qui interdit `/assets/`, `/static/`, `/dist/` ou `/wp-includes/`
 **À vérifier :**
 
 - les règles `Disallow` héritées d'anciennes versions du site ;
-- le **rapport robots.txt** de la Search Console (paramètres) et l'outil d'inspection d'URL, qui liste les ressources que Google n'a pas pu charger ;
+- le rapport robots.txt de la Search Console (paramètres) et l'outil d'inspection d'URL, qui liste les ressources que Google n'a pas pu charger ;
 - le code de réponse des fichiers JS et CSS clés (200 attendu).
 
 **Correction :** retirer les blocages sur les ressources nécessaires au rendu. Le robots.txt sert à contrôler l'exploration de pages, pas à cacher des fichiers techniques.
@@ -77,9 +77,9 @@ Chat, tests A/B, cartes de chaleur, lecteurs vidéo, publicité, outils d'analyt
 
 **Pourquoi c'est pénalisant :**
 
-- **le fil principal est saturé** : des tâches longues retardent l'interactivité et dégradent l'**INP** et parfois le **LCP** ;
+- **le fil principal est saturé** : des tâches longues retardent l'interactivité et dégradent l'INP et parfois le LCP ;
 - **l'affichage est retardé** si un script est chargé de façon bloquante dans le `<head>` ;
-- **la mise en page bouge** quand des éléments sont injectés tardivement (**CLS**) ;
+- **la mise en page bouge** quand des éléments sont injectés tardivement (CLS) ;
 - **un service tiers lent ou en panne** peut ralentir toute la page ;
 - **des tests A/B ou bannières mal configurés** peuvent masquer du contenu ou modifier des balises au moment où le robot passe.
 
@@ -100,11 +100,11 @@ Ces problèmes sont visibles dans PageSpeed Insights et dans l'onglet Lighthouse
 
 ## La checklist « JavaScript compatible SEO »
 
-- Le titre, le texte principal et les liens sont-ils dans le **HTML initial** ?
-- Les fichiers JS et CSS nécessaires sont-ils **accessibles** (200, non bloqués) ?
-- La console de production est-elle **sans erreur bloquante** ?
-- Les **scripts tiers** sont-ils inventoriés et chargés en différé ?
-- L'indexation réelle a-t-elle été **vérifiée** (inspection d'URL, rapport d'indexation, logs) ?
+- Le titre, le texte principal et les liens sont-ils dans le HTML initial ?
+- Les fichiers JS et CSS nécessaires sont-ils accessibles (200, non bloqués) ?
+- La console de production est-elle sans erreur bloquante ?
+- Les scripts tiers sont-ils inventoriés et chargés en différé ?
+- L'indexation réelle a-t-elle été vérifiée (inspection d'URL, rapport d'indexation, logs) ?
 
 Voir aussi : [comprendre l'indexation Google](/indexation-google/).
 

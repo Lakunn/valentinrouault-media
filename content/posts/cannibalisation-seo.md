@@ -22,7 +22,7 @@ La cannibalisation de mots-clés fait peur à beaucoup de rédacteurs : publier 
 
 ## Qu'est-ce que la cannibalisation de mots-clés ?
 
-On parle de cannibalisation quand **plusieurs pages d'un même site visent la même requête et la même intention**, au point de se concurrencer dans les résultats.
+On parle de cannibalisation quand plusieurs pages d'un même site visent la même requête et la même intention, au point de se concurrencer dans les résultats.
 
 Exemple typique : un site e-commerce publie « Meilleure trottinette électrique » et « Top des trottinettes électriques pour adulte », deux guides presque identiques. Google ne sait pas lequel mettre en avant, et aucun des deux ne s'impose.
 
@@ -32,9 +32,9 @@ Exemple typique : un site e-commerce publie « Meilleure trottinette électrique
 
 John Mueller, de l'équipe Search Relations de Google, a précisé à plusieurs reprises la position du moteur :
 
-- il n'existe **pas de pénalité** liée au fait d'avoir plusieurs pages sur une même requête ;
-- Google **choisit** la page qu'il juge la plus pertinente pour une requête donnée ; les autres ne sont pas sanctionnées, simplement moins affichées ;
-- il ne faut pas parler de cannibalisation sur une base théorique : la Search Console ne montre que des pages **réellement affichées** pour une requête. C'est sur ces données qu'il faut raisonner.
+- il n'existe pas de pénalité liée au fait d'avoir plusieurs pages sur une même requête ;
+- Google choisit la page qu'il juge la plus pertinente pour une requête donnée ; les autres ne sont pas sanctionnées, simplement moins affichées ;
+- il ne faut pas parler de cannibalisation sur une base théorique : la Search Console ne montre que des pages réellement affichées pour une requête. C'est sur ces données qu'il faut raisonner.
 
 Plusieurs pages d'un même site peuvent d'ailleurs apparaître sur une même requête lorsqu'elles apportent chacune quelque chose de différent.
 

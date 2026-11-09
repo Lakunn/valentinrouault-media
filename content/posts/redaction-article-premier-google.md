@@ -28,7 +28,7 @@ Tout commence par la [recherche de mots-clés](/mot-cle-seo/).
 - **Un mot-clé principal**, celui que l'article vise en priorité. Exemple : *meilleures croquettes pour chien*.
 - **Des mots-clés secondaires** : variantes, synonymes, sous-questions (*croquettes sans céréales*, *croquettes pour chiot*, *comment choisir des croquettes*).
 
-Privilégiez les requêtes **précises**, souvent plus longues : elles sont moins concurrentielles et attirent des visiteurs dont le besoin est clair. Vérifiez aussi la **valeur** du mot-clé pour votre activité : une requête à fort volume sans lien avec ce que vous proposez ne rapportera rien.
+Privilégiez les requêtes **précises**, souvent plus longues : elles sont moins concurrentielles et attirent des visiteurs dont le besoin est clair. Vérifiez aussi la valeur du mot-clé pour votre activité : une requête à fort volume sans lien avec ce que vous proposez ne rapportera rien.
 
 ## 2. Comprendre l'intention de recherche
 
@@ -41,7 +41,7 @@ Google classe les pages qui répondent le mieux au **besoin** derrière la requ�
 | Transactionnelle | Acheter | *acheter harnais chien pas cher* |
 | Navigationnelle | Trouver une marque ou un site | *croquettes Zooplus* |
 
-**Le test le plus fiable : regarder la première page de Google.** Si elle n'affiche que des comparatifs, un article « définition » ne se classera pas. Notez le format dominant (liste, guide, comparatif, vidéo), la profondeur des pages et les questions associées.
+Le test le plus fiable : regarder la première page de Google. Si elle n'affiche que des comparatifs, un article « définition » ne se classera pas. Notez le format dominant (liste, guide, comparatif, vidéo), la profondeur des pages et les questions associées.
 
 **Conseil de structure :** construisez l'arborescence du site (catégories, pages services) autour des intentions commerciales et transactionnelles, et utilisez les articles pour répondre aux intentions informationnelles. Ces articles alimentent le maillage interne, et ce sont aussi ceux que les IA citent le plus pour répondre aux questions.
 
@@ -57,9 +57,9 @@ Une page qui répète ce que disent les dix premiers résultats n'a aucune raiso
 
 ### Des sources et une expertise visibles
 
-- Un **auteur identifié**, avec son parcours.
-- Des **sources citées** pour chaque chiffre.
-- Des informations **récentes** et datées.
+- Un auteur identifié, avec son parcours.
+- Des sources citées pour chaque chiffre.
+- Des informations récentes et datées.
 
 C'est ce que Google résume par l'E-E-A-T (expérience, expertise, autorité, fiabilité).
 
@@ -87,12 +87,12 @@ Ces éléments améliorent l'expérience de lecture et participent au gain d'inf
 
 ## 4. Placer le mot-clé, sans excès
 
-- dans la **balise title** ;
-- dans le **H1** ;
-- dans **l'introduction** ;
-- dans **un ou deux H2**, quand c'est naturel ;
-- dans la **meta description** (elle n'influence pas le classement mais le taux de clic) ;
-- dans l'**URL**, courte et lisible.
+- dans la balise title ;
+- dans le H1 ;
+- dans l'introduction ;
+- dans un ou deux H2, quand c'est naturel ;
+- dans la meta description (elle n'influence pas le classement mais le taux de clic) ;
+- dans l'URL, courte et lisible.
 
 Pour le reste du texte, écrivez naturellement, en utilisant les variantes et le vocabulaire du sujet. Google ne fixe aucune densité de mot-clé idéale ; répéter l'expression exacte à outrance (*keyword stuffing*) est contre-productif et peut être considéré comme du spam.
 

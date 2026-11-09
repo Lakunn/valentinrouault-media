@@ -23,7 +23,7 @@ Votre adresse e-mail et le contenu de votre message. Ils servent uniquement à v
 
 ### Mesure d'audience
 
-Le site utilise **Google Analytics 4**, intégré via l'extension Site Kit de Google, **uniquement si vous l'acceptez** dans le bandeau affiché lors de votre première visite. Sans accord, aucun cookie Analytics n'est déposé.
+Le site utilise **Google Analytics 4**, intégré via l'extension Site Kit de Google, uniquement si vous l'acceptez dans le bandeau affiché lors de votre première visite. Sans accord, aucun cookie Analytics n'est déposé.
 
 Avec votre accord, sont collectés : pages consultées, durée de visite, source de la visite, type d'appareil et de navigateur, pays et ville approximatifs. Google Analytics 4 n'enregistre pas les adresses IP complètes. Les données sont conservées 14 mois au maximum.
 

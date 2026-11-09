@@ -32,9 +32,9 @@ On distingue trois familles :
 
 ## Pourquoi les liens comptent toujours
 
-- Ils aident Google à **découvrir** les pages et à mesurer leur **autorité**.
-- Ils apportent du **trafic** quand ils sont cliqués.
-- Ils renforcent la **notoriété** de la marque, ce qui influence aussi les réponses des IA.
+- Ils aident Google à découvrir les pages et à mesurer leur autorité.
+- Ils apportent du trafic quand ils sont cliqués.
+- Ils renforcent la notoriété de la marque, ce qui influence aussi les réponses des IA.
 
 Une étude d'Ahrefs, publiée en 2020, observait que la très grande majorité des pages ne reçoit aucun trafic depuis Google, et citait l'absence de liens entrants parmi les causes principales. Une page sans aucun lien part avec un handicap, même si son contenu est bon.
 
@@ -92,9 +92,9 @@ Les règles de Google sur le spam interdisent explicitement l'achat ou la vente 
 
 Dans la pratique, l'achat de liens reste répandu, via des plateformes qui mettent en relation éditeurs et annonceurs. Ceux qui le pratiquent le font en connaissance du risque : action manuelle, ou simple neutralisation des liens par l'algorithme, c'est-à-dire un budget perdu. Si vous empruntez cette voie, quelques règles limitent les dégâts :
 
-- vérifier le **trafic réel** du site et son évolution, pas seulement ses scores d'autorité ;
+- vérifier le trafic réel du site et son évolution, pas seulement ses scores d'autorité ;
 - écarter les sites qui publient surtout des articles sponsorisés, ou dont les liens sortants dépassent largement les liens entrants ;
-- privilégier des sites **réellement liés à votre thématique** ;
+- privilégier des sites réellement liés à votre thématique ;
 - varier les ancres et garder des volumes cohérents avec la croissance naturelle du site.
 
 ### Les erreurs à éviter
@@ -109,7 +109,7 @@ Dans la pratique, l'achat de liens reste répandu, via des plateformes qui mette
 Les assistants IA ne « suivent » pas les liens comme Google, mais ils s'appuient sur les mêmes signaux de notoriété :
 
 - les pages qui reçoivent beaucoup de liens sont mieux classées, donc plus souvent trouvées lors des recherches que lancent les IA ;
-- les marques **souvent citées** dans la presse, les comparatifs et les forums sont plus présentes dans les réponses, même sans lien ;
+- les marques souvent citées dans la presse, les comparatifs et les forums sont plus présentes dans les réponses, même sans lien ;
 - les sources de référence d'un secteur (médias spécialisés, sites d'avis, communautés) sont celles que les IA consultent le plus : y être présent compte double.
 
 Le netlinking devient donc une partie d'un travail plus large de **notoriété en ligne**. Voir le [guide du GEO](/seo-ia/) et [le SEO off-site](/off-site-seo/).

@@ -23,15 +23,15 @@ La recherche de mots-clés n'a jamais été aussi éclatée. Google reste le soc
 ## 1. Les fondamentaux, toujours valables
 
 - **Volume** : utile pour estimer le potentiel, mais à relativiser. Une requête moins recherchée mais très qualifiée rapporte souvent plus.
-- **Concurrence** : au-delà du score de difficulté des outils, regardez **la page de résultats** elle-même. AI Overview, vidéos, extraits, sites marchands ou forums : chaque élément change ce qu'il est possible d'obtenir.
-- **Intention** : informationnelle, commerciale, transactionnelle, navigationnelle, et des intentions **hybrides** (acheter et s'inspirer, par exemple).
+- **Concurrence** : au-delà du score de difficulté des outils, regardez la page de résultats elle-même. AI Overview, vidéos, extraits, sites marchands ou forums : chaque élément change ce qu'il est possible d'obtenir.
+- **Intention** : informationnelle, commerciale, transactionnelle, navigationnelle, et des intentions hybrides (acheter et s'inspirer, par exemple).
 - **Sujets plutôt que mots-clés** : regroupez les requêtes en ensembles thématiques. Une page bien construite se classe sur des dizaines de variantes.
 
 **La valeur d'un mot-clé.** Pour prioriser, regardez aussi la valeur estimée du trafic : Ahrefs l'estime à partir de ce qu'il faudrait payer en publicité pour obtenir les mêmes visites. Plus elle est élevée, plus la requête a de chances d'être rentable.
 
 ![Valeur du trafic estimée par mot-clé dans Ahrefs](https://valentinrouault.com/wp-content/uploads/2025/09/valeur-trafic-ahref-1024x271.png)
 
-Le meilleur critère reste votre propre donnée : **trafic potentiel × taux de conversion × valeur d'une conversion**.
+Le meilleur critère reste votre propre donnée : trafic potentiel × taux de conversion × valeur d'une conversion.
 
 ## 2. Les sources des questions
 
@@ -87,10 +87,10 @@ TikTok et YouTube positionnent les vidéos notamment grâce à leur texte et à 
 ### TikTok
 
 1. Tapez un mot-clé de base dans la barre de recherche (ex. *recette healthy*).
-2. Notez les **suggestions automatiques** : *recette healthy rapide*, *recette healthy étudiant*…
+2. Notez les suggestions automatiques : *recette healthy rapide*, *recette healthy étudiant*…
 3. Relevez les hashtags dominants.
-4. Comparez ces termes dans **Google Trends**.
-5. Une courbe qui monte côté Google signale une requête qui **migre** des réseaux sociaux vers la recherche classique : c'est le moment de publier.
+4. Comparez ces termes dans Google Trends.
+5. Une courbe qui monte côté Google signale une requête qui migre des réseaux sociaux vers la recherche classique : c'est le moment de publier.
 
 ![Suggestions de recherche sur TikTok](https://valentinrouault.com/wp-content/uploads/2025/09/recherche-mot-cle-tik-tok.png)
 
@@ -98,7 +98,7 @@ TikTok et YouTube positionnent les vidéos notamment grâce à leur texte et à 
 
 1. Cherchez votre sujet (ex. *montre running*).
 2. Triez les vidéos les plus vues des derniers mois.
-3. Lisez les **commentaires** et notez les questions qui reviennent (« fonctionne-t-elle sans smartphone ? », « quelle autonomie en hiver ? »).
+3. Lisez les commentaires et notez les questions qui reviennent (« fonctionne-t-elle sans smartphone ? », « quelle autonomie en hiver ? »).
 4. Testez ces questions dans Google : souvent, peu de pages y répondent bien.
 5. Utilisez-les aussi pour des formats courts : une question, une réponse.
 
