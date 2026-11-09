@@ -1,109 +1,75 @@
 ---
-title: 'ChatGPT vs Google : qui domine en Septembre 2025 ?'
+title: "ChatGPT contre Google : ce que disent vraiment les chiffres de trafic"
 slug: google-vs-chatgpt-tendances
 status: publish
 date: '2025-09-16T13:24:07'
-origin: import
+origin: rewrite
 wp_id: 270
-url: https://valentinrouault.com/google-vs-chatgpt-tendances/
-seo_title: 'Chat gpt vs Google : ce qu''il faut savoir en septembre 2025 !'
-meta_description: Les données récentes de Similarweb (juillet 2024 – juin 2025) mais également de Profound montrent que ChatGPT n’est pas en train de remplacer Google, mais
 categories:
 - actus-seo
 - blog
 cover_id: 275
+dek: "ChatGPT a doublé ses visites en un an pendant que Google stagnait, mais l'écart reste de un à trente. Les données Similarweb de 2025, leur mise à jour de 2026, et ce qu'elles impliquent pour votre trafic."
+seo_title: "ChatGPT vs Google : les chiffres de trafic 2025-2026"
+meta_description: "Visites, longueur des requêtes, trafic envoyé aux sites, conversions : ChatGPT face à Google selon Similarweb, mise à jour 2026 et conséquences SEO."
+essentiel:
+  - "De juillet 2024 à juin 2025, les visites de ChatGPT aux États-Unis sont passées de **3,5 à 6,8 milliards**, quand Google restait stable autour de **194 milliards**."
+  - "Le trafic envoyé par ChatGPT vers les sites a été multiplié par 36 sur la période, mais reste très inférieur à celui de Google."
+  - "En 2026, Similarweb mesure que **95 %** des utilisateurs de ChatGPT utilisent aussi Google : les deux s'additionnent plus qu'ils ne se remplacent."
+  - "ChatGPT perd du terrain face à **Gemini** : sa part du trafic web des assistants IA est passée de 79 % à 54 % entre mai 2025 et mai 2026."
 ---
 
-Les données récentes de Similarweb (juillet 2024 – juin 2025\) mais également de Profound montrent que ChatGPT n’est pas en train de remplacer Google, mais d’élargir le champ des usages et de redessiner le lien entre recherche et action. Pour les spécialistes du marketing digital, c’est un bouleversement stratégique.
+*Article mis à jour en novembre 2026 avec les données Similarweb publiées depuis la première version.*
 
-## 1\. L’essor fulgurant de ChatGPT
+« ChatGPT va-t-il remplacer Google ? » La question revient dans chaque réunion marketing depuis 2023. Les données de trafic donnent une réponse plus nuancée : ChatGPT croît très vite, Google ne recule presque pas, et la plupart des internautes utilisent les deux.
 
-Les chiffres parlent d’eux\-mêmes :
+## Les chiffres de 2025 : une croissance rapide, à partir d'une base faible
 
-- **États\-Unis** : visites passées de **3,5 à 6,8 milliards** en un an (\+94%).
-- **Royaume\-Uni** : croissance encore plus rapide, **\+131%** (868 M → 2 Md).
-- **Google**, de son côté, stagne : \-0,85% aux US et \-0,22% au UKDocument sans titre (2\).
+En août 2025, Kevin Indig a publié dans Search Engine Journal une analyse des données Similarweb pour les États-Unis et le Royaume-Uni. Elle compare juillet 2024 à juin 2025 aux douze mois précédents.
 
-En clair : Google reste ultra\-dominant (près de 200 milliards de visites aux US, contre 6,8 pour ChatGPT), mais la dynamique est du côté de l’IA.
+| Indicateur | États-Unis | Royaume-Uni |
+| --- | --- | --- |
+| Visites sur ChatGPT | 3,5 → 6,8 milliards (+94 %) | 868 millions → 2 milliards (+131 %) |
+| Visites sur Google | 196 → 194 milliards (−0,85 %) | 35,56 → 35,49 milliards (−0,22 %) |
+| Longueur moyenne d'une requête | 80 mots sur ChatGPT, 3,4 sur Google | 91 mots sur ChatGPT, 3,2 sur Google |
+| Trafic envoyé aux sites par ChatGPT | 14 → 516 millions de visites (+3 496 %) | +5 950 % |
+| Trafic envoyé aux sites par Google | +23 % | +19 % |
 
-Pour un marché comme la France, ces chiffres sont un signal fort : l’adoption d’outils IA n’en est qu’à ses débuts, mais les comportements évoluent déjà rapidement.
+Deux lectures sont possibles. La première retient la dynamique : ChatGPT double, Google stagne. La seconde retient l'échelle : aux États-Unis, ChatGPT représentait environ 3,4 % des visites de Google. Les deux sont exactes, et c'est leur combinaison qui compte.
 
-Au global pour toutes les IA génératives, la [tendance](https://www.webfx.com/blog/seo/gen-ai-search-trends/) est claire et nette 👇
+![Évolution du trafic des IA génératives comparé à la recherche organique](https://valentinrouault.com/wp-content/uploads/2025/09/IA-generative-vs-recherche-organiquepng-1024x588.png)
 
-![Comparaison trafic IA vs organique](https://valentinrouault.com/wp-content/uploads/2025/09/IA-generative-vs-recherche-organiquepng-1024x588.png)
+*Graphique : WebFX, données sur plus de 1 500 sites.*
 
-Source ; web FX sur plus de 1500 sites web
+## Des requêtes beaucoup plus longues
 
-## 2\. Un comportement utilisateur radicalement différent
+Sur Google, on tape trois ou quatre mots, puis on affine en plusieurs recherches. Sur ChatGPT, une seule demande contient souvent le contexte complet : la situation, les contraintes, le budget. Pour un marketeur, cela veut dire que l'intention est exprimée bien plus clairement, mais qu'elle n'est visible ni dans un outil de mots-clés ni dans la Search Console.
 
-Google a conditionné des années d’habitudes de recherche : taper quelques mots, scroller, cliquer.
+![Longueur moyenne des requêtes sur ChatGPT et sur Google](https://valentinrouault.com/wp-content/uploads/2025/09/longueur-requete-google-vs-chatgptpng-1024x849.png)
 
-ChatGPT change complètement la donne :
+## Moins de visites, mais des visites qui convertissent
 
-- **Longueur moyenne des requêtes** : 80 mots aux US, 91 au UK, contre seulement 3,2–3,4 sur GoogleDocument sans titre (2\).
-- Même pour des questions “simples”, les prompts ChatGPT sont **10 fois plus longs** (\~38 mots).
+L'analyse de Kevin Indig mesurait aussi le taux de conversion sur des sites transactionnels. Aux États-Unis, les visites venues de ChatGPT convertissaient à 6,9 %, contre 5,4 % pour Google. Au Royaume-Uni, les deux étaient au même niveau, autour de 5,5 %.
 
-![longueur requête chat gpt vs google](https://valentinrouault.com/wp-content/uploads/2025/09/longueur-requete-google-vs-chatgptpng-1024x849.png)
-Résultat : chaque échange est beaucoup plus riche en contexte, révélant **l’intention réelle** de l’utilisateur. Là où Google découpe le parcours en plusieurs requêtes successives, ChatGPT compresse tout en une **conversation continue**.
+L'explication la plus probable : l'utilisateur clique après une conversation où il a déjà comparé et éliminé des options. Il arrive plus décidé. Ce résultat reste à vérifier sur vos propres données, car il varie fortement selon le secteur.
 
-Pour les marketeurs : plus d’opportunités de qualifier l’intention et de cibler des réponses pertinentes.
+![Taux de conversion des visites venues de ChatGPT et de Google](https://valentinrouault.com/wp-content/uploads/2025/09/conversion-chat-gpt-vs-googlepng-1024x849.png)
 
-## 3\. ChatGPT, un nouveau moteur de trafic referral
+## Ce qui a changé en 2026
 
-Le chiffre choc :
+**Les deux usages se cumulent.** Le rapport *Generative AI Landscape 2026* de Similarweb indique que 461 millions des 494 millions d'utilisateurs de ChatGPT mesurés entre mars et mai 2026 ont aussi utilisé Google, soit environ 95 %. ChatGPT s'ajoute à Google plus qu'il ne le remplace.
 
-- **\+3 496% de trafic sortant** (referral) depuis ChatGPT aux US (14 → 516 millions de visites).
-- **\+5 950% au Royaume\-Uni**.
-- En comparaison, Google n’a crû que de \+23% aux US et \+19% au UKDocument sans titre (2\).
+**Les assistants IA dans leur ensemble continuent de croître** : en moyenne 9,5 milliards de visites web par mois entre juin 2025 et mai 2026, en hausse de 70 % sur un an, toujours selon Similarweb.
 
-![referral chat gpt vs google](https://valentinrouault.com/wp-content/uploads/2025/09/referral-chatgpt-vs-googlepng-1024x849.png)
-Aujourd’hui, ChatGPT représente déjà **27% du volume referral de Google** (1,9 milliard). Un résultat impressionnant, sachant que la mission première de l’IA n’est pas de rediriger vers des sites externes mais de répondre directement aux utilisateurs.
+**ChatGPT n'est plus seul.** Sa part du trafic web des grands assistants IA est passée d'environ 79 % en mai 2025 à 54 % en mai 2026. Gemini en profite le plus : il dépassait 26 % en avril 2026. Ces chiffres ne comptent que les visites sur les sites web, pas les applications mobiles ni les réponses IA intégrées à Google.
 
-À noter : une [chute récente](https://www.linkedin.com/posts/joshua-blyskal_chatgpt-referral-traffic-is-down-52-since-activity-7364003556087005185-BaJ0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABIhMjcBq8NMgIfgfa69D2M0o-aAH9WT6ZQ) de \-52% du trafic sortant entre juillet et août 2025, qui pourrait annoncer une volonté de limiter les clics externes. Mon avis, les contenus des sites web sont trop peu optimisées pour la recherche IA comparés à des sites comme reddit ou autres qui donne un accès direct à l’information souhaitée.
+**Google a intégré l'IA dans sa propre page.** Avec les Aperçus IA et le Mode IA, arrivés en France le 22 juillet 2026, une partie de la concurrence se joue désormais à l'intérieur de Google.
 
-Opportunité : optimiser ses contenus pour être **cités par ChatGPT** (et donc cliqués), comme on le faisait avec les featured snippets de Google.
+## Ce que je conseille d'en faire
 
-## 4\. Conversions : ChatGPT dépasse Google
+1. **Mesurer le trafic IA à part.** Créer un groupe de canaux « IA » dans GA4 (chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com) et suivre son taux de conversion, pas seulement son volume. Une partie de ce trafic arrive sans référent identifiable, ce que j'explique dans [l'article sur le SEO pour ChatGPT](/seo-chatgpt/).
+2. **Garder Google comme priorité de volume.** Même en forte croissance, ChatGPT reste un canal d'appoint pour la grande majorité des sites. Les fondamentaux d'une [stratégie SEO](/strategies-seo/) restent la base.
+3. **Travailler la citation.** Le trafic d'un assistant dépend de sa décision de citer une source. Contenus précis, datés et attribuables, présence sur les sites tiers que les IA consultent : voir [comment être cité par les IA](/seo-ia/).
+4. **Ne pas tout miser sur un assistant.** La redistribution entre ChatGPT et Gemini en 2026 montre que les parts de marché bougent vite. Les [statistiques sur la recherche IA](/stats-geo/) permettent de suivre ces évolutions.
 
-En volume, Google reste largement au\-dessus. Mais du côté de la **qualité**, ChatGPT prend l’avantage :
-
-- **Taux de conversion transactionnel** :
-	- US : ChatGPT **6,9%** vs Google **5,4%**.
-	- UK : ChatGPT **5,5%**, équivalent à GoogleDocument sans titre (2\).
-
-![taux de conversion google vs chat gpt](https://valentinrouault.com/wp-content/uploads/2025/09/conversion-chat-gpt-vs-googlepng-1024x849.png)
-
-Données Similar Web : Juin 2025
-
-Pourquoi ? Parce que les utilisateurs cliquent après une conversation complète, souvent déjà convaincus. L’intention est plus mûre, plus proche de l’acte d’achat.
-
-En pratique : le trafic issu de ChatGPT, même encore limité, est **plus qualifié** que celui venant de Google.
-
-## 5\. Limites et incertitudes
-
-Oui c’est le nouvel Eldorado, mais :
-
-- **Volume encore faible** : ChatGPT reste loin derrière Google en trafic brut.
-- **Dépendance aux choix d’OpenAI** : une chute soudaine du trafic referral peut réduire l’impact pour les éditeurs.
-- **Contraintes techniques et réglementaires** : énergie, coûts de calcul, encadrement politique.
-
-## 6\. Comment réagir en tant que marque ou site web?
-
-Ne pas agir sans conseils. Mais plutôt s’éduquer sur l’impact des nouveaux moteurs de recherche.
-
-1. **Mesurer le trafic IA** : suivre les referrals ChatGPT dans ses analytics.
-2. **[Optimiser pour la visibilité IA](https://valentinrouault.com/seo-chatgpt/)** : FAQ, schémas clairs, contenu fiable → plus de chances d’être cité.
-3. **Travailler le CRO (conversion rate optimization)** sur les pages recevant du trafic IA (CTAs, formulaires, quizzes, lead magnets).
-4. **Ne pas délaisser le SEO classique** : Google reste incontournable et complémentaire.
-5. **Suivre de près l’évolution** des IA génératives et ajuster ses stratégies au fil des tests d’OpenAI.
-
-## Chat GPT est un eldorado
-
-Chat GPT n’est pas devant et ne dépassera peut être jamais Google, mais la progression du trafic va vite, c’est une opportunité à saisir. D’autant plus que la concurrence qui optimise ses contenu pour l’IA est encore faible.
-
-- Croissance explosive.
-- Requêtes plus riches et révélatrices d’intentions.
-- Trafic referral en forte hausse.
-- Conversions plus élevées que Google.
-
-Pour votre marque, c’est le moment d’expérimenter et de se positionner : **l’IA conversationnelle est en train de devenir la nouvelle porte d’entrée du web**.
+Sources : Kevin Indig, « ChatGPT vs. Google at every stage of the user journey », Search Engine Journal (août 2025), données Similarweb ; Similarweb, *Generative AI Landscape 2026* et Global AI Tracker (2026) ; WebFX, analyse des tendances de recherche IA (2025).

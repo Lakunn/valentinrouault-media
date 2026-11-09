@@ -1,113 +1,90 @@
 ---
-title: 'ChatGPT Shopping : Le Nouveau SEO de l’E-commerce'
+title: "ChatGPT Shopping : comment vos produits peuvent y apparaître"
 slug: seo-ecom-chat-gpt
 status: publish
 date: '2025-10-07T14:15:56'
-origin: import
+origin: rewrite
 wp_id: 493
-url: https://valentinrouault.com/seo-ecom-chat-gpt/
-seo_title: SEO e-commerce sur Chat GPT | Les bonnes pratiques 2025/2026
-meta_description: Depuis l’été 2025, OpenAI a fait basculer le paysage digital avec ChatGPT Shopping et Instant Checkout. Ce changement redéfinit la façon dont les utilisateurs
 categories:
 - blog
+dek: "Instant Checkout a été lancé, élargi puis retiré en six mois. Le protocole de commerce agentique, lui, reste. Ce qui a changé depuis octobre 2025, et ce qui fait qu'un produit est recommandé par ChatGPT."
+seo_title: "ChatGPT Shopping : le SEO e-commerce en 2026"
+meta_description: "ChatGPT Shopping en 2026 : fin d'Instant Checkout, protocole ACP, flux produits. Ce qui fait qu'un produit est recommandé par ChatGPT et comment s'y préparer."
+essentiel:
+  - "Instant Checkout, l'achat sans quitter ChatGPT lancé le **29 septembre 2025**, a été retiré en **mars 2026** : les marchands gardent désormais leur propre tunnel de paiement."
+  - "Le **protocole ACP** (Agentic Commerce Protocol, ouvert, conçu avec Stripe) reste actif pour transmettre catalogues et commandes aux agents."
+  - "ChatGPT recommande peu de produits par réponse : les **données produit complètes** et les **preuves externes** (avis, comparatifs) pèsent lourd."
+  - "La mesure reste le point faible : une recommandation dans ChatGPT finit souvent en **recherche de marque** sur Google."
 ---
 
-Depuis l’été 2025, OpenAI a fait basculer le paysage digital avec **ChatGPT Shopping** et **Instant Checkout**. Ce changement redéfinit la façon dont les utilisateurs découvrent, comparent et achètent des produits en ligne. Pour les e\-commerçants et les professionnels du SEO, il s’agit d’un bouleversement comparable à l’arrivée de Google Shopping il y a plus de dix ans.
+En septembre 2025, OpenAI présentait ChatGPT comme un futur lieu d'achat : on demandait un conseil, on payait dans la conversation. Un an plus tard, le paiement intégré a disparu, mais la recommandation de produits est restée. Pour un site e-commerce, la question n'est plus « faut-il vendre dans ChatGPT ? », c'est « mes produits sont-ils cités quand on demande conseil à ChatGPT ? ».
 
-Dans cet article, on analyse en détail :
+## Ce qui s'est passé depuis octobre 2025
 
-- Ce qu’est ChatGPT Shopping et comment il fonctionne.
-- Les signaux que ChatGPT utilise pour classer les produits.
-- Les opportunités et les risques pour les marchands.
-- Les bonnes pratiques pour optimiser vos fiches produits.
-- La feuille de route probable de cette nouvelle ère du SEO.
+Les dates comptent ici, car beaucoup d'articles publiés à l'automne 2025 décrivent une situation qui n'existe plus.
 
-## 1\. Qu’est\-ce que ChatGPT Shopping ?
+| Date | Événement |
+| --- | --- |
+| 29 septembre 2025 | Lancement d'Instant Checkout aux États-Unis avec les vendeurs Etsy, sur le protocole ACP développé avec Stripe. |
+| 16 février 2026 | Instant Checkout ouvert à tous les utilisateurs américains. |
+| Mars 2026 | OpenAI retire Instant Checkout : le bouton renvoie vers le site du marchand, qui encaisse lui-même. |
+| 24 mars 2026 | Shopify active par défaut ses « Agentic Storefronts », qui exposent les catalogues de ses marchands aux assistants IA. |
 
-ChatGPT propose désormais, pour les requêtes transactionnelles (“meilleure montre connectée”, “caméra de sécurité pas chère”), une **shortlist de produits** présentée sous forme de cartes.
-Chaque carte contient :
+Le protocole ACP, publié en open source, n'a pas été abandonné avec Instant Checkout. Il sert toujours à décrire un catalogue, un panier et une commande pour qu'un agent puisse les manipuler. La partie paiement dans ChatGPT a disparu, la partie données reste.
 
-- Nom du produit
-- Image
-- Prix
-- Lien “Visit” ou option **d’achat direct dans ChatGPT** (Instant Checkout)
-- Parfois, des **avis** et des **justifications** (“idéal pour le sport”, “meilleur rapport qualité\-prix”).
+En France, aucune de ces fonctions de paiement n'a été ouverte. Les recommandations de produits, elles, apparaissent dans les réponses de ChatGPT en français.
 
-Contrairement à Google, où 10 résultats organiques \+ annonces coexistent, ici seuls **quelques produits** apparaissent. Si vous n’êtes pas dans la shortlist, vous êtes invisible.
+## Comment ChatGPT choisit les produits qu'il cite
 
-## 2\. Instant Checkout : l’achat sans sortir du chat
+OpenAI ne publie pas de critères de classement. Ce que l'on observe en testant des requêtes d'achat, et ce que la documentation marchand laisse entendre, tient en trois familles de signaux.
 
-Le vrai tournant, c’est **Instant Checkout**.
+**Ce que la requête précise.** Une demande comme « chaussures de trail pour pieds larges, moins de 150 € » contient un budget, un usage et une contrainte. ChatGPT écarte les produits dont la fiche ne permet pas de vérifier ces trois points.
 
-- Déjà actif avec Etsy US, bientôt généralisé à **Shopify**.
-- OpenAI prend une **commission** côté marchand.
-- Paiements sécurisés via **Stripe**.
-- Basé sur un standard ouvert : **Agentic Commerce Protocol (ACP)**, permettant à un agent (ChatGPT) de gérer un panier et un paiement en toute sécurité.
+**Ce que disent les données produit.** Prix, disponibilité, variantes, dimensions, matières : quand ces informations sont absentes ou contradictoires entre le site et le flux, le produit perd sa place. Les données structurées `Product` et `Offer` sur la fiche, et un flux à jour, servent ici de socle.
 
-Concrètement, l’utilisateur peut demander : *“Ajoute ce produit au panier”* → *“Finalise l’achat”*… sans jamais quitter ChatGPT.
+**Ce que disent les autres.** Avis clients, tests de la presse, comparatifs, discussions sur les forums. ChatGPT justifie souvent sa sélection par une phrase du type « apprécié pour son maintien » : cette justification vient de sources tierces, rarement de votre seule fiche.
 
-## 3\. Comment ChatGPT choisit les produits ?
+![Exemple de réponse de ChatGPT Shopping avec une sélection de produits](https://valentinrouault.com/wp-content/uploads/2025/10/image-2-1024x553.png)
 
-ChatGPT analyse la requête et construit des critères :
+Une réponse affiche en général une poignée de produits. Être sixième revient à ne pas exister, ce qui change la logique par rapport à une page de résultats Google où l'on peut gagner des clics en deuxième page de catégorie.
 
-- Budget (“moins de 150 €”)
-- Caractéristiques (taille, couleur, usage)
-- Preuves sociales (avis, popularité, comparatifs)
+## Les risques à connaître
 
-Les signaux pris en compte :
+- **La volatilité.** La même requête, posée à quelques heures d'écart, ne renvoie pas toujours la même sélection. Un suivi ponctuel ne suffit pas.
+- **Les erreurs de données.** Un prix ou un stock faux affiché par l'assistant crée une déception au moment où l'acheteur arrive sur votre site.
+- **L'attribution.** Un acheteur voit votre produit dans ChatGPT, puis tape votre marque dans Google. Dans vos outils, la vente est attribuée à la recherche de marque. Le [rapport IA de la Search Console](/search-console-rapport-ia/) et le suivi des recherches de marque aident à recouper.
+- **La dépendance.** Instant Checkout a vécu six mois. Construire une stratégie sur une fonction précise d'un assistant expose à ce genre de revirement.
 
-1. **Proximité avec la requête (intention de recherche)**
-2. **Qualité des données produit** : GTIN, MPN, SKU, variantes (taille, couleur), prix et stock **à jour**.
-3. **Schema.org JSON\-LD** complet (`Product`, `Offer`, `Review`, `FAQ`) intégré côté serveur.
-4. **Preuves externes** : mentions dans des comparatifs, avis clients, forums, communautés.
-5. **Texte orienté bénéfices** : l’IA privilégie les produits décrits de manière claire (“idéal pour les voyages”, “parfait pour les familles”).
+## Ce que je recommande de travailler
 
-![](https://valentinrouault.com/wp-content/uploads/2025/10/image-2-1024x553.png)
-## 4\. Opportunités pour les marchands
+1. **Des fiches produits complètes et cohérentes.** Toutes les caractéristiques qu'un acheteur pourrait mentionner dans une question, écrites en texte (pas seulement dans une image), et identiques dans le flux, la fiche et les données structurées.
+2. **Des contenus orientés usage.** « Pour qui », « pour quel usage », « à éviter si » : ce sont exactement les éléments qu'un assistant reprend pour justifier une recommandation. Les guides d'achat de votre site jouent ce rôle à l'échelle d'une catégorie.
+3. **Des preuves externes.** Avis vérifiés, présence dans les comparatifs de référence de votre secteur, citations dans la presse. Le travail de [SEO off-site](/off-site-seo/) sert directement la visibilité dans les assistants.
+4. **L'accès des robots.** Vérifier que `OAI-SearchBot`, le robot de recherche d'OpenAI, n'est pas bloqué dans votre robots.txt ni par votre pare-feu. Sans exploration, pas de citation.
+5. **Un suivi régulier.** Une liste fixe d'une vingtaine de requêtes d'achat, testée chaque mois, avec la position de vos produits et de ceux des concurrents.
 
-- **[Conversions élevées](https://valentinrouault.com/benchmark-conversion-marketing/)** : les utilisateurs arrivent déjà convaincus.
-- **Moins de concurrence visible** : seuls 3 à 5 produits s’affichent.
-- **Niches avantagées** : des petites marques bien documentées peuvent battre de gros distributeurs.
-- **Visibilité nouvelle** : possibilité de capter un trafic qui ne passera plus par Google.
+Pour la partie technique propre aux boutiques en ligne (catégories, facettes, pagination), la page [SEO e-commerce](/seo-ecommerce/) détaille les fondamentaux, qui restent la base de tout le reste.
 
-## 5\. Risques et limites
+## Faut-il rejoindre le programme marchand d'OpenAI ?
 
-- **Visibilité réduite** : si vous n’êtes pas dans la shortlist, vous n’existez pas.
-- **Volatilité** : la même requête peut afficher des produits différents à quelques heures d’intervalle.
-- **Données inexactes** : prix/stock erronés, variantes mal gérées.
-- **Attribution compliquée** : un utilisateur peut voir votre produit sur ChatGPT, mais taper ensuite votre marque sur Google.
+Si votre boutique tourne sur Shopify, vos produits sont déjà exposés aux assistants depuis mars 2026, sauf désactivation. Pour les autres solutions, OpenAI propose un formulaire marchand et la documentation du protocole ACP. L'intégration a un coût technique : je la conseille aux catalogues importants, déjà propres côté données. Pour une petite boutique, le travail sur les fiches et les avis rapporte davantage, puisqu'il sert aussi Google.
 
-## 6\. Bonnes pratiques (SEO \+ GEO)
+<section class="faq" markdown="1">
 
-On ne parle plus seulement de SEO (Search Engine Optimization), mais de **GEO (Generative Engine Optimization)** : optimiser pour être retenu par un moteur génératif.
+## Questions fréquentes
 
-### Checklist pour optimiser vos fiches produits
+### Peut-on encore acheter directement dans ChatGPT ?
 
-Voici ce qui compte vraiment poru une bonne [stratégie de SEO](https://valentinrouault.com/strategies-seo/) ecommerce sur chat gpt
+Non. Depuis mars 2026, le paiement intégré n'existe plus : ChatGPT renvoie vers le site du marchand pour finaliser la commande.
 
-- **Catalogues propres et complets**
-	- GTIN/MPN/SKU renseignés.
-	- Variantes exhaustives (taille, couleur).
-	- Prix et stock mis à jour en temps réel.
-	- Images multiples et de haute qualité.
-- **Données structurées (Schema.org)**
-- **Contenu orienté bénéfices**
-- **Preuves externes**
-	- Collectez des avis (Trustpilot, Google, marketplaces).
-	- Obtenez des mentions dans des articles comparatifs.
-	- Activez votre présence sur Reddit, forums, TikTok, YouTube.
-- **Suivi et monitoring**
+### ChatGPT Shopping est-il disponible en France ?
 
-## 7\. Comment rejoindre ChatGPT Shopping ?
+Les recommandations de produits apparaissent dans les réponses en français. Les fonctions de paiement n'ont jamais été ouvertes en France.
 
-- **Etsy et Shopify** : intégration simplifiée, pas de démarches complexes.
-- **Autres CMS / sites custom** :
-	- Formulaire d’onboarding OpenAI.
-	- Envoi d’un feed produit conforme aux [specs OpenAI](https://developers.openai.com/commerce/specs/feed/).
-	- Intégration de l’ACP pour activer Instant Checkout.
+### Les produits cités dans ChatGPT sont-ils sponsorisés ?
 
-## 8\. La feuille de route probable
+OpenAI indique que les recommandations de produits sont organiques. Les annonces testées dans ChatGPT sont signalées comme telles, séparément des réponses.
 
-- **Publicité sponsorisée** : attendue à court terme (comme Google Ads dans Shopping).
-- **Extension d’Instant Checkout** : multi\-produits, intégration internationale, apps tierces.
-- **Renforcement du protocole ACP** : adoption par d’autres IA, standardisation du checkout via [outils de création d’agents IA](https://valentinrouault.com/meilleurs-solutions-agents-ia/).
+</section>
+
+Sources : annonces d'OpenAI sur Instant Checkout et l'Agentic Commerce Protocol (29 septembre 2025, puis février et mars 2026) ; annonce de Shopify sur les Agentic Storefronts (mars 2026).

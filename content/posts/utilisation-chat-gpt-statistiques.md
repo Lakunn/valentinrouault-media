@@ -1,107 +1,81 @@
 ---
-title: 'Les usages de ChatGPT : que révèlent les conversations des utilisateurs ?'
+title: "À quoi sert ChatGPT ? Ce que montre l'étude d'OpenAI sur 1,5 million de conversations"
 slug: utilisation-chat-gpt-statistiques
 status: publish
 date: '2025-10-07T13:45:29'
-origin: import
+origin: rewrite
 wp_id: 484
-url: https://valentinrouault.com/utilisation-chat-gpt-statistiques/
-seo_title: Pourquoi chat GPT est-il utilisé ? Leak OPEN AI 2025
-meta_description: L’essor des modèles de langage comme ChatGPT ne cesse de transformer la manière dont nous travaillons, apprenons et communiquons. Mais quelles sont réellement
 categories:
 - actus-seo
 cover_id: 486
+dek: "En septembre 2025, OpenAI et des chercheurs du NBER ont publié la plus grande étude sur l'usage réel de ChatGPT. Les chiffres clés, leurs limites, et ce qu'ils changent pour une stratégie de contenu."
+seo_title: "Usages de ChatGPT : les chiffres de l'étude OpenAI"
+meta_description: "Conseils pratiques, recherche d'information, écriture : ce que révèle l'étude OpenAI et NBER sur 1,5 million de conversations ChatGPT, et ses effets en SEO."
+essentiel:
+  - "L'étude, publiée le **15 septembre 2025** par OpenAI et le NBER, porte sur environ **1,5 million de conversations** anonymisées."
+  - "Trois usages dominent : **conseils pratiques (29 %)**, **recherche d'information (24 %)** et **écriture (24 %)**."
+  - "L'usage **non professionnel** est passé de 53 % à **plus de 70 %** des messages entre juin 2024 et juin 2025."
+  - "Pour le SEO, la recherche d'information dans ChatGPT concurrence directement les requêtes informationnelles de Google."
 ---
 
-L’essor des modèles de langage comme [ChatGPT](https://valentinrouault.com/seo-chatgpt/) ne cesse de transformer la manière dont nous travaillons, apprenons et communiquons. Mais quelles sont réellement les utilisations les plus courantes de l’outil ? Une analyse de plus d’1,1 million de conversations (mai 2024 – juin 2025\) met en lumière les **thématiques dominantes, les intentions des utilisateurs et leur lien avec le travail**.
+Le 15 septembre 2025, OpenAI a publié avec des économistes du National Bureau of Economic Research (NBER) une étude intitulée *How People Use ChatGPT*. Ce n'est pas une fuite, contrairement à ce qu'on a pu lire, mais un document de travail public. Son intérêt tient à sa base : environ 1,5 million de conversations, classées automatiquement sans qu'aucun humain ne lise les messages.
 
-J’ai recueilli et analysé moi\-même ces statistiques pour vous partager les usages liés à 7 grands thèmes et comparer les usages en fonction du contexte au ou en dehors du travail.
+À l'époque, ChatGPT revendiquait 700 millions d'utilisateurs hebdomadaires. L'étude couvre la période de mai 2024 à juin 2025 et les comptes grand public (Free, Plus, Pro), sans les offres entreprise.
 
-## 1\. Les grands thèmes des conversations avec ChatGPT
+## Les trois usages qui dominent
 
-OpenAI a développé un **classificateur** capable de regrouper les requêtes utilisateurs en 24 catégories, elles\-mêmes consolidées en **7 grands thèmes** :
+Les chercheurs ont réparti les conversations en grandes catégories. Trois d'entre elles concentrent près de 80 % des messages.
 
-- **Écriture** (correction, résumé, traduction, rédaction créative)
-- **Guidance pratique** (conseils, tutorat, santé, créativité)
-- **Aide technique** (programmation, calculs, data analysis)
-- **Multimédia** (création et analyse d’images, génération de médias)
-- **Recherche d’informations** (produits, recettes, faits spécifiques)
-- **Expression personnelle** (discussions, réflexions, jeux de rôle)
-- **Autres / indéterminés**
+| Catégorie | Part des messages | Exemples |
+| --- | --- | --- |
+| Conseils pratiques | 29 % | tutorat, méthode, idées, conseils de santé ou de forme |
+| Recherche d'information | 24 % | faits, produits, recettes, actualités |
+| Écriture | 24 % | rédaction, correction, résumé, traduction |
 
-👉 Selon les données, trois thèmes dominent largement :
+La programmation, souvent présentée comme l'usage phare, pèse peu dans les comptes grand public : autour de 4 % des messages. Les usages de compagnie ou de jeu de rôle restent marginaux eux aussi.
 
-- **Guidance pratique (29%)**
-- **Recherche d’informations (24%)**
-- **Écriture (24%)**
+![Répartition des conversations ChatGPT par grande catégorie](https://valentinrouault.com/wp-content/uploads/2025/10/chatgpt-1024x640.png)
 
-![](https://valentinrouault.com/wp-content/uploads/2025/10/chatgpt-1024x640.png)
-À eux seuls, ils représentent **77% des conversations**.
+## Les tendances sur un an
 
-## 2\. L’évolution des usages : une dynamique en mutation
+**La recherche d'information progresse.** Elle est l'une des catégories qui gagnent le plus de terrain sur la période. ChatGPT sert de plus en plus à ce qu'on demandait auparavant à un moteur de recherche.
 
-### Écriture : un usage en déclin relatif
+**L'écriture recule en part relative**, mais reste le premier usage au travail. Environ 40 % des messages professionnels concernent l'écriture, et une bonne partie consiste à retravailler un texte fourni par l'utilisateur plutôt qu'à en créer un.
 
-Voici quelques [statistiques IA](https://valentinrouault.com/stats-geo/) pour vous permettre de mieux comprendre les tenants et aboutissants de la recherche dans les IA génératives.
+**L'usage personnel devient majoritaire.** Les messages sans lien avec le travail sont passés de 53 % à plus de 70 % entre juin 2024 et juin 2025. Les deux usages progressent en volume, mais le personnel croît plus vite.
 
-En juillet 2024, l’écriture représentait 36% des usages. Un an plus tard, elle tombe à 24%. La raison ? L’essor de l’usage professionnel et le recours à d’autres outils spécialisés pour certaines tâches.
+![Évolution des catégories d'usage de ChatGPT entre 2024 et 2025](https://valentinrouault.com/wp-content/uploads/2025/10/output-5-1-1024x772.png)
 
-![](https://valentinrouault.com/wp-content/uploads/2025/10/output-5-1-1024x772.png)
-### Recherche d’informations : en forte croissance
+## Demander, faire, s'exprimer
 
-La recherche d’informations est passée de **14% à 24%** en un an, confirmant que ChatGPT devient une **alternative crédible au moteur de recherche** classique.
+L'étude propose une seconde lecture, par intention :
 
-Le [SEO pour les IA](https://valentinrouault.com/consultant-seo-ia/) est donc une stratégie d’avenir.
+- **Demander** (*Asking*), 49 % des messages : chercher une information ou un avis pour décider ;
+- **Faire** (*Doing*), 40 % : déléguer une tâche, un texte, un tableau, du code ;
+- **S'exprimer** (*Expressing*), 11 % : partager, réfléchir, discuter sans objectif de production.
 
-### Aide technique : en recul
+Les demandes progressent plus vite que les tâches, et les utilisateurs les jugent mieux. Au travail, l'équilibre s'inverse : la délégation de tâches y domine.
 
-L’aide technique a baissé de **12% à 5%** des conversations. Cela s’explique par la montée en puissance des API de programmation (Codex, [agents IA autonomes](https://valentinrouault.com/meilleurs-solutions-agents-ia/), IDE intégrés à l’IA).
+![Répartition des intentions : demander, faire, s'exprimer](https://valentinrouault.com/wp-content/uploads/2025/10/output-7-1024x868.png)
 
-### Multimédia : une explosion avec l’arrivée de l’image
+## Les limites de l'étude
 
-Les demandes liées à la création et analyse d’images sont passées de **2% à plus de 7%**, avec un pic lors du lancement de la génération d’images en avril 2025\.
+Trois points à garder en tête avant de citer ces chiffres :
 
-## 3\. Les intentions des utilisateurs : demander, faire, ou s’exprimer
+1. **Les données viennent d'OpenAI.** L'étude est cosignée par des chercheurs universitaires, mais le classement repose sur les outils et les données de l'entreprise.
+2. **Les comptes entreprise sont exclus.** L'usage professionnel réel est donc sous-estimé.
+3. **Le classement est automatique.** Une conversation qui mêle plusieurs besoins est rangée dans une seule catégorie.
 
-L’étude distingue **trois intentions principales** :
+Ces chiffres datent de mi-2025. Les modèles et les fonctions de ChatGPT ont beaucoup changé depuis, avec la recherche intégrée et le shopping notamment : les parts ont pu bouger.
 
-- **Asking (49%)** : chercher de l’information ou un conseil.
-- **Doing (40%)** : déléguer une tâche (rédaction, code, tableau, résumé).
-- **Expressing (11%)** : échanger, partager ou discuter sans but productif.
+## Ce que j'en retiens pour le SEO
 
-👉 Pour les usages **professionnels**, la tendance s’inverse :
+Un quart des messages relève de la recherche d'information, et un autre bon quart de conseils pratiques. Ce sont exactement les requêtes qui alimentaient le trafic informationnel des blogs et des médias. Une partie de ces questions ne passe plus par Google, et une autre y passe après une réponse de ChatGPT, pour vérifier ou acheter.
 
-- **Doing monte à 56%** des requêtes (principalement écriture et productivité).
-- **Asking tombe à 35%**.
-- **Expressing reste marginal (9%)**.
+Pour un site éditorial, cela confirme trois priorités :
 
-![](https://valentinrouault.com/wp-content/uploads/2025/10/output-7-1024x868.png)
-Cela montre que ChatGPT devient **un outil de production directe** plus qu’un simple assistant de recherche.
+- **être une source citable** sur les questions pratiques de votre domaine, avec des réponses claires et datées (voir [comment apparaître dans ChatGPT](/seo-chatgpt/)) ;
+- **mesurer ce trafic**, même partiel : le [rapport IA de la Search Console](/search-console-rapport-ia/) et le suivi des referrals donnent une première idée ;
+- **ne pas abandonner Google**, qui reste de loin la première source de visites, comme le montrent les [statistiques sur la recherche IA](/stats-geo/).
 
-## 4\. L’impact au travail : quelles activités concernées ?
-
-L’analyse des conversations via la classification **O\*NET** (base de données du Département du Travail américain) révèle que l’IA se concentre surtout sur **l’information et la prise de décision**.
-
-Les 7 activités professionnelles les plus fréquentes sont :
-
-1. **Chercher de l’information (19,3%)**
-2. **Interpréter et expliquer (13,1%)**
-3. **Documenter et enregistrer (12,8%)**
-4. **Fournir des conseils (9,2%)**
-5. **Penser de manière créative (9,1%)**
-6. **Prendre des décisions et résoudre des problèmes (8,5%)**
-7. **Travailler avec des ordinateurs (4,9%)**
-
-![](https://valentinrouault.com/wp-content/uploads/2025/10/output-8-1024x678.png)
-En contexte **100% professionnel**, la hiérarchie change légèrement : plus de place pour la **résolution de problèmes (10,6%)** et le **travail créatif (9,3%)**.
-
-## 5\. Que retenir de cette analyse ?
-
-En un an, l’usage de ChatGPT a évolué vers :
-
-- Moins de **corrections et traductions** simples.
-- Plus de **production concrète** (rapports, e\-mails, contenus multimédias).
-- Une montée en puissance de la **recherche d’informations personnalisée**.
-- Une intégration accrue dans les **flux de travail professionnels**, en particulier pour rédiger, analyser et décider rapidement.
-
-👉 En clair : **ChatGPT n’est plus seulement un assistant de conversation, mais un véritable partenaire de productivité et de créativité.**
+Source : Chatterji, Cunningham, Deming, Hitzig, Ong, Shan et Wadman, *How People Use ChatGPT*, NBER Working Paper, 15 septembre 2025.
