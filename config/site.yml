@@ -16,10 +16,32 @@ brand:
   wp_blogdescription: Analyses, tests et veille sur le SEO, le GEO et la recherche par IA
 
 home:
-  seo_title: "Valentin Rouault | Média SEO & GEO : analyses, tests et veille"
-  meta_description: "Le média indépendant de Valentin Rouault sur le SEO et le GEO : comment Google et les IA (ChatGPT, Perplexity, AI Overviews) choisissent leurs sources, tests et méthodes."
-  h1: Valentin Rouault, le média SEO & GEO
+  seo_title: "Valentin Rouault | Consultant SEO / GEO senior et média SEO"
+  meta_description: "Valentin Rouault, consultant SEO / GEO senior chez Ads Up : plus de 110 campagnes SEO en France et au Canada. Analyses, tests et veille SEO et GEO."
+  h1: Valentin Rouault, consultant SEO / GEO senior
   manifesto_title: Pourquoi ce média
+
+  # Présentation en tête de page d'accueil (le texte de présentation vient de content/pages/accueil.md).
+  profile:
+    kicker: Consultant SEO / GEO senior
+    title: "Je fais remonter les marques dans Google, et dans les réponses des IA."
+    current: "Aujourd'hui chez <a href=\"https://ads-up.fr/\" rel=\"noopener\">Ads Up</a>, cabinet de performance digitale."
+    stats:
+      - { value: "+110", label: "campagnes SEO menées" }
+      - { value: "89 %", label: "de winrate" }
+      - { value: "95 %", label: "de clients satisfaits" }
+    clients_title: Ils m'ont fait confiance
+    clients: [Cirque du Soleil, Metro, Endro Cosmétiques, AG2R, DJI, SAIL, Domitys, Hydro-Québec, Navailles]
+    stats_note: "Chiffres issus de mon suivi de missions."
+
+  # Direction artistique de la présentation d'accueil (inspirée d'Ads Up, à confirmer).
+  # Laisser vide pour garder la charte du site.
+  da:
+    background: ""      # ex. #0f1b2d
+    text: ""            # ex. #ffffff
+    accent: ""          # ex. #00c2a8
+    font_heading: ""    # ex. "Poppins", sans-serif (police chargée par le site)
+    font_body: ""
 
 author:
   name: Valentin Rouault

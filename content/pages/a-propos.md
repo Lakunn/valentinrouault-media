@@ -10,7 +10,9 @@ meta_description: "Valentin Rouault, consultant SEO et GEO depuis plus de dix an
 
 ## Qui écrit
 
-Je m'appelle Valentin Rouault. Je travaille dans le référencement naturel depuis plus de dix ans, aujourd'hui comme consultant SEO / GEO senior en agence. J'ai accompagné des sites e-commerce, des entreprises locales et des grands comptes, en France et à l'international, et en plusieurs langues.
+Je m'appelle Valentin Rouault. Je travaille dans le référencement naturel depuis plus de dix ans, aujourd'hui comme consultant SEO / GEO senior chez [Ads Up](https://ads-up.fr/), cabinet de performance digitale. J'ai mené plus de 110 campagnes SEO pour des sites e-commerce, des entreprises locales et des grands comptes, en France et au Canada, en français et en anglais.
+
+Parmi les marques que j'ai accompagnées : Cirque du Soleil, Metro, Endro Cosmétiques, AG2R, DJI, SAIL, Domitys, Hydro-Québec et Navailles.
 
 Depuis l'arrivée des moteurs génératifs, mon travail a glissé d'une question (« comment être premier sur Google ? ») vers une autre (« comment être la source que l'IA choisit de citer ? »). Ce média est l'endroit où je documente ce que j'apprends en route.
 

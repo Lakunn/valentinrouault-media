@@ -1,0 +1,26 @@
+# Veille de valentinrouault.com : flux lus chaque semaine par scripts/veille.py.
+# filter: false = tout garder (source déjà ciblée) ; sinon seuls les éléments contenant un mot-clé sont gardés.
+
+keywords: [seo, référencement, google, search console, ai overviews, ai mode, chatgpt, openai, perplexity, gemini, copilot, bing, llm, geo, core update, spam, crawl, index, schema, robots]
+exclude: []
+
+feeds:
+  - name: "Google Search Central (blog officiel)"
+    url: "https://developers.google.com/search/blog/feed.xml"
+    filter: false
+  - name: "Google Actualités : SEO et IA (FR)"
+    url: "https://news.google.com/rss/search?q=(SEO+OR+r%C3%A9f%C3%A9rencement)+(Google+OR+ChatGPT+OR+IA)&hl=fr&gl=FR&ceid=FR:fr"
+    filter: false
+  - name: "Google Actualités : Google Search updates (EN)"
+    url: "https://news.google.com/rss/search?q=%22Google+Search%22+(update+OR+%22AI+Mode%22+OR+%22AI+Overviews%22)&hl=en-US&gl=US&ceid=US:en"
+    filter: false
+  - name: "Search Engine Roundtable"
+    url: "https://www.seroundtable.com/index.rdf"
+  - name: "Search Engine Land"
+    url: "https://searchengineland.com/feed"
+  - name: "Abondance"
+    url: "https://www.abondance.com/feed"
+  - name: "OpenAI (actualités)"
+    url: "https://openai.com/news/rss.xml"
+  - name: "Bing Webmaster (blog)"
+    url: "https://blogs.bing.com/webmaster/feed"

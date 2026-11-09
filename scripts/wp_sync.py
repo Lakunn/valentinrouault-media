@@ -207,7 +207,8 @@ class Sync:
         front_id = posts_id = None
 
         # Les pages d'abord (parents éventuels), puis les articles.
-        for doc in sorted(docs, key=lambda d: (d.kind != "page", d.slug)):
+        # Pages sans parent d'abord, puis pages enfants, puis articles.
+        for doc in sorted(docs, key=lambda d: (d.kind != "page", bool(d.meta.get("parent")), d.slug)):
             current = self.find(doc)
             data = self.payload(doc, cat_ids, page_ids)
             if current:

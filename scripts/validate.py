@@ -112,6 +112,22 @@ def main() -> None:
             if c not in cat_slugs:
                 # Toléré si la rubrique existe déjà dans WordPress (la synchro vérifie).
                 warn(f"{d.path.name} : rubrique « {c} » absente de config/site.yml")
+        status = d.meta.get("status", "publish")
+        if status not in ("publish", "draft", "future", "private", "pending"):
+            print(f"✗ {d.path.name} : statut « {status} » inconnu")
+            errors += 1
+        if status == "future":
+            from datetime import datetime
+
+            try:
+                when = datetime.fromisoformat(str(d.meta.get("date")))
+            except ValueError:
+                when = None
+            if not when:
+                print(f"✗ {d.path.name} : publication programmée sans date valide")
+                errors += 1
+            elif when < datetime.now():
+                warn(f"{d.path.name} : date de programmation passée, WordPress le publiera immédiatement")
         t, md = d.meta.get("seo_title", ""), d.meta.get("meta_description", "")
         if d.meta.get("origin") != "import":
             if not t or not (30 <= len(t) <= 65):

@@ -13,11 +13,69 @@ $vr_lead = new WP_Query(
 	)
 );
 ?>
+<?php
+$vr_profile = vr_config( 'home.profile' );
+if ( $vr_profile ) :
+	$vr_da    = array_filter( (array) vr_config( 'home.da', array() ) );
+	$vr_style = '';
+	foreach ( array( 'background' => '--hero-bg', 'text' => '--hero-ink', 'accent' => '--hero-accent', 'font_heading' => '--hero-font-h', 'font_body' => '--hero-font-b' ) as $vr_k => $vr_var ) {
+		if ( ! empty( $vr_da[ $vr_k ] ) ) {
+			$vr_style .= $vr_var . ':' . preg_replace( '/[^#\w\s,\-"\'().%]/', '', $vr_da[ $vr_k ] ) . ';';
+		}
+	}
+	$vr_bio = '';
+	if ( have_posts() ) {
+		the_post();
+		ob_start();
+		the_content();
+		$vr_bio = ob_get_clean();
+		rewind_posts();
+	}
+	?>
+<section class="home-hero<?php echo $vr_da ? ' has-da' : ''; ?>"<?php echo $vr_style ? ' style="' . esc_attr( $vr_style ) . '"' : ''; ?>>
+	<div class="wrap hero-grid">
+		<div class="hero-main">
+			<span class="kicker"><?php echo esc_html( $vr_profile['kicker'] ?? '' ); ?></span>
+			<h1><?php echo esc_html( vr_config( 'home.h1', vr_config( 'brand.name' ) ) ); ?></h1>
+			<p class="hero-title"><?php echo esc_html( $vr_profile['title'] ?? '' ); ?></p>
+			<div class="hero-bio"><?php echo wp_kses_post( $vr_bio ); ?></div>
+			<?php if ( ! empty( $vr_profile['current'] ) ) : ?>
+				<p class="hero-current"><?php echo wp_kses( $vr_profile['current'], array( 'a' => array( 'href' => array(), 'rel' => array() ) ) ); ?></p>
+			<?php endif; ?>
+		</div>
+		<?php if ( ! empty( $vr_profile['stats'] ) ) : ?>
+		<ul class="hero-stats" aria-label="Chiffres clés">
+			<?php foreach ( $vr_profile['stats'] as $vr_stat ) : ?>
+				<li><strong><?php echo esc_html( $vr_stat['value'] ); ?></strong><span><?php echo esc_html( $vr_stat['label'] ); ?></span></li>
+			<?php endforeach; ?>
+			<?php if ( ! empty( $vr_profile['stats_note'] ) ) : ?>
+				<li class="hero-note"><?php echo esc_html( $vr_profile['stats_note'] ); ?></li>
+			<?php endif; ?>
+		</ul>
+		<?php endif; ?>
+	</div>
+	<?php if ( ! empty( $vr_profile['clients'] ) ) : ?>
+	<div class="hero-clients">
+		<div class="wrap">
+			<p class="hero-clients-title"><?php echo esc_html( $vr_profile['clients_title'] ?? '' ); ?></p>
+			<ul>
+				<?php foreach ( $vr_profile['clients'] as $vr_client ) : ?>
+					<li><?php echo esc_html( $vr_client ); ?></li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
+	</div>
+	<?php endif; ?>
+</section>
+<?php endif; ?>
 <div class="wrap">
+	<?php if ( ! $vr_profile ) : ?>
 	<h1 class="screen-reader-text"><?php echo esc_html( vr_config( 'home.h1', vr_config( 'brand.name' ) ) ); ?></h1>
+	<?php endif; ?>
 
 	<?php if ( $vr_lead->have_posts() ) : ?>
 	<section class="lead" aria-label="À la une">
+		<h2 class="screen-reader-text">Derniers articles</h2>
 		<div class="lead-main">
 			<?php
 			$vr_lead->the_post();
@@ -50,7 +108,7 @@ $vr_lead = new WP_Query(
 
 	<?php
 	// Manifeste : contenu de la page définie comme page d'accueil (content/pages/accueil.md).
-	if ( have_posts() ) :
+	if ( ! $vr_profile && have_posts() ) :
 		while ( have_posts() ) :
 			the_post();
 			if ( '' !== trim( get_the_content() ) ) :
