@@ -4,8 +4,9 @@ slug: accueil
 status: publish
 front_page: true
 origin: rewrite
-seo_title: "Valentin Rouault | Média SEO & GEO : analyses, tests et veille"
-meta_description: "Le média indépendant de Valentin Rouault sur le SEO et le GEO : comment Google et les IA (ChatGPT, Perplexity, AI Overviews) choisissent leurs sources."
+seo_title: 'Valentin Rouault | Média SEO & GEO : analyses, tests et veille'
+meta_description: 'Le média indépendant de Valentin Rouault sur le SEO et le GEO : comment Google et les IA (ChatGPT, Perplexity, AI Overviews) choisissent leurs sources.'
+wp_id: 14
 ---
 
 La recherche change de forme. Une partie des réponses ne passe plus par dix liens bleus mais par un paragraphe rédigé par une IA, qui cite trois ou quatre sources et ignore les autres. Être classé ne suffit plus : il faut aussi être **retenu et cité**.
