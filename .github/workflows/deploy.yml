@@ -1,0 +1,83 @@
+name: 2 · Déploiement
+
+# À chaque push sur main (thème, contenus, config) :
+#   validation → envoi du thème (FTP/SFTP) → synchro des contenus (API REST) → contrôle « zéro 301 ».
+# Sécurité : rien n'est écrit en production tant que la variable de dépôt DEPLOY_ENABLED ≠ "true".
+# Le lancement manuel permet une simulation (dry run) à tout moment.
+on:
+  push:
+    branches: [main]
+    paths: ["theme/**", "content/**", "config/**", "scripts/**"]
+  pull_request:
+    paths: ["theme/**", "content/**", "config/**", "scripts/**"]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "simulation = aucune écriture ; production = déploie"
+        type: choice
+        options: [simulation, production]
+        default: simulation
+      force:
+        description: "Ré-envoyer tous les contenus, même inchangés"
+        type: boolean
+        default: false
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - run: python scripts/validate.py
+      - name: Lint PHP du thème
+        run: find theme -name '*.php' -print0 | xargs -0 -n1 php -l
+
+  deploy:
+    needs: validate
+    if: github.event_name != 'pull_request' && vars.WP_URL != ''
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      WP_URL: ${{ vars.WP_URL }}
+      WP_USER: ${{ secrets.WP_USER }}
+      WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+      LIVE: ${{ vars.DEPLOY_ENABLED == 'true' && (github.event_name == 'push' || inputs.mode == 'production') }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt && sudo apt-get install -y -qq lftp
+      - run: python scripts/validate.py
+
+      - name: Envoi du thème
+        if: env.LIVE == 'true'
+        env:
+          FTP_PROTOCOL: ${{ vars.FTP_PROTOCOL }}   # sftp ou ftp
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_THEME_DIR: ${{ vars.FTP_THEME_DIR }} # ex. /www/wp-content/themes/vr-media
+        run: |
+          lftp -u "$FTP_USER","$FTP_PASSWORD" "${FTP_PROTOCOL:-sftp}://$FTP_HOST" -e "
+            set sftp:auto-confirm yes; set ssl:verify-certificate yes; set net:max-retries 3;
+            mirror --reverse --delete --verbose --parallel=4 theme/vr-media $FTP_THEME_DIR;
+            bye"
+
+      - name: Synchro des contenus
+        run: |
+          if [ "$LIVE" = "true" ]; then
+            python scripts/wp_sync.py --apply ${{ inputs.force && '--force' || '' }}
+          else
+            echo "Mode simulation (DEPLOY_ENABLED=${{ vars.DEPLOY_ENABLED }})"
+            python scripts/wp_sync.py
+          fi
+
+      - name: Contrôle zéro 301
+        if: env.LIVE == 'true'
+        run: python scripts/check_urls.py

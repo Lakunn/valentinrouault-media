@@ -1,0 +1,101 @@
+# Configuration du média — source de vérité.
+# Le déploiement la convertit en theme/vr-media/site.json (lu par le thème)
+# et s'en sert pour créer / renommer les rubriques dans WordPress.
+#
+# RÈGLE D'OR : un slug existant ne change JAMAIS (zéro 301). On peut renommer
+# le libellé d'une rubrique, pas son slug.
+
+site_url: https://valentinrouault.com
+
+brand:
+  name: Valentin Rouault
+  tagline: Le média SEO & GEO
+  # Repris dans les réglages WordPress (Réglages > Général)
+  wp_blogname: Valentin Rouault — Le média SEO & GEO
+  wp_blogdescription: Analyses, tests et veille sur le SEO, le GEO et la recherche par IA
+
+home:
+  seo_title: "Valentin Rouault | Média SEO & GEO : analyses, tests et veille"
+  meta_description: "Le média indépendant de Valentin Rouault sur le SEO et le GEO : comment Google et les IA (ChatGPT, Perplexity, AI Overviews) choisissent leurs sources, tests et méthodes."
+  h1: Valentin Rouault, le média SEO & GEO
+  manifesto_title: Pourquoi ce média
+
+author:
+  name: Valentin Rouault
+  role: Consultant SEO / GEO senior, plus de 10 ans d'expérience
+  page: /a-propos/
+  bio: "Consultant SEO et GEO depuis plus de dix ans, Valentin a travaillé sur des sites e-commerce, locaux et grands comptes. Il teste ici ce qui fait remonter un site dans Google et dans les réponses des IA."
+  photo: ""            # URL d'une photo (médiathèque WordPress), ex. https://valentinrouault.com/wp-content/uploads/…/valentin.jpg
+  links:
+    # - { label: LinkedIn, url: "https://www.linkedin.com/in/…" }
+  knows_about:
+    - Search Engine Optimization
+    - Generative Engine Optimization
+    - SEO e-commerce
+    - SEO local
+    - Netlinking
+    - Données structurées
+
+# Rubriques. L'ordre = ordre d'affichage. slug = slug WordPress existant (NE PAS MODIFIER).
+categories:
+  - slug: blog
+    name: GEO & recherche IA
+    on_home: true
+    tagline: Comment ChatGPT, Perplexity et les AI Overviews choisissent leurs sources.
+    seo_title: "GEO et recherche IA : analyses et méthodes | Valentin Rouault"
+    meta_description: "Tous les articles sur le GEO (Generative Engine Optimization) : être cité par ChatGPT, Perplexity, Gemini et les AI Overviews de Google."
+    intro: "Le GEO, c'est l'art d'être cité par les moteurs génératifs. Ici : ce qu'on sait, ce qu'on a testé, et ce qui relève encore du mythe."
+  - slug: seo
+    name: SEO technique & stratégie
+    on_home: true
+    tagline: Indexation, JavaScript, architecture, netlinking.
+    seo_title: "SEO technique et stratégie : guides et retours terrain | Valentin Rouault"
+    meta_description: "Indexation, crawl, JavaScript SEO, netlinking, refontes : les guides SEO techniques et stratégiques, issus du terrain."
+    intro: "Ce qui fait qu'un site est exploré, indexé et classé. Des guides pratiques, des erreurs vues en audit, des méthodes reproductibles."
+  - slug: contenu-seo
+    name: Contenu & IA
+    on_home: true
+    tagline: Rédiger, structurer et automatiser des contenus qui se classent.
+    seo_title: "Contenu SEO et IA : rédaction, outils, agents | Valentin Rouault"
+    meta_description: "Rédaction SEO, outils et agents IA, cannibalisation, recherche de mots-clés : produire des contenus qui se classent sur Google et dans les IA."
+    intro: "Rédaction, structure, outils IA et agents : comment produire des contenus utiles, qui se classent et qui sont repris par les IA."
+  - slug: actus-seo
+    name: Actus SEO
+    on_home: true
+    tagline: Ce qui change chez Google et les IA, et ce que ça implique.
+    seo_title: "Actualités SEO et GEO : Google, ChatGPT, IA | Valentin Rouault"
+    meta_description: "L'actualité SEO et GEO décryptée : mises à jour Google, nouveautés ChatGPT et moteurs IA, avec leurs conséquences concrètes."
+    intro: "L'actualité de la recherche, décryptée : ce qui change chez Google et chez les moteurs IA, et ce qu'il faut en faire."
+
+nav:
+  - { label: GEO & IA, url: /category/blog/ }
+  - { label: SEO, url: /category/seo/ }
+  - { label: Contenu, url: /category/contenu-seo/ }
+  - { label: Actus, url: /category/actus-seo/ }
+  - { label: Tous les articles, url: /blog-seo/ }
+  - { label: À propos, url: /a-propos/ }
+
+footer_nav:
+  - { label: "Guide : consultant SEO IA", url: /consultant-seo-ia/ }
+  - { label: "Guide : SEO e-commerce", url: /seo-ecommerce/ }
+  - { label: "Guide : SEO local", url: /seo-local/ }
+  - { label: À propos, url: /a-propos/ }
+  - { label: Contact, url: /contact/ }
+
+footer:
+  about: "Un média indépendant sur le SEO et le GEO : comment les moteurs de recherche et les IA choisissent les pages qu'ils montrent et qu'ils citent."
+
+# Newsletter : laisser action vide tant qu'aucun outil n'est branché (le bloc est alors masqué).
+newsletter:
+  action: ""           # ex. URL d'action d'un formulaire Brevo / MailerLite
+  field: EMAIL
+  title: La veille SEO & GEO
+  text: "Un e-mail par mois : ce qui a changé chez Google et les IA, et ce qui mérite d'être testé."
+  button: Je m'abonne
+
+default_share_image: ""
+
+# Articles par page. Ne pas augmenter sans vérifier urls.csv (les archives paginées existantes doivent rester en 200).
+per_page:
+  blog: 9
+  archive: 6

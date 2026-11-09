@@ -1,0 +1,86 @@
+"""Contrôles hors ligne (à chaque push / PR), avant tout déploiement.
+
+- génère theme/vr-media/site.json depuis config/site.yml ;
+- vérifie le front matter de chaque contenu ;
+- vérifie que chaque article / page du référentiel urls.csv existe toujours dans le dépôt
+  avec le MÊME slug (sinon l'URL disparaîtrait) ;
+- signale titres et meta descriptions hors des longueurs recommandées.
+"""
+from __future__ import annotations
+
+import csv
+import json
+import sys
+from pathlib import Path
+from urllib.parse import urlsplit
+
+sys.path.insert(0, str(Path(__file__).parent))
+from common import ROOT, URLS_FILE, all_docs, die, load_config, warn  # noqa: E402
+
+REQUIRED = ["title", "slug"]
+
+
+def build_site_json(cfg: dict) -> None:
+    keys = ["brand", "home", "author", "categories", "nav", "footer_nav", "footer", "newsletter", "default_share_image", "per_page"]
+    out = {k: cfg.get(k) for k in keys}
+    if out["author"] and out["author"].get("links") is None:
+        out["author"]["links"] = []
+    dest = ROOT / "theme" / "vr-media" / "site.json"
+    dest.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"site.json généré ({dest.stat().st_size} octets)")
+
+
+def main() -> None:
+    cfg = load_config()
+    build_site_json(cfg)
+    errors = 0
+    docs = all_docs()
+    cat_slugs = {c["slug"] for c in cfg.get("categories", [])}
+    slugs = {d.slug for d in docs}
+
+    for d in docs:
+        for k in REQUIRED:
+            if not d.meta.get(k):
+                print(f"✗ {d.path.relative_to(ROOT)} : champ « {k} » manquant")
+                errors += 1
+        if d.slug != d.path.stem:
+            print(f"✗ {d.path.relative_to(ROOT)} : le nom du fichier doit être le slug ({d.slug}.md)")
+            errors += 1
+        for c in d.meta.get("categories", []) or []:
+            if c not in cat_slugs:
+                # Toléré si la rubrique existe déjà dans WordPress (la synchro vérifie).
+                warn(f"{d.path.name} : rubrique « {c} » absente de config/site.yml")
+        t, md = d.meta.get("seo_title", ""), d.meta.get("meta_description", "")
+        if d.meta.get("origin") != "import":
+            if not t or not (30 <= len(t) <= 65):
+                warn(f"{d.path.name} : seo_title de {len(t)} caractères (idéal 30–65)")
+            if not md or not (110 <= len(md) <= 160):
+                warn(f"{d.path.name} : meta_description de {len(md)} caractères (idéal 110–160)")
+            if d.kind == "post" and not d.meta.get("essentiel"):
+                warn(f"{d.path.name} : pas de bloc « essentiel » (recommandé pour le GEO)")
+
+    for flag in ("front_page", "posts_page"):
+        n = sum(1 for d in docs if d.meta.get(flag))
+        if n > 1:
+            print(f"✗ {n} contenus marqués {flag} (un seul autorisé)")
+            errors += 1
+
+    if URLS_FILE.exists():
+        with URLS_FILE.open(encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                if row["type"] not in ("post", "page"):
+                    continue
+                path = urlsplit(row["url"]).path.strip("/")
+                if path and "/" not in path and path not in slugs:
+                    print(f"✗ {row['url']} est dans le référentiel mais aucun contenu n'a le slug « {path} »")
+                    errors += 1
+    else:
+        warn("urls.csv absent : lance le workflow « Import du site actuel »")
+
+    print(f"{len(docs)} contenus vérifiés, {errors} erreur(s)")
+    if errors:
+        die("validation échouée")
+
+
+if __name__ == "__main__":
+    main()
