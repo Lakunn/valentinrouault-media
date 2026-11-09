@@ -6,6 +6,7 @@
 # le libellé d'une rubrique, pas son slug.
 
 site_url: https://valentinrouault.com
+posts_page_slug: blog-seo   # page qui liste les articles
 
 brand:
   name: Valentin Rouault
@@ -105,6 +106,7 @@ footer_nav:
   - { label: Confidentialité, url: /politique-de-confidentialite/ }
 
 footer:
+  legal: "Média indépendant, sans contenu sponsorisé."
   about: "Un média indépendant sur le SEO et le GEO : comment les moteurs de recherche et les IA choisissent les pages qu'ils montrent et qu'ils citent."
 
 # Newsletter : laisser action vide tant qu'aucun outil n'est branché (le bloc est alors masqué).
@@ -114,6 +116,8 @@ newsletter:
   title: La veille SEO & GEO
   text: "Un e-mail par mois : ce qui a changé chez Google et les IA, et ce qui mérite d'être testé."
   button: Je m'abonne
+
+analytics: true
 
 default_share_image: ""
 

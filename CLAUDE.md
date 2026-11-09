@@ -14,6 +14,8 @@ Ce dépôt pilote le site WordPress valentinrouault.com (média SEO / GEO). Lire
 
 ## Écriture
 
+**Suivre le skill `guide-canin-contenu`** (lignes directrices communes aux deux sites, section « valentinrouault.com ») pour toute création ou réécriture : idéation, fact-checking, brief, rédaction, maillage interne, médias, humanisation.
+
 - Français, vouvoiement, ton éditorial (média, pas agence) : aucune offre commerciale, aucun appel à « prendre rendez-vous ».
 - Chaque affirmation datable est datée ; chaque chiffre a une source identifiable, sinon il est retiré.
 - Front matter obligatoire : title, slug, status, dek, seo_title (30–65 car.), meta_description (110–160 car.), essentiel (3–4 points), categories pour les articles.
@@ -23,4 +25,7 @@ Ce dépôt pilote le site WordPress valentinrouault.com (média SEO / GEO). Lire
 
 ## Avant de pousser
 
-`python scripts/validate.py` doit passer sans erreur.
+- `python scripts/validate.py` sans erreur (front matter, pagination, liens internes cassés).
+- `python scripts/style_check.py --strict <fichiers modifiés>` sans alerte bloquante (tirets longs, formules d'IA, emojis, typographie).
+- Images locales dans `content/media/`, insérées en `![alt](media/fichier.webp)` : la synchro les téléverse.
+- Vidéo YouTube : URL seule sur sa ligne (lecteur léger chargé au clic).

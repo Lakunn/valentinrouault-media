@@ -15,13 +15,14 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import ROOT, URLS_FILE, all_docs, die, load_config, warn  # noqa: E402
+from common import ROOT, URLS_FILE, all_docs, die, doc_path, load_config, warn  # noqa: E402
 
 REQUIRED = ["title", "slug"]
 
 
 def build_site_json(cfg: dict) -> None:
-    keys = ["brand", "home", "author", "categories", "nav", "footer_nav", "footer", "newsletter", "default_share_image", "per_page"]
+    keys = ["brand", "home", "author", "categories", "nav", "footer_nav", "footer", "newsletter", "default_share_image",
+            "per_page", "analytics", "publisher_type", "urgence", "urgence_categories"]
     out = {k: cfg.get(k) for k in keys}
     if out["author"] and out["author"].get("links") is None:
         out["author"]["links"] = []
@@ -42,19 +43,51 @@ def check_pagination(cfg: dict, docs: list) -> int:
     errors = 0
     with URLS_FILE.open(encoding="utf-8") as f:
         for row in csv.DictReader(f):
-            m = re.search(r"^https?://[^/]+/(.*)/page/(\d+)/$", row["url"])
+            m = re.search(r"^https?://[^/]+/(?:(.*)/)?page/(\d+)/$", row["url"])
             if not m:
                 continue
-            archive, n = m.group(1), int(m.group(2))
+            archive, n = (m.group(1) or ""), int(m.group(2))
+            last = archive.split("/")[-1]
+            cat_slugs = {c["slug"]: c for c in cfg.get("categories", [])}
             if archive.startswith("author/"):
                 count, size = len(posts), per.get("author", 5)
-            elif archive.startswith("category/"):
-                slug = archive.split("/")[-1]
-                count, size = sum(1 for d in posts if slug in (d.meta.get("categories") or [])), per.get("archive", 6)
+            elif archive.startswith("category/") or last in cat_slugs:
+                # une rubrique parente affiche aussi les articles de ses sous-rubriques
+                family = {last} | {s for s, c in cat_slugs.items() if c.get("parent") == last}
+                count = sum(1 for d in posts if family & set(d.meta.get("categories") or []))
+                size = per.get("archive", 6)
             else:
                 count, size = len(posts), per.get("blog", 9)
             if math.ceil(count / size) < n:
                 print(f"✗ /{archive}/page/{n}/ disparaîtrait : {count} articles à {size} par page = {math.ceil(count / size)} page(s)")
+                errors += 1
+    return errors
+
+
+def check_links(cfg: dict, docs: list) -> int:
+    """Liens internes relatifs des contenus réécrits ou nouveaux : la cible doit exister."""
+    import re
+
+    known = {doc_path(d, cfg) for d in docs}
+    known |= {"/" + str(urlsplit(d.meta["url"]).path).strip("/") + "/" for d in docs if d.meta.get("url")}
+    if URLS_FILE.exists():
+        with URLS_FILE.open(encoding="utf-8") as f:
+            known |= {"/" + urlsplit(r["url"]).path.strip("/") + "/" for r in csv.DictReader(f)}
+    for c in cfg.get("categories", []):
+        known.add(f"/category/{c['slug']}/")
+        parent = c.get("parent")
+        known.add(f"/{parent}/{c['slug']}/" if parent else f"/{c['slug']}/")
+    known |= {"//", "/llms.txt/"}
+    errors = 0
+    for d in docs:
+        if d.meta.get("origin") == "import":
+            continue
+        for target in re.findall(r"\]\((/[^)\s#?]*)", d.body):
+            if target.startswith(("/wp-content/", "/media/")):
+                continue
+            path = "/" + target.strip("/") + "/"
+            if path not in known:
+                print(f"✗ {d.path.name} : lien interne vers {target} introuvable")
                 errors += 1
     return errors
 
@@ -105,14 +138,15 @@ def main() -> None:
             errors += 1
 
     errors += check_pagination(cfg, docs)
+    errors += check_links(cfg, docs)
 
     if URLS_FILE.exists():
         with URLS_FILE.open(encoding="utf-8") as f:
             for row in csv.DictReader(f):
                 if row["type"] not in ("post", "page"):
                     continue
-                path = urlsplit(row["url"]).path.strip("/")
-                if path and "/" not in path and path not in slugs:
+                path = urlsplit(row["url"]).path.strip("/").split("/")[-1]
+                if path and path not in slugs:
                     print(f"✗ {row['url']} est dans le référentiel mais aucun contenu n'a le slug « {path} »")
                     errors += 1
     else:

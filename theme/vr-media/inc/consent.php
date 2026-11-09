@@ -12,6 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+if ( ! vr_config( 'analytics' ) ) {
+	return; // Aucun outil de mesure déclaré dans config/site.yml : pas de bandeau.
+}
+
 // Doit passer avant Site Kit : priorité 0.
 add_action(
 	'wp_head',

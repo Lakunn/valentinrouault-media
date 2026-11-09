@@ -134,7 +134,7 @@ class WP:
         return self._req("POST", path, json=data).json()
 
     def upload(self, file: Path) -> dict:
-        mime = {"jpg": "image/jpeg", "jpeg": "image/jpeg", "png": "image/png", "webp": "image/webp", "avif": "image/avif"}
+        mime = {"jpg": "image/jpeg", "jpeg": "image/jpeg", "png": "image/png", "webp": "image/webp", "avif": "image/avif", "svg": "image/svg+xml"}
         ext = file.suffix.lower().lstrip(".")
         return self._req(
             "POST",
@@ -142,3 +142,21 @@ class WP:
             data=file.read_bytes(),
             headers={"Content-Disposition": f'attachment; filename="{file.name}"', "Content-Type": mime.get(ext, "application/octet-stream")},
         ).json()
+
+
+def doc_path(doc: "Doc", cfg: dict | None = None) -> str:
+    """Chemin public attendu d'un contenu (/parent/slug/ ou /rubrique/sous-rubrique/slug/)."""
+    cfg = cfg or load_config()
+    if doc.kind == "page":
+        parts = [doc.meta["parent"]] if doc.meta.get("parent") else []
+    elif cfg.get("category_in_url") and doc.meta.get("categories"):
+        cats = {c["slug"]: c for c in cfg.get("categories", [])}
+        # WordPress retient la rubrique d'identifiant le plus bas : on prend la première déclarée dans le fichier.
+        chain, cur = [], doc.meta["categories"][0]
+        while cur:
+            chain.insert(0, cur)
+            cur = (cats.get(cur) or {}).get("parent")
+        parts = chain
+    else:
+        parts = []
+    return "/" + "/".join(parts + [doc.slug]) + "/"

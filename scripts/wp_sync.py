@@ -57,7 +57,10 @@ class Sync:
             if cur is None:
                 self.log(f"rubrique créée : {slug} ({name})")
                 if self.apply:
-                    ids[slug] = self.wp.post("categories", {"slug": slug, "name": name, "description": desc})["id"]
+                    payload = {"slug": slug, "name": name, "description": desc}
+                    if conf.get("parent") and conf["parent"] in ids:
+                        payload["parent"] = ids[conf["parent"]]
+                    ids[slug] = self.wp.post("categories", payload)["id"]
                 self.changes += 1
             elif html.unescape(cur["name"]) != name or html.unescape(cur.get("description", "")) != desc:
                 self.log(f"rubrique renommée : {slug} « {cur['name']} » → « {name} »")
@@ -98,6 +101,16 @@ class Sync:
                     f"{doc.path.name} : le slug changerait « {item['slug']} » → « {doc.slug} ». "
                     "Ça casserait une URL existante : synchro annulée."
                 )
+            if doc.kind == "post" and self.cfg.get("category_in_url"):
+                ids = {c["id"]: c["slug"] for c in self.wp.get_all("categories", context="edit")} if not hasattr(self, "_cats") else self._cats
+                self._cats = ids
+                current = sorted(ids.get(c, str(c)) for c in item.get("categories", []))
+                wanted = sorted(doc.meta.get("categories") or [])
+                if current != wanted:
+                    die(
+                        f"{doc.path.name} : les rubriques changeraient {current} → {wanted}. "
+                        "Sur ce site la rubrique fait partie de l'URL : synchro annulée."
+                    )
             return item
         found = self.wp.get(endpoint, slug=doc.slug, status="publish,draft,pending,private,future", context="edit")
         return found[0] if found else None
@@ -105,13 +118,38 @@ class Sync:
     def canonical(self, doc: Doc) -> str:
         return str(doc.meta.get("canonical") or (self.cfg.get("canonical_overrides") or {}).get(doc.slug, ""))
 
+    def inline_media(self, html: str) -> str:
+        """Téléverse les images locales (media/…) insérées dans le texte et remplace leur adresse."""
+        import re as _re
+
+        def repl(m):
+            rel = m.group(1)
+            file = (CONTENT / rel).resolve()
+            if not file.exists():
+                die(f"image introuvable : {rel}")
+            cache = self.__dict__.setdefault("_media", {})
+            if rel not in cache:
+                found = [x for x in self.wp.get("media", search=file.stem, per_page=10)
+                         if x.get("source_url", "").rsplit("/", 1)[-1].startswith(file.stem)]
+                if found:
+                    cache[rel] = found[0]["source_url"]
+                elif self.apply:
+                    self.log(f"image envoyée : {file.name}")
+                    cache[rel] = self.wp.upload(file)["source_url"]
+                else:
+                    self.log(f"image à envoyer : {file.name}")
+                    cache[rel] = rel
+            return f'src="{cache[rel]}"'
+
+        return _re.sub(r'src="(media/[^"]+)"', repl, html)
+
     def payload(self, doc: Doc, cat_ids: dict[str, int], page_ids: dict[str, int]) -> dict:
         m = doc.meta
         data = {
             "title": m["title"],
             "slug": doc.slug,
             "status": m.get("status", "publish"),
-            "content": render(doc),
+            "content": self.inline_media(render(doc)),
             "excerpt": m.get("dek", ""),
             "meta": {
                 "vr_seo_title": m.get("seo_title", ""),
@@ -185,7 +223,9 @@ class Sync:
                         cover = self.cover(doc)
                         if cover:
                             data["featured_media"] = cover
-                        self.wp.post(f"{'pages' if doc.kind == 'page' else 'posts'}/{current['id']}", data)
+                        updated = self.wp.post(f"{'pages' if doc.kind == 'page' else 'posts'}/{current['id']}", data)
+                        if updated.get("link") != current.get("link"):
+                            die(f"l'URL de {doc.path.name} a changé ({current.get('link')} → {updated.get('link')}) : arrêt immédiat, à corriger à la main")
                 item_id = current["id"]
             else:
                 self.log(f"créé : {doc.kind} /{doc.slug}/")

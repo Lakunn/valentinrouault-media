@@ -13,6 +13,18 @@
     toc.removeAttribute('open');
   }
 
+  // Lecteur YouTube léger : l'iframe n'est chargée qu'au clic.
+  document.addEventListener('click', function (e) {
+    var b = e.target && e.target.closest && e.target.closest('.yt-lite-btn');
+    if (!b) return;
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + b.getAttribute('data-yt') + '?autoplay=1&rel=0';
+    f.title = b.getAttribute('aria-label');
+    f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+    f.allowFullscreen = true;
+    b.replaceWith(f);
+  });
+
   // Consentement cookies (voir inc/consent.php)
   var box = document.getElementById('vr-consent');
   var has = /(?:^|; )vr_consent=(granted|denied)/.test(document.cookie);

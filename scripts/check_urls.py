@@ -19,7 +19,7 @@ import requests
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import UA, URLS_FILE, all_docs, load_config, norm_url, site_url  # noqa: E402
+from common import UA, URLS_FILE, all_docs, doc_path, load_config, norm_url, site_url  # noqa: E402
 
 S = requests.Session()
 S.headers["User-Agent"] = UA
@@ -67,12 +67,14 @@ def main() -> None:
         if d.slug in skip:
             continue
         if d.meta.get("status", "publish") == "publish" and not d.meta.get("front_page"):
-            targets.setdefault(norm_url(f"{base}/{d.slug}/"), "noindex-ok" if d.meta.get("noindex") else "new")
+            if d.meta.get("url"):
+                continue  # contenu importé : son URL réelle est déjà dans urls.csv
+            targets.setdefault(norm_url(base + doc_path(d)), "noindex-ok" if d.meta.get("noindex") else "new")
     targets[f"{base}/llms.txt"] = "txt"
     for d in all_docs():
         target = d.meta.get("canonical") or (load_config().get("canonical_overrides") or {}).get(d.slug)
         if target:
-            EXPECTED_CANONICAL[norm_url(f"{base}/{d.slug}/")] = norm_url(base + target)
+            EXPECTED_CANONICAL[norm_url(d.meta.get("url") or base + doc_path(d))] = norm_url(base + target)
 
     with ThreadPoolExecutor(8) as ex:
         results = list(ex.map(lambda kv: check(*kv), targets.items()))

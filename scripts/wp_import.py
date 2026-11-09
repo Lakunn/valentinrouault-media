@@ -120,6 +120,7 @@ def build_url_baseline(wp: WP, posts: list[dict], pages: list[dict]) -> None:
     # Pagination des archives (page des articles + rubriques + auteur).
     archives = [u for u, k in rows.items() if k in ("category", "tag", "author")]
     archives += [norm_url(p["link"]) for p in pages if p["slug"] in ("blog-seo", "blog")]
+    archives.append(norm_url(base + "/"))  # accueil paginé (/page/2/) quand il liste les articles
     for a in archives:
         for u in paginated(a):
             add(u, "pagination")
@@ -265,7 +266,9 @@ def main() -> None:
     cats = {c["id"]: c["slug"] for c in wp.get_all("categories")}
     # page_on_front / page_for_posts ne sont pas publics : on les déduit.
     front_id = next((p["id"] for p in pages if norm_url(p["link"]) == norm_url(site_url() + "/")), 0)
-    posts_id = next((p["id"] for p in pages if p["slug"] == "blog-seo"), 0)
+    from common import load_config
+    posts_slug = load_config().get("posts_page_slug", "")
+    posts_id = next((p["id"] for p in pages if posts_slug and p["slug"] == posts_slug), 0)
     for p in posts:
         print(import_item(p, "post", cats, front_id, posts_id))
     for p in pages:
