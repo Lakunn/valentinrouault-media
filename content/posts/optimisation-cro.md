@@ -1,93 +1,101 @@
 ---
-title: 'SEO et CRO : 6 améliorations simples, testées et approuvées'
+title: "SEO et CRO : six leviers pour convertir le trafic que vous avez déjà"
 slug: optimisation-cro
 status: publish
 date: '2025-09-16T14:19:30'
-origin: import
+origin: rewrite
 wp_id: 247
-url: https://valentinrouault.com/optimisation-cro/
-seo_title: Optimisation Conversion | 6 conseils simples
-meta_description: CRO, ou conversion rate optimisation, c'est la discipline qui doit aller de paire avec le SEO. On attire du trafic puis on le convertit efficacement.
 categories:
 - seo
+dek: "Le SEO attire, le CRO transforme. Cartes de chaleur, vidéo, mobile, clarté de l'offre, tests A/B : six leviers que j'applique avant de chercher plus de trafic, avec les outils gratuits pour démarrer."
+seo_title: "SEO et CRO : 6 leviers pour mieux convertir"
+meta_description: "Cartes de chaleur, vidéo, ergonomie mobile, clarté de l'offre, tests A/B : six leviers de CRO pour convertir le trafic SEO existant, avec des outils gratuits."
+essentiel:
+  - "Quand le trafic organique devient plus rare et plus cher, **mieux convertir** les visites existantes rapporte souvent plus vite que d'en chercher de nouvelles."
+  - "**Microsoft Clarity**, gratuit, suffit pour commencer : cartes de chaleur, enregistrements de sessions, signaux de frustration."
+  - "La plupart des gains viennent de la **clarté** : ce que propose la page, pour qui, et quelle action faire ensuite."
+  - "Un test A/B ne vaut que si l'**échantillon** est suffisant : sur un petit site, mieux vaut observer les comportements que tester."
 ---
 
-CRO, ou conversion rate optimisation, c’est la discipline qui doit aller de paire avec le SEO. On attire du trafic puis on le convertit efficacement.
+Le SEO amène des visiteurs, le CRO (*conversion rate optimization*) les aide à passer à l'action. Les deux sont souvent gérés par des équipes différentes, alors qu'ils travaillent sur les mêmes pages. Avec la baisse des clics sur les requêtes informationnelles, chaque visite organique vaut plus cher : la convertir mieux devient une priorité.
 
-Voici 6 conseils que j’applique pour mes clients et que tu devrais appliquer aussi.
+Ces six leviers sont ceux que je regarde en premier sur une page qui reçoit du trafic mais convertit peu. Pour le cas particulier d'une refonte complète, la méthode est différente : voir [la refonte d'un site sans perdre son SEO](/refonte-site-seo-cro/).
 
-## Une landing, c’est de la science, pas de l’art
+## 1. Observer avant de modifier
 
-On a souvent tendance à croire que le succès d’une landing page repose uniquement sur le design ou la créativité. La réalité est tout autre : une landing performante est avant tout le résultat de **tests, d’analyses et de décisions basées sur des données**. Voici les leviers à activer :
+Avant de toucher à quoi que ce soit, il faut voir comment les visiteurs se comportent réellement sur la page.
 
-## Installer des heatmaps
+**Microsoft Clarity** est gratuit et suffit dans la plupart des cas :
 
-Avant d’améliorer quoi que ce soit, il faut comprendre comment les visiteurs interagissent avec votre page.
-Les heatmaps permettent de **visualiser les zones qui attirent le plus d’attention** (clics, scrolls, interactions).
+- les **cartes de chaleur** montrent où les visiteurs cliquent et jusqu'où ils font défiler la page ;
+- les **enregistrements de sessions** permettent de suivre des parcours réels, de manière anonymisée ;
+- les **signaux de frustration** (clics répétés au même endroit, retours en arrière rapides) pointent les zones qui posent problème.
 
-- Elles révèlent les CTA ignorés.
-- Elles mettent en lumière les sections trop longues ou peu engageantes.
-- Elles aident à repositionner les éléments clés pour maximiser la conversion.
+![Tableau de bord de Microsoft Clarity avec cartes de chaleur et indicateurs de frustration](https://valentinrouault.com/wp-content/uploads/2025/09/clarity-1-1024x438.png)
 
-### Clarity
+**Hotjar** ajoute des sondages et des retours directs des visiteurs, utiles pour comprendre le pourquoi d'un comportement. Sa version gratuite est plus limitée.
 
-L’outil gratuit de Microsoft, **Clarity**, offre des cartes de chaleur, des enregistrements de sessions et des métriques de frustration (clics répétés, scrolls excessifs). Idéal pour commencer sans budget.
+Ce qu'on découvre presque toujours : un bouton d'action que personne ne voit, une section que personne n'atteint, un élément non cliquable que tout le monde essaie de cliquer. Pensez à déclarer ces outils dans votre politique de confidentialité et à les soumettre au consentement.
 
-![capture d'écran de clarity](https://valentinrouault.com/wp-content/uploads/2025/09/clarity-1-1024x438.png)
-### Hotjar
+## 2. Rendre l'offre claire en cinq secondes
 
-Plus complet, **Hotjar** ajoute des sondages intégrés et des feedbacks utilisateurs. Parfait pour croiser l’analyse quantitative (comportements) avec du qualitatif (avis en direct).
+Un visiteur qui arrive depuis Google doit comprendre immédiatement trois choses : ce que la page propose, pour qui, et ce qu'il peut faire ensuite.
 
-## Ajouter des contenus vidéos à vos pages
+- **Le titre principal** reprend l'intention de la requête qui amène le trafic. La Search Console indique ces requêtes, page par page.
+- **Le premier écran** contient la proposition de valeur et l'action principale, sans obliger à faire défiler.
+- **Une seule action principale par page.** Trois boutons de même poids diluent l'attention.
 
-Une vidéo claire et courte peut **augmenter de 80 % les conversions** selon plusieurs études marketing.
-Elle permet de :
+C'est le levier le plus rentable, et le plus souvent négligé. Il rejoint le travail de [rédaction orientée intention](/redaction-article-premier-google/).
 
-- Présenter le produit ou service rapidement.
-- Humaniser la marque.
-- Réduire les doutes avant un achat ou une prise de contact.
+## 3. Ajouter une vidéo courte quand elle répond à une question
 
-Attention : privilégiez des vidéos courtes (30–90 secondes), sous\-titrées et adaptées au mobile.
+Une vidéo n'a d'intérêt que si elle répond mieux que le texte à une question que se pose le visiteur : comment fonctionne le produit, à quoi ressemble le service, qui se trouve derrière.
 
-## Un design mobile *Thumb Friendly*
+- Courte, autour d'une minute.
+- Sous-titrée, car beaucoup de vidéos sont regardées sans le son.
+- Chargée seulement au clic, pour ne pas ralentir la page.
 
-Plus de 70 % du trafic provient désormais du mobile. Votre landing doit être pensée pour une **navigation au pouce** :
+Mesurez son effet : Clarity montre si elle est lancée, et un test avant-après sur le taux de conversion dit si elle aide.
 
-- CTA accessibles sans étirer la main.
-- Texte lisible sans zoom.
-- Formulaires courts et clairs.
-- Vitesse de chargement optimisée (moins de 3 secondes).
+## 4. Penser la page pour le pouce
 
-Ces détails sont cruciaux et peuvent permettre aux [e\-commerces](https://valentinrouault.com/seo-ecommerce/) de gagner beaucoup de ventes.
+Sur la plupart des sites, la majorité des visites viennent du mobile. Vérifiez la répartition dans vos propres statistiques, puis :
 
-## L’attention à tous les détails
+- placer les boutons dans la zone atteignable avec le pouce ;
+- garder un texte lisible sans zoom ;
+- raccourcir les formulaires au strict nécessaire, avec le bon type de clavier pour chaque champ (numérique pour un téléphone) ;
+- surveiller les Core Web Vitals dans la Search Console, en particulier l'INP, qui mesure la réactivité aux interactions.
 
-Une landing performante, c’est une **somme d’optimisations** :
+Pour une boutique en ligne, ces détails pèsent directement sur le chiffre d'affaires : voir aussi la page [SEO e-commerce](/seo-ecommerce/).
 
-- La couleur du bouton CTA.
-- Le wording d’un titre.
-- L’ordre des sections.
-- La suppression des distractions (menus, liens inutiles).
+## 5. Rassurer au bon endroit
 
-Chaque micro\-détail compte, car il peut faire basculer le visiteur entre **cliquer ou partir**. Dans certains tests de grandes marques, non seulement on va tester la couler d’un CTA mais également si il sera plutôt arrondi ou carré, etc…
+Les éléments de réassurance servent quand ils sont placés au moment du doute, pas regroupés en bas de page :
 
-Il faut aller a ce niveau de précision.
+- avis clients et logos de références près de l'action principale ;
+- conditions (délais, retours, engagement) visibles avant le formulaire ou le panier ;
+- un moyen de contact identifiable pour les demandes complexes.
 
-## A/B Testing : Dos and Don’ts
+## 6. Tester, mais seulement quand c'est possible
 
-### Ce qu’il faut faire
+Le test A/B est l'outil le plus cité et le plus mal utilisé.
 
-- **Tester une seule variable à la fois** (titre, bouton, image).
-- **Atteindre une taille d’échantillon suffisante** avant de conclure.
-- **Documenter chaque test** pour éviter de répéter les mêmes erreurs.
-- **Analyser au\-delà du taux de conversion** : impact sur le panier moyen, la rétention, etc.
+**Ce qui fonctionne :**
 
-### Ce qu’il ne faut pas faire
+- partir d'une hypothèse issue de l'observation (« les visiteurs ne voient pas le bouton parce que… ») ;
+- tester une seule variable à la fois ;
+- attendre un échantillon suffisant et au moins un cycle complet de semaine avant de conclure ;
+- documenter chaque test, gagnant ou perdant ;
+- regarder au-delà du taux de conversion : panier moyen, qualité des prospects.
 
-- Se contenter d’un seul test concluant : l’optimisation est un **processus continu**.
-- Changer trop d’éléments en même temps.
-- Arrêter un test trop tôt (les premiers résultats sont souvent biaisés).
-- Tester sans hypothèse claire (« on verra bien » ne mène à rien).
-- Attendre des résultats concluants de chaque A/B test
+**Ce qui ne fonctionne pas :**
 
->
+- arrêter un test dès qu'une variante prend l'avantage, car les premiers jours sont trompeurs ;
+- changer plusieurs éléments à la fois, puis ne pas savoir lequel a joué ;
+- tester sans hypothèse, pour voir.
+
+**Sur un petit site,** le trafic ne suffit souvent pas pour obtenir un résultat fiable en quelques semaines. Mieux vaut alors s'appuyer sur l'observation (levier 1) et sur des changements de fond, puis comparer les périodes.
+
+## Par où commencer
+
+Installez Clarity sur vos cinq pages qui reçoivent le plus de trafic organique. Regardez une vingtaine de sessions par page. Notez ce qui bloque. Corrigez d'abord la clarté de l'offre et l'action principale, ensuite le reste. Pour situer vos résultats, voir [les taux de conversion par canal](/benchmark-conversion-marketing/), en gardant en tête que le meilleur repère reste votre propre historique.

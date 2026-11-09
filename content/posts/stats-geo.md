@@ -1,133 +1,93 @@
 ---
-title: Statistiques GEO (SEO pour les IA) 2025
+title: "Statistiques GEO 2026 : la recherche par IA en chiffres vérifiés"
 slug: stats-geo
 status: publish
 date: '2025-09-29T17:46:07'
-origin: import
+origin: rewrite
 wp_id: 423
-url: https://valentinrouault.com/stats-geo/
-seo_title: Statistiques et chiffres clé du GEO 2025 | Dossier complet
-meta_description: Le SEO pour les IA, ou GEO, prend d'assaut les stratégies marketing des entreprises. Les moteurs de recherche traditionnels laissent place aux engins
 categories:
 - blog
+dek: "Combien de personnes utilisent les réponses IA, combien de clics elles retirent aux sites, quel trafic les assistants envoient : les chiffres GEO dont la source et la date se vérifient, mis à jour en novembre 2026."
+seo_title: "Statistiques GEO 2026 : la recherche IA en chiffres"
+meta_description: "AI Overviews, Mode IA, ChatGPT, Gemini : utilisateurs, clics perdus, trafic envoyé aux sites, conversions. Les statistiques GEO 2026 vérifiées et sourcées."
+essentiel:
+  - "Les **AI Overviews** touchent plus de **2,5 milliards** d'utilisateurs par mois, le **Mode IA** plus de **1 milliard** (Google, mai 2026)."
+  - "Un AI Overview fait baisser le taux de clic du premier résultat d'environ **58 %** (Ahrefs, données de décembre 2025)."
+  - "Le trafic que ChatGPT envoie aux sites a été multiplié par plus de 36 en un an, mais Google en envoie toujours beaucoup plus."
+  - "**95 %** des utilisateurs de ChatGPT utilisent aussi Google : la recherche IA s'ajoute à la recherche classique."
 ---
 
-# Generative Engine Optimization (GEO) : le nouveau champ de bataille du web
+*Article mis à jour en novembre 2026. La première version reprenait les chiffres d'un rapport sectoriel dont la méthode n'était pas publiée. Je l'ai remplacée par des données dont la source est identifiable.*
 
-Le [SEO pour les IA](https://valentinrouault.com/seo-ia/), ou GEO, prend d’assaut les stratégies marketing des entreprises. Les **moteurs de recherche traditionnels** laissent place aux **engins génératifs** : [ChatGPT](https://valentinrouault.com/utilisation-chat-gpt-statistiques/), Google AI Overviews, Perplexity, DeepSeek…
-Ces nouveaux intermédiaires captent déjà une part énorme de l’attention et redistribuent totalement les cartes.
+Le GEO (*Generative Engine Optimization*) consiste à être cité dans les réponses des moteurs et des assistants IA. Pour décider de l'effort à y consacrer, il faut des ordres de grandeur fiables. Voici ceux que j'utilise, classés par question.
 
-En **juillet 2025**, près d’**un quart de toutes les recherches mondiales (23 %)** passent déjà par une IA générative. En un an seulement, le volume de requêtes GenAI a progressé de **\+200 %**.
+## Combien de personnes utilisent la recherche par IA ?
 
-## L’explosion de l’usage de l’IA au quotidien
+| Indicateur | Valeur | Source et date |
+| --- | --- | --- |
+| Utilisateurs mensuels des AI Overviews | plus de 2,5 milliards | Google, I/O 2026, 19 mai 2026 |
+| Utilisateurs mensuels du Mode IA | plus de 1 milliard, un an après son lancement | Google, I/O 2026 |
+| Utilisateurs mensuels de l'application Gemini | plus de 900 millions | Google, I/O 2026 |
+| Utilisateurs hebdomadaires de ChatGPT | 700 millions | OpenAI, septembre 2025 |
+| Visites web mensuelles moyennes des assistants IA | 9,5 milliards, +70 % sur un an | Similarweb, juin 2025 à mai 2026 |
 
-- **75 % des consommateurs** disent utiliser une IA, et **46 %** interagissent avec elle **tous les jours**.
-- Les échanges sont beaucoup plus longs : **81 %** des utilisateurs font au moins **5 interactions consécutives** avec une IA pour un même sujet (contre une seule requête sur Google).
-- Les usages sont variés :
-	- **45 %** pour trouver de l’information (nouveau concurrent direct de Google Search)
-	- **34 %** pour se divertir
-	- **34 %** pour explorer un sujet en profondeur
+En France, les AI Overviews et le Mode IA ne sont disponibles que depuis le **22 juillet 2026**, après un long blocage lié aux droits voisins de la presse. Les chiffres mondiaux reflètent donc un usage installé ailleurs depuis plus longtemps.
 
-![](https://valentinrouault.com/wp-content/uploads/2025/09/01_share_genai_donut-1-1024x819.png)
-L’IA n’est donc pas seulement un outil de productivité : elle devient un **compagnon de recherche, d’exploration et même de loisir**.
+## Qui gagne des parts entre les assistants ?
 
-## Une adoption générationnelle massive
+| Indicateur | Valeur | Source et date |
+| --- | --- | --- |
+| Part de ChatGPT dans le trafic web des grands assistants | environ 79 % → 54 % | Similarweb, mai 2025 → mai 2026 |
+| Part de Gemini | plus de 26 % | Similarweb, avril 2026 |
+| Utilisateurs de ChatGPT qui utilisent aussi Google | environ 95 % (461 sur 494 millions) | Similarweb, mars à mai 2026 |
 
-Les chiffres montrent une vraie fracture générationnelle :
+Ces parts ne comptent que les visites sur les sites web, pas les applications mobiles ni les réponses intégrées à Google. Elles montrent surtout qu'il ne faut pas optimiser pour un seul assistant.
 
-- **Gen Z : 92 %** utilisent l’IA
-- **Millennials : 88 %**
-- **Gen X : 69 %**
-- **Boomers : seulement 47 %**
+## Combien de clics les réponses IA retirent-elles aux sites ?
 
-Autre point crucial : **45 % des Millennials** sont prêts à payer pour un abonnement premium d’IA (contre 26 % en moyenne).
+| Indicateur | Valeur | Source et date |
+| --- | --- | --- |
+| Visites avec un clic sur un résultat, avec ou sans résumé IA | 8 % contre 15 % | Pew Research Center, mars 2025, États-Unis |
+| Sessions de navigation arrêtées sur la page de résultats | 26 % avec résumé IA, 16 % sans | Pew Research Center, mars 2025 |
+| Clics sur un lien cité dans le résumé | 1 % des visites | Pew Research Center, mars 2025 |
+| Baisse du taux de clic de la position 1 avec un AI Overview | −58 % | Ahrefs, données de décembre 2025 |
+| Même mesure en position 2 et en position 10 | −50,8 % et −19,4 % | Ahrefs, février 2026 |
 
-![](https://valentinrouault.com/wp-content/uploads/2025/09/03_adoption_generations-1-1024x762.png)
-Et l’accès se fait surtout via mobile : **37 % des Millennials** passent par une application dédiée, contre 26 % de la moyenne générale.
+Les résumés IA s'affichent surtout sur les requêtes longues : dans l'étude de Pew, 53 % des recherches de dix mots ou plus en affichaient un, contre 8 % des recherches d'un ou deux mots. Les contenus qui répondent à des questions détaillées sont donc les plus exposés.
 
-## Les plateformes dominantes : ChatGPT et Google en duel
+## Quel trafic les assistants envoient-ils aux sites ?
 
-En 2025, le marché des requêtes génératives est largement dominé par deux acteurs :
+| Indicateur | Valeur | Source et date |
+| --- | --- | --- |
+| Trafic envoyé par ChatGPT aux sites, États-Unis | 14 → 516 millions de visites sur douze mois | Kevin Indig, données Similarweb, juillet 2024 à juin 2025 |
+| Trafic envoyé par Google sur la même période | +23 % | même source |
+| Longueur moyenne d'une demande | 80 mots sur ChatGPT, 3,4 sur Google | même source |
+| Taux de conversion des visites, sites transactionnels américains | 6,9 % depuis ChatGPT, 5,4 % depuis Google | même source |
 
-- **ChatGPT : 2,5 milliards de requêtes par jour** (**57 %** du total)
-- **Google AI Overviews : 1,8 milliard/jour** (**41 %**)
+Le trafic des assistants progresse vite à partir d'une base faible. Il convertit souvent mieux, car le visiteur arrive après avoir comparé ses options dans la conversation. Ce constat varie beaucoup selon les secteurs : vérifiez-le sur vos propres données. Je détaille ces chiffres dans [ChatGPT contre Google](/google-vs-chatgpt-tendances/).
 
-Les challengers restent marginaux :
+## Que demande-t-on aux assistants ?
 
-- DeepSeek (**0,7 %**)
-- Perplexity (**0,6 %**)
-- Bing Copilot (**0,4 %**)
+D'après l'étude d'OpenAI et du NBER publiée le 15 septembre 2025, sur environ 1,5 million de conversations :
 
-![](https://valentinrouault.com/wp-content/uploads/2025/09/02_platform_share-2-1024x669.png)
-**98 % des requêtes GenAI** se concentrent sur deux plateformes.
+- **29 %** des messages relèvent des conseils pratiques ;
+- **24 %** de la recherche d'information ;
+- **24 %** de l'écriture.
 
-## Vers un monde zéro\-clic : la grande baisse du trafic web
+La recherche d'information progresse, et c'est elle qui concurrence directement les requêtes informationnelles de Google. Le détail est dans [l'analyse de l'étude OpenAI](/utilisation-chat-gpt-statistiques/).
 
-Les [zero\-click search](https://valentinrouault.com/zero-click-searches/) sont brutales pour le trafic des sites web dans la plupart des pays du monde :
+## Peut-on mesurer sa propre visibilité dans les IA ?
 
-- Le **trafic global du web** a chuté de **15 % en un an**.
-- Pour certains secteurs, la baisse est dramatique : **−30 % dans la santé**.
-- Dans le même temps, Google a vu le volume de requêtes **augmenter de \+10 %**, preuve que les AI Overviews n’ont pas vocation à envoyer du trafic, mais à **retenir les utilisateurs dans l’écosystème Google**..
+En partie, et c'est récent :
 
-![](https://valentinrouault.com/wp-content/uploads/2025/09/06_web_change-1-1024x763.png)
-Le modèle historique “requête → clic → site” est en train de s’effondrer.
+- **Bing** publie un rapport de performance IA dans ses outils pour webmasters depuis février 2026 ;
+- **Google** a annoncé le 3 juin 2026 un rapport « IA générative » dans la Search Console, avec des données à partir du 18 mai 2026. Il montre des impressions, mais ni les clics ni les requêtes. Mode d'emploi dans [le rapport IA de la Search Console](/search-console-rapport-ia/) ;
+- **ChatGPT** n'ajoute plus systématiquement de paramètre de suivi à ses liens depuis l'automne 2026 : une partie de son trafic arrive sans référent identifiable dans vos statistiques.
 
-## Les requêtes longues explosent : la fin du mot\-clé court
+## Ce que ces chiffres impliquent
 
-Un autre bouleversement majeur :
+1. **La recherche IA est massive, mais elle passe surtout par Google.** Les AI Overviews et le Mode IA touchent bien plus de monde que les assistants autonomes.
+2. **Le clic se raréfie sur les requêtes informationnelles.** La visibilité se mesure aussi en citations et en notoriété, plus seulement en visites.
+3. **Les fondamentaux restent les mêmes.** Google indique que ses fonctions IA reposent sur le même index et les mêmes systèmes de classement que la recherche classique. Un site bien construit, aux contenus précis, datés et attribuables, part avec un avantage. La méthode est dans [comment être cité par les IA](/seo-ia/).
 
-- Les **requêtes de 8 mots ou plus** ont augmenté de **\+700 %** depuis le lancement des AI Overviews.
-- Les utilisateurs posent des questions beaucoup plus détaillées, parfois rédigées comme une conversation entière.
-
-La **long tail** devient la norme. Optimiser pour un mot\-clé unique n’a plus de sens : il faut penser en termes de **clusters sémantiques et intentions multiples**.
-
-![](https://valentinrouault.com/wp-content/uploads/2025/09/07_query_length_growth-1024x730.png)
-La stratégie de contenu vit donc une profonde révolution et la [rédaction des articles optimisés](https://valentinrouault.com/redaction-article-premier-google/) en SEO doit maintenant prendre en compte les standards des IA génératives.
-
-## La confiance envers l’IA grimpe en flèche
-
-La perception a radicalement changé en un an :
-
-- Confiance dans les outils GenAI : **37 % en 2024 → 61 % en 2025**
-- Confiance dans les Google AI Overviews : **44 % → 68 %**
-
-![](https://valentinrouault.com/wp-content/uploads/2025/09/04_trust_growth_fixed-1024x762.png)
-Autrement dit, **près de 7 personnes sur 10** considèrent désormais que les réponses générées par l’IA sont fiables.
-
-Et côté usage :
-
-- **50 %** des utilisateurs disent regarder presque toujours l’Overview Google quand il s’affiche.
-- **20 %** déclarent que l’Overview seul suffit et ne cliquent plus ailleurs.
-- **80 %** se disent satisfaits du volume d’Overviews affichés.
-
-## GEO : le nouveau SEO
-
-Face à ces mutations : le **Generative Engine Optimization (GEO)**. Il s’agit d’une nouvelle façon d’aborder votre [stratégie SEO](https://valentinrouault.com/strategies-seo/).
-Son objectif : **être cité, intégré et valorisé par les IA génératives**, plutôt que seulement apparaître dans les SERP.
-
-Le rapport définit 4 piliers :
-
-1. **Consumers** : comprendre les comportements et attentes des utilisateurs GenAI.
-2. **Content** : rédiger du contenu clair, structuré, prêt à être “digéré” par les LLM.
-3. **Code** : optimiser vitesse, accessibilité et balisage sémantique (données structurées, schémas).
-4. **Credibility** : renforcer EEAT (expertise, autorité, fiabilité) et visibilité via PR.
-
-Quelques résultats concrets :
-
-- Une marque cosmétique a gagné **\+33 % de visibilité** sur ses pages produits grâce à une optimisation GEO.
-- Une marque de luxe a atteint **64 % de taux de succès** dans les Google AI Overviews après avoir retravaillé ses FAQ.
-
-## S’adapter ou disparaître
-
-Le web entre dans une nouvelle ère.
-
-- **23 % des recherches** passent déjà par des IA.
-- Le trafic web recule de **15 %**.
-- Les requêtes longues explosent de **\+700 %**.
-- La confiance envers l’IA dépasse les **60 %**.
-
-Ce que ça veut dire ?
-Le SEO tel qu’on l’a connu touche à sa fin.
-L’avenir se joue dans le **Generative Engine Optimization**. Ceux qui s’adaptent maintenant seront visibles demain. Ceux qui restent sur l’ancien modèle disparaîtront des radars… littéralement.
-
-On en parle le temps d’un appel de découverte ? <https://valentinrouault.com/contact/>
+Sources : Google, keynote I/O 2026 (19 mai 2026) ; OpenAI et NBER, *How People Use ChatGPT* (15 septembre 2025) ; Similarweb, *Generative AI Landscape 2026* et Global AI Tracker ; Pew Research Center (22 juillet 2025) ; Ahrefs, « AI Overviews Reduce Clicks by 58% » (février 2026) ; Kevin Indig, Search Engine Journal (août 2025) ; Google Search Central (juin 2026).

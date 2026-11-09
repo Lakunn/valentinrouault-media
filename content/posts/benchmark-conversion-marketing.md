@@ -1,148 +1,67 @@
 ---
-title: Où sont les conversions en 2025 ? tendances par sources de trafic
+title: "Taux de conversion par canal : pourquoi les benchmarks se contredisent"
 slug: benchmark-conversion-marketing
 status: publish
 date: '2025-09-15T14:42:15'
-origin: import
+origin: rewrite
 wp_id: 249
-url: https://valentinrouault.com/benchmark-conversion-marketing/
-seo_title: 'Conversions 2025 : Canaux, Budget et Stratégies gagnante !'
-meta_description: 'Découvrez en 2025 quels canaux de trafic convertissent le mieux : email/SMS, search ads, SEO, social, display, affiliation et IA génératives (ChatGPT, Perplexity, AI Overviews). Benchmarks, chiffres clés et stratégies pour booster vos conversions.'
 categories:
 - seo
 - contenu-seo
 cover_id: 257
+dek: "SEO, publicité, e-mail, réseaux sociaux, IA : selon l'étude citée, le même canal convertit à 1 % ou à 8 %. Comment lire ces repères, ce qu'ils disent vraiment, et comment construire les vôtres."
+seo_title: "Taux de conversion par canal : les benchmarks 2026"
+meta_description: "SEO, SEA, e-mail, réseaux sociaux, IA générative : les taux de conversion par canal selon First Page Sage, WordStream et Similarweb, et pourquoi ils divergent."
+essentiel:
+  - "Le même canal affiche des taux très différents selon l'étude : le search payant convertit à **1,3 %** dans les données clients de First Page Sage, et à **8,18 %** chez WordStream."
+  - "Ces écarts viennent des définitions : ce qui compte comme conversion, l'échantillon, le secteur, la période."
+  - "Un ordre revient pourtant : les canaux d'intention (recherche, e-mail, recommandation) convertissent mieux que les canaux de découverte (social, display)."
+  - "Le seul benchmark utile est le vôtre : même définition de conversion, mêmes périodes, canal par canal."
 ---
 
-En 2025, les conversions se concentrent sur quelques canaux majeurs :
+*Article mis à jour en novembre 2026. La première version alignait des taux venus de sources différentes comme s'ils étaient comparables. Ce n'est pas le cas.*
 
-- **Email / SMS** : canal le plus rentable avec des taux de conversion et de revenu par destinataire record.
-- **Search Ads (PPC)** : CVR moyen de **7,5 %**, le plus performant en acquisition directe.
-- **SEO** : stable autour de **2–3 %**, mais fragilisé par les [*zero\-clicks*.](https://valentinrouault.com/zero-click-searches/)
-- **Social** : CVR faible (\<2 %), utile surtout pour la découverte et l’assisté.
-- **Display / programmatique** : très faible CVR (**0,3–0,7 %**) mais rôle de notoriété.
-- **Referral / Affiliation** : CVR intermédiaire (**2–5 %**), efficace pour élargir son audience.
-- **IA génératives** : trafic limité mais extrêmement qualifié, avec des CVR de **3 % à 16 %**, bien supérieurs au SEO classique (**≈1,8 %**).
+« Quel est un bon taux de conversion pour le SEO ? » La question revient dans chaque bilan de campagne. Les réponses trouvées en ligne vont de 1 % à plus de 10 %. Ce n'est pas que certaines études se trompent : elles ne mesurent pas la même chose.
 
-## 1\. Email \& SMS : la banque des conversions
+## Le même canal, des taux qui varient du simple au sextuple
 
-- **Revenue per recipient (RPR)** :
-	- Email campagnes standards ≈ **0,10 USD**
-	- Flows automatisés (abandon panier, post\-achat, welcome) ≈ **3,07 USD** → soit **30× plus** rentable.
-- **Placed order rates** : le top 10 % des campagnes obtient un taux **5× supérieur à la moyenne**, et un RPR **7× plus élevé**.
-- **SMS marketing** : RPR légèrement supérieur à l’email dans de nombreuses verticales e\-commerce (mode, beauté, bijoux).
+| Canal | Taux | Source | Ce qui est mesuré |
+| --- | --- | --- | --- |
+| Search payant | 8,18 % | WordStream, plus de 13 000 campagnes américaines, avril 2025 à mars 2026 | conversions déclarées dans Google Ads, par clic |
+| Search payant | 1,3 % | First Page Sage, données clients 2025-2026 | visiteur devenu prospect, toutes pages |
+| Référencement naturel | 2,4 % | First Page Sage, données clients 2025-2026 | visiteur devenu prospect, toutes pages |
+| Visites depuis Google, sites transactionnels américains | 5,4 % | Kevin Indig, données Similarweb, juin 2025 | conversion transactionnelle |
+| Visites depuis ChatGPT, mêmes sites | 6,9 % | même source | conversion transactionnelle |
 
-L’email/SMS reste **le canal n°1 en ROI**, surtout avec de la segmentation fine et des scénarios automatisés. Cependant, il faut dire que ce n’est pas le premier canal de découverte.
+Une conversion Google Ads peut être un appel, un clic sur un bouton ou un formulaire, compté par clic publicitaire sur une page dédiée. Une conversion chez First Page Sage est un visiteur devenu prospect qualifié, rapporté à toutes les visites du site. Les deux chiffres sont exacts dans leur cadre. Les comparer directement n'a pas de sens.
 
-Les stratégies les plus efficaces étant les flow automatisés notamment pour le e\-commerce en post achat ou en abandon panier, il faut d’abord avoir le contact pour mieux convertir ensuite.
+## L'ordre qui revient d'une étude à l'autre
 
-![Comparaison revenu email automatisé ou email classique](https://valentinrouault.com/wp-content/uploads/2025/09/output-2-1-1024x850.png)
-## 2\. SEO (Search organique)
+Malgré ces écarts, les classements convergent sur une logique simple : plus l'intention est forte au moment du clic, plus la conversion est probable.
 
-Avoir une bonne [stratégie SEO](https://valentinrouault.com/strategies-seo/) mais aussi une stratégie organique via les IA ([GEO](https://valentinrouault.com/seo-ia/)) est le pilier principal du marketing en ligne selon moi.
+**Les canaux d'intention convertissent le mieux.** Recherche (naturelle et payante), e-mail envoyé à des abonnés, recommandation d'un site partenaire : le visiteur cherche déjà une solution ou connaît déjà la marque.
 
-- CVR médian **2,1 % en B2C** et **2,6 % en B2B** (First Page Sage 2025\).
-- Moyenne e\-commerce : **1,4–3 %** (Shopify).
-- Exemples sectoriels (Speed Commerce 2025\) :
-	- **Personal Care** : ≈6,8 %
-	- **Food \& Beverages** : ≈4,9 %
-	- **Électronique** : ≈3,6 %
-	- **Mode** : ≈1,9 %
-- Impact des AI Overviews : baisse du CTR de la **position \#1 de 34,5 %** en moyenne, et jusqu’à **\-60 % de trafic** sur certaines pages.
+**Les canaux de découverte convertissent moins au dernier clic.** Réseaux sociaux et display touchent des personnes qui ne cherchaient rien. Leur rôle se mesure en notoriété et en conversions assistées, pas en dernier clic. First Page Sage place le display autour de 0,3 % en B2B et 0,7 % en B2C.
 
-Stable et scalable, mais nécessite de travailler l’exctractabilité (FAQ, schémas, comparatifs, contenu brandé). C’est le meilleur canal de découverte de marque et donc de **brand awareness**.
+**L'e-mail est un cas à part.** Ses taux sont élevés parce qu'il s'adresse à des personnes déjà acquises. Les scénarios automatisés (relance de panier, bienvenue, après-achat) rapportent nettement plus par destinataire que les campagnes ponctuelles, selon les benchmarks annuels de Klaviyo. Mais il faut d'abord avoir constitué la liste, souvent grâce aux autres canaux.
 
-![Comparatif CTR et CVR  SEO et IA générative](https://valentinrouault.com/wp-content/uploads/2025/09/output-3-1-1024x726.png)
-## 3\. Search Ads (PPC)
+**Les assistants IA envoient peu de visites, souvent décidées.** Le visiteur a comparé ses options dans la conversation avant de cliquer. Le volume reste faible face à Google, et l'avantage varie selon les secteurs : certaines études trouvent l'inverse sur des sites de contenu.
 
-Le search ads c’est l’indispensable de toute les stratégies d’acquisition. Les pubs sur réseaux de recherches s’adapte à toutes les cibles, toutes les industries.
+## Les pièges de lecture
 
-- CVR moyen toutes industries ≈ **7,5 %**.
-- Lead\-gen B2B : formulaires courts avec **CVR \>10 %**.
-- E\-commerce : CVR généralement **4–8 %** selon verticales et devices.
+- **Comparer un taux sur clic publicitaire et un taux sur visite.** Le premier exclut tous les visiteurs qui ne sont pas passés par la page d'atterrissage.
+- **Oublier le secteur.** Un site juridique et un site de mode n'ont pas les mêmes cycles d'achat. First Page Sage mesure ainsi des écarts de un à plus de trois entre secteurs pour le seul référencement naturel.
+- **Juger un canal au dernier clic.** Un internaute découvre une marque sur un réseau social, revient par une recherche de marque, puis achète via un e-mail. Le dernier clic donne tout le mérite à l'e-mail.
+- **Mélanger les périodes.** Les taux de 2024 précèdent l'arrivée des AI Overviews en France (juillet 2026) : la composition du trafic organique a changé depuis.
 
-C’est le **canal roi en acquisition directe**, captant l’intention la plus chaude. Cela combine rapidité d’exécution et de résultats.
+## Comment construire vos propres repères
 
-## 4\. Social (organique \& paid)
+1. **Définir une conversion unique par objectif** : demande de devis, inscription, achat. Et s'y tenir.
+2. **Segmenter par canal et par type de page** dans GA4 : une page d'article et une page produit n'ont pas le même rôle.
+3. **Isoler le trafic des assistants IA** dans un groupe de canaux dédié (chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com).
+4. **Comparer d'une période à l'autre** plutôt qu'avec un benchmark extérieur. Votre progression est l'indicateur qui compte.
+5. **Regarder les conversions assistées**, pas seulement le dernier clic, avant de couper le budget d'un canal.
 
-- CVR moyen estimé entre **0,5 % et 1,5 %**, inférieur aux autres canaux.
-- Engagement organique en baisse en 2025\.
-- Nécessité de miser sur :
-	- **UGC (User Generated Content)**
-	- **Retargeting**
-	- **Influence**
-- Plus efficace en **conversion assistée** qu’en last\-click.
+Pour améliorer le taux de conversion des pages qui reçoivent déjà du trafic, voir [les leviers de CRO que j'applique](/optimisation-cro/). Pour l'effet des réponses IA sur le trafic organique, voir [les recherches zéro clic](/zero-click-searches/).
 
-Utile pour nourrir le haut et milieu de funnel, pas pour conclure. Il faut ajouter que c’est un canal à travailler également en SEO, en gros, penser organique et pas uniquement Google.
-
-## 5\. Display \& Programmatique
-
-- CVR très faible :
-	- **≈0,7 % en B2C**
-	- **≈0,3 % en B2B**.
-- Sert surtout pour :
-	- **Notoriété**
-	- **Amorçage du funnel**
-	- **Remarketing**
-
-Un canal de visibilité, pas de performance directe. Si votre objectif est surtout de vous faire connaître comme pour les organismes à but non lucratif par exemple, c’est le canal parfait.
-
-## 6\. Referral, Affiliation \& Partenariats
-
-- CVR généralement **2–5 %**, selon industrie et offre.
-- Benchmarks First Page Sage 2025 confirment un rôle solide en **CPA contrôlé**.
-- Exemples :
-	- Programmes d’affiliation retail ≈ **3 %**
-	- Webinars B2B ≈ **4–6 %** (inscriptions).
-
-Un bon relais pour toucher de nouveaux publics et diversifier son funnel.
-
-## 7\. IA génératives (ChatGPT, AI Overviews, Perplexity, etc.)
-
-- **13,14 % des requêtes Google** déclenchent un AI Overview (Semrush, mars 2025\).
-- Impact : CTR de la position \#1 en baisse de **34,5 %** ; certaines pages perdent **jusqu’à 60 % de trafic**.
-- **CVR observés** :
-	- ChatGPT : ≈ **16 %**
-	- Perplexity : ≈ **10,5 %**
-	- Claude : ≈ **5 %**
-	- Gemini : ≈ **3 %**
-	- Google organique : ≈ **1,8 %**
-- Selon Adobe, dans certaines verticales (électronique, voyage, B2B tech), le trafic IA convertit seulement **9 % moins bien** que le trafic classique.
-
-Faible volume mais **taux de conversion record**, souvent **5 à 10× supérieur** au SEO.
-
-## Conclusion
-
-En 2025, les conversions suivent une hiérarchie claire :
-
-- **Email/SMS** : la référence absolue (RPR jusqu’à 30× supérieur pour les flows).
-- **Search Ads** : le meilleur canal d’acquisition directe (≈7,5 %).
-- **SEO** : un socle stable mais fragilisé par les *zero\-clicks* (≈2–3 %).
-- **Social \& Display** : rôle d’assisté et de visibilité, CVR faibles (\<2 %).
-- **Referral/Affiliation** : bon complément (≈2–5 %).
-- **IA génératives** : nouvel eldorado des conversions qualifiées (3–16 %).
-
-![Budget idéal markjeting digital 2025](https://valentinrouault.com/wp-content/uploads/2025/09/output-1-1-1024x953.png)
-### Sources
-
-Conductor : [https://www.conductor.com/blog/ai\-overviews\-impact/](https://www.conductor.com/blog/ai-overviews-impact/?utm_source=chatgpt.com)
-
-Search Engine Land : [https://searchengineland.com/google\-ai\-overviews\-hurt\-click\-through\-rates\-454428](https://searchengineland.com/google-ai-overviews-hurt-click-through-rates-454428?utm_source=chatgpt.com)
-
-Semrush : [https://www.semrush.com/blog/semrush\-ai\-overviews\-study/](https://www.semrush.com/blog/semrush-ai-overviews-study/?utm_source=chatgpt.com)
-
-Pew Research / eMarketer : [https://www.emarketer.com/content/google\-ai\-summaries\-ending\-search\-sessions\-reducing\-click\-through\-behavior](https://www.emarketer.com/content/google-ai-summaries-ending-search-sessions-reducing-click-through-behavior?utm_source=chatgpt.com)
-
-Whistler Billboards : [https://www.whistlerbillboards.com/marketing/the\-impact\-of\-googles\-ai\-overviews/](https://www.whistlerbillboards.com/marketing/the-impact-of-googles-ai-overviews/?utm_source=chatgpt.com)
-
-Adobe Analytics / Statista : [https://business.adobe.com/blog/the\-explosive\-rise\-of\-generative\-ai\-referral\-traffic](https://business.adobe.com/blog/the-explosive-rise-of-generative-ai-referral-traffic?utm_source=chatgpt.com)
-
-First Page Sage : [https://firstpagesage.com/seo\-blog/conversion\-rate\-benchmarks/](https://firstpagesage.com/seo-blog/conversion-rate-benchmarks/)
-
-Shopify / Klaviyo : [https://www.klaviyo.com/products/email\-marketing/benchmarks](https://www.klaviyo.com/products/email-marketing/benchmarks)
-
-Seer Interactive : [https://www.seerinteractive.com/insights/case\-study\-6\-learnings\-about\-how\-traffic\-from\-chatgpt\-converts](https://www.seerinteractive.com/insights/case-study-6-learnings-about-how-traffic-from-chatgpt-converts?utm_source=chatgpt.com)
-
-Adobe Analytics : [https://business.adobe.com/blog/the\-explosive\-rise\-of\-generative\-ai\-referral\-traffic](https://business.adobe.com/blog/the-explosive-rise-of-generative-ai-referral-traffic?utm_source=chatgpt.com)
-
-WebFX (Generative AI Search Trends) : [https://www.webfx.com/blog/seo/gen\-ai\-search\-trends/](https://www.webfx.com/blog/seo/gen-ai-search-trends/?utm_source=chatgpt.com)
+Sources : WordStream, benchmarks Google Ads (avril 2025 à mars 2026) ; First Page Sage, taux de conversion par canal et par secteur (2025-2026) ; Kevin Indig, Search Engine Journal (août 2025), données Similarweb ; Klaviyo, benchmarks e-mail et SMS.

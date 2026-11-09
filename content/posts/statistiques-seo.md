@@ -1,121 +1,95 @@
 ---
-title: 52 statistiques SEO pour booster ta stratégie en 2025
+title: "Statistiques SEO 2026 : les chiffres vérifiés, avec leur source et leur date"
 slug: statistiques-seo
 status: publish
 date: '2025-10-01T12:49:14'
-origin: import
+origin: rewrite
 wp_id: 443
-url: https://valentinrouault.com/statistiques-seo/
-seo_title: 52 statistiques SEO et GEO | Chiffres de 2025 (Mises à jour)
-meta_description: Les statistiques à connaître pour la prise de décisions en SEO mais également les tendances prépondérantes.
 categories:
 - actus-seo
+dek: "Parts de marché, taux de clic, recherches sans clic, effet des AI Overviews : une sélection de chiffres SEO dont la source et la date sont vérifiables, avec ce qu'ils permettent de conclure et ce qu'ils ne disent pas."
+seo_title: "Statistiques SEO 2026 : les chiffres sourcés et datés"
+meta_description: "Parts de marché de Google, taux de clic par position, recherches zéro clic, impact des AI Overviews : les statistiques SEO 2026 vérifiées, avec source et date."
+essentiel:
+  - "Google garde environ **88 %** des recherches en France (StatCounter, septembre 2026), Bing un peu plus de **5 %**."
+  - "Sans AI Overview, le premier résultat capte environ **27,6 %** des clics (Backlinko) ; avec un AI Overview, son taux de clic baisse d'environ **58 %** (Ahrefs, données de décembre 2025)."
+  - "Environ **six recherches sur dix** se terminaient sans clic en 2024 (SparkToro et Datos), avant l'arrivée des AI Overviews en Europe."
+  - "La plupart des « statistiques SEO » qui circulent n'ont ni source primaire ni date : je les ai retirées."
 ---
 
-Le comportement des utilisateurs sur les moteurs de recherche. Voici ma version mise à jour des statistiques sur l’état du search en 2025\.
+*Article mis à jour en novembre 2026. La première version comptait 52 chiffres. J'en ai retiré plus de la moitié : sources introuvables, études de plus de cinq ans présentées comme actuelles, ou chiffres repris d'un article à l'autre sans origine identifiable.*
 
-Ce sont des chiffres qui sont amenés à changer avec l’avènement des IA génératives et du [GEO](https://valentinrouault.com/seo-ia/). Un autre article sur les chiffres à connaître pour se positionner dans les IA arrivera bientôt 😊
+Les listes de statistiques SEO se copient les unes les autres. Un chiffre de 2016 finit présenté comme une tendance de l'année, une estimation de blog devient une étude. J'ai gardé uniquement les chiffres dont je peux citer la source, la date et la méthode, même résumée.
 
-## Trafic et résultats organiques
+## Parts de marché des moteurs de recherche
 
-1. **Les résultats organiques captent 53,3 % du trafic web, contre seulement 15 % pour le trafic payant.**
-Plus de la moitié du trafic vient du SEO : ignorer le référencement, c’est perdre une énorme opportunité. (Source : BrightEdge)
-2. **Les trois premiers résultats organiques obtiennent 75,1 % des clics.**
-Se positionner dans le top 3 est vital pour maximiser ton trafic. (Source : Backlinko)
-3. **68 % des expériences en ligne commencent par un moteur de recherche.**
-Le SEO reste la porte d’entrée principale du web. (Source : BrightEdge)
-4. **58 à 60 % des recherches n’aboutissent à aucun clic.**
-Les featured snippets et les réponses directes captent de plus en plus l’attention. (Source : Search Engine Land)
-5. **92 % des utilisateurs de Google cliquent sur les résultats organiques plutôt que sur les annonces.**
-La confiance reste du côté du SEO. (Source : Leptidigital)
-6. **75 % des utilisateurs ne dépassent jamais la première page.**
-Si tu n’es pas en page 1, tu es invisible. (Source : HubSpot)
+| Indicateur | Valeur | Source et date |
+| --- | --- | --- |
+| Part de Google en France, tous appareils | 88,2 % | StatCounter, septembre 2026 |
+| Part de Bing en France, tous appareils | 5,5 % | StatCounter, septembre 2026 |
+| Part de Google dans le monde | 90,4 % | StatCounter, mai 2026 |
+| Part de Bing en France sur ordinateur | 11,8 % | StatCounter, juin 2026 |
 
-On peut se rassurer sur l’utilité de travailler sur Google et de travailler le SEO au global car le trafic organique reste une majorité du web. Les [stratégies SEO](https://valentinrouault.com/strategies-seo/) sont donc toujours primordiales.
+**Ce qu'il faut en retenir :** Google reste de très loin le premier moteur en France. Sur ordinateur, Bing pèse plus qu'on ne le pense, en partie grâce à Windows et à Edge. StatCounter mesure des pages vues sur un panel de sites : c'est un ordre de grandeur, pas un recensement.
 
-## SEO local
+## Taux de clic et positions
 
-Le vrai eldorado et l’une des pratiques les plus méconnues du SEO.
+| Indicateur | Valeur | Source et date |
+| --- | --- | --- |
+| Taux de clic moyen du premier résultat organique | 27,6 % | Backlinko, analyse de 4 millions de résultats, avant les AI Overviews |
+| Écart de clics entre la position 1 et la position 10 | environ 10 fois plus | Backlinko, même étude |
+| Pages qui ne reçoivent aucun trafic de Google | 96,55 % | Ahrefs, étude sur environ 14 milliards de pages (2023) |
 
-1. **46 % des recherches sur Google sont locales.**
-Les entreprises locales ne peuvent pas ignorer l’optimisation locale. (Source : Go\-Globe)
-2. **28 % des recherches locales aboutissent à un achat dans la journée.**
-Le SEO local génère des conversions rapides. (Source : Seroundtable)
-3. **72 % des utilisateurs qui font une recherche locale visitent un magasin dans un rayon de 8 km.**
-Optimiser ta fiche Google My Business est indispensable. (Source : HubSpot)
-4. **50 % des recherches mobiles sont locales.**
-Le mobile et le local sont intimement liés. (Source : Sortlist)
-5. **87 % des utilisateurs mobiles qui effectuent une recherche locale visitent une entreprise dans la journée.**
-L’intention est forte et immédiate. (Source : Think with Google)
+**Ce qu'il faut en retenir :** l'essentiel des clics se joue sur les trois premières positions, et la grande majorité des pages publiées ne reçoit aucune visite organique. Le second chiffre vient d'un index qui comprend énormément de pages sans intérêt : il dit surtout qu'écrire ne suffit pas.
 
-## Comportement utilisateur et taux de clics (CTR)
+## Recherches sans clic et AI Overviews
 
-1. **Le CTR moyen diminue de 15 % dès la deuxième page.**
-Si tu n’es pas en page 1, ton trafic chute. (Source : Advanced Web Ranking)
-2. **Les recherches de 4 mots ou plus représentent 50 % des recherches.**
-Les requêtes longues sont précises et souvent plus qualifiées. (Source : Wordstream)
-3. **43 % des internautes recherchent du contenu vidéo avant d’acheter.**
-La vidéo influence directement les décisions. (Source : HubSpot)
-4. **Les vidéos augmentent les conversions de 80 %.**
-Les intégrer sur ton site peut transformer tes résultats. (Source : Wordstream)
+| Indicateur | Valeur | Source et date |
+| --- | --- | --- |
+| Recherches Google sans clic vers un site | 58,5 % aux États-Unis, 59,7 % dans l'UE | SparkToro et Datos, 2024 |
+| Recherches affichant un résumé IA | 18 % | Pew Research Center, navigation de 900 adultes américains, mars 2025 |
+| Visites avec clic sur un résultat, avec ou sans résumé IA | 8 % contre 15 % | Pew Research Center, mars 2025 |
+| Clics sur un lien cité dans le résumé IA | 1 % des visites | Pew Research Center, mars 2025 |
+| Baisse du taux de clic de la position 1 quand un AI Overview s'affiche | −34,5 % | Ahrefs, publié en avril 2025 |
+| Même mesure, un an plus tard | −58 % | Ahrefs, données de décembre 2025, publié en février 2026 |
+| Même mesure en position 2 et en position 10 | −50,8 % et −19,4 % | Ahrefs, février 2026 |
 
-## Performances de contenu
+**Ce qu'il faut en retenir :** les études convergent sur le sens, pas sur l'ampleur. Les méthodes diffèrent (panel de navigation, données agrégées de la Search Console, requêtes de bureau seulement). Et la plupart datent d'avant le 22 juillet 2026, date d'arrivée des Aperçus IA et du Mode IA en France. L'effet sur le marché français reste à mesurer site par site. J'explique comment dans l'article sur [les recherches zéro clic](/zero-click-searches/).
 
-1. **Les pages en première position comptent en moyenne 1447 mots.**
-Le contenu long et structuré domine. (Source : Backlinko)
-2. **Les titres de 6 à 13 mots génèrent plus de trafic organique.**
-Un équilibre entre clarté et optimisation. (Source : Semrush)
-3. **Les entreprises avec un blog génèrent 126 % de leads en plus.**
-Le contenu régulier reste un levier majeur. (Source : HubSpot)
-4. **Publier plus de 16 articles par mois génère 4,5 fois plus de leads.**
-La fréquence compte autant que la qualité. (Source : HubSpot)
+## Usage des IA génératives
 
-La [rédaction de contenu performants](https://valentinrouault.com/redaction-article-premier-google/) est donc toujours au centre des stratégies SEO car sans contenu, pas d’[indexation](https://valentinrouault.com/indexation-google/).
+| Indicateur | Valeur | Source et date |
+| --- | --- | --- |
+| Utilisateurs mensuels des AI Overviews | plus de 2,5 milliards | Google, I/O 2026 (19 mai 2026) |
+| Utilisateurs mensuels du Mode IA | plus de 1 milliard | Google, I/O 2026 |
+| Utilisateurs de ChatGPT qui utilisent aussi Google | environ 95 % | Similarweb, mars à mai 2026 |
+| Visites web mensuelles moyennes des assistants IA | 9,5 milliards, +70 % sur un an | Similarweb, juin 2025 à mai 2026 |
 
-## Liens entrants et backlinks
+Ces chiffres sont détaillés dans les [statistiques sur la recherche IA](/stats-geo/).
 
-1. **Les pages en première position ont 3,8 fois plus de backlinks que les autres.**
-Les liens restent un pilier SEO. (Source : Backlinko)
-2. **68 % des marketeurs considèrent le netlinking comme la stratégie la plus difficile.**
-Mais elle reste incontournable. (Source : Semrush)
-3. **Les backlinks de sites à forte autorité augmentent de 67 % les chances de classement.**
-La qualité prime sur la quantité. (Source : Ahrefs)
-4. **74,3 % des link builders paient pour obtenir des backlinks.**
-La réalité du marché : beaucoup utilisent encore des stratégies payantes. (Source : Ahrefs)
+## Les mises à jour de Google
 
-## Mobile et vitesse de chargement
+| Mise à jour | Dates | Source |
+| --- | --- | --- |
+| Core update de décembre 2025 | du 11 au 29 décembre 2025 | Search Status Dashboard |
+| Spam update de mars 2026 | 24 et 25 mars 2026, moins de 20 heures | Search Status Dashboard |
+| Core update de mars 2026 | du 27 mars au 8 avril 2026 | Search Status Dashboard |
+| Core update de mai 2026 | à partir du 21 mai 2026 | Search Status Dashboard |
+| Spam update d'août 2026 | à partir du 18 août 2026 | Search Status Dashboard |
 
-1. **63 % du trafic organique global vient du mobile.**
-L’expérience mobile n’est plus optionnelle. (Source : Statista)
-2. **61 % des recherches Google se font sur mobile.**
-Google privilégie l’expérience mobile dans son classement. (Source : Semrush)
-3. **53 % des visiteurs quittent un site si le chargement dépasse 3 secondes.**
-La vitesse est critique. (Source : Google)
-4. **Les utilisateurs mobiles sont 5 fois plus susceptibles d’abandonner un site non optimisé.**
-Mobile\-friendly \= indispensable. (Source : Google)
+**Ce qu'il faut en retenir :** comptez trois ou quatre mises à jour majeures par an. Le seul calendrier fiable est le [Search Status Dashboard](https://status.search.google.com/) de Google.
 
-## Sécurité et expérience utilisateur (UX)
+## Les chiffres que j'ai retirés, et pourquoi
 
-1. **70 % des utilisateurs abandonnent un achat si le site n’est pas sécurisé.**
-Le HTTPS est une question de confiance autant que de SEO. (Source : GlobalSign)
-2. **Le taux de rebond moyen est de 47 %.**
-Un indicateur à surveiller pour juger la pertinence de ton contenu. (Source : Trusted Shops)
-3. **Les conversions augmentent de 74 % si une page est optimisée pour la vitesse.**
-Lenteur \= pertes directes. (Source : WP Rocket)
-4. **80 % des utilisateurs ignorent les annonces sponsorisées.**
-Encore une fois, l’organique reste roi. (Source : SEO Round Table)
+- **« 53 % du trafic web vient du référencement naturel »** : étude BrightEdge de 2019, régulièrement présentée comme récente. Elle date d'avant les réponses IA.
+- **« Les vidéos augmentent les conversions de 80 % »** : chiffre issu d'une étude d'un fournisseur de vidéo publicitaire vieille de plus de dix ans, dont la méthode n'est plus consultable. Il circule depuis d'un site à l'autre.
+- **« 46 % des recherches Google sont locales »** : chiffre attribué à Google, sans publication d'origine retrouvée.
+- **« Publier 16 articles par mois génère 4,5 fois plus de leads »** : étude HubSpot de 2015, sur un échantillon de clients de l'éditeur.
 
-## Impact de l’IA dans le SEO
+Si vous croisez ces chiffres dans une présentation, demandez la source. C'est souvent la question qui fait le plus de bien à un débat.
 
-1. **65 % des entreprises estiment que l’IA améliore leurs efforts SEO.**
-L’IA accélère la création et l’optimisation. (Source : Seoprofy)
-2. **58 % des professionnels SEO prévoient d’intégrer l’IA dans leurs flux de travail.**
-La tendance est claire : l’IA devient un standard. (Source : Demandsage)
-3. **68 % des entreprises obtiennent un meilleur ROI grâce à l’IA.**
-L’analyse, la génération de contenu et la personnalisation sont optimisées. (Source : Demandsage)
+## Comment utiliser ces statistiques
 
-## Conclusion
+Une statistique de marché sert à cadrer une discussion, pas à fixer un objectif. Votre taux de clic réel dépend de vos requêtes, de votre secteur et de ce que Google affiche autour de vos résultats. La seule source qui vaille pour votre site, c'est votre Search Console : les impressions, les clics et, depuis 2026, [le rapport IA générative](/search-console-rapport-ia/). Pour transformer ces données en plan d'action, voir [les stratégies SEO](/strategies-seo/).
 
-En Octobre 2025, le SEO repose encore sur les fondamentaux : mots\-clés, contenu et backlinks. Mais de nouveaux facteurs comme la vitesse, le mobile, la recherche locale et l’IA redéfinissent les priorités.
-
-Ces **52 statistiques SEO** doivent guider ta stratégie. Concentre\-toi sur la première page, optimise ton site pour le mobile et la vitesse, exploite le SEO local et intègre l’IA dans tes process.
+Sources : StatCounter Global Stats (mai, juin et septembre 2026) ; Backlinko, étude sur le taux de clic organique ; Ahrefs, études sur le trafic des pages (2023) et sur les AI Overviews (avril 2025, février 2026) ; SparkToro et Datos, étude zéro clic (2024) ; Pew Research Center (22 juillet 2025) ; Google I/O 2026 ; Similarweb, *Generative AI Landscape 2026* ; Google Search Status Dashboard.
