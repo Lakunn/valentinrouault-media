@@ -30,7 +30,7 @@ while ( have_posts() ) :
 					<h2 id="essentiel-title">L'essentiel</h2>
 					<ul>
 						<?php foreach ( $vr_essentiel as $vr_point ) : ?>
-							<li><?php echo wp_kses( $vr_point, array( 'strong' => array(), 'em' => array(), 'a' => array( 'href' => array() ) ) ); ?></li>
+							<li><?php echo wp_kses( $vr_point, array( 'strong' => array(), 'em' => array(), 'sup' => array(), 'sub' => array(), 'a' => array( 'href' => array() ) ) ); ?></li>
 						<?php endforeach; ?>
 					</ul>
 				</section>
