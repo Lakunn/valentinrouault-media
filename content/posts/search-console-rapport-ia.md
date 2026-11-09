@@ -67,7 +67,7 @@ Les pages stratégiques qui n'apparaissent jamais sont les priorités : réponse
 
 ## Une précision sur l'option de blocage
 
-En parallèle de ce rapport, Google a introduit un réglage qui permet d'exclure son contenu des fonctionnalités d'IA générative. C'est un choix binaire, qui retire le site de ces surfaces sans garantie de gain ailleurs. À réserver aux cas où l'exposition dans les réponses IA nuit clairement au modèle économique du site.
+En parallèle de ce rapport, Google a introduit un réglage qui permet d'exclure son contenu des fonctionnalités d'IA générative. Ce réglage, disponible pour tous les sites depuis le 31 août 2026, se trouve dans les paramètres de la Search Console, à la rubrique « IA générative de la recherche ». Il s'applique à toute la propriété, et non page par page. C'est un choix binaire, qui retire le site de ces surfaces sans garantie de gain ailleurs. À réserver aux cas où l'exposition dans les réponses IA nuit clairement au modèle économique du site.
 
 <section class="faq" markdown="1">
 

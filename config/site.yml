@@ -116,12 +116,14 @@ nav:
   - { label: Contenu, url: /category/contenu-seo/ }
   - { label: Actus, url: /category/actus-seo/ }
   - { label: Tous les articles, url: /blog-seo/ }
+  - { label: Outils, url: /outils-seo/ }
   - { label: À propos, url: /a-propos/ }
 
 footer_nav:
   - { label: "Guide : consultant SEO IA", url: /consultant-seo-ia/ }
   - { label: "Guide : SEO e-commerce", url: /seo-ecommerce/ }
   - { label: "Guide : SEO local", url: /seo-local/ }
+  - { label: Outils SEO gratuits, url: /outils-seo/ }
   - { label: À propos, url: /a-propos/ }
   - { label: Contact, url: /contact/ }
   - { label: Mentions légales, url: /mentions-legales/ }
