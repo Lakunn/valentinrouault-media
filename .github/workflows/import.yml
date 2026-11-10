@@ -34,4 +34,4 @@ jobs:
           git add urls.csv content
           git diff --cached --quiet && echo "Rien de nouveau" && exit 0
           git commit -m "Import du site actuel ($(date -u +%F))"
-          git push
+          git pull --rebase origin main && git push
