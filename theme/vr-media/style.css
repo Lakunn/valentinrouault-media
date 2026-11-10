@@ -190,7 +190,7 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 .prose > * + * { margin-top: 1.25em; }
 .prose p, .prose ul, .prose ol { margin-bottom: 0; }
 .prose strong { font-weight: 700; color: var(--ink); }
-.prose h2 { font-size: 1.75rem; line-height: 1.2; margin: 2.4em 0 .7em; padding-top: 1.1em; border-top: 1px solid var(--rule); }
+.prose h2 { font-size: 1.75rem; line-height: 1.2; margin: 1.8em 0 .6em; padding-top: .9em; border-top: 1px solid var(--rule); }
 .prose h3 { font-size: 1.32rem; line-height: 1.3; margin: 1.9em 0 .55em; }
 .prose h2 + h3 { margin-top: .8em; }
 .prose h4 { font-size: 1.1rem; margin: 1.5em 0 .4em; font-family: var(--sans); }
