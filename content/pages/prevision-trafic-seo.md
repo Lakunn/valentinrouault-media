@@ -15,10 +15,13 @@ essentiel:
 
 « Combien de trafic si on passe en première page ? » C'est la question qui décide d'un budget. Cet outil y répond avec une méthode simple et explicite, que vous pouvez montrer à un client ou à une direction.
 
+Vous pouvez coller un export brut : l'outil reconnaît les en-têtes de Semrush, d'Ahrefs et de la Search Console (les impressions servent alors de volume). Le tableau sort trié par gain, avec une priorité pour chaque mot-clé, et se télécharge en CSV pour un tableur.
+
 [vr_trafic]
 
 ## Comment lire le résultat
 
+- **Commencez par les lignes « Rapide ».** Ce sont des pages déjà en première page, entre la position visée et la 10e : une optimisation du contenu ou du maillage suffit souvent.
 - **Les gains se concentrent sur les trois premières positions.** Passer de la 15e à la 8e position rapporte peu ; passer de la 4e à la 1re change l'ordre de grandeur.
 - **La valeur en euros** multiplie les clics gagnés par le coût par clic : c'est ce que coûterait le même trafic en publicité. C'est un repère, pas un chiffre d'affaires.
 - **Les AI Overviews** réduisent fortement le taux de clic des premières positions sur les requêtes informationnelles. Renseignez une part proche de la réalité de votre secteur, en vérifiant vos requêtes principales.

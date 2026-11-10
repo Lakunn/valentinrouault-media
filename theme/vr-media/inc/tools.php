@@ -85,6 +85,7 @@ add_shortcode(
 					'Product'       => 'Fiche produit',
 					'Person'        => 'Personne (auteur, consultant)',
 					'BreadcrumbList' => 'Fil d\'Ariane',
+					'FAQPage'       => 'Questions fréquentes (FAQ)',
 				)
 			)
 		);
@@ -113,6 +114,7 @@ add_shortcode(
 		$f .= vr_field( 'rating', 'Note moyenne des avis (sur 5)', vr_input( 'rating', '4,6' ), 'Uniquement des avis réels et visibles sur la page.', 'for-Product' );
 		$f .= vr_field( 'reviews', 'Nombre d\'avis', vr_input( 'reviews', '128' ), '', 'for-Product' );
 		$f .= vr_field( 'crumbs', 'Étapes du fil d\'Ariane (une par ligne : nom | adresse)', vr_textarea( 'crumbs', "Accueil | https://exemple.fr/\nBlog | https://exemple.fr/blog/\nRecherches zéro clic | https://exemple.fr/blog/zero-clic/", 4 ), '', 'for-BreadcrumbList' );
+		$f .= vr_field( 'faq', 'Questions et réponses (une par ligne : question | réponse)', vr_textarea( 'faq', "Combien de temps dure un audit SEO ? | Comptez deux à quatre semaines selon la taille du site.\nFaut-il un llms.txt ? | Ce n'est pas obligatoire : aucun moteur ne s'est engagé à le lire.", 4 ), 'Le texte doit être identique à celui affiché sur la page.', 'for-FAQPage' );
 		$f .= '<button class="btn" type="submit">Générer le code</button>';
 		return vr_tool_wrap( 'schema', 'Générateur de données structurées (JSON-LD)', $f );
 	}
@@ -122,7 +124,7 @@ add_shortcode(
 add_shortcode(
 	'vr_hreflang',
 	function () {
-		$f  = vr_field( 'versions', 'Versions de la page (une par ligne : code langue-pays | adresse)', vr_textarea( 'versions', "fr-fr | https://exemple.com/fr/\nfr-ca | https://exemple.com/ca-fr/\nen-ca | https://exemple.com/ca-en/\nen | https://exemple.com/en/", 6 ), 'Code langue ISO 639-1 (fr, en, de…), suivi si besoin d\'un code pays ISO 3166-1 (fr, be, ca, ch…).' );
+		$f  = vr_field( 'versions', 'Versions de la page (une par ligne : code langue-pays | adresse)', vr_textarea( 'versions', "fr-fr | https://exemple.com/fr/\nfr-ca | https://exemple.com/ca-fr/\nen-ca | https://exemple.com/ca-en/\nen | https://exemple.com/en/", 6 ), 'Code langue ISO 639-1 (fr, en, de…), suivi si besoin d\'un code pays ISO 3166-1 (fr, be, ca, ch…). Pour auditer un site existant, collez directement les balises <link rel="alternate" hreflang> de son code source.' );
 		$f .= vr_field( 'xdefault', 'Version par défaut (x-default)', vr_input( 'xdefault', 'https://exemple.com/', 'url' ), 'La page affichée quand aucune langue ne correspond, souvent un sélecteur de pays. Facultatif.' );
 		$f .= '<button class="btn" type="submit">Générer et vérifier</button>';
 		return vr_tool_wrap( 'hreflang', 'Générateur et vérificateur de balises hreflang', $f );
@@ -147,7 +149,9 @@ add_shortcode(
 	function () {
 		$f  = vr_field( 'brand', 'Votre marque et ses variantes (une par ligne)', vr_textarea( 'brand', "valentin rouault\nvalentinrouault\nrouault", 3 ), 'Pensez aux fautes de frappe et aux écritures collées.' );
 		$f .= vr_field( 'city', 'Villes ou zones visées (une par ligne)', vr_textarea( 'city', "paris\nlyon\nmontreal", 3 ), 'Facultatif, pour le filtre local.' );
+		$f .= vr_field( 'topic', 'Mots de votre thématique (un par ligne)', vr_textarea( 'topic', "netlinking\nbacklink\nlien", 3 ), 'Facultatif : isole un sujet pour suivre ses clics à part.' );
 		$f .= vr_field( 'minwords', 'Longue traîne : nombre de mots minimum', vr_select( 'minwords', array( '4' => '4 mots et plus', '5' => '5 mots et plus', '6' => '6 mots et plus', '8' => '8 mots et plus (requêtes conversationnelles)' ) ) );
+		$f .= vr_field( 'sample', 'Tester sur vos requêtes (facultatif)', vr_textarea( 'sample', "comment faire du netlinking\nvalentin rouault seo\nmeilleur outil seo gratuit\nconsultant seo paris", 5 ), 'Collez la colonne « Requêtes » d\'un export de la Search Console : l\'outil compte ce que chaque filtre capte avant que vous l\'utilisiez.' );
 		$f .= '<button class="btn" type="submit">Générer les filtres</button>';
 		return vr_tool_wrap( 'regex', 'Filtres d\'expressions régulières pour la Search Console', $f );
 	}

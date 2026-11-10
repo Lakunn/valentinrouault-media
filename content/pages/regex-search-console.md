@@ -15,6 +15,8 @@ essentiel:
 
 Le rapport Performances de la Search Console mélange tout : la notoriété de la marque, les requêtes d'achat, les questions. Segmenter avec des expressions régulières change la lecture, surtout depuis l'arrivée des AI Overviews en France le 22 juillet 2026.
 
+Collez aussi quelques centaines de requêtes de votre export : l'outil indique, pour chaque filtre, combien de requêtes il capte et lesquelles. Vous voyez tout de suite si la marque est bien couverte avant d'ouvrir la Search Console.
+
 [vr_regex_gsc]
 
 ## Trois analyses à faire avec ces filtres

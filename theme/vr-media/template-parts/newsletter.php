@@ -14,7 +14,7 @@ if ( ! $vr_action ) {
 	</div>
 	<form action="<?php echo esc_url( $vr_action ); ?>" method="post" target="_blank">
 		<label class="screen-reader-text" for="nl-email">Adresse e-mail</label>
-		<input id="nl-email" type="email" name="<?php echo esc_attr( vr_config( 'newsletter.field', 'EMAIL' ) ); ?>" placeholder="ton@email.fr" required>
+		<input id="nl-email" type="email" name="<?php echo esc_attr( vr_config( 'newsletter.field', 'EMAIL' ) ); ?>" placeholder="votre@email.fr" required>
 		<button class="btn" type="submit"><?php echo esc_html( vr_config( 'newsletter.button', "S'inscrire" ) ); ?></button>
 	</form>
 </section>

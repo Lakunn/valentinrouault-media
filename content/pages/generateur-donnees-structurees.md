@@ -25,9 +25,10 @@ Les données structurées décrivent le contenu d'une page dans un format que le
 - **Produit** : fiche produit avec un prix et, si vous en avez, des avis réellement affichés.
 - **Personne** : page d'auteur ou de consultant.
 - **Fil d'Ariane** : toutes les pages qui en affichent un.
+- **FAQ** : questions et réponses visibles sur la page. N'en attendez aucun affichage particulier dans Google (voir ci-dessous).
 
 ## Ce qui a changé récemment
 
-Depuis le 7 mai 2026, Google n'affiche plus de résultats enrichis pour les FAQ : ce type n'est donc pas proposé ici. Le balisage reste lisible par les moteurs, mais il ne donne plus d'affichage particulier.
+Depuis le 7 mai 2026, Google n'affiche plus de résultats enrichis pour les FAQ. Le type reste proposé ici parce que le balisage décrit toujours la page aux moteurs, mais il ne donne plus d'affichage particulier : ne le présentez pas comme un levier de clics.
 
 Pour la place des données structurées dans une stratégie plus large, voir [les quick wins SEO](/quick-wins-seo/) et [le SEO pour les IA](/seo-ia/).

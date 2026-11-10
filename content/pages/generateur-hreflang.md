@@ -15,6 +15,8 @@ essentiel:
 
 J'ai travaillé sur des sites en plusieurs langues et sur plusieurs continents : hreflang est l'un des réglages les plus souvent faux, et l'un des plus coûteux quand il l'est. Une version canadienne qui remonte en France, une page anglaise servie aux internautes belges : les symptômes sont discrets, mais le trafic perdu est réel.
 
+L'outil sert aussi d'audit : collez les balises `<link rel="alternate" hreflang>` copiées depuis le code source d'une page, il les relit et signale les codes invalides, les doublons et l'absence de x-default.
+
 [vr_hreflang]
 
 ## Les règles à retenir
