@@ -9,6 +9,7 @@ Usage : python scripts/check_urls.py [--base https://valentinrouault.com]
 from __future__ import annotations
 
 import argparse
+import time
 import csv
 import os
 import sys
@@ -29,10 +30,18 @@ EXPECTED_CANONICAL: dict[str, str] = {}
 
 
 def check(url: str, kind: str) -> tuple[str, str, str]:
-    try:
-        r = S.get(url, allow_redirects=False, timeout=30)
-    except requests.RequestException as e:
-        return url, "KO", f"erreur réseau : {e}"
+    # Hébergement mutualisé : on espace les requêtes et on réessaie les erreurs 5xx passagères.
+    r = None
+    for attempt in range(4):
+        time.sleep(1.5 if attempt == 0 else 10 * attempt)
+        try:
+            r = S.get(url, allow_redirects=False, timeout=30)
+        except requests.RequestException as e:
+            if attempt == 3:
+                return url, "KO", f"erreur réseau : {e}"
+            continue
+        if r.status_code < 500:
+            break
     if 300 <= r.status_code < 400:
         return url, "KO", f"redirection {r.status_code} → {r.headers.get('Location')}"
     if r.status_code != 200:
@@ -76,7 +85,7 @@ def main() -> None:
         if target:
             EXPECTED_CANONICAL[norm_url(d.meta.get("url") or base + doc_path(d))] = norm_url(base + target)
 
-    with ThreadPoolExecutor(8) as ex:
+    with ThreadPoolExecutor(2) as ex:
         results = list(ex.map(lambda kv: check(*kv), targets.items()))
 
     ko = [r for r in results if r[1] == "KO"]
