@@ -1,26 +1,100 @@
-# Veille de valentinrouault.com : flux lus chaque semaine par scripts/veille.py.
-# filter: false = tout garder (source déjà ciblée) ; sinon seuls les éléments contenant un mot-clé sont gardés.
+# Veille éditoriale de valentinrouault.com : lue chaque jour par scripts/veille.py.
+#
+# Chaque source a un poids (1 à 3) et une langue. Le score d'un sujet augmente avec le nombre
+# de sources distinctes qui en parlent, leur poids et la fraîcheur. Un sujet très couvert en
+# anglais et pas encore en français reçoit un bonus « écart FR » : c'est là qu'un article
+# français apporte le plus de valeur.
+#
+# Les flux en erreur sont listés à la fin de chaque rapport : les corriger ou les retirer ici.
 
-keywords: [seo, référencement, google, search console, ai overviews, ai mode, chatgpt, openai, perplexity, gemini, copilot, bing, llm, geo, core update, spam, crawl, index, schema, robots]
-exclude: []
+days: 7             # fenêtre analysée à chaque passage
+history_days: 45    # durée de conservation des éléments (pour détecter les sujets qui montent)
+keep_top: 12        # nombre de sujets détaillés dans le rapport
+
+keywords: [seo, référencement, referencement, google, search console, ai overview, aperçus ia, ai mode, mode ia, chatgpt, openai, perplexity, gemini, copilot, bing, llm, geo, core update, spam, crawl, index, schema, robots, serp, backlink, netlinking, e-e-a-t, eeat, discover, merchant, local, maps, agent, llms.txt]
+exclude: [webinar, sponsored, sponsorisé, podcast episode, job, recrute, hiring]
 
 feeds:
-  - name: "Google Search Central (blog officiel)"
-    url: "https://developers.google.com/search/blog/feed.xml"
-    filter: false
-  - name: "Google Actualités : SEO et IA (FR)"
-    url: "https://news.google.com/rss/search?q=(SEO+OR+r%C3%A9f%C3%A9rencement)+(Google+OR+ChatGPT+OR+IA)&hl=fr&gl=FR&ceid=FR:fr"
-    filter: false
-  - name: "Google Actualités : Google Search updates (EN)"
-    url: "https://news.google.com/rss/search?q=%22Google+Search%22+(update+OR+%22AI+Mode%22+OR+%22AI+Overviews%22)&hl=en-US&gl=US&ceid=US:en"
-    filter: false
-  - name: "Search Engine Roundtable"
-    url: "https://www.seroundtable.com/index.rdf"
-  - name: "Search Engine Land"
-    url: "https://searchengineland.com/feed"
-  - name: "Abondance"
-    url: "https://www.abondance.com/feed"
-  - name: "OpenAI (actualités)"
-    url: "https://openai.com/news/rss.xml"
-  - name: "Bing Webmaster (blog)"
-    url: "https://blogs.bing.com/webmaster/feed"
+  # --- Sources officielles (poids 3) ---
+  - { name: "Google Search Central (blog)", url: "https://developers.google.com/search/blog/feed.xml", lang: en, weight: 3, type: officiel, filter: false }
+  - { name: "Google Search Status Dashboard", url: "https://status.search.google.com/en/feed.atom", lang: en, weight: 3, type: officiel, filter: false }
+  - { name: "Google The Keyword : Search", url: "https://blog.google/products/search/rss/", lang: en, weight: 3, type: officiel, filter: false }
+  - { name: "Bing Webmaster (blog)", url: "https://blogs.bing.com/webmaster/feed", lang: en, weight: 3, type: officiel, filter: false }
+  - { name: "OpenAI (actualités)", url: "https://openai.com/news/rss.xml", lang: en, weight: 2, type: officiel }
+
+  # --- Médias SEO internationaux (poids 2) ---
+  - { name: "Search Engine Roundtable", url: "https://www.seroundtable.com/index.rdf", lang: en, weight: 2, type: media, filter: false }
+  - { name: "Search Engine Land", url: "https://searchengineland.com/feed", lang: en, weight: 2, type: media, filter: false }
+  - { name: "Search Engine Journal", url: "https://www.searchenginejournal.com/feed/", lang: en, weight: 2, type: media, filter: false }
+  - { name: "Ahrefs blog", url: "https://ahrefs.com/blog/feed/", lang: en, weight: 2, type: etude }
+  - { name: "Semrush blog", url: "https://www.semrush.com/blog/feed/", lang: en, weight: 1, type: etude }
+  - { name: "Moz blog", url: "https://moz.com/posts/rss/blog", lang: en, weight: 1, type: etude }
+  - { name: "SparkToro", url: "https://sparktoro.com/blog/feed/", lang: en, weight: 2, type: etude }
+  - { name: "Growth Memo (Kevin Indig)", url: "https://www.growth-memo.com/feed", lang: en, weight: 2, type: etude }
+  - { name: "Aleyda Solis", url: "https://www.aleydasolis.com/en/feed/", lang: en, weight: 1, type: expert }
+  - { name: "iPullRank", url: "https://ipullrank.com/feed", lang: en, weight: 1, type: expert }
+  - { name: "Google Actualités : Google Search (EN)", url: "https://news.google.com/rss/search?q=%22Google+Search%22+(update+OR+%22AI+Mode%22+OR+%22AI+Overviews%22)&hl=en-US&gl=US&ceid=US:en", lang: en, weight: 1, type: media, filter: false }
+
+  # --- Médias SEO francophones (poids 2) ---
+  - { name: "Abondance", url: "https://www.abondance.com/feed", lang: fr, weight: 2, type: media, filter: false }
+  - { name: "WebRankInfo", url: "https://www.webrankinfo.com/rss.xml", lang: fr, weight: 2, type: media, filter: false }
+  - { name: "Blog du Modérateur", url: "https://www.blogdumoderateur.com/feed/", lang: fr, weight: 1, type: media }
+  - { name: "Siècle Digital", url: "https://siecledigital.fr/feed/", lang: fr, weight: 1, type: media }
+  - { name: "Journal du Net", url: "https://www.journaldunet.com/rss/", lang: fr, weight: 1, type: media }
+  - { name: "Google Actualités : SEO et IA (FR)", url: "https://news.google.com/rss/search?q=(SEO+OR+r%C3%A9f%C3%A9rencement)+(Google+OR+ChatGPT+OR+IA)&hl=fr&gl=FR&ceid=FR:fr", lang: fr, weight: 1, type: media, filter: false }
+
+# Comptes Bluesky (flux RSS officiels : https://bsky.app/profile/<handle>/rss).
+# Beaucoup de Googlers et d'experts SEO y publient aussi. Un handle inexact apparaît dans
+# « Flux injoignables » : le corriger ici.
+bluesky:
+  - { handle: "johnmu.com", name: "John Mueller (Google)", weight: 3 }
+  - { handle: "rustybrick.com", name: "Barry Schwartz (Search Engine Roundtable)", weight: 2 }
+  - { handle: "lilyray.nyc", name: "Lily Ray", weight: 2 }
+  - { handle: "aleyda.com", name: "Aleyda Solis", weight: 1 }
+  - { handle: "glenngabe.bsky.social", name: "Glenn Gabe", weight: 2 }
+  - { handle: "randfish.bsky.social", name: "Rand Fishkin", weight: 1 }
+
+# Alertes Google : dans google.com/alerts, créer l'alerte, « Afficher les options »,
+# « Envoyer à : Flux RSS », puis copier ici l'adresse du flux.
+google_alerts: []
+#  - { name: "Alerte : AI Overviews France", url: "https://www.google.com/alerts/feeds/…/…" }
+
+# Comptes X (Twitter) : suivis uniquement si le secret X_BEARER_TOKEN existe (API payante).
+# Sans lui, ces comptes sont couverts indirectement par Search Engine Roundtable, qui relaie
+# chaque jour les déclarations des Googlers.
+x_accounts:
+  - { handle: searchliaison, name: "Google SearchLiaison (Danny Sullivan)", weight: 3 }
+  - { handle: JohnMu, name: "John Mueller (Google)", weight: 3 }
+  - { handle: methode, name: "Gary Illyes (Google)", weight: 3 }
+  - { handle: g33konaut, name: "Martin Splitt (Google)", weight: 3 }
+  - { handle: googlesearchc, name: "Google Search Central", weight: 3 }
+  - { handle: rustybrick, name: "Barry Schwartz", weight: 2 }
+  - { handle: lilyraynyc, name: "Lily Ray", weight: 2 }
+  - { handle: glenngabe, name: "Glenn Gabe", weight: 2 }
+  - { handle: Marie_Haynes, name: "Marie Haynes", weight: 1 }
+  - { handle: Kevin_Indig, name: "Kevin Indig", weight: 1 }
+  - { handle: randfish, name: "Rand Fishkin", weight: 1 }
+  - { handle: aleyda, name: "Aleyda Solis", weight: 1 }
+  - { handle: abondance_com, name: "Olivier Andrieu (Abondance)", weight: 2 }
+  - { handle: webrankinfo, name: "Olivier Duffez (WebRankInfo)", weight: 2 }
+
+# Sujets suivis : un élément est rattaché au sujet dont il contient un des motifs.
+# L'ordre compte (le premier sujet qui correspond l'emporte). Le reste est regroupé par mots communs.
+topics:
+  - { id: ai-overviews, label: "AI Overviews / Aperçus IA", match: ["ai overview", "aperçus ia", "aperçu ia", "ai overviews"] }
+  - { id: ai-mode, label: "Mode IA de Google", match: ["ai mode", "mode ia"] }
+  - { id: core-update, label: "Mises à jour de l'algorithme", match: ["core update", "mise à jour principale", "mise à jour de base", "algorithm update"] }
+  - { id: spam, label: "Spam et pénalités", match: ["spam update", "spam policy", "site reputation", "scaled content", "pénalité", "manual action"] }
+  - { id: search-console, label: "Search Console", match: ["search console"] }
+  - { id: chatgpt, label: "ChatGPT et OpenAI", match: ["chatgpt", "openai", "searchgpt", "gpt-"] }
+  - { id: gemini, label: "Gemini", match: ["gemini"] }
+  - { id: perplexity, label: "Perplexity", match: ["perplexity"] }
+  - { id: bing, label: "Bing et Copilot", match: ["bing", "copilot"] }
+  - { id: geo, label: "GEO et visibilité dans les IA", match: ["geo ", "generative engine", "llm visibility", "citations", "llms.txt", "ai visibility", "ai search"] }
+  - { id: structured-data, label: "Données structurées et résultats enrichis", match: ["structured data", "schema", "rich result", "données structurées"] }
+  - { id: local, label: "SEO local", match: ["local seo", "google business profile", "maps", "seo local"] }
+  - { id: ecommerce, label: "E-commerce et Merchant Center", match: ["merchant center", "shopping", "product", "e-commerce", "ecommerce"] }
+  - { id: discover, label: "Google Discover", match: ["discover"] }
+  - { id: technique, label: "SEO technique (crawl, indexation, rendu)", match: ["crawl", "googlebot", "index", "javascript", "core web vitals", "rendering", "robots.txt"] }
+  - { id: liens, label: "Liens et netlinking", match: ["backlink", "link building", "netlinking", "links"] }
+  - { id: zero-clic, label: "Recherches zéro clic et trafic", match: ["zero-click", "zéro clic", "click-through", "ctr", "traffic drop", "baisse de trafic"] }

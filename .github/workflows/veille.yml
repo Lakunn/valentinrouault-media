@@ -1,14 +1,15 @@
 name: 4 · Veille
 
-# Chaque lundi matin : lit les flux de config/veille.yml et commite veille/AAAA-MM-JJ.md.
+# Chaque matin : lit les sources de config/veille.yml, classe les sujets et commite
+# veille/AAAA-MM-JJ.md, veille/plan.md et veille/items.json.
 on:
   schedule:
-    - cron: "41 5 * * 1"
+    - cron: "17 5 * * *"
   workflow_dispatch:
     inputs:
       days:
         description: "Nombre de jours couverts"
-        default: "8"
+        default: "7"
 
 permissions:
   contents: write
@@ -21,7 +22,9 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12", cache: pip }
       - run: pip install -r requirements.txt
-      - run: python scripts/veille.py --days ${{ inputs.days || '8' }}
+      - run: python scripts/veille.py --days ${{ inputs.days || '7' }}
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
       - name: Commit
         run: |
           git config user.name "vr-media-bot"
@@ -29,4 +32,4 @@ jobs:
           git add veille
           git diff --cached --quiet && exit 0
           git commit -m "Veille du $(date -u +%F)"
-          git push
+          git pull --rebase origin main && git push
