@@ -54,7 +54,9 @@ def check_pagination(cfg: dict, docs: list) -> int:
             cat_slugs = {c["slug"]: c for c in cfg.get("categories", [])}
             if archive.startswith("author/"):
                 count, size = len(posts), per.get("author", 5)
-            elif archive.startswith("category/") or last in cat_slugs:
+            elif archive == (cfg.get("posts_page_slug") or "\0"):
+                count, size = len(posts), per.get("blog", 9)
+            elif archive.startswith("category/") or (cfg.get("category_in_url") and last in cat_slugs):
                 # une rubrique parente affiche aussi les articles de ses sous-rubriques
                 family = {last} | {s for s, c in cat_slugs.items() if c.get("parent") == last}
                 count = sum(1 for d in posts if family & set(d.meta.get("categories") or []))
