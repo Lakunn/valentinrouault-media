@@ -268,3 +268,25 @@ add_action(
 		}
 	}
 );
+
+/**
+ * Vide le cache de page (LiteSpeed, cache Hostinger) quand le thème change à chaque déploiement :
+ * sans cela, les pages déjà en cache gardent l'ancienne feuille de style.
+ */
+add_action(
+	'init',
+	function () {
+		$vr_rev = (string) filemtime( VR_DIR . '/style.css' ) . '-' . (string) filemtime( VR_DIR . '/assets/site.js' ) . '-' . (string) filemtime( VR_DIR . '/assets/tools.js' );
+		if ( get_option( 'vr_theme_rev' ) === $vr_rev ) {
+			return;
+		}
+		update_option( 'vr_theme_rev', $vr_rev, true );
+		do_action( 'litespeed_purge_all' );
+		if ( ! headers_sent() ) {
+			header( 'X-LiteSpeed-Purge: *' );
+		}
+		if ( function_exists( 'wp_cache_flush' ) ) {
+			wp_cache_flush();
+		}
+	}
+);
