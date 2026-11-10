@@ -65,6 +65,7 @@ jobs:
           FTP_PORT: ${{ vars.FTP_PORT }}           # Hostinger SFTP : 65002
           FTP_THEME_DIR: ${{ vars.FTP_THEME_DIR }} # ex. domains/valentinrouault.com/public_html/wp-content/themes/vr-media
         run: |
+          if [ -z "$FTP_HOST" ]; then echo "Pas d'accès SFTP configuré : thème à installer depuis l'administration WordPress (zip)"; exit 0; fi
           lftp -u "$FTP_USER","$FTP_PASSWORD" "${FTP_PROTOCOL:-sftp}://$FTP_HOST${FTP_PORT:+:$FTP_PORT}" -e "
             set sftp:auto-confirm yes; set ssl:verify-certificate yes; set net:max-retries 3;
             mirror --reverse --delete --verbose --parallel=4 theme/vr-media $FTP_THEME_DIR;
