@@ -151,3 +151,13 @@ per_page:
   blog: 9       # /blog-seo/page/4/ existe → 11 max aujourd'hui
   archive: 6    # /category/seo/page/3/ existe → 6 max aujourd'hui
   author: 5     # /author/…/page/7/ existe → 5 max aujourd'hui
+
+# Maillage vers les outils : encadré « Pour aller plus loin » sous les articles qui traitent du sujet (au plus deux).
+tool_links:
+  - { match: "données structurées|schema|json-ld|résultats enrichis", title: "Générateur de données structurées", url: /outils-seo/generateur-donnees-structurees/, text: "Le code JSON-LD prêt à coller, avec les contrôles des champs exigés par Google." }
+  - { match: "hreflang|multilingue|international|plusieurs langues", title: "Générateur et vérificateur hreflang", url: /outils-seo/generateur-hreflang/, text: "Les balises de chaque version linguistique, et l'audit d'un site existant." }
+  - { match: "search console|regex|requêtes|impressions", title: "Filtres regex pour la Search Console", url: /outils-seo/regex-search-console/, text: "Isolez la marque, les questions et les requêtes d'achat dans le rapport Performances." }
+  - { match: "llms\\.txt|assistants? ia|chatgpt|perplexity|llm", title: "Générateur de llms.txt", url: /outils-seo/generateur-llms-txt/, text: "Le fichier qui présente votre site aux assistants IA." }
+  - { match: "maillage|liens internes|pagerank|pages? orphelines?", title: "PageRank interne", url: /outils-seo/pagerank-interne/, text: "Mesurez où votre maillage envoie la popularité, à partir d'un export de crawl." }
+  - { match: "mots[- ]clés|intention de recherche|recherche de mots", title: "Classement par intention et par thème", url: /outils-seo/classement-intention-mots-cles/, text: "Rangez une liste de mots-clés par intention et regroupez-la par thème." }
+  - { match: "taux de clic|\\bctr\\b|ai overviews|zéro clic|perte de trafic|prévision", title: "Prévision de trafic SEO", url: /outils-seo/prevision-trafic-seo/, text: "Le trafic gagné position par position, effet des AI Overviews compris." }
