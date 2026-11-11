@@ -7,7 +7,7 @@ origin: new
 categories: [actus-seo, blog]
 dek: "Depuis le 10 novembre, OpenAI laisse les entreprises revendiquer leur fiche dans ChatGPT et voir combien de fois l'assistant les cite, et combien de clics suivent. Ce que contient vraiment ce tableau de bord, ce qu'il ne dit pas, et ce qu'une entreprise française peut faire dès maintenant."
 seo_title: "Business Hub de ChatGPT : mentions, clics et limites"
-meta_description: "OpenAI lance Businesses in ChatGPT : fiche entreprise, mentions, clics et thèmes de découverte. Ce que montre le tableau de bord, ses limites, quoi faire en France."
+meta_description: "OpenAI lance Businesses in ChatGPT : fiche entreprise, mentions, clics et thèmes de découverte. Ce que montre le tableau de bord et ses limites."
 essentiel:
   - "Lancé en **bêta le 10 novembre 2026**, le programme Businesses in ChatGPT permet de revendiquer une fiche, d'envoyer un flux produits et de suivre **mentions, vues de fiche et clics** sur 7 ou 28 jours."
   - "Les premiers tableaux de bord montrent **peu de clics pour beaucoup de mentions** : 24 clics pour 690 mentions dans un exemple publié, soit environ 3,5 %."
