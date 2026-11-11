@@ -39,6 +39,8 @@ Aucune consigne nouvelle, aucun secteur visé, aucun lien annoncé avec les AI O
 | Core update de mai | 21 mai | 2 juin | 12 jours |
 | Core update de novembre | 10 novembre | en cours | environ 14 jours annoncés |
 
+L'historique complet des mises à jour depuis 2025 figure dans mes [statistiques SEO](/statistiques-seo/), et le contexte des deux dernières années dans [ce qui a vraiment changé entre 2025 et 2026](/tendances-seo-2025/).
+
 Sources : historique des mises à jour du tableau de bord Google, recoupé avec [Search Engine Journal](https://www.searchenginejournal.com/google-november-2026-core-update/596614/) et [PPC Land](https://ppc.land/googles-core-update-may-run-until-three-days-before-black-friday/).
 
 Les deux précédentes ont fini un peu avant l'échéance annoncée. Si celle-ci suit le même rythme, la fin tomberait autour du 22 novembre. Mais rien ne le garantit : attendez l'annonce de fin sur le tableau de bord avant de fixer votre période de mesure.

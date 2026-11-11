@@ -42,6 +42,8 @@ Quand Google ou une IA reprend votre contenu en vous citant, votre marque est as
 
 Depuis juin 2026, Google mesure d'ailleurs cette exposition : le [rapport IA générative de la Search Console](/search-console-rapport-ia/) indique les impressions de vos pages dans les AI Overviews et l'AI Mode.
 
+Google affirme de son côté que l'IA ne fait pas baisser les clics, et qu'elle les rend même meilleurs. J'ai confronté ce discours aux mesures indépendantes dans [L'IA de Google fait-elle baisser les clics ?](/ia-transforme-recherche-google/).
+
 ## Trois façons de réagir
 
 ### 1. Être extractible, et attribuable

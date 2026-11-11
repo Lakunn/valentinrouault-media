@@ -74,10 +74,11 @@ Ces chiffres sont détaillés dans les [statistiques sur la recherche IA](/stats
 | Core update de décembre 2025 | du 11 au 29 décembre 2025 | Search Status Dashboard |
 | Spam update de mars 2026 | 24 et 25 mars 2026, moins de 20 heures | Search Status Dashboard |
 | Core update de mars 2026 | du 27 mars au 8 avril 2026 | Search Status Dashboard |
-| Core update de mai 2026 | à partir du 21 mai 2026 | Search Status Dashboard |
+| Core update de mai 2026 | du 21 mai au 2 juin 2026 | Search Status Dashboard |
 | Spam update d'août 2026 | à partir du 18 août 2026 | Search Status Dashboard |
+| Core update de novembre 2026 | à partir du 10 novembre 2026 | Search Status Dashboard |
 
-**Ce qu'il faut en retenir :** comptez trois ou quatre mises à jour majeures par an. Le seul calendrier fiable est le [Search Status Dashboard](https://status.search.google.com/) de Google.
+**Ce qu'il faut en retenir :** comptez trois ou quatre mises à jour majeures par an. Le seul calendrier fiable est le [Search Status Dashboard](https://status.search.google.com/) de Google. Pour la mise à jour en cours, voir [la core update de novembre 2026](/core-update-novembre-2026/) ; pour le tableau d'ensemble, [ce qui a vraiment changé entre 2025 et 2026](/tendances-seo-2025/).
 
 ## Les chiffres que j'ai retirés, et pourquoi
 
@@ -90,6 +91,6 @@ Si vous croisez ces chiffres dans une présentation, demandez la source. C'est s
 
 ## Comment utiliser ces statistiques
 
-Une statistique de marché sert à cadrer une discussion, pas à fixer un objectif. Votre taux de clic réel dépend de vos requêtes, de votre secteur et de ce que Google affiche autour de vos résultats. La seule source qui vaille pour votre site, c'est votre Search Console : les impressions, les clics et, depuis 2026, [le rapport IA générative](/search-console-rapport-ia/). Pour transformer ces données en plan d'action, voir [les stratégies SEO](/strategies-seo/).
+Une statistique de marché sert à cadrer une discussion, pas à fixer un objectif. Votre taux de clic réel dépend de vos requêtes, de votre secteur et de ce que Google affiche autour de vos résultats. La seule source qui vaille pour votre site, c'est votre Search Console : les impressions, les clics et, depuis 2026, [le rapport IA générative](/search-console-rapport-ia/). Pour transformer ces données en plan d'action, voir [les stratégies SEO](/strategies-seo/) et, pour reprendre les bases, [comment améliorer son référencement Google](/comment-ameliorer-son-referencement-google/).
 
 Sources : StatCounter Global Stats (mai, juin et septembre 2026) ; Backlinko, étude sur le taux de clic organique ; Ahrefs, études sur le trafic des pages (2023) et sur les AI Overviews (avril 2025, février 2026) ; SparkToro et Datos, étude zéro clic (2024) ; Pew Research Center (22 juillet 2025) ; Google I/O 2026 ; Similarweb, *Generative AI Landscape 2026* ; Google Search Status Dashboard.

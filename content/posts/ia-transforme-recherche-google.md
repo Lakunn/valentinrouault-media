@@ -51,4 +51,6 @@ Les deux discours peuvent coexister : il peut y avoir plus de recherches au tota
 - **Suivre l'engagement des visites restantes.** Si Google a raison sur les clics de qualité, la durée et le taux de conversion des visites organiques devraient progresser. C'est vérifiable dans vos propres statistiques.
 - **Travailler les contenus que l'IA ne remplace pas** : expérience directe, données propres, comparatifs argumentés. C'est le fil de mes conseils pour [être cité par les IA](/seo-ia/) et pour [rédiger un article qui se positionne](/redaction-article-premier-google/).
 
+Pour un exemple concret de ce que ces fonctions changent dans un secteur, voir [les outils IA de Google pour les élèves et les étudiants](/google-search-innove-pour-la-rentree-2025-nouvelles-fonctionnalites-ia-et-outils-pratiques-pour-etudiants-et-familles/).
+
 Sources : Liz Reid, « AI in Search is driving more queries and higher quality clicks », blog Google (6 août 2025) ; Pew Research Center, « Google users are less likely to click on links when an AI summary appears in the results » (22 juillet 2025).

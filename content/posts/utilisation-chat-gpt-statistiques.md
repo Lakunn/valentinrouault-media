@@ -78,4 +78,6 @@ Pour un site éditorial, cela confirme trois priorités :
 - **mesurer ce trafic**, même partiel : le [rapport IA de la Search Console](/search-console-rapport-ia/) et le suivi des referrals donnent une première idée ;
 - **ne pas abandonner Google**, qui reste de loin la première source de visites, comme le montrent les [statistiques sur la recherche IA](/stats-geo/).
 
+OpenAI ne réussit pas tout ce qu'il lance : l'application Sora, lancée comme un réseau social de vidéos générées par IA, a fermé sept mois plus tard. J'en ai retracé l'histoire dans [Sora 2 : de l'application vidéo d'OpenAI à sa fermeture](/sote-2-video-ia/).
+
 Source : Chatterji, Cunningham, Deming, Hitzig, Ong, Shan et Wadman, *How People Use ChatGPT*, NBER Working Paper, 15 septembre 2025.

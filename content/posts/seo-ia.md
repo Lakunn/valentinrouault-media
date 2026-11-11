@@ -153,6 +153,8 @@ Les réponses varient d'une session à l'autre : on suit des tendances sur plusi
 - [llms.txt : utile ou pas ?](/llms-txt/)
 - [ChatGPT Shopping et l'e-commerce](/seo-ecom-chat-gpt/)
 - [Le zéro clic : que faire quand le trafic baisse](/zero-click-searches/)
+- [L'IA de Google fait-elle baisser les clics ?](/ia-transforme-recherche-google/)
+- [Les bases : comment améliorer son référencement Google](/comment-ameliorer-son-referencement-google/)
 
 <section class="faq" markdown="1">
 
