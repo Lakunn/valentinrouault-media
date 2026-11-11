@@ -3,16 +3,28 @@ title: "Outils SEO et GEO gratuits"
 slug: outils-seo
 status: publish
 origin: new
-dek: "Cinq outils pour les tâches qui reviennent chaque semaine : baliser une page, gérer un site multilingue, chiffrer un potentiel de trafic, segmenter la Search Console et préparer un fichier llms.txt."
+dek: "Sept outils pour les tâches qui reviennent chaque semaine : classer des mots-clés, mesurer un maillage, baliser une page, gérer un site multilingue, chiffrer un potentiel de trafic, segmenter la Search Console et préparer un fichier llms.txt."
 seo_title: "Outils SEO et GEO gratuits, sans inscription"
-meta_description: "Générateur de données structurées, hreflang, prévision de trafic SEO, filtres regex pour la Search Console et générateur de llms.txt : cinq outils gratuits."
+meta_description: "Intention de mots-clés, PageRank interne, données structurées, hreflang, prévision de trafic, regex Search Console, llms.txt : sept outils SEO gratuits."
 essentiel:
-  - "Cinq outils, chacun sur sa page, **sans inscription** et sans envoi de données : tout se calcule dans votre navigateur."
-  - "Ils répondent à des tâches concrètes : baliser, internationaliser, chiffrer, segmenter, préparer pour les IA."
+  - "Sept outils, chacun sur sa page, **sans inscription** et sans envoi de données : tout se calcule dans votre navigateur."
+  - "Ils répondent à des tâches concrètes : classer, mailler, baliser, internationaliser, chiffrer, segmenter, préparer pour les IA."
   - "Chaque outil cite la source de ses repères, avec sa date."
 ---
 
 Ces outils sont ceux dont je me sers en mission. Ils ne remplacent pas un crawler ou une suite SEO, mais ils font gagner du temps sur des tâches précises, et ils sont pensés pour les cas réels, pas pour une démonstration.
+
+## Intention et thèmes de mots-clés
+
+Collez une liste de mots-clés : chaque requête est rangée par intention (information, comparaison, achat, local, navigation) et les requêtes sont regroupées par thème, avec export CSV.
+
+[Ouvrir le classement par intention](/outils-seo/classement-intention-mots-cles/)
+
+## PageRank interne
+
+À partir de l'export des liens de votre crawler : la popularité interne de chaque page, les pages orphelines et la profondeur en clics.
+
+[Ouvrir le calcul du PageRank interne](/outils-seo/pagerank-interne/)
 
 ## Générateur de données structurées
 

@@ -349,3 +349,12 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 .vr-test { font-size: .86rem; color: var(--ink-2); margin: -.4rem 0 1rem; }
 .vr-test code { font-size: .8rem; background: var(--paper-2); padding: .05rem .3rem; border-radius: 3px; }
 .vr-notes li { margin: .3rem 0; }
+.vr-bars { display: grid; gap: .45rem; margin: .4rem 0 1.4rem; }
+.vr-bar { display: grid; grid-template-columns: 140px 1fr 52px; align-items: center; gap: .6rem; font-size: .88rem; }
+.vr-bar b { display: block; height: 14px; background: var(--accent); border-radius: 3px; }
+.vr-bar em { font-style: normal; color: var(--ink-2); text-align: right; }
+.vr-details { margin: 1rem 0; }
+.vr-details summary { cursor: pointer; font-weight: 600; }
+.vr-i-info { background: #e5effa; color: #1d4f86; } .vr-i-comp { background: #fff1d6; color: #7a5200; }
+.vr-i-achat { background: #e3f3e6; color: #1e6b2c; } .vr-i-local { background: #f3e5f5; color: #6a1b7a; }
+.vr-i-nav { background: #fdeee7; color: #9a2e0e; } .vr-i-mixte { background: var(--paper-2); color: var(--muted); }

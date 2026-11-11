@@ -325,7 +325,158 @@
       + '<p class="vr-note">Format proposé sur llmstxt.org. Aucun moteur ne s\'est engagé à l\'utiliser : c\'est un complément, pas un levier de classement. Le point complet est dans l\'article sur le <a href="/llms-txt/">fichier llms.txt</a>.</p>';
   }
 
-  var TOOLS = { schema: schema, hreflang: hreflang, trafic: trafic, regex: regex, llms: llms };
+
+  /* --------------------------------- 6. Intention et thèmes (repris de growww) */
+  // Mots déclencheurs : mêmes listes que le moteur de growww (analysis/seed_keywords.py), validées sur des milliers de requêtes.
+  function fold(t) { return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’']/g, ' '); }
+  function kset(str) { var o = {}; str.split(/\s+/).forEach(function (w) { if (w) o[w] = 1; }); return o; }
+  var K_ACHAT = kset('prix tarif tarifs cout devis acheter achat vente vendre commander commande promo location louer livraison reserver reservation abonnement buy price prices cost cheap deal deals order shop sale rent hire quote booking discount coupon soldes');
+  var K_COMP = kset('meilleur meilleure meilleurs meilleures avis comparatif comparaison top classement test vs versus alternative alternatives best review reviews compare comparison');
+  var K_INFO = kset('comment pourquoi quoi quel quelle quels quelles quand combien faut definition guide tuto tutoriel astuce astuces conseil conseils idee idees exemple exemples signification how why what when which who tutorial tips ideas examples meaning');
+  var LOCAL_RE = /(pres de chez moi|autour de moi|a proximite|near me|nearby|\bartisan|\binstallateur|\bdepann|\breparateur)/;
+  var STOP = kset('de du des la le les un une et a au aux en pour par sur avec sans dans ou d l the of for to in on and with est ce que qui son sa ses mon ma mes votre vos');
+  var INTENTS = { info: 'Information', comp: 'Comparaison', achat: 'Achat', local: 'Prestataire local', nav: 'Navigation', mixte: 'Mixte' };
+  function intentOf(kw, brands, cities) {
+    var f = fold(kw), toks = f.split(/[^a-z0-9]+/).filter(Boolean), has = function (set) { return toks.some(function (t) { return set[t]; }); };
+    if (brands.some(function (b) { return b && (' ' + f + ' ').indexOf(' ' + b + ' ') > -1; })) return ['nav', 'contient votre marque'];
+    if (LOCAL_RE.test(f) || cities.some(function (c) { return c && (' ' + f + ' ').indexOf(' ' + c + ' ') > -1; })) return ['local', 'lieu ou recherche de prestataire'];
+    if (/\?\s*$/.test(kw) || (toks[0] && K_INFO[toks[0]])) return ['info', 'question'];
+    if (has(K_ACHAT) || f.indexOf('pas cher') > -1) return ['achat', 'mot d\'achat'];
+    if (has(K_COMP)) return ['comp', 'mot de comparaison'];
+    if (has(K_INFO)) return ['info', 'mot d\'information'];
+    return ['mixte', 'aucun mot déclencheur'];
+  }
+  function stem(w) { return w.length > 4 ? w.replace(/(ements|ement|ations|ation|eurs|euse|eux|es|s|x)$/, '') : w; }
+  function topicTokens(kw, ignore) {
+    return fold(kw).split(/[^a-z0-9]+/).filter(function (t) { return t.length > 2 && !STOP[t] && !K_ACHAT[t] && !K_COMP[t] && !K_INFO[t] && !ignore[t]; }).map(stem);
+  }
+  function intention(form, box) {
+    var rows = lines(val(form, 'keywords'));
+    if (!rows.length) return error(box, 'Collez au moins un mot-clé.');
+    var brands = lines(val(form, 'brands')).map(fold), cities = lines(val(form, 'cities')).map(fold);
+    var head = splitRow(rows[0]);
+    if (head.length > 1 && num(head[1]) === null && /mot|keyword|requ/i.test(head[0])) rows.shift();
+    var data = rows.map(function (l) { var p = splitRow(l); return { kw: p[0], vol: num(p[1]) || 0 }; }).filter(function (d) { return d.kw; });
+    // Le mot présent dans plus de 60 % des requêtes est le sujet commun (ex. « seo ») : on ne regroupe pas dessus.
+    var df = {};
+    data.forEach(function (d) { d.toks = topicTokens(d.kw, {}); var seen = {}; d.toks.forEach(function (t) { if (!seen[t]) { df[t] = (df[t] || 0) + 1; seen[t] = 1; } }); });
+    var common = {}; Object.keys(df).forEach(function (t) { if (data.length >= 5 && df[t] / data.length > 0.6) common[t] = 1; });
+    data.forEach(function (d) {
+      var it = intentOf(d.kw, brands, cities); d.intent = it[0]; d.why = it[1];
+      var cand = d.toks.filter(function (t) { return !common[t] && df[t] >= 2; });
+      cand.sort(function (a, b) { return df[b] - df[a]; });
+      d.theme = cand[0] || (d.toks.filter(function (t) { return !common[t]; })[0]) || 'autres';
+    });
+    // Thèmes d'une seule requête regroupés dans « autres ».
+    var tc = {}; data.forEach(function (d) { tc[d.theme] = (tc[d.theme] || 0) + 1; });
+    var label = {}; data.forEach(function (d) { if (tc[d.theme] < 2) d.theme = 'autres'; });
+    data.forEach(function (d) { if (d.theme !== 'autres' && !label[d.theme]) { var w = fold(d.kw).split(/[^a-z0-9]+/).filter(function (x) { return stem(x) === d.theme; })[0]; label[d.theme] = w || d.theme; } });
+    var useVol = data.some(function (d) { return d.vol; });
+    var byI = {}, byT = {};
+    data.forEach(function (d) {
+      var k = useVol ? d.vol : 1;
+      byI[d.intent] = (byI[d.intent] || 0) + k;
+      var t = byT[d.theme] = byT[d.theme] || { n: 0, v: 0, i: {} }; t.n++; t.v += d.vol; t.i[d.intent] = (t.i[d.intent] || 0) + 1;
+    });
+    var total = Object.keys(byI).reduce(function (s, k) { return s + byI[k]; }, 0) || 1;
+    var bars = Object.keys(INTENTS).filter(function (k) { return byI[k]; }).map(function (k) {
+      var pc = 100 * byI[k] / total;
+      return '<div class="vr-bar"><span>' + INTENTS[k] + '</span><b style="width:' + Math.max(pc, 1).toFixed(1) + '%"></b><em>' + fmt(pc) + ' %</em></div>';
+    }).join('');
+    var themes = Object.keys(byT).sort(function (a, b) { return a === 'autres' ? 1 : b === 'autres' ? -1 : (byT[b].v - byT[a].v) || (byT[b].n - byT[a].n); });
+    var tRows = themes.map(function (t) {
+      var x = byT[t], dom = Object.keys(x.i).sort(function (a, b) { return x.i[b] - x.i[a]; })[0];
+      return '<tr><td><strong>' + esc(t === 'autres' ? 'Autres' : label[t]) + '</strong></td><td>' + x.n + '</td><td>' + (useVol ? fmt(x.v) : '–') + '</td><td>' + INTENTS[dom] + '</td></tr>';
+    }).join('');
+    data.sort(function (a, b) { return a.theme === b.theme ? b.vol - a.vol : (themes.indexOf(a.theme) - themes.indexOf(b.theme)); });
+    var csv = ['Mot-clé;Volume;Intention;Raison;Thème'].concat(data.map(function (d) {
+      return [d.kw, d.vol || '', INTENTS[d.intent], d.why, d.theme === 'autres' ? 'Autres' : label[d.theme]].map(csvCell).join(';');
+    })).join('\n');
+    var kRows = data.slice(0, 300).map(function (d) {
+      return '<tr><td>' + esc(d.kw) + '</td><td>' + (d.vol ? fmt(d.vol) : '–') + '</td><td><span class="vr-tag vr-i-' + d.intent + '">' + INTENTS[d.intent] + '</span></td><td>' + esc(d.theme === 'autres' ? 'Autres' : label[d.theme]) + '</td></tr>';
+    }).join('');
+    box.innerHTML = '<p class="vr-regex-title"><strong>Répartition des intentions</strong> · ' + (useVol ? 'pondérée par le volume' : 'en nombre de requêtes') + '</p><div class="vr-bars">' + bars + '</div>'
+      + '<p class="vr-regex-title"><strong>' + (function (k) { return k + (k > 1 ? ' thèmes' : ' thème'); })(themes.length - (byT.autres ? 1 : 0)) + '</strong> · un thème = une page ou un groupe de pages à prévoir</p>'
+      + '<div class="vr-table-wrap"><table class="vr-table"><thead><tr><th>Thème</th><th>Requêtes</th><th>Volume</th><th>Intention dominante</th></tr></thead><tbody>' + tRows + '</tbody></table></div>'
+      + '<div class="vr-actions"><button type="button" class="btn btn-ghost vr-dl" data-file="mots-cles-classes.csv" data-mime="text/csv" data-text="' + esc(csv) + '">Télécharger le classement complet (CSV)</button></div>'
+      + '<details class="vr-details"><summary>Voir les ' + data.length + ' requêtes</summary><div class="vr-table-wrap"><table class="vr-table"><thead><tr><th>Mot-clé</th><th>Volume</th><th>Intention</th><th>Thème</th></tr></thead><tbody>' + kRows + '</tbody></table></div></details>'
+      + '<p class="vr-note">Classement par les mots de la requête, sans IA : c\'est un premier tri. Pour une requête ambiguë (« Mixte »), la page de résultats de Google tranche : regardez ce qui s\'y classe avant de choisir le format de page.</p>';
+  }
+
+  /* ---------------------------------------------- 7. PageRank interne (growww) */
+  function normUrl(u, base) {
+    u = String(u || '').trim().replace(/^"|"$/g, '');
+    if (!u) return '';
+    try { var x = new URL(u, base || 'https://exemple.fr/'); x.hash = ''; return x.href; } catch (e) { return u; }
+  }
+  function shortUrl(u) { try { var x = new URL(u); return (x.pathname + x.search) || '/'; } catch (e) { return u; } }
+  function pagerank(form, box) {
+    var rows = lines(val(form, 'links'));
+    if (!rows.length) return error(box, 'Collez la liste des liens internes (page source, page de destination).');
+    var home = normUrl(val(form, 'home')), base = home || undefined;
+    var head = splitRow(rows[0]).map(function (h) { return h.toLowerCase(); });
+    var si = 0, di = 1;
+    if (!/^https?:|^\//.test(head[0])) {
+      rows.shift();
+      head.forEach(function (h, i) { if (/^(source|from|de|page source)$/.test(h)) si = i; if (/^(destination|target|to|vers|address|adresse|page de destination)$/.test(h)) di = i; });
+    }
+    var out = {}, nodes = {}, edges = 0;
+    rows.forEach(function (l) {
+      var p = splitRow(l), s = normUrl(p[si], base), d = normUrl(p[di], base);
+      if (!s || !d || s === d) return;
+      nodes[s] = nodes[d] = 1;
+      out[s] = out[s] || {};
+      if (!out[s][d]) { out[s][d] = 1; edges++; }
+    });
+    lines(val(form, 'pages')).forEach(function (u) { u = normUrl(u, base); if (u) nodes[u] = 1; });
+    var ids = Object.keys(nodes), n = ids.length;
+    if (n < 2) return error(box, 'Il faut au moins deux pages reliées.');
+    if (n > 20000) return error(box, 'Plus de 20 000 pages : découpez l\'export par répertoire.');
+    var idx = {}; ids.forEach(function (u, i) { idx[u] = i; });
+    var outs = ids.map(function (u) { return Object.keys(out[u] || {}).map(function (d) { return idx[d]; }); });
+    var inc = ids.map(function () { return 0; }); outs.forEach(function (o) { o.forEach(function (j) { inc[j]++; }); });
+    var a = 0.85, pr = ids.map(function () { return 1 / n; });
+    for (var it = 0; it < 60; it++) {
+      var nx = ids.map(function () { return (1 - a) / n; }), dangling = 0;
+      for (var i = 0; i < n; i++) {
+        if (!outs[i].length) { dangling += pr[i]; continue; }
+        var share = a * pr[i] / outs[i].length;
+        for (var k = 0; k < outs[i].length; k++) nx[outs[i][k]] += share;
+      }
+      var dsh = a * dangling / n, diff = 0;
+      for (i = 0; i < n; i++) { nx[i] += dsh; diff += Math.abs(nx[i] - pr[i]); }
+      pr = nx;
+      if (diff < 1e-9) break;
+    }
+    // Profondeur en clics depuis l'accueil.
+    var start = home && idx[home] !== undefined ? idx[home] : ids.reduce(function (b, u, i) { return shortUrl(u).length < shortUrl(ids[b]).length ? i : b; }, 0);
+    var depth = ids.map(function () { return -1; }); depth[start] = 0;
+    var q = [start];
+    while (q.length) { var c = q.shift(); outs[c].forEach(function (j) { if (depth[j] < 0) { depth[j] = depth[c] + 1; q.push(j); } }); }
+    var max = Math.max.apply(null, pr);
+    var data = ids.map(function (u, i) { return { u: u, pr: pr[i], score: Math.round(100 * pr[i] / max), inl: inc[i], outl: outs[i].length, d: depth[i] }; });
+    data.sort(function (x, y) { return y.pr - x.pr; });
+    var orphans = data.filter(function (x) { return !x.inl && x.u !== ids[start]; });
+    var deep = data.filter(function (x) { return x.d > 3; });
+    var unreach = data.filter(function (x) { return x.d < 0; });
+    var bottom = data.slice(-Math.min(15, Math.floor(n / 5)));
+    var row = function (x) { return '<tr><td title="' + esc(x.u) + '">' + esc(shortUrl(x.u)) + '</td><td><strong>' + x.score + '</strong></td><td>' + x.inl + '</td><td>' + x.outl + '</td><td>' + (x.d < 0 ? 'inaccessible' : x.d) + '</td></tr>'; };
+    var thead = '<thead><tr><th>Page</th><th>Score (sur 100)</th><th>Liens reçus</th><th>Liens émis</th><th>Clics depuis l\'accueil</th></tr></thead>';
+    var csv = ['URL;Score;PageRank;Liens reçus;Liens émis;Profondeur'].concat(data.map(function (x) { return [x.u, x.score, x.pr.toFixed(6), x.inl, x.outl, x.d < 0 ? '' : x.d].map(csvCell).join(';'); })).join('\n');
+    box.innerHTML = '<div class="vr-kpis"><div><p class="vr-big">' + fmt(n) + '</p><p>pages, ' + fmt(edges) + ' liens internes</p></div>'
+      + '<div><p class="vr-big">' + orphans.length + '</p><p>page(s) orpheline(s), sans aucun lien reçu</p></div>'
+      + '<div><p class="vr-big">' + (deep.length + unreach.length) + '</p><p>page(s) à plus de 3 clics de l\'accueil ou inaccessibles</p></div></div>'
+      + '<p class="vr-regex-title"><strong>Les pages qui concentrent le plus de popularité interne</strong></p>'
+      + '<div class="vr-table-wrap"><table class="vr-table">' + thead + '<tbody>' + data.slice(0, 20).map(row).join('') + '</tbody></table></div>'
+      + '<p>Vérifiez que ce sont bien vos pages stratégiques. Si une page légale ou un tag arrive en tête, c\'est souvent un lien de menu ou de pied de page à revoir.</p>'
+      + (orphans.length ? '<p class="vr-regex-title"><strong>Pages orphelines</strong> · aucune page du site ne les cite</p><div class="vr-table-wrap"><table class="vr-table">' + thead + '<tbody>' + orphans.slice(0, 50).map(row).join('') + '</tbody></table></div>' : '')
+      + '<p class="vr-regex-title"><strong>Les pages les moins soutenues</strong> · candidates à des liens depuis vos pages fortes</p>'
+      + '<div class="vr-table-wrap"><table class="vr-table">' + thead + '<tbody>' + bottom.map(row).join('') + '</tbody></table></div>'
+      + '<div class="vr-actions"><button type="button" class="btn btn-ghost vr-dl" data-file="pagerank-interne.csv" data-mime="text/csv" data-text="' + esc(csv) + '">Télécharger toutes les pages (CSV)</button></div>'
+      + '<p class="vr-note">Calcul local, dans votre navigateur : rien n\'est envoyé. Même méthode que le PageRank d\'origine (facteur d\'amortissement 0,85), appliquée à votre seul maillage interne. Le score ne tient pas compte des liens externes ni de la position du lien dans la page : c\'est une mesure de structure, pas une prévision de classement.</p>';
+  }
+
+  var TOOLS = { schema: schema, hreflang: hreflang, trafic: trafic, regex: regex, llms: llms, intention: intention, pagerank: pagerank };
 
   document.addEventListener('click', function (e) {
     var b = e.target.closest ? e.target.closest('.vr-copy, .vr-dl') : null;

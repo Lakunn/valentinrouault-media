@@ -169,3 +169,31 @@ add_shortcode(
 		return vr_tool_wrap( 'llms', 'Générateur de fichier llms.txt', $f );
 	}
 );
+
+/* -------------------------------------------------------------------------
+ * 6. Intention et thèmes de mots-clés (règles reprises de growww)
+ * ---------------------------------------------------------------------- */
+add_shortcode(
+	'vr_intention',
+	function () {
+		$f  = vr_field( 'keywords', 'Mots-clés (un par ligne, volume facultatif après un point-virgule)', vr_textarea( 'keywords', "consultant seo paris;1300\nprix audit seo;390\nmeilleur outil seo gratuit;880\ncomment faire un audit seo;720\naudit seo gratuit;1600\nformation seo avis;210\nqu'est-ce que le seo ?;2400\nagence seo lyon;590\noutil audit seo;480\nseo local definition;170", 10 ), 'Export Semrush, Ahrefs ou Search Console accepté : la première colonne doit être le mot-clé.' );
+		$f .= vr_field( 'brands', 'Vos marques (une par ligne, facultatif)', vr_textarea( 'brands', "growww\nvalentin rouault", 2 ), 'Les requêtes qui les contiennent passent en « Navigation ».' );
+		$f .= vr_field( 'cities', 'Villes ou zones servies (facultatif)', vr_textarea( 'cities', "paris\nlyon", 2 ), 'Les requêtes qui les contiennent passent en « Prestataire local ».' );
+		$f .= '<button class="btn" type="submit">Classer les mots-clés</button>';
+		return vr_tool_wrap( 'intention', 'Classer des mots-clés par intention et par thème', $f );
+	}
+);
+
+/* -------------------------------------------------------------------------
+ * 7. PageRank interne et pages orphelines (calcul repris de growww)
+ * ---------------------------------------------------------------------- */
+add_shortcode(
+	'vr_pagerank',
+	function () {
+		$f  = vr_field( 'links', 'Liens internes (une ligne par lien : page source ; page de destination)', vr_textarea( 'links', "Source;Destination\n/;/blog/\n/;/services/\n/;/contact/\n/blog/;/blog/article-a/\n/blog/;/blog/article-b/\n/blog/article-a/;/services/\n/blog/article-b/;/blog/article-a/\n/services/;/contact/\n/blog/;/\n/services/;/\n/contact/;/", 10 ), 'Dans Screaming Frog : Bulk Export › Links › All Inlinks. Collez le fichier tel quel, les colonnes Source et Destination sont reconnues.' );
+		$f .= vr_field( 'pages', 'Toutes les URL du site (facultatif, pour trouver les orphelines)', vr_textarea( 'pages', "/blog/article-c/\n/mentions-legales/", 3 ), 'Collez les URL de votre sitemap : celles qu\'aucun lien ne cite ressortent comme orphelines.' );
+		$f .= vr_field( 'home', 'Page d\'accueil (facultatif)', vr_input( 'home', 'https://exemple.fr/', 'text' ), 'Sert à mesurer la profondeur en clics. Par défaut : l\'URL la plus courte.' );
+		$f .= '<button class="btn" type="submit">Calculer le PageRank interne</button>';
+		return vr_tool_wrap( 'pagerank', 'PageRank interne, pages orphelines et profondeur', $f );
+	}
+);
