@@ -28,7 +28,7 @@ Les AI Overviews, lancés aux États-Unis en mai 2024, et le Mode IA, lancé en 
 
 À l'échelle mondiale, Google revendiquait en mai 2026 plus de 2,5 milliards d'utilisateurs mensuels pour les AI Overviews, et plus de 1 milliard pour le Mode IA.
 
-**Ce que cela change :** sur les requêtes informationnelles, une réponse complète s'affiche avant les liens. Ahrefs mesure une baisse du taux de clic de la première position d'environ 58 % quand un AI Overview s'affiche (données de décembre 2025). Le détail est dans [les recherches zéro clic](/zero-click-searches/).
+**Ce que cela change :** sur les requêtes informationnelles, une réponse complète s'affiche avant les liens. Ahrefs mesure une baisse du taux de clic de la première position d'environ 58 % quand un AI Overview s'affiche (données de décembre 2025). En France, les sites les plus exposés ont perdu 23,1 % de CTR dans les neuf jours suivant le lancement : voir [l'étude Ahrefs sur les AI Overviews en France](/ai-overviews-france-ctr/). Le détail du phénomène est dans [les recherches zéro clic](/zero-click-searches/).
 
 ## 2. Être cité devient un objectif en soi
 

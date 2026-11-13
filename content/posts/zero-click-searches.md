@@ -34,6 +34,8 @@ Les assistants comme ChatGPT, Perplexity ou Gemini vont plus loin : l'utilisateu
 
 L'étude publiée en 2024 par SparkToro à partir des données de panel de Datos estimait qu'environ **six recherches Google sur dix**, aux États-Unis comme dans l'Union européenne, se terminaient sans clic vers un site web. Ces mesures datent d'avant la généralisation des AI Overviews en Europe. Les mêmes acteurs ont publié en 2026 des chiffres nettement plus bas (autour d'une recherche sur cinq sans clic), mais à partir d'un panel uniquement sur ordinateur : les deux séries ne sont pas comparables, et l'ordre de grandeur dépend beaucoup de la méthode.
 
+En France, la première mesure après l'arrivée des AI Overviews le 22 juillet 2026 confirme le mécanisme : les impressions tiennent, les clics baissent. Les sites les plus exposés ont perdu 23,1 % de taux de clic en neuf jours, selon Ahrefs. Le détail est dans [l'impact des AI Overviews sur le CTR en France](/ai-overviews-france-ctr/).
+
 ## À quoi sert encore d'écrire ?
 
 Ma réponse : le contenu ne sert plus seulement à capter des clics, il sert à capter de l'autorité.

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="Droite de pente −0,9 entre l'exposition aux AI Overviews et la baisse du CTR ; le secteur santé, exposé à 22,2 %, perd 20,4 % de CTR">
+<rect width="800" height="560" rx="6" fill="#fcfbf8"/>
+<rect x="40" y="34" width="44" height="4" rx="2" fill="#2f5fdc"/>
+<text x="40" y="74" font-family="'Iowan Old Style', Charter, Cambria, Georgia, serif" font-size="26" font-weight="700" fill="#16181d">Un point d'exposition coûte environ un point de CTR</text>
+<text x="40" y="102" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#5d6168">Relation entre l'exposition aux AI Overviews et l'évolution du taux de clic, 963 domaines</text>
+<line x1="110.0" y1="140" x2="110.0" y2="420" stroke="#e2ddd2"/>
+<text x="110.0" y="442" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168" text-anchor="middle">0 %</text>
+<line x1="236.0" y1="140" x2="236.0" y2="420" stroke="#e2ddd2"/>
+<text x="236.0" y="442" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168" text-anchor="middle">5 %</text>
+<line x1="362.0" y1="140" x2="362.0" y2="420" stroke="#e2ddd2"/>
+<text x="362.0" y="442" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168" text-anchor="middle">10 %</text>
+<line x1="488.0" y1="140" x2="488.0" y2="420" stroke="#e2ddd2"/>
+<text x="488.0" y="442" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168" text-anchor="middle">15 %</text>
+<line x1="614.0" y1="140" x2="614.0" y2="420" stroke="#e2ddd2"/>
+<text x="614.0" y="442" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168" text-anchor="middle">20 %</text>
+<line x1="740.0" y1="140" x2="740.0" y2="420" stroke="#e2ddd2"/>
+<text x="740.0" y="442" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168" text-anchor="middle">25 %</text>
+<line x1="110" y1="140.0" x2="740" y2="140.0" stroke="#e2ddd2"/>
+<text x="100" y="144.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168" text-anchor="end">0</text>
+<line x1="110" y1="196.0" x2="740" y2="196.0" stroke="#e2ddd2"/>
+<text x="100" y="200.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168" text-anchor="end">−5 %</text>
+<line x1="110" y1="252.0" x2="740" y2="252.0" stroke="#e2ddd2"/>
+<text x="100" y="256.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168" text-anchor="end">−10 %</text>
+<line x1="110" y1="308.0" x2="740" y2="308.0" stroke="#e2ddd2"/>
+<text x="100" y="312.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168" text-anchor="end">−15 %</text>
+<line x1="110" y1="364.0" x2="740" y2="364.0" stroke="#e2ddd2"/>
+<text x="100" y="368.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168" text-anchor="end">−20 %</text>
+<line x1="110" y1="420.0" x2="740" y2="420.0" stroke="#e2ddd2"/>
+<text x="100" y="424.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168" text-anchor="end">−25 %</text>
+<line x1="110.0" y1="140.0" x2="740.0" y2="392.0" stroke="#2f5fdc" stroke-width="2.5" stroke-linecap="round"/>
+<text x="462.8" y="267.1" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" font-weight="700" fill="#2f5fdc">pente de −0,9</text>
+<circle cx="246.1" cy="194.4" r="6" fill="#fcfbf8" stroke="#16181d" stroke-width="2"/>
+<text x="258.1" y="182.4" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" fill="#16181d" text-anchor="start">médiane du panel : 5,4 % d'exposition</text>
+<circle cx="669.4" cy="368.5" r="6" fill="#16181d" stroke="#16181d" stroke-width="2"/>
+<text x="657.4" y="398.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" fill="#16181d" text-anchor="end">santé : 22,2 % d'exposition, CTR −20,4 %</text>
+<text x="425.0" y="466" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" fill="#5d6168" text-anchor="middle">Part des requêtes du domaine qui affichent un AI Overview</text>
+<text x="40" y="126" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" fill="#5d6168">Évolution du CTR</text>
+<text x="40" y="496" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168">Point plein : valeur mesurée. Point creux : position sur la tendance. La pente indique un risque moyen, pas une prévision site par site.</text>
+<line x1="40" y1="514" x2="760" y2="514" stroke="#e2ddd2"/>
+<text x="40" y="538" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" fill="#5d6168">Source : Ahrefs, « AI Overviews Cut CTR by 23.1% in France », 16 septembre 2026 · valentinrouault.com</text>
+</svg>

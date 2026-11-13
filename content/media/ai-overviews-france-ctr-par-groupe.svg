@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" width="800" height="470" role="img" aria-label="Évolution du taux de clic : −23,1 % pour les domaines très exposés, −24,8 % d'effet net, −5,7 % pour le panel, +2,3 % pour le groupe témoin">
+<rect width="800" height="470" rx="6" fill="#fcfbf8"/>
+<rect x="40" y="34" width="44" height="4" rx="2" fill="#2f5fdc"/>
+<text x="40" y="74" font-family="'Iowan Old Style', Charter, Cambria, Georgia, serif" font-size="26" font-weight="700" fill="#16181d">Plus un site est exposé, plus son CTR recule</text>
+<text x="40" y="102" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#5d6168">Évolution du taux de clic, 28 jours avant et 9 jours après le lancement des AI Overviews en France</text>
+<line x1="701.4" y1="128" x2="701.4" y2="370" stroke="#5d6168" stroke-width="1.5"/>
+<rect x="523.2" y="140" width="178.2" height="26" rx="4" fill="#2f5fdc"/>
+<text x="515.2" y="158" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" font-weight="700" fill="#16181d" text-anchor="end">−23,1 %</text>
+<text x="40" y="153" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#16181d">Domaines très exposés</text>
+<text x="40" y="171" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168">plus de 20 % des requêtes avec AI Overview</text>
+<rect x="510.1" y="204" width="191.3" height="26" rx="4" fill="#2f5fdc"/>
+<text x="502.1" y="222" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" font-weight="700" fill="#16181d" text-anchor="end">−24,8 %</text>
+<text x="40" y="217" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#16181d">Effet net, corrigé du groupe témoin</text>
+<text x="40" y="235" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168">très exposés comparés au groupe témoin</text>
+<rect x="657.5" y="268" width="44.0" height="26" rx="4" fill="#2f5fdc"/>
+<text x="649.5" y="286" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" font-weight="700" fill="#16181d" text-anchor="end">−5,7 %</text>
+<text x="40" y="281" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#16181d">Ensemble du panel (médiane)</text>
+<text x="40" y="299" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168">963 domaines</text>
+<rect x="701.4" y="332" width="17.7" height="26" rx="4" fill="#9aa0a8"/>
+<text x="727.2" y="350" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" font-weight="700" fill="#16181d" text-anchor="start">+2,3 %</text>
+<text x="40" y="345" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#16181d">Groupe témoin</text>
+<text x="40" y="363" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168">moins de 2 % des requêtes avec AI Overview</text>
+<text x="40" y="400" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" fill="#5d6168">CTR médian des domaines très exposés : 2,29 % avant le 22 juillet 2026, 1,76 % après (−0,53 point).</text>
+<line x1="40" y1="424" x2="760" y2="424" stroke="#e2ddd2"/>
+<text x="40" y="448" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" fill="#5d6168">Source : Ahrefs, « AI Overviews Cut CTR by 23.1% in France », 16 septembre 2026 · valentinrouault.com</text>
+</svg>

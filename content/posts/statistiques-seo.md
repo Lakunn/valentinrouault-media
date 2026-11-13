@@ -53,8 +53,9 @@ Les listes de statistiques SEO se copient les unes les autres. Un chiffre de 201
 | Baisse du taux de clic de la position 1 quand un AI Overview s'affiche | −34,5 % | Ahrefs, publié en avril 2025 |
 | Même mesure, un an plus tard | −58 % | Ahrefs, données de décembre 2025, publié en février 2026 |
 | Même mesure en position 2 et en position 10 | −50,8 % et −19,4 % | Ahrefs, février 2026 |
+| Baisse du CTR médian des domaines français très exposés (plus de 20 % de requêtes avec AI Overview) | −23,1 % | Ahrefs, 963 domaines, juillet 2026 |
 
-**Ce qu'il faut en retenir :** les études convergent sur le sens, pas sur l'ampleur. Les méthodes diffèrent (panel de navigation, données agrégées de la Search Console, requêtes de bureau seulement). Et la plupart datent d'avant le 22 juillet 2026, date d'arrivée des Aperçus IA et du Mode IA en France. L'effet sur le marché français reste à mesurer site par site. J'explique comment dans l'article sur [les recherches zéro clic](/zero-click-searches/).
+**Ce qu'il faut en retenir :** les études convergent sur le sens, pas sur l'ampleur. Les méthodes diffèrent (panel de navigation, données agrégées de la Search Console, requêtes de bureau seulement). Et la plupart datent d'avant le 22 juillet 2026, date d'arrivée des Aperçus IA et du Mode IA en France. La première mesure française, publiée par Ahrefs en septembre 2026, est analysée dans [l'impact des AI Overviews sur le CTR en France](/ai-overviews-france-ctr/). L'effet sur votre propre site reste à mesurer requête par requête. J'explique comment dans l'article sur [les recherches zéro clic](/zero-click-searches/).
 
 ## Usage des IA génératives
 

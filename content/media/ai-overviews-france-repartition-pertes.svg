@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 410" width="800" height="410" role="img" aria-label="48 % des domaines ont perdu plus de 10 % de clics, 19 % plus de 30 %, 5 % plus de 50 %">
+<rect width="800" height="410" rx="6" fill="#fcfbf8"/>
+<rect x="40" y="34" width="44" height="4" rx="2" fill="#2f5fdc"/>
+<text x="40" y="74" font-family="'Iowan Old Style', Charter, Cambria, Georgia, serif" font-size="26" font-weight="700" fill="#16181d">Près d'un site sur deux a perdu plus de 10 % de clics</text>
+<text x="40" y="102" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#5d6168">Part des domaines du panel par niveau de perte de clics, juillet 2026</text>
+<rect x="300" y="140" width="400" height="26" rx="4" fill="#e2ddd2" opacity=".55"/>
+<rect x="300" y="140" width="320.0" height="26" rx="4" fill="#2f5fdc"/>
+<text x="628.0" y="158" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" font-weight="700" fill="#16181d">48 %</text>
+<text x="40" y="158" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#16181d">Plus de 10 % de clics perdus</text>
+<rect x="300" y="198" width="400" height="26" rx="4" fill="#e2ddd2" opacity=".55"/>
+<rect x="300" y="198" width="126.7" height="26" rx="4" fill="#2f5fdc"/>
+<text x="434.7" y="216" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" font-weight="700" fill="#16181d">19 %</text>
+<text x="40" y="216" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#16181d">Plus de 30 % de clics perdus</text>
+<rect x="300" y="256" width="400" height="26" rx="4" fill="#e2ddd2" opacity=".55"/>
+<rect x="300" y="256" width="33.3" height="26" rx="4" fill="#2f5fdc"/>
+<text x="341.3" y="274" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" font-weight="700" fill="#16181d">5 %</text>
+<text x="40" y="274" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#16181d">Plus de 50 % de clics perdus</text>
+<text x="40" y="330" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" fill="#5d6168">Part des 963 domaines du panel, selon la baisse de leurs clics quotidiens moyens. Les catégories se cumulent.</text>
+<line x1="40" y1="364" x2="760" y2="364" stroke="#e2ddd2"/>
+<text x="40" y="388" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" fill="#5d6168">Source : Ahrefs, « AI Overviews Cut CTR by 23.1% in France », 16 septembre 2026 · valentinrouault.com</text>
+</svg>

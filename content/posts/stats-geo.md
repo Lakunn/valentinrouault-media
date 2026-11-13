@@ -52,6 +52,9 @@ Ces parts ne comptent que les visites sur les sites web, pas les applications mo
 | Clics sur un lien cité dans le résumé | 1 % des visites | Pew Research Center, mars 2025 |
 | Baisse du taux de clic de la position 1 avec un AI Overview | −58 % | Ahrefs, données de décembre 2025 |
 | Même mesure en position 2 et en position 10 | −50,8 % et −19,4 % | Ahrefs, février 2026 |
+| Baisse du CTR des sites français très exposés aux AI Overviews | −23,1 % | Ahrefs, juillet 2026, publié en septembre 2026 |
+
+Le dernier chiffre est le premier mesuré en France, neuf jours après le lancement. J'en détaille la méthode et les limites dans [l'impact des AI Overviews sur le CTR en France](/ai-overviews-france-ctr/).
 
 Les résumés IA s'affichent surtout sur les requêtes longues : dans l'étude de Pew, 53 % des recherches de dix mots ou plus en affichaient un, contre 8 % des recherches d'un ou deux mots. Les contenus qui répondent à des questions détaillées sont donc les plus exposés.
 

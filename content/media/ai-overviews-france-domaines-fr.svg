@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 322" width="800" height="322" role="img" aria-label="Évolution médiane des clics : −12,3 % pour les domaines en .fr, −8,8 % pour l'ensemble du panel">
+<rect width="800" height="322" rx="6" fill="#fcfbf8"/>
+<rect x="40" y="34" width="44" height="4" rx="2" fill="#2f5fdc"/>
+<text x="40" y="74" font-family="'Iowan Old Style', Charter, Cambria, Georgia, serif" font-size="26" font-weight="700" fill="#16181d">Les sites en .fr perdent davantage de clics</text>
+<text x="40" y="102" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#5d6168">Évolution médiane des clics quotidiens après le 22 juillet 2026</text>
+<line x1="720.0" y1="128" x2="720.0" y2="242" stroke="#5d6168" stroke-width="1.5"/>
+<rect x="375.6" y="140" width="344.4" height="26" rx="4" fill="#2f5fdc"/>
+<text x="367.6" y="158" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" font-weight="700" fill="#16181d" text-anchor="end">−12,3 %</text>
+<text x="40" y="153" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#16181d">Domaines en .fr</text>
+<text x="40" y="171" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168">médiane</text>
+<rect x="473.6" y="204" width="246.4" height="26" rx="4" fill="#9aa0a8"/>
+<text x="465.6" y="222" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" font-weight="700" fill="#16181d" text-anchor="end">−8,8 %</text>
+<text x="40" y="217" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#16181d">Ensemble du panel</text>
+<text x="40" y="235" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12.5" fill="#5d6168">médiane, 963 domaines</text>
+<line x1="40" y1="276" x2="760" y2="276" stroke="#e2ddd2"/>
+<text x="40" y="300" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" fill="#5d6168">Source : Ahrefs, « AI Overviews Cut CTR by 23.1% in France », 16 septembre 2026 · valentinrouault.com</text>
+</svg>
