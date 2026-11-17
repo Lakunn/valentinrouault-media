@@ -5,6 +5,14 @@ parent: outils-seo
 status: publish
 origin: new
 dek: "Collez une liste de mots-clés avec leurs volumes et vos positions : l'outil estime les clics gagnés en position visée, leur valeur, et l'effet des AI Overviews."
+tool_steps:
+  - "Collez mots-clés, volumes et positions"
+  - "Choisissez la position visée"
+  - "Lisez les clics gagnés et leur valeur"
+tool_chips:
+  - "Gratuit"
+  - "Effet des AI Overviews inclus"
+  - "Rien n'est envoyé"
 seo_title: "Prévision de trafic SEO : estimer les clics gagnés"
 meta_description: "Estimez le trafic SEO gagné si vos pages atteignent la position visée, avec sa valeur en équivalent publicitaire et l'effet des AI Overviews."
 essentiel:

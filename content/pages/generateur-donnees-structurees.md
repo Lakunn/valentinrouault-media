@@ -5,6 +5,14 @@ parent: outils-seo
 status: publish
 origin: new
 dek: "Choisissez le type de page, remplissez les champs : le code JSON-LD est prêt à coller, avec les contrôles des propriétés que Google demande."
+tool_steps:
+  - "Choisissez le type de page"
+  - "Remplissez les champs utiles"
+  - "Copiez le JSON-LD contrôlé"
+tool_chips:
+  - "Gratuit"
+  - "Propriétés Google vérifiées"
+  - "Prêt à coller"
 seo_title: "Générateur de données structurées JSON-LD gratuit"
 meta_description: "Générez le JSON-LD d'un article, d'une organisation, d'un commerce local, d'un produit, d'une personne ou d'un fil d'Ariane, avec les contrôles de Google."
 essentiel:

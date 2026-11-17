@@ -5,6 +5,14 @@ parent: outils-seo
 status: publish
 origin: new
 dek: "Listez les versions d'une page par langue et par pays : l'outil génère les balises et le sitemap, et repère les erreurs de codes, d'adresses et de couverture."
+tool_steps:
+  - "Listez vos versions par langue et pays"
+  - "Vérifiez les erreurs signalées"
+  - "Copiez les balises ou le sitemap"
+tool_chips:
+  - "Gratuit"
+  - "Codes ISO contrôlés"
+  - "Balises + sitemap"
 seo_title: "Générateur hreflang gratuit, avec vérification"
 meta_description: "Générez les balises hreflang et le sitemap multilingue d'une page, avec la détection des codes invalides, doublons, x-default manquant et adresses incorrectes."
 essentiel:

@@ -5,6 +5,14 @@ parent: outils-seo
 status: publish
 origin: new
 dek: "Indiquez votre marque et vos villes : l'outil génère les expressions régulières pour isoler, dans le rapport Performances, la marque, les questions, les comparaisons, l'intention d'achat, le local et la longue traîne."
+tool_steps:
+  - "Indiquez votre marque et vos villes"
+  - "Copiez le filtre regex voulu"
+  - "Collez-le dans Performances › Requête"
+tool_chips:
+  - "Gratuit"
+  - "Syntaxe RE2 validée"
+  - "Prêt à coller"
 seo_title: "Filtres regex Search Console : marque, questions, local"
 meta_description: "Regex prêtes à coller dans la Search Console : marque et hors marque, questions, comparatifs, intention d'achat, recherches locales, longue traîne."
 essentiel:

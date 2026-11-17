@@ -5,6 +5,14 @@ parent: outils-seo
 status: publish
 origin: new
 dek: "Collez l'export des liens internes de votre crawler : l'outil calcule le PageRank interne de chaque page, repère les pages orphelines et celles trop loin de l'accueil."
+tool_steps:
+  - "Exportez les liens internes de votre crawler"
+  - "Collez l'export dans l'outil"
+  - "Repérez pages fortes, faibles et orphelines"
+tool_chips:
+  - "Gratuit"
+  - "Calcul dans le navigateur"
+  - "Screaming Frog, Sitebulb…"
 seo_title: "PageRank interne et pages orphelines : l'outil gratuit"
 meta_description: "Calculez le PageRank interne de vos pages à partir d'un export Screaming Frog, trouvez les pages orphelines et la profondeur en clics. Calcul local, gratuit."
 essentiel:

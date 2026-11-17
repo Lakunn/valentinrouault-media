@@ -5,6 +5,14 @@ parent: outils-seo
 status: publish
 origin: new
 dek: "Collez une liste de mots-clés, avec leurs volumes si vous les avez : l'outil range chaque requête par intention (information, comparaison, achat, local, navigation) et regroupe les requêtes par thème."
+tool_steps:
+  - "Collez vos mots-clés (et leurs volumes)"
+  - "L'outil classe chaque requête par intention"
+  - "Exportez les groupes par thème"
+tool_chips:
+  - "Gratuit"
+  - "Rien n'est envoyé"
+  - "Export CSV"
 seo_title: "Intention de recherche : classer vos mots-clés gratuitement"
 meta_description: "Classez une liste de mots-clés par intention de recherche et par thème, avec la répartition pondérée par le volume et un export CSV. Gratuit, sans inscription."
 essentiel:

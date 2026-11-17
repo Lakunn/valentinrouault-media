@@ -5,6 +5,14 @@ parent: outils-seo
 status: publish
 origin: new
 dek: "Le nom du site, un résumé, vos pages clés classées par section : l'outil produit un fichier llms.txt conforme au format proposé par llmstxt.org."
+tool_steps:
+  - "Nommez le site et résumez-le"
+  - "Ajoutez vos pages clés par section"
+  - "Téléchargez le llms.txt"
+tool_chips:
+  - "Gratuit"
+  - "Format llmstxt.org"
+  - "Prêt à publier"
 seo_title: "Générateur de llms.txt gratuit, au format llmstxt.org"
 meta_description: "Créez le fichier llms.txt de votre site : résumé, sections, pages clés et section Optional, au format llmstxt.org, prêt à publier à la racine du site."
 essentiel:
