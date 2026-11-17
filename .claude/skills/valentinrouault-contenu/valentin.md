@@ -40,6 +40,7 @@ Une ligne par expérience **fournie par Valentin**, datée, avec ce qu'on peut e
 
 | Date | Expérience (anonymisée si besoin) | Ce qu'on peut écrire | Articles qui l'utilisent |
 |---|---|---|---|
+| 17/11/2026 | Désindexation progressive de guidecanin.fr (28 → 14 pages indexées de septembre à novembre 2026, 38 « Explorée, actuellement non indexée », impressions à zéro le 26/10) ; Yoast et Rank Math actifs ensemble ; titres importés avec balises H1 | Chiffres réels de la Search Console, diagnostic et méthode ; le site peut être décrit comme « un guide pratique sur les chiens que j'édite » | /exploree-actuellement-non-indexee/ |
 | | | | |
 
 Quand un article gagnerait à une expérience et qu'aucune ne convient : **poser la question à Valentin** (« As-tu un cas réel de cannibalisation corrigée, même anonyme, avec l'effet constaté ? »), et écrire sans en attendant, à la troisième personne ou à partir de sources.
