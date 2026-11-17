@@ -5,7 +5,7 @@ description: "Transformer la veille SEO/GEO (flux RSS des grands blogs SEO fran�
 
 # Veille SEO/GEO → articles à valeur ajoutée (valentinrouault.com)
 
-Ce skill complète `guide-canin-contenu` (cycle commun de rédaction et d'humanisation, section « valentinrouault.com »). Il couvre l'amont : partir de ce que publient les autres pour écrire **ce qu'ils n'ont pas écrit**.
+Ce skill complète `valentinrouault-contenu` (rédaction, voix de Valentin, grille algoproof). Il couvre l'amont : partir de ce que publient les autres pour écrire **ce qu'ils n'ont pas écrit**.
 
 Principe directeur : un article tiré de la veille n'est justifié que s'il répond oui à au moins **une** de ces questions.
 
@@ -72,7 +72,7 @@ Règle absolue : aucune expérience, aucun test, aucun client inventé. Si une v
 
 ## 6. Rédiger
 
-Suivre le skill `guide-canin-contenu` pour le format (front matter complet, L'essentiel, maillage interne en liens relatifs, FAQ si utile) et l'humanisation. Choisir le modèle dans `templates/` : `actualite.md` pour une annonce, `statistiques.md` pour une étude, `guide-pilier.md` pour une synthèse.
+Suivre le skill `valentinrouault-contenu` pour la voix, le format (front matter complet, L'essentiel, maillage interne en liens relatifs, FAQ si utile) et l'humanisation. Choisir le modèle dans `templates/` : `actualite.md` pour une annonce, `statistiques.md` pour une étude, `guide-pilier.md` pour une synthèse.
 
 Spécificités de ce skill :
 

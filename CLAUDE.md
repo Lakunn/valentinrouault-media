@@ -14,9 +14,9 @@ Ce dépôt pilote le site WordPress valentinrouault.com (média SEO / GEO). Lire
 
 ## Écriture
 
-**Suivre le skill `guide-canin-contenu`** (lignes directrices communes aux deux sites, section « valentinrouault.com ») pour toute création ou réécriture : idéation, fact-checking, brief, rédaction, maillage interne, médias, humanisation.
+**Suivre le skill `valentinrouault-contenu`** pour toute création ou réécriture (voix de Valentin dans `valentin.md`, grille `algoproof.md`), et **`veille-valeur-ajoutee`** pour les articles tirés de la veille.
 
-- Français, vouvoiement, ton éditorial (média, pas agence) : aucune offre commerciale, aucun appel à « prendre rendez-vous ».
+- Français, première personne (Valentin) et vouvoiement du lecteur, ton éditorial (média, pas agence) : aucune offre commerciale, aucun appel à « prendre rendez-vous ». Aucune expérience inventée.
 - Chaque affirmation datable est datée ; chaque chiffre a une source identifiable, sinon il est retiré.
 - Front matter obligatoire : title, slug, status, dek, seo_title (30–65 car.), meta_description (110–160 car.), essentiel (3–4 points), categories pour les articles.
 - Maillage interne en liens relatifs (`/slug/`), vers des URL existantes uniquement.
