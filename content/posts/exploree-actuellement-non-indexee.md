@@ -103,6 +103,14 @@ Non, pas sans l'avoir améliorée. Redemander l'indexation d'une page inchangée
 
 Il n'y a pas de délai garanti. Comptez plusieurs semaines après les améliorations, le temps que Google réexplore et réévalue le site.
 
+### Peut-on forcer Google à indexer une page ?
+
+Non. L'inspection d'URL de la Search Console permet de **demander** l'indexation, ce qui accélère le passage de Googlebot, mais la décision reste à Google. Sur une page jugée faible, la demande ne change rien tant que la page n'a pas changé.
+
+### Quelle différence avec « Détectée, actuellement non indexée » ?
+
+« Détectée » veut dire que Google connaît l'URL mais ne l'a pas encore explorée, souvent faute de budget d'exploration ou parce que le site lui paraît peu prioritaire. « Explorée » veut dire qu'il l'a lue et a choisi de ne pas la garder. Le second statut est le plus révélateur d'un problème de qualité.
+
 ### Faut-il supprimer les pages non indexées ?
 
 Pas forcément. Une page sans demande et sans valeur peut être fusionnée, mise en noindex ou retirée. Une page qui répond à une vraie question mérite d'être réécrite.

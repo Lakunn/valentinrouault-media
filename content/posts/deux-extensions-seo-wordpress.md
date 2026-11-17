@@ -53,6 +53,22 @@ Ensuite, d'autres éléments peuvent départager :
 
 Je n'ai pas de préférence de principe entre les deux. Les deux font le travail. Ce qui compte, c'est qu'il n'y en ait qu'une.
 
+## Yoast ou Rank Math : les différences qui comptent vraiment
+
+Si vous devez en choisir une, les comparatifs en ligne listent des dizaines de fonctions. En pratique, sur les versions gratuites, voici ce qui change le quotidien :
+
+| Point | Yoast SEO (gratuit) | Rank Math (gratuit) |
+|---|---|---|
+| Titres, descriptions, canonicals, sitemap | Oui | Oui |
+| Gestion des redirections | Non (version payante) | Oui |
+| Plusieurs mots-clés cibles par page | Non (version payante) | Oui |
+| Choix fin des données structurées par page | Limité | Plus étendu |
+| Nombre de réglages | Moins nombreux, plus guidés | Beaucoup plus nombreux |
+
+Mon avis : sur un petit site géré par une seule personne, la simplicité de Yoast évite des erreurs de réglage. Sur un site qui a besoin de redirections ou de données structurées variées sans payer, Rank Math en fait plus. Dans les deux cas, le score de « lisibilité » ou de « SEO » affiché dans l'éditeur ne mesure pas ce que Google évalue : ne réécrivez pas un bon texte pour faire passer un voyant au vert.
+
+**Comment vérifier ce qu'une extension produit vraiment** : peu importe laquelle, le seul juge est le code source de la page publiée. Après chaque changement de réglage, refaites le contrôle des cinq points du début de cet article.
+
 ## Retirer la seconde sans rien perdre
 
 1. **Exportez** la liste des URL avec leur titre et leur description actuels (un crawl suffit). C'est votre état de référence.
