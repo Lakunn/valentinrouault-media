@@ -199,3 +199,24 @@ add_filter(
 		return $args;
 	}
 );
+
+/*
+ * /wp-sitemap.xml renvoyait la page d'accueil (constaté le 17/11/2026) : la règle de réécriture de l'index des
+ * sitemaps manquait côté serveur, alors que les sous-sitemaps répondaient. Rendu de secours de l'index, sans
+ * dépendre de la règle ; la montée de VR_VERSION régénère aussi les règles (inc/llms.php).
+ */
+add_action(
+	'parse_request',
+	function ( $wp ) {
+		$path = trim( (string) wp_parse_url( $_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH ), '/' );
+		if ( 'wp-sitemap.xml' !== $path || ! empty( $wp->query_vars['sitemap'] ) || ! function_exists( 'wp_sitemaps_get_server' ) ) {
+			return;
+		}
+		$server = wp_sitemaps_get_server();
+		if ( ! $server->sitemaps_enabled() ) {
+			return;
+		}
+		$server->renderer->render_index( $server->index->get_sitemap_list() );
+		exit;
+	}
+);
