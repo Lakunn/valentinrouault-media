@@ -1,8 +1,15 @@
-"""Veille éditoriale : lit les flux de config/veille.yml (sites, Bluesky, alertes Google, X en option),
-regroupe les nouveautés par sujet, les classe, et propose pour chaque sujet un angle qui apporte
-de la valeur par rapport à ce qui est déjà publié.
+"""Veille éditoriale (script commun aux 4 sites de Valentin : escapade-et-voyage.fr, guidecanin.fr,
+valentinrouault.com, growww.app ; fichier identique dans les 4 dépôts, tout ce qui est propre au site est
+dans config/veille.yml) : lit les flux (sites, Bluesky, alertes Google, X en option), regroupe les
+nouveautés par sujet, les classe, et propose pour chaque sujet un angle qui apporte de la valeur par
+rapport à ce qui est déjà publié.
 
-Sorties (commitées par le workflow « 4 · Veille », chaque matin) :
+Options de config/veille.yml : `keywords` / `exclude` globaux ; par flux `keywords` (remplacent la liste
+globale : utile pour les flux anglais ou très larges), `filter: false`, `weight`, `lang`, `type` ;
+`topics` (sujets suivis) ; `lang_defaut` (langue des flux sans `lang`, « en » par défaut) ; `min_sources` (sources distinctes pour
+retenir un sujet, 2 par défaut : 1 pour un site dont la veille suit surtout des règles et des actualités pratiques) ; `angles` et `stop_extra` pour adapter les angles proposés et les mots ignorés.
+
+Sorties (commitées par le workflow de veille du dépôt) :
 - veille/AAAA-MM-JJ.md : le rapport du jour, sujets classés, sources, angle proposé, contenus à mettre à jour ;
 - veille/plan.md : le plan d'articles glissant (les meilleurs sujets des derniers jours) ;
 - veille/items.json : l'historique des éléments vus (sert à détecter les sujets qui montent).
@@ -28,8 +35,33 @@ from pathlib import Path
 import requests
 import yaml
 
-sys.path.insert(0, str(Path(__file__).parent))
-from common import ROOT, UA, all_docs, warn  # noqa: E402
+ROOT = Path(__file__).resolve().parents[1]
+UA = "Mozilla/5.0 (compatible; media-veille/1.0)"
+
+
+def warn(msg: str) -> None:
+    print(f"ATTENTION : {msg}", file=sys.stderr)
+
+
+class Doc:
+    def __init__(self, slug: str, meta: dict):
+        self.kind, self.slug, self.meta = "post", slug, meta
+
+
+def all_docs() -> list[Doc]:
+    """Articles du dépôt (front matter des fichiers .md / .html de content/posts)."""
+    out = []
+    for p in sorted((ROOT / "content" / "posts").glob("*.*")):
+        if p.suffix not in (".md", ".html"):
+            continue
+        text = p.read_text(encoding="utf-8")
+        try:
+            meta = yaml.safe_load(text.split("---")[1]) if text.startswith("---") else {}
+        except yaml.YAMLError:
+            meta = {}
+        meta = meta or {}
+        out.append(Doc(str(meta.get("slug") or p.stem), meta))
+    return out
 
 CONF = ROOT / "config" / "veille.yml"
 OUT = ROOT / "veille"
@@ -39,24 +71,23 @@ NOW = datetime.now(timezone.utc)
 STOP = set("""
 a au aux avec ce ces dans de des du elle en et est il ils je la le les leur lui ma mais me même mes moi mon ne nos notre nous on ou où par pas pour qu que qui sa se ses son sur ta te tes toi ton tu un une vos votre vous c d j l m n s t y été être avoir fait faire plus moins comme tout tous toute toutes cette cet sans sous entre vers chez après avant aussi encore déjà très bien ça quoi quel quelle quels quelles comment pourquoi
 the a an and or of to in on for with by from at as is are was were be been it its this that these those your you we our they their how what why when which who new now more most will can not no into about over after before vs via just get gets got using use used
-google seo search
 """.split())
 
-ANGLES = {
+ANGLES = {  # remplaçables par `angles:` dans config/veille.yml
     "annonce": [
-        "Ce qui change concrètement pour un site français, avec la date d'arrivée en France ou son absence.",
-        "Vérifier sur 2 ou 3 sites réels (Search Console, SERP françaises) avant d'écrire, et publier ces observations.",
+        "Ce qui change concrètement pour le lecteur français, avec la date d'application en France ou son absence.",
+        "Vérifier sur la source primaire (texte officiel, page du service, annonce de l'entreprise) avant d'écrire.",
         "Lister ce qu'il faut faire, ne pas faire, et surveiller dans les 30 jours.",
     ],
     "etude": [
         "Relire la méthode de l'étude (échantillon, pays, période, définition des métriques) et la résumer honnêtement.",
-        "Confronter les chiffres à au moins deux autres études ou aux données de la Search Console.",
-        "Dire ce que l'étude ne permet pas de conclure, et ce que cela implique pour le marché français.",
+        "Confronter les chiffres à au moins deux autres études ou à une source officielle.",
+        "Dire ce que l'étude ne permet pas de conclure, et ce que cela implique pour le lecteur français.",
     ],
     "declaration": [
         "Citer la déclaration exacte (source primaire) et la replacer dans les déclarations précédentes sur le même sujet.",
         "Séparer ce qui est confirmé, ce qui est interprété par les médias, et ce qui reste inconnu.",
-        "Traduire en décisions : qu'est-ce qu'un responsable SEO doit vérifier ou changer ?",
+        "Traduire en décisions : qu'est-ce que le lecteur doit vérifier ou changer ?",
     ],
     "debat": [
         "Rassembler les positions en présence, avec leurs arguments et leurs données.",
@@ -76,7 +107,13 @@ def norm(text: str) -> str:
     return "".join(c for c in text if not unicodedata.combining(c))
 
 
-def tokens(text: str) -> set[str]:
+def has_any(text: str, words: list[str]) -> bool:
+    """Un mot-clé ne compte qu'en début de mot (« tique » ne doit pas trouver « politique », ni « eta » « secretary ») ;
+    il peut être suivi d'autres lettres (« chien » trouve « chiens »)."""
+    return any(re.search(r"(?<![a-z0-9])" + re.escape(w), text) for w in words)
+
+
+def tokens(text: str) -> set[str]:  # STOP est complété par `stop_extra` de la config (main)
     return {w for w in re.findall(r"[a-z0-9][a-z0-9\-\.]{2,}", norm(text)) if w not in STOP and not w.isdigit()}
 
 
@@ -189,9 +226,11 @@ def main() -> None:
     ap.add_argument("--days", type=int)
     args = ap.parse_args()
     conf = yaml.safe_load(CONF.read_text(encoding="utf-8"))
+    STOP.update(norm(w) for w in conf.get("stop_extra") or [])
+    ANGLES.update(conf.get("angles") or {})
     days = args.days or conf.get("days", 7)
     OUT.mkdir(exist_ok=True)
-    history: dict[str, dict] = {i["id"]: i for i in json.loads(HISTORY.read_text())} if HISTORY.exists() else {}
+    history: dict[str, dict] = {i["id"]: i for i in json.loads(HISTORY.read_text(encoding="utf-8"))} if HISTORY.exists() else {}
     keywords = [norm(k) for k in conf.get("keywords", [])]
     exclude = [norm(k) for k in conf.get("exclude", [])]
     topics = conf.get("topics", [])
@@ -215,9 +254,10 @@ def main() -> None:
             if it["date"] and it["date"] < NOW - timedelta(days=conf.get("history_days", 45)):
                 continue
             text = norm(f"{it['title']} {it['summary']}")
-            if feed.get("filter", True) and keywords and not any(k in text for k in keywords):
+            fkw = [norm(k) for k in feed.get("keywords") or []] or keywords  # mots-clés propres au flux
+            if feed.get("filter", True) and fkw and not has_any(text, fkw):
                 continue
-            if any(k in text for k in exclude):
+            if has_any(text, exclude):
                 continue
             fetched += 1
             iid = hashlib.sha1(it["link"].encode()).hexdigest()[:16]
@@ -227,7 +267,7 @@ def main() -> None:
             history[iid] = {
                 "id": iid, "title": it["title"], "link": it["link"], "summary": it["summary"],
                 "date": (it["date"] or NOW).isoformat(), "seen": NOW.isoformat(),
-                "source": feed["name"], "lang": feed.get("lang", "en"), "weight": feed.get("weight", 1),
+                "source": feed["name"], "lang": feed.get("lang", conf.get("lang_defaut", "en")), "weight": feed.get("weight", 1),
                 "type": classify(it, feed.get("type", "media")), "topic": topic_of(it, topics),
             }
 
@@ -278,7 +318,9 @@ def main() -> None:
         ranked.append({"id": cid, "label": label, "score": round(score, 1), "items": sorted(items, key=lambda i: (-i["weight"], i["date"])),
                        "sources": len(srcs), "gap": gap, "rising": rising, "kind": kind, "update": internal_matches(tk, docs)})
     ranked.sort(key=lambda c: c["score"], reverse=True)
-    top = [c for c in ranked if c["sources"] >= 2 or c["items"][0]["weight"] >= 3][: conf.get("keep_top", 12)]
+    # Sujet retenu : couvert par `min_sources` sources distinctes (2 par défaut), ou par une source de poids ≥ 3
+    min_src = conf.get("min_sources", 2)
+    top = [c for c in ranked if c["sources"] >= min_src or c["items"][0]["weight"] >= 3][: conf.get("keep_top", 12)]
 
     today = NOW.strftime("%Y-%m-%d")
     out = [f"# Veille du {today}", "",
@@ -299,7 +341,7 @@ def main() -> None:
             out += ["", "**Mettre à jour plutôt que créer** : " + ", ".join(c["update"]) + " (vérifier si le sujet y est déjà traité)."]
         out += ["", "**Décision** : [ ] article · [ ] mise à jour · [ ] ignorer", ""]
     if not top:
-        out.append("Aucun sujet couvert par au moins deux sources cette semaine.")
+        out.append(f"Aucun sujet couvert par au moins {min_src} source(s) cette semaine.")
     if broken:
         out += ["", "## Sources injoignables", "", "À corriger ou retirer dans `config/veille.yml` :", ""] + [f"- {b}" for b in broken]
     if not token:

@@ -11,6 +11,21 @@ days: 7             # fenêtre analysée à chaque passage
 history_days: 45    # durée de conservation des éléments (pour détecter les sujets qui montent)
 keep_top: 12        # nombre de sujets détaillés dans le rapport
 
+stop_extra: [google, seo, search]
+angles:
+  annonce:
+    - "Ce qui change concrètement pour un site français, avec la date d'arrivée en France ou son absence."
+    - "Vérifier sur 2 ou 3 sites réels (Search Console, SERP françaises) avant d'écrire, et publier ces observations."
+    - "Lister ce qu'il faut faire, ne pas faire, et surveiller dans les 30 jours."
+  etude:
+    - "Relire la méthode de l'étude (échantillon, pays, période, définition des métriques) et la résumer honnêtement."
+    - "Confronter les chiffres à au moins deux autres études ou aux données de la Search Console."
+    - "Dire ce que l'étude ne permet pas de conclure, et ce que cela implique pour le marché français."
+  declaration:
+    - "Citer la déclaration exacte (source primaire) et la replacer dans les déclarations précédentes sur le même sujet."
+    - "Séparer ce qui est confirmé, ce qui est interprété par les médias, et ce qui reste inconnu."
+    - "Traduire en décisions : qu'est-ce qu'un responsable SEO doit vérifier ou changer ?"
+
 keywords: [seo, référencement, referencement, google, search console, ai overview, aperçus ia, ai mode, mode ia, chatgpt, openai, perplexity, gemini, copilot, bing, llm, geo, core update, spam, crawl, index, schema, robots, serp, backlink, netlinking, e-e-a-t, eeat, discover, merchant, local, maps, agent, llms.txt]
 exclude: [webinar, sponsored, sponsorisé, podcast episode, job, recrute, hiring]
 

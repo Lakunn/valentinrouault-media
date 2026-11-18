@@ -1,0 +1,78 @@
+# Graines de la carte des mots-clés de valentinrouault.com (scripts/keyword_map.py, script commun aux 4 sites).
+# Ligne éditoriale : média SEO & GEO (analyses, tests, veille), à la première personne, sans offre commerciale.
+# Les actus viennent de la veille (veille/plan.md) ; la carte sert aux articles de fond, qui durent.
+
+langue: fr
+pays: FR
+par_semaine: 2     # en plus des articles tirés de la veille
+semaines: 10
+serp_max: 40
+facteur_bing: 20
+contenus: [content/posts]
+
+graines:
+  - seo
+  - référencement naturel
+  - référencement google
+  - geo seo
+  - ai overview
+  - chatgpt seo
+  - search console
+  - mot clé seo
+  - netlinking
+  - seo local
+  - indexation google
+  - audit seo
+  - rédaction seo
+  - balise
+  - llms.txt
+  - google discover
+
+declinaisons: [comment, pourquoi, quel, quelle, c'est quoi, définition, exemple, gratuit, outil, wordpress, 2026, erreur, checklist, vs]
+
+rubriques:
+  - {slug: blog, adequation: 1.0, motif: '\b(geo|ia|ai|chatgpt|llm|llms|perplexity|gemini|copilot|overviews?|mode ia|ai mode|generative|generatif|moteurs? de reponse)\b'}
+  - {slug: seo-technique, adequation: 1.0, motif: '\b(indexation|indexer|crawl|robots|sitemap|canonical|core web vitals|javascript|redirection|404|schema|donnees structurees|balises?|hreflang|pagespeed|search console|explor)\b'}
+  - {slug: contenu-seo, adequation: 1.0, motif: '\b(redaction|rediger|contenu|article|mots? cles?|semantique|cocon|title|meta description|discover|e e a t|eeat)\b'}
+  - {slug: seo, adequation: 0.9, motif: '\b(seo|referencement|netlinking|backlinks?|audit|strategie|positionnement|seo local|google business|serp)\b'}
+  - {slug: reseaux-sociaux, adequation: 0.6, motif: '\b(linkedin|instagram|tiktok|facebook|youtube|pinterest|reseaux sociaux)\b'}
+rubrique_defaut: {slug: a-classer, adequation: 0.3}
+rubriques_coeur: [blog, seo-technique, contenu-seo]
+
+mots_habillage: [seo, comment, faire, quel, quelle, pourquoi, qu, est, ce, que, c, quoi, definition, google, site, son, un]
+
+exclure_mots:
+  # intentions commerciales ou d'emploi : hors ligne éditoriale (média, pas agence)
+  - agence
+  - consultant
+  - freelance
+  - prestataire
+  - tarif
+  - devis
+  - formation
+  - cours
+  - emploi
+  - salaire
+  - stage
+  - alternance
+  - fiche métier
+  - offre
+  - cpf
+  - pdf
+  - login
+  - connexion
+  - se connecter
+  - ne fonctionne pas
+  - chat gpt gratuit
+  - telecharger
+  - télécharger
+  - app
+  # bruit relevé au premier passage (18/11/2026)
+  - intersection
+  - cardinale
+  - maritime
+  - balise argos
+  - balise detresse
+  - balise gps
+  - balise de détresse
+  - sécurité routière

@@ -14,6 +14,8 @@ Ce dépôt pilote le site WordPress valentinrouault.com (média SEO / GEO). Lire
 
 ## Écriture
 
+Les sujets de fond viennent de la carte des mots-clés (`config/keywords.yml`, `keywords/calendrier.md`), régénérée le 1er du mois ; l'actualité, de `veille/`. Voir l'étape 0 du skill de contenu.
+
 **Suivre le skill `valentinrouault-contenu`** pour toute création ou réécriture (voix de Valentin dans `valentin.md`, grille `algoproof.md`), et **`veille-valeur-ajoutee`** pour les articles tirés de la veille.
 
 - Français, première personne (Valentin) et vouvoiement du lecteur, ton éditorial (média, pas agence) : aucune offre commerciale, aucun appel à « prendre rendez-vous ». Aucune expérience inventée.

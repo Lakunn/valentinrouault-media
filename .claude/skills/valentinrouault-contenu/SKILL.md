@@ -11,6 +11,14 @@ Pour un sujet issu de la veille quotidienne (annonce, étude, déclaration), le 
 
 Cycle en sept étapes, **dans l'ordre**. On ne rédige pas avant que Valentin ait validé le brief.
 
+## 0. Carte des mots-clés, veille et volumes (commun aux 4 sites)
+
+- **Sujets de fond** : `config/keywords.yml` (calendrier lisible dans `keywords/calendrier.md`), régénéré le 1er du mois par le workflow « Carte des mots-clés » (`scripts/keyword_map.py`, identique dans les 4 dépôts ; graines, rubriques et exclusions dans `config/keyword_seeds.yml`). Prendre le prochain sujet du calendrier ; `statut: existe_peut_etre` = un article existant couvre peut-être déjà le sujet : vérifier et **mettre à jour** plutôt que créer.
+- **Volumes** : la carte prend, dans l'ordre, `config/volumes.yml` (relevés Keyword Surfer), DataForSEO, Bing, sinon l'indice Google Suggest (« à relever »). Pour relever : `python scripts/keyword_map.py --a-relever` donne la liste ; dans le Chrome de Valentin, recherche google.fr de chaque requête, lecture du tableau « Keyword ideas » de Surfer ; **au plus ~30 recherches d'affilée** (au-delà Google affiche un CAPTCHA, qu'on ne résout jamais) ; consigner la formulation la plus recherchée et ses variantes dans `config/volumes.yml`, puis relancer le script (gratuit grâce au cache).
+- **Actualité** : `veille/AAAA-MM-JJ.md` et `veille/plan.md` (workflow de veille, `scripts/veille.py` identique dans les 4 dépôts, flux dans `config/veille.yml`). Une règle, un prix ou une formalité qui change : mise à jour datée de l'article concerné avant tout nouvel article.
+- Renseigner `keyword` (requête principale de la carte) et `keywords_secondaires` dans le front matter de chaque nouvel article : la carte suivante le marque alors `programme` ou `publie`.
+- Récapitulatif chaque lundi par e-mail (n8n, `growww-site/deploy/n8n/`).
+
 ## 1. Idée et existant
 
 1. Sources : veille (`veille/AAAA-MM-JJ.md`, `veille/plan.md`), questions de clients et de lecteurs que Valentin rapporte, suggestions et « Autres questions » Google, UGC (étape 2), sujets que ses audits font revenir.
