@@ -4,18 +4,18 @@ Un sujet entre dans le plan quand au moins deux sources en parlent, ou une sourc
 
 | Sujet | Score | Sources | Signal | Type | Contenu existant | Rapport |
 | --- | --- | --- | --- | --- | --- | --- |
-| ChatGPT et OpenAI | 42.0 | 13 | – | annonce | /utilisation-chat-gpt-statistiques/, /meilleurs-solutions-agents-ia/, /llms-txt/ | [2026-11-23](2026-11-23.md) |
-| Mode IA de Google | 31.2 | 6 | écart FR en hausse | debat | /google-search-innove-pour-la-rentree-2025-nouvelles-fonctionnalites-ia-et-outils-pratiques-pour-etudiants-et-familles/, /zero-click-searches/, /utilisation-chat-gpt-statistiques/ | [2026-11-23](2026-11-23.md) |
-| Google Search Profiles make it easier to add your LinkedIn profile https://www.s | 28.6 | 6 | écart FR en hausse | declaration | /tendances-seo-2025/, /refonte-site-seo-cro/, /meilleurs-solutions-agents-ia/ | [2026-11-23](2026-11-23.md) |
-| Mises à jour de l'algorithme | 26.0 | 6 | écart FR en hausse | annonce | /statistiques-seo/, /seo-ia/, /seo-chatgpt/ | [2026-11-23](2026-11-23.md) |
-| SEO local | 20.0 | 5 | en hausse | declaration | /llms-txt/, /chatgpt-business-hub/, /utilisation-chat-gpt-statistiques/ | [2026-11-23](2026-11-23.md) |
-| AI Overviews / Aperçus IA | 18.0 | 6 | en hausse | debat | /ai-overviews-france-ctr/, /tendances-seo-2025/, /stats-geo/ | [2026-11-23](2026-11-23.md) |
-| SEO technique (crawl, indexation, rendu) | 16.0 | 5 | en hausse | declaration | /refonte-site-seo-cro/, /llms-txt/, /exploree-actuellement-non-indexee/ | [2026-11-23](2026-11-23.md) |
-| Bing et Copilot | 12.0 | 3 | en hausse | declaration | – | [2026-11-23](2026-11-23.md) |
-| GEO et visibilité dans les IA | 10.0 | 4 | en hausse | debat | /seo-ia/, /zero-click-searches/, /refonte-site-seo-cro/ | [2026-11-23](2026-11-23.md) |
-| E-commerce et Merchant Center | 10.0 | 4 | – | etude | /core-update-novembre-2026/, /chatgpt-business-hub/ | [2026-11-23](2026-11-23.md) |
-| Agents IA : Google demande aux sites d’ouvrir leurs CDN et pare-feu à Google-Age | 8.0 | 3 | en hausse | debat | /meilleurs-solutions-agents-ia/, /google-vs-chatgpt-tendances/, /agent-ia-seo/ | [2026-11-23](2026-11-23.md) |
-| Search Console | 6.7 | 3 | – | etude | /seo-ia/, /search-console-vs-google-analytics/ | [2026-11-23](2026-11-23.md) |
-| Données structurées et résultats enrichis | 5.2 | 2 | écart FR | etude | – | [2026-11-23](2026-11-23.md) |
-| Spam et pénalités | 5.2 | 1 | écart FR | declaration | – | [2026-11-23](2026-11-23.md) |
-| The Final Ad Checklist Before BFCM – What To Fix Now & What To Leave via @sejour | 5.2 | 1 | écart FR | debat | – | [2026-11-23](2026-11-23.md) |
+| ChatGPT et OpenAI | 40.0 | 13 | – | debat | /llms-txt/, /bing-webmaster-tools-indexnow/, /utilisation-chat-gpt-statistiques/ | [2026-11-24](2026-11-24.md) |
+| Mises à jour de l'algorithme | 36.4 | 7 | écart FR en hausse | annonce | /seo-ia/, /statistiques-seo/, /seo-chatgpt/ | [2026-11-24](2026-11-24.md) |
+| Mode IA de Google | 26.0 | 7 | en hausse | debat | /google-search-innove-pour-la-rentree-2025-nouvelles-fonctionnalites-ia-et-outils-pratiques-pour-etudiants-et-familles/, /zero-click-searches/, /seo-ia/ | [2026-11-24](2026-11-24.md) |
+| Daily Search Forum Recap: November 24, 2026 | 23.4 | 5 | écart FR en hausse | debat | /tendances-seo-2025/, /refonte-site-seo-cro/, /google-search-innove-pour-la-rentree-2025-nouvelles-fonctionnalites-ia-et-outils-pratiques-pour-etudiants-et-familles/ | [2026-11-24](2026-11-24.md) |
+| Bing et Copilot | 20.0 | 5 | en hausse | declaration | /bing-webmaster-tools-indexnow/, /tendances-seo-2025/, /statistiques-seo/ | [2026-11-24](2026-11-24.md) |
+| SEO technique (crawl, indexation, rendu) | 16.0 | 5 | – | debat | /core-update-novembre-2026/, /refonte-site-seo-cro/, /exploree-actuellement-non-indexee/ | [2026-11-24](2026-11-24.md) |
+| AI Overviews / Aperçus IA | 16.0 | 5 | en hausse | debat | /stats-geo/, /search-console-rapport-ia/, /bing-webmaster-tools-indexnow/ | [2026-11-24](2026-11-24.md) |
+| Google: People Don't Just Want AI, They Want AI & The Web | 15.6 | 3 | écart FR en hausse | declaration | /javascript-seo-erreurs/, /ia-transforme-recherche-google/ | [2026-11-24](2026-11-24.md) |
+| SEO local | 14.0 | 4 | en hausse | debat | /llms-txt/, /seo-chatgpt/, /chatgpt-business-hub/ | [2026-11-24](2026-11-24.md) |
+| GEO et visibilité dans les IA | 14.0 | 5 | en hausse | debat | /seo-ia/, /zero-click-searches/, /refonte-site-seo-cro/ | [2026-11-24](2026-11-24.md) |
+| Gemini | 10.0 | 4 | en hausse | debat | /meilleurs-solutions-agents-ia/, /google-vs-chatgpt-tendances/, /redaction-article-premier-google/ | [2026-11-24](2026-11-24.md) |
+| Spam et pénalités | 8.7 | 2 | écart FR | declaration | – | [2026-11-24](2026-11-24.md) |
+| E-commerce et Merchant Center | 8.3 | 4 | – | etude | /core-update-novembre-2026/, /chatgpt-business-hub/ | [2026-11-24](2026-11-24.md) |
+| WordPress Drops To 38.4% Of The Web, Down Nearly 5 Points In A Year via @sejourn | 7.8 | 2 | écart FR en hausse | debat | /plugin-wordpress/, /deux-extensions-seo-wordpress/, /seo-ia/ | [2026-11-24](2026-11-24.md) |
+| Google’s Expansion Of Personal Intelligence Will Change SEO via @sejournal, @mar | 7.8 | 2 | écart FR | debat | – | [2026-11-24](2026-11-24.md) |
