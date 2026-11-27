@@ -28,11 +28,10 @@ home:
     current: "Aujourd'hui chez <a href=\"https://ads-up.fr/\" rel=\"noopener\">Ads Up</a>, cabinet de performance digitale."
     stats:
       - { value: "+110", label: "campagnes SEO menées" }
-      - { value: "89 %", label: "de campagnes réussies" }
-      - { value: "95 %", label: "de clients satisfaits" }
+      - { value: "10 ans", label: "de référencement naturel" }
+      - { value: "FR · CA", label: "e-commerce, local et grands comptes" }
     clients_title: Ils m'ont fait confiance
     clients: [Cirque du Soleil, Metro, Endro Cosmétiques, AG2R, DJI, SAIL, Domitys, Hydro-Québec, Navailles]
-    stats_note: "Chiffres issus de mon suivi de missions."
 
   # Direction artistique de la présentation d'accueil (inspirée d'Ads Up, à confirmer).
   # Laisser vide pour garder la charte du site.
